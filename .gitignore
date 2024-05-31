@@ -47,3 +47,14 @@ po/*~
 
 # RStudio Connect folder
 rsconnect/
+
+# Quarto
+/.quarto/
+
+# Future-proofing: ignore commonly included files that should not be tracked
+# Inspired by usethis::git_vaccinate() options
+.DS_Store
+.Rproj.user
+.httr-oauth
+.quarto
+_site/
