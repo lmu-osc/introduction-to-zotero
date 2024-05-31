@@ -1,5 +1,16 @@
 [
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "intro",
+    "section": "",
+    "text": "site landing\n\n\n\n Back to top",
+    "crumbs": [
+      "Home",
+      "Overview"
+    ]
+  },
+  {
     "objectID": "part_one.html",
     "href": "part_one.html",
     "title": "placeholder",
@@ -9,17 +20,6 @@
       "Home",
       "Background",
       "Temp"
-    ]
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "intro",
-    "section": "",
-    "text": "site landing\n\n\n\n Back to top",
-    "crumbs": [
-      "Home",
-      "Overview"
     ]
   }
 ]
