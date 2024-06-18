@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://lmu-osc.github.io/introduction-to-zotero/index.html</loc>
-    <lastmod>2024-05-31T14:28:18.548Z</lastmod>
+    <loc>https://lmu-osc.github.io/introduction-to-zotero/LICENSE.html</loc>
+    <lastmod>2024-06-18T08:08:16.619Z</lastmod>
   </url>
   <url>
     <loc>https://lmu-osc.github.io/introduction-to-zotero/part_one.html</loc>
-    <lastmod>2024-05-31T14:28:18.548Z</lastmod>
+    <lastmod>2024-06-18T08:08:16.619Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmu-osc.github.io/introduction-to-zotero/index.html</loc>
+    <lastmod>2024-06-18T08:08:16.619Z</lastmod>
   </url>
 </urlset>
