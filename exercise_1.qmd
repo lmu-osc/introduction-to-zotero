@@ -3,3 +3,9 @@ title: "Exercise 1"
 format: html
 editor: visual
 ---
+
+-   save references to 3-4 different sources
+-   organize them into a folder in Zotero
+-   Switch your RStudio viewer to Visual, open Insert, and then Citation
+-   edit a tag
+-   insert other citations
