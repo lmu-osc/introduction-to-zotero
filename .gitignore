@@ -58,3 +58,4 @@ rsconnect/
 .httr-oauth
 .quarto
 _site/
+_outline.md
