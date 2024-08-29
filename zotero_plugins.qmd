@@ -1,0 +1,5 @@
+---
+title: "Zotero Plugins"
+format: html
+editor: visual
+---
