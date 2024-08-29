@@ -1,6 +1,15 @@
 ---
-title: "intro"
+title: "Welcome to the Zotero Tutorial!"
 format: html
 ---
 
-site landing
+# Tutorial Overview
+
+This self-paced tutorial will introduce you to Zotero, a free citation management tool that can help you organize your research and create bibliographies with a specific focus on integrating it with RStudio and Quarto. It is intended to take about 30-60 minutes to complete.
+
+The tutorial is split into the following sections:
+
+1. [Getting Started with Zotero]()
+2. [Using Zotero with RStudio and Quarto]()
+3. [Exercises]()
+
