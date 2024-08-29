@@ -40,16 +40,19 @@ website:
         href: index.qmd
       - section: "Background"
         contents:
-          - href: part_one.qmd
-            text: "Temp"
+          - href: zotero_basics.qmd
+            text: "Zotero Basics"
+          - href: citation_style_language.qmd
+            text: "Citation Style Language"
 
-ormat:
+format:
   html:
     theme: cosmo
     css: styles.css
     toc: true
     fontsize: 13pt
     code-overflow: wrap
-
+    grid:
+      sidebar-width: 300px
 
 
