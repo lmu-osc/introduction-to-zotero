@@ -44,6 +44,22 @@ website:
             text: "Zotero Basics"
           - href: citation_style_language.qmd
             text: "Citation Style Language"
+      - section: "Zotero with Quarto"
+        contents:
+          - href: citations_in_quarto.qmd
+            text: "Citations in Quarto"
+      - section: "Exercises"
+        contents:
+          - href: exercise_1.qmd
+            text: "Exercise 1"
+          - href: exercise_2.qmd
+            text: "Exercise 2"
+      - section: "Advanced"
+        contents:
+          - href: zotero_groups.qmd
+            text: "Zotero Groups"
+          - href: zotero_plugins.qmd
+            text: "Zotero Plugins"
 
 format:
   html:
