@@ -19,18 +19,6 @@ The Zotero Connector is not perfect, however, and you may occassionally need to 
 
 Less commonly, you may need to import references from other software. To do this, export the references from the software in a compatible format, and import them into Zotero. Zotero can import references from a variety of formats, including BibTex, RIS, and EndNote XML.
 
-# Organizing References
-
--   You can organize your references in Zotero by creating collections and tags.
--   To create a collection, click on the "New Collection" button, and give the collection a name.
--   To add references to a collection, drag and drop the references into the collection.
--   To add tags to a reference, click on the "Tags" tab, and enter the tags you want to add.
-
-# Collaborating with others
-
--   You can collaborate with others by sharing your references with them.
--   To share your references, click on the "Share" button, and select the people you want to share with.
--   To receive shared references, click on the "Receive Shared Library" button, and enter the URL of the shared library.
 
 # Citing references
 
@@ -44,5 +32,23 @@ If using Zotero with a word processor, you can generate a bibliography by clicki
 
 Alternatively, you can generate a bibliography by clicking on the "Export" button in Zotero, and selecting the citation style you want to use. This will generate a bibliography in the selected style that you can copy and paste into your document. You can generate a bibliography for a single reference, a collection (i.e. a folder), or your entire library.
 
+
+# Other Features
+
+-   Less important, but still interesting, features offered by Zotero
+-   Optional to learn this content
+
+## Organizing References
+
+-   You can organize your references in Zotero by creating collections and tags.
+-   To create a collection, click on the "New Collection" button, and give the collection a name.
+-   To add references to a collection, drag and drop the references into the collection.
+-   To add tags to a reference, click on the "Tags" tab, and enter the tags you want to add.
+
+## Collaborating with others
+
+-   You can collaborate with others by sharing your references with them.
+-   To share your references, click on the "Share" button, and select the people you want to share with.
+-   To receive shared references, click on the "Receive Shared Library" button, and enter the URL of the shared library.
 
 
