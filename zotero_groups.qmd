@@ -3,3 +3,9 @@ title: "Zotero Groups"
 format: html
 editor: visual
 ---
+
+
+* can collaborate on a group library
+* storage capacity is based on the plan of the owner of the group. a lab PI, for example, could purchase the $120/year unlimited data plan and share that with the lab members under a lab group
+* can create a public group that anyone can join. is also a good way to share your lab's publications with the world in an easily-downloadable format
+* can create a private group that requires an invitation to join
