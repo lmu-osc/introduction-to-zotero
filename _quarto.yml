@@ -42,6 +42,8 @@ website:
         contents:
           - href: zotero_basics.qmd
             text: "Zotero Basics"
+          - href: zotero_usage.qmd
+            text: "Zotero Usage"
           - href: citation_style_language.qmd
             text: "Citation Style Language"
       - section: "Zotero with Quarto"

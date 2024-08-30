@@ -1,0 +1,41 @@
+---
+title: "Using Zotero"
+format: html
+editor: visual
+---
+
+# Adding References
+
+The first step to using Zotero is adding references to your library. You can add references to Zotero in several ways:
+
+  - Save to Zotero with the Zotero Connector browser extension
+  - Manual entry
+  - Import from online databases.
+  - Import from other software.
+    
+The most common and preferred way of entering references is by using the Zotero Connector browser extension. The Zotero Connector allows you to save references directly from your browser to your Zotero library. The connector will, when possible, download a PDF of the article and attach it to the reference. If you save content from a webpage that does not have an available PDF download of the content, the Connector will take a snapshot of the webpage to preserve the information in case the page is later changed or removed.
+
+The Zotero Connector is not perfect, however, and you may occassionally need to "manually" enter a reference. To do this, click on the "New Item" button in Zotero, and select the type of reference you want to add. You can then enter the metadata for the reference manually. However, if you can find a BibTex or RIS file for the reference, you can import the reference into Zotero by dragging and dropping the file into the Zotero window, or by copying the BibTex content and then selecting `File` -> `Import from Clipboard` in Zotero.
+
+Less commonly, you may need to import references from other software. To do this, export the references from the software in a compatible format, and import them into Zotero. Zotero can import references from a variety of formats, including BibTex, RIS, and EndNote XML.
+
+
+# Organizing References
+
+  - You can organize your references in Zotero by creating collections and tags.
+  - To create a collection, click on the "New Collection" button, and give the collection a name.
+  - To add references to a collection, drag and drop the references into the collection.
+  - To add tags to a reference, click on the "Tags" tab, and enter the tags you want to add.
+  
+# Citing references
+
+  - You can cite references in your documents by using the Zotero word processor plugins.
+  - To cite a reference, click on the "Insert Citation" button, and select the reference you want to cite.
+  - To create a bibliography, click on the "Insert Bibliography" button, and select the citation style you want to use.
+  
+# Collaborating with others
+
+  - You can collaborate with others by sharing your references with them.
+  - To share your references, click on the "Share" button, and select the people you want to share with.
+  - To receive shared references, click on the "Receive Shared Library" button, and enter the URL of the shared library.
+
