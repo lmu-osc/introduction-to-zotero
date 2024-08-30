@@ -3,5 +3,36 @@ title: "Zotero Basics"
 format: html
 ---
 
+Given that you are reading this tutorial, you are likely already familiar with the concept of citations and possibly already use a citation manager for your work, particularly if you are coming from an academic background. However, it is worth reviewing the basics before we dive into the specifics of Zotero.
 
-temp page
+
+# Citations
+
+A citation is a reference to a source of information. They are used to give credit to the original author of a work that you are using in your research, and they also allow readers to locate the original source of the information.
+
+Citations are typically included in the body of your work as short in-text citations followed by a bibliography or reference list at the end of your work with complete details on the work. Citation managers help you manage these details and automatically generate citations and bibliographies in the correct format.
+
+The format of citations varies depending on the citation style you are using, and this typical changes depending on your research field. Common citation styles include APA, MLA, Chicago, and Vancouver, among others, but there are at least 8,000 variations of citation styles in use today. More information on citation styles will be covered in the [Citation Style Language chapter](citation_style_language.qmd).
+
+
+## Citation Managers
+
+Citation managers are software tools that help you organize your research, collect and store references, and generate citations and bibliographies in a variety of citation styles. They can save you time and effort by automating the process of creating citations and bibliographies, and tend to have plug-ins for popular word processors like Microsoft Word and (sometimes) LibreOffice. Popular examples of citation managers include RefWorks, Mendeley, and EndNote although these are generally paid tools. The focus of this tutorial, however, is on an alternative citation manager called Zotero.
+
+
+# Zotero
+
+Like the previously mentioned citation managers, Zotero helps you organize your research, collect and store references, and generate citations and bibliographies in a variety of citation styles. The major difference between Zotero and these competitors is that Zotero is free and open-source, which makes it accessible to a wider audience. One of the other major benefits of Zotero is that libraries are full transportable so if you ever leave your current institution or decide to leave Zotero for another citation manager altogether, you can freely export and import your library. The other major citation managers nominally have import/export features, but they may be encrypted and/or require contacting customer support whereas Zotero's is a simple export/import process.
+
+Zotero is available as a standalone application for Windows, macOS, and Linux, and includes a browser extension for Firefox, Chrome, and Safari that allows you to save references directly from your web browser with a single click. The desktop application and browser extension are the core offerings of Zotero, but there is also a web-based version with up to 300 MB free storage that can be accessed from any device with an internet connection and a mobile application for the iPhone (Android app in progress). Other features of Zotero include:
+
+* The ability to collaborate on group libraries using either public or private groups
+* An active user community that has created a wide range of plugins and add-ons to extend its functionality
+* Integration with numerous word processors and text editors, including Microsoft Word, LibreOffice, Google Docs, and RStudio
+
+## Downloading Zotero
+
+To get started with Zotero, you will need to download the desktop application and browser extension. You can download Zotero from the [Zotero website](https://www.zotero.org/download/). The website will automatically detect your operating system and provide you with the appropriate download links. Once you have downloaded and installed Zotero, you should download the Zotero Connector for your preferred web browser. The Zotero Connector is available for the Chrome, Firefox, Safari, and Edge browsers.
+
+
+
