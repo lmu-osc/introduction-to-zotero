@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Welcome to the Zotero Tutorial! – Introduction to Zotero</title>
+<title>Using Zotero – Introduction to Zotero</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,7 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./zotero_basics.html" rel="next">
+<link href="./citation_style_language.html" rel="next">
+<link href="./zotero_basics.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -125,7 +126,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Overview</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./zotero_basics.html">Background</a></li><li class="breadcrumb-item"><a href="./zotero_usage.html">Zotero Usage</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -147,7 +148,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Overview</span></a>
   </div>
 </li>
@@ -168,7 +169,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./zotero_usage.html" class="sidebar-item-text sidebar-link">
+  <a href="./zotero_usage.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Zotero Usage</span></a>
   </div>
 </li>
@@ -253,16 +254,25 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#tutorial-overview" id="toc-tutorial-overview" class="nav-link active" data-scroll-target="#tutorial-overview">Tutorial Overview</a></li>
+  <li><a href="#adding-references" id="toc-adding-references" class="nav-link active" data-scroll-target="#adding-references">Adding References</a></li>
+  <li><a href="#citing-references" id="toc-citing-references" class="nav-link" data-scroll-target="#citing-references">Citing references</a>
+  <ul class="collapse">
+  <li><a href="#generating-bibliographies" id="toc-generating-bibliographies" class="nav-link" data-scroll-target="#generating-bibliographies">Generating Bibliographies</a></li>
+  </ul></li>
+  <li><a href="#other-features" id="toc-other-features" class="nav-link" data-scroll-target="#other-features">Other Features</a>
+  <ul class="collapse">
+  <li><a href="#organizing-references" id="toc-organizing-references" class="nav-link" data-scroll-target="#organizing-references">Organizing References</a></li>
+  <li><a href="#collaborating-with-others" id="toc-collaborating-with-others" class="nav-link" data-scroll-target="#collaborating-with-others">Collaborating with others</a></li>
+  </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/lmu-osc/introduction-to-zotero/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/introduction-to-zotero/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/lmu-osc/introduction-to-zotero/edit/main/zotero_usage.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/introduction-to-zotero/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./zotero_basics.html">Background</a></li><li class="breadcrumb-item"><a href="./zotero_usage.html">Zotero Usage</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Welcome to the Zotero Tutorial!</h1>
+<h1 class="title">Using Zotero</h1>
 </div>
 
 
@@ -279,17 +289,54 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="tutorial-overview" class="level1">
-<h1>Tutorial Overview</h1>
-<p>This self-paced tutorial will introduce you to Zotero, a free citation management tool that can help you organize your research and create bibliographies with a specific focus on integrating it with RStudio and Quarto. It is intended to take about 30-60 minutes to complete.</p>
-<p>The tutorial is split into the following sections:</p>
-<ol type="1">
-<li><a href="">Getting Started with Zotero</a></li>
-<li><a href="">Using Zotero with RStudio and Quarto</a></li>
-<li><a href="">Exercises</a></li>
-</ol>
+<section id="adding-references" class="level1">
+<h1>Adding References</h1>
+<p>The first step to using Zotero is adding references to your library. You can add references to Zotero in several ways:</p>
+<ul>
+<li>Save to Zotero with the Zotero Connector browser extension</li>
+<li>Manual entry</li>
+<li>Import from online databases.</li>
+<li>Import from other software.</li>
+</ul>
+<p>The most common and preferred way of entering references is by using the Zotero Connector browser extension. The Zotero Connector allows you to save references directly from your browser to your Zotero library. The connector will, when possible, download a PDF of the article and attach it to the reference. If you save content from a webpage that does not have an available PDF download of the content, the Connector will take a snapshot of the webpage to preserve the information in case the page is later changed or removed.</p>
+<p>The Zotero Connector is not perfect, however, and you may occassionally need to “manually” enter a reference. To do this, click on the “New Item” button in Zotero, and select the type of reference you want to add. You can then enter the metadata for the reference manually. However, if you can find a BibTex or RIS file for the reference, you can import the reference into Zotero by dragging and dropping the file into the Zotero window, or by copying the BibTex content and then selecting <code>File</code> -&gt; <code>Import from Clipboard</code> in Zotero.</p>
+<p>Less commonly, you may need to import references from other software. To do this, export the references from the software in a compatible format, and import them into Zotero. Zotero can import references from a variety of formats, including BibTex, RIS, and EndNote XML.</p>
+</section>
+<section id="citing-references" class="level1">
+<h1>Citing references</h1>
+<p>The main point of using Zotero, of course, is to cite references in your documents. Zotero makes this easy by providing plugins for popular word processors like Microsoft Word and LibreOffice. <a href="https://www.zotero.org/support/system_requirements#word_processors">These word processor plugins</a> should be installed automatically when you install Zotero.</p>
+<p>To cite a reference in your document, click on the “Add/Edit Citation” button in the Zotero toolbar, and search for the reference you want to cite. Zotero will insert a citation in the text, and generate a bibliography at the end of the document.</p>
+<section id="generating-bibliographies" class="level2">
+<h2 class="anchored" data-anchor-id="generating-bibliographies">Generating Bibliographies</h2>
+<p>If using Zotero with a word processor, you can generate a bibliography by clicking on the “Insert Bibliography” button in the Zotero toolbar. This will insert a bibliography at the current cursor location in your document.</p>
+<p>Alternatively, you can generate a bibliography by clicking on the “Export” button in Zotero, and selecting the citation style you want to use. This will generate a bibliography in the selected style that you can copy and paste into your document. You can generate a bibliography for a single reference, a collection (i.e.&nbsp;a folder), or your entire library.</p>
+</section>
+</section>
+<section id="other-features" class="level1">
+<h1>Other Features</h1>
+<ul>
+<li>Less important, but still interesting, features offered by Zotero</li>
+<li>Optional to learn this content</li>
+</ul>
+<section id="organizing-references" class="level2">
+<h2 class="anchored" data-anchor-id="organizing-references">Organizing References</h2>
+<ul>
+<li>You can organize your references in Zotero by creating collections and tags.</li>
+<li>To create a collection, click on the “New Collection” button, and give the collection a name.</li>
+<li>To add references to a collection, drag and drop the references into the collection.</li>
+<li>To add tags to a reference, click on the “Tags” tab, and enter the tags you want to add.</li>
+</ul>
+</section>
+<section id="collaborating-with-others" class="level2">
+<h2 class="anchored" data-anchor-id="collaborating-with-others">Collaborating with others</h2>
+<ul>
+<li>You can collaborate with others by sharing your references with them.</li>
+<li>To share your references, click on the “Share” button, and select the people you want to share with.</li>
+<li>To receive shared references, click on the “Receive Shared Library” button, and enter the URL of the shared library.</li>
+</ul>
 
 
+</section>
 </section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
@@ -715,10 +762,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./zotero_basics.html" class="pagination-link" aria-label="Zotero Basics">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Zotero Basics</span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./zotero_basics.html" class="pagination-link" aria-label="Zotero Basics">
-        <span class="nav-page-text">Zotero Basics</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./citation_style_language.html" class="pagination-link" aria-label="Citation Style Language">
+        <span class="nav-page-text">Citation Style Language</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -730,7 +780,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>   
     <div class="nav-footer-center">
 <p>Copyright, 2024 Open Science Center at LMU Munich</p>
-<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/lmu-osc/introduction-to-zotero/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/introduction-to-zotero/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/lmu-osc/introduction-to-zotero/edit/main/zotero_usage.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/introduction-to-zotero/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>

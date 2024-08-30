@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Welcome to the Zotero Tutorial! – Introduction to Zotero</title>
+<title>Citations in Quarto – Introduction to Zotero</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,7 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./zotero_basics.html" rel="next">
+<link href="./exercise_1.html" rel="next">
+<link href="./citation_style_language.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -125,7 +126,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Overview</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./citations_in_quarto.html">Zotero with Quarto</a></li><li class="breadcrumb-item"><a href="./citations_in_quarto.html">Citations in Quarto</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -147,7 +148,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Overview</span></a>
   </div>
 </li>
@@ -191,7 +192,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./citations_in_quarto.html" class="sidebar-item-text sidebar-link">
+  <a href="./citations_in_quarto.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Citations in Quarto</span></a>
   </div>
 </li>
@@ -248,21 +249,15 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#tutorial-overview" id="toc-tutorial-overview" class="nav-link active" data-scroll-target="#tutorial-overview">Tutorial Overview</a></li>
-  </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/lmu-osc/introduction-to-zotero/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/introduction-to-zotero/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./citations_in_quarto.html">Zotero with Quarto</a></li><li class="breadcrumb-item"><a href="./citations_in_quarto.html">Citations in Quarto</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Welcome to the Zotero Tutorial!</h1>
+<h1 class="title">Citations in Quarto</h1>
 </div>
 
 
@@ -279,18 +274,8 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="tutorial-overview" class="level1">
-<h1>Tutorial Overview</h1>
-<p>This self-paced tutorial will introduce you to Zotero, a free citation management tool that can help you organize your research and create bibliographies with a specific focus on integrating it with RStudio and Quarto. It is intended to take about 30-60 minutes to complete.</p>
-<p>The tutorial is split into the following sections:</p>
-<ol type="1">
-<li><a href="">Getting Started with Zotero</a></li>
-<li><a href="">Using Zotero with RStudio and Quarto</a></li>
-<li><a href="">Exercises</a></li>
-</ol>
 
 
-</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -715,10 +700,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./citation_style_language.html" class="pagination-link" aria-label="Citation Style Language">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Citation Style Language</span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./zotero_basics.html" class="pagination-link" aria-label="Zotero Basics">
-        <span class="nav-page-text">Zotero Basics</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./exercise_1.html" class="pagination-link" aria-label="Exercise 1">
+        <span class="nav-page-text">Exercise 1</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -730,7 +718,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>   
     <div class="nav-footer-center">
 <p>Copyright, 2024 Open Science Center at LMU Munich</p>
-<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/lmu-osc/introduction-to-zotero/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/introduction-to-zotero/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+<div class="toc-actions"><ul><li><a href="https://github.com/lmu-osc/introduction-to-zotero/edit/main/citations_in_quarto.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/introduction-to-zotero/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
