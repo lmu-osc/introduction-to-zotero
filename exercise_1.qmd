@@ -1,7 +1,6 @@
 ---
 title: "Exercise 1"
 format: html
-editor: visual
 ---
 
 -   save references to 3-4 different sources
