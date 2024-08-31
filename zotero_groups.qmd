@@ -1,7 +1,6 @@
 ---
 title: "Zotero Groups"
 format: html
-editor: visual
 ---
 
 
