@@ -49,7 +49,7 @@ website:
       - section: "Integrating Zotero"
         contents:
           - href: citations_in_quarto.qmd
-            text: "Citations in RStudio"
+            text: "Citations in Quarto"
           - href: citations_in_word.qmd
             text: "Citations in Word"
       - section: "Exercises"
