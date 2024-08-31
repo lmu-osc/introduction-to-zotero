@@ -2,3 +2,5 @@
 title: "Citations in Quarto"
 format: html
 ---
+
+* Note that the instructions here rely on the use of RStudio. If you are not using RStudio, you should note that whatever text editor you are using may not have the same functionality as RStudio, and you may need to adjust your workflow accordingly. That said, these instructions also cover text-only editing options that should be viable approaches to editing your document to include citations and a bibliography via any text editor.
