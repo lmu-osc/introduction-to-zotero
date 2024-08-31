@@ -1,7 +1,6 @@
 ---
 title: "Using Zotero"
 format: html
-editor: visual
 ---
 
 # Adding References
