@@ -46,10 +46,12 @@ website:
             text: "Zotero Usage"
           - href: citation_style_language.qmd
             text: "Citation Style Language"
-      - section: "Zotero with Quarto"
+      - section: "Integrating Zotero"
         contents:
           - href: citations_in_quarto.qmd
-            text: "Citations in Quarto"
+            text: "Citations in RStudio"
+          - href: citations_in_word.qmd
+            text: "Citations in Word"
       - section: "Exercises"
         contents:
           - href: exercise_1.qmd
