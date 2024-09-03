@@ -4,3 +4,7 @@ format: html
 ---
 
 * Note that the instructions here rely on the use of RStudio. If you are not using RStudio, you should note that whatever text editor you are using may not have the same functionality as RStudio, and you may need to adjust your workflow accordingly. That said, these instructions also cover text-only editing options that should be viable approaches to editing your document to include citations and a bibliography via any text editor.
+
+* Advantage of using RStudio for this process: it will automatically generate a bibilography file for you when inserting a citation, it will add the bibliography to the yaml of your file, the bibliography file will be automatically updated to include any new citations you add, and it will automatically generate the bibliography in the format you specify in the yaml of your file.
+* For other text editors, you must first generate your bibliography file, and then manually add the bibliography to the yaml of your file. You will also need to manually update the bibliography file to include any new citations you add.
+* If you are using another text editor, you can check out the [Tutorial: Authoring](https://quarto.org/docs/get-started/authoring/text-editor.html#citations) Quarto documentation page for more information.  
