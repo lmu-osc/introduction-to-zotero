@@ -9,7 +9,22 @@ This self-paced tutorial will introduce you to Zotero, a free citation managemen
 
 The tutorial is split into the following sections:
 
-1. [Getting Started with Zotero]()
-2. [Using Zotero with RStudio and Quarto]()
-3. [Exercises]()
+1. [Getting Started with Zotero](zotero_basics.qmd)
+2. [Integrating Zotero](citations_in_quarto.qmd)
+3. [Exercises](exercise_1.qmd)
+4. [Advanced](zotero_groups.qmd)
+
+::: {.callout-tip title="Software Requirements"}
+
+To complete this tutorial, you will need to have the following software installed on your computer:
+
+- [Zotero](https://www.zotero.org/download/)
+- [Zotero Connector](https://www.zotero.org/download/)
+- [RStudio](https://www.rstudio.com/products/rstudio/download/)
+- [Quarto](https://quarto.org/docs/get-started/) **RStudio comes bundled with Quarto.**
+
+:::
+
+
+
 
