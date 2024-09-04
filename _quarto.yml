@@ -19,8 +19,8 @@ website:
 
 
   navbar:
-    right:
-      - about.qmd
+    # right:
+    #   - about.qmd
     left:
       - href: index.qmd
         text: Home
