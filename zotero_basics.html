@@ -32,6 +32,7 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="./">
 <link href="./zotero_usage.html" rel="next">
 <link href="./index.html" rel="prev">
+<link href="./assets/LMU-OSC_favicon.jpg" rel="icon" type="image/jpeg">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -91,13 +92,6 @@ ul.task-list li input[type="checkbox"] {
   <li class="nav-item">
     <a class="nav-link active" href="./index.html" aria-current="page"> 
 <span class="menu-text">Home</span></a>
-  </li>  
-</ul>
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item">
-    <span class="nav-link">
-<span class="menu-text">about.qmd</span>
-    </span>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -184,7 +178,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
- <span class="menu-text">Zotero with Quarto</span></a>
+ <span class="menu-text">Integrating Zotero</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -194,6 +188,12 @@ ul.task-list li input[type="checkbox"] {
   <div class="sidebar-item-container"> 
   <a href="./citations_in_quarto.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Citations in Quarto</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./citations_in_word.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Citations in Word</span></a>
   </div>
 </li>
       </ul>
@@ -249,7 +249,9 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar"><div class="quarto-margin-header"><div class="margin-header-item">
+<p><img src="./assets/LMU-OSC_logo.jpg" class="img-fluid" width="175"></p>
+</div></div>
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
@@ -287,12 +289,12 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Given that you are reading this tutorial, you are likely already familiar with the concept of citations and possibly already use a citation manager for your work, particularly if you are coming from an academic background. However, it is worth reviewing the basics before we dive into the specifics of Zotero.</p>
+<p>Hopefully you are already familiar with the concept of citing the work of others and creating bibliographies. If not, don’t worry! This tutorial will introduce you to the basics of citations and citation managers, with a specific focus on the Zotero citation manager.</p>
 <section id="citations" class="level1">
 <h1>Citations</h1>
 <p>A citation is a reference to a source of information. They are used to give credit to the original author of a work that you are using in your research, and they also allow readers to locate the original source of the information.</p>
-<p>Citations are typically included in the body of your work as short in-text citations followed by a bibliography or reference list at the end of your work with complete details on the work. Citation managers help you manage these details and automatically generate citations and bibliographies in the correct format.</p>
-<p>The format of citations varies depending on the citation style you are using, and this typical changes depending on your research field. Common citation styles include APA, MLA, Chicago, and Vancouver, among others, but there are at least 8,000 variations of citation styles in use today. More information on citation styles will be covered in the <a href="./citation_style_language.html">Citation Style Language chapter</a>.</p>
+<p>Citations are typically included in the body of your work as short, in-text citations followed by a bibliography or reference list at the end of your work which includes complete details on the cited works. Citation managers help you manage these parts of your project by automatically generating citations and bibliographies. However, there is not a single format for citations and bibliographies.</p>
+<p>In fact, there are at least 8,000 variations of citation styles in use today, but some of the most common and well-known citation styles are the APA, MLA, Chicago, and Vancouver styles. The format of citations generally changes according to the preferred citation style of your research field and/or by journal preference. More information on citation styles will be covered in the <a href="./citation_style_language.html">Citation Style Language chapter</a>, but it is first necessary to understand the basics of citation managers.</p>
 <section id="citation-managers" class="level2">
 <h2 class="anchored" data-anchor-id="citation-managers">Citation Managers</h2>
 <p>Citation managers are software tools that help you organize your research, collect and store references, and generate citations and bibliographies in a variety of citation styles. They can save you time and effort by automating the process of creating citations and bibliographies, and tend to have plug-ins for popular word processors like Microsoft Word and (sometimes) LibreOffice. Popular examples of citation managers include RefWorks, Mendeley, and EndNote although these are generally paid tools. The focus of this tutorial, however, is on an alternative citation manager called Zotero.</p>
@@ -300,7 +302,8 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="zotero" class="level1">
 <h1>Zotero</h1>
-<p>Like the previously mentioned citation managers, Zotero helps you organize your research, collect and store references, and generate citations and bibliographies in a variety of citation styles. The major difference between Zotero and these competitors is that Zotero is free and open-source, which makes it accessible to a wider audience. One of the other major benefits of Zotero is that libraries are full transportable so if you ever leave your current institution or decide to leave Zotero for another citation manager altogether, you can freely export and import your library. The other major citation managers nominally have import/export features, but they may be encrypted and/or require contacting customer support whereas Zotero’s is a simple export/import process.</p>
+<p>Zotero provides the same features as the previously-mentioned citation managers: it helps you organize your research, collects and stores references, and generates citations and bibliographies in a variety of citation styles. The major difference between Zotero and these competitors is that Zotero is free and open-source, which makes it accessible to a wider audience.</p>
+<p>One of the other major benefits of Zotero is that libraries are full transportable so if you ever leave your current institution or decide to leave Zotero for another citation manager altogether, you can freely export and import your library. The other major citation managers nominally have import/export features, but they may be encrypted and/or require contacting customer support whereas Zotero’s is a simple export/import process.</p>
 <p>Zotero is available as a standalone application for Windows, macOS, and Linux, and includes a browser extension for Firefox, Chrome, and Safari that allows you to save references directly from your web browser with a single click. The desktop application and browser extension are the core offerings of Zotero, but there is also a web-based version with up to 300 MB free storage that can be accessed from any device with an internet connection and a mobile application for the iPhone (Android app in progress). Other features of Zotero include:</p>
 <ul>
 <li>The ability to collaborate on group libraries using either public or private groups</li>

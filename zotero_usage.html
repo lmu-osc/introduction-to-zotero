@@ -32,6 +32,7 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="./">
 <link href="./citation_style_language.html" rel="next">
 <link href="./zotero_basics.html" rel="prev">
+<link href="./assets/LMU-OSC_favicon.jpg" rel="icon" type="image/jpeg">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -91,13 +92,6 @@ ul.task-list li input[type="checkbox"] {
   <li class="nav-item">
     <a class="nav-link active" href="./index.html" aria-current="page"> 
 <span class="menu-text">Home</span></a>
-  </li>  
-</ul>
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item">
-    <span class="nav-link">
-<span class="menu-text">about.qmd</span>
-    </span>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -184,7 +178,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
- <span class="menu-text">Zotero with Quarto</span></a>
+ <span class="menu-text">Integrating Zotero</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -194,6 +188,12 @@ ul.task-list li input[type="checkbox"] {
   <div class="sidebar-item-container"> 
   <a href="./citations_in_quarto.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Citations in Quarto</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./citations_in_word.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Citations in Word</span></a>
   </div>
 </li>
       </ul>
@@ -249,12 +249,19 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar"><div class="quarto-margin-header"><div class="margin-header-item">
+<p><img src="./assets/LMU-OSC_logo.jpg" class="img-fluid" width="175"></p>
+</div></div>
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#adding-references" id="toc-adding-references" class="nav-link active" data-scroll-target="#adding-references">Adding References</a></li>
+  <li><a href="#creating-a-zotero-library" id="toc-creating-a-zotero-library" class="nav-link active" data-scroll-target="#creating-a-zotero-library">Creating a Zotero Library</a></li>
+  <li><a href="#adding-references" id="toc-adding-references" class="nav-link" data-scroll-target="#adding-references">Adding References</a>
+  <ul class="collapse">
+  <li><a href="#zotero-connector" id="toc-zotero-connector" class="nav-link" data-scroll-target="#zotero-connector">Zotero Connector</a></li>
+  <li><a href="#manual-entry" id="toc-manual-entry" class="nav-link" data-scroll-target="#manual-entry">Manual Entry</a></li>
+  </ul></li>
   <li><a href="#citing-references" id="toc-citing-references" class="nav-link" data-scroll-target="#citing-references">Citing references</a>
   <ul class="collapse">
   <li><a href="#generating-bibliographies" id="toc-generating-bibliographies" class="nav-link" data-scroll-target="#generating-bibliographies">Generating Bibliographies</a></li>
@@ -289,51 +296,162 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="creating-a-zotero-library" class="level1">
+<h1>Creating a Zotero Library</h1>
+<p>Zotero’s library system functions similar to a file system on your computer. You can create folders to organize your references, and add tags to references to help you find them later. The images below show how to create a new folder in Zotero, and what a fresh folder looks like.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">1. General Library</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">2. Creating a New Folder</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">3. A Fresh Folder</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets/01_library.png" class="img-fluid figure-img"></p>
+<figcaption>All of your citations can be accessed in the overall <strong>My Library</strong> section.</figcaption>
+</figure>
+</div>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets/02_new_folder.png" class="img-fluid figure-img"></p>
+<figcaption>Press the folder button in the top left corner to create a new folder, and provide a relevant name.</figcaption>
+</figure>
+</div>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets/03_empty_folder.png" class="img-fluid figure-img"></p>
+<figcaption>A new folder will be empty by default, and will now appear in the tab bar on the left size of the Zotero application.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
 <section id="adding-references" class="level1">
 <h1>Adding References</h1>
-<p>The first step to using Zotero is adding references to your library. You can add references to Zotero in several ways:</p>
+<p>While creating libraries/folders for your projects is highly recommended and useful, the more important step in using Zotero is adding references to your library. You can add references to Zotero in several ways:</p>
 <ul>
 <li>Save to Zotero with the Zotero Connector browser extension</li>
 <li>Manual entry</li>
 <li>Import from online databases.</li>
 <li>Import from other software.</li>
 </ul>
+<p>We will outline the first two methods here, as they are the most common ways to add references to Zotero.</p>
+<section id="zotero-connector" class="level2">
+<h2 class="anchored" data-anchor-id="zotero-connector">Zotero Connector</h2>
 <p>The most common and preferred way of entering references is by using the Zotero Connector browser extension. The Zotero Connector allows you to save references directly from your browser to your Zotero library. The connector will, when possible, download a PDF of the article and attach it to the reference. If you save content from a webpage that does not have an available PDF download of the content, the Connector will take a snapshot of the webpage to preserve the information in case the page is later changed or removed.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">1. Locate Source</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">2. Open Link</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false">3. Download</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-4" role="tab" aria-controls="tabset-2-4" aria-selected="false">4. Check Library</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets/01_palmerpenguins.png" class="img-fluid figure-img"></p>
+<figcaption>Identify the publication, book, website, or other source of information you wish to cite.</figcaption>
+</figure>
+</div>
+</div>
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets/02_palmerpenguins.png" class="img-fluid figure-img"></p>
+<figcaption>Open the website page. Try to find links to PubMed, the original publisher, or similar sites that have PDFs available. Zotero will automatically download these when available. Otherwise, it will attempt to screenshot the website itself.</figcaption>
+</figure>
+</div>
+</div>
+<div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets/03_palmerpenguins.png" class="img-fluid figure-img"></p>
+<figcaption>Click the Zotero Connector button in your browser to save the reference to your Zotero library. The button is generally in the top right corner of your browser. The appearance of this button <em>can</em> change depending on the type of object being cited.</figcaption>
+</figure>
+</div>
+</div>
+<div id="tabset-2-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-4-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets/04_palmerpenguins.png" class="img-fluid figure-img"></p>
+<figcaption>After saving the reference, check your Zotero library to ensure the reference was saved correctly.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="manual-entry" class="level2">
+<h2 class="anchored" data-anchor-id="manual-entry">Manual Entry</h2>
 <p>The Zotero Connector is not perfect, however, and you may occassionally need to “manually” enter a reference. To do this, click on the “New Item” button in Zotero, and select the type of reference you want to add. You can then enter the metadata for the reference manually. However, if you can find a BibTex or RIS file for the reference, you can import the reference into Zotero by dragging and dropping the file into the Zotero window, or by copying the BibTex content and then selecting <code>File</code> -&gt; <code>Import from Clipboard</code> in Zotero.</p>
+<p>The example below will demonstrate how to manually import a BibTex entry.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true">1. Locate Source</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false">2. Open Citation</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false">3. Copy BibTex</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-4" role="tab" aria-controls="tabset-3-4" aria-selected="false">4. Import to Zotero</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-5" role="tab" aria-controls="tabset-3-5" aria-selected="false">5. Check Library</a></li></ul>
+<div class="tab-content">
+<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets/01_palmerpenguins_manual.png" class="img-fluid figure-img"></p>
+<figcaption>Identify the object you want to cite. If you can find the publication on Google Scholar, for example, BibTex entries are readily available. Click on the “Cite” button in Google Scholar to access the BibTex entry.</figcaption>
+</figure>
+</div>
+</div>
+<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets/02_palmerpenguins_manual.png" class="img-fluid figure-img"></p>
+<figcaption>Click on the “BibTex” button in Google Scholar to access the BibTex entry.</figcaption>
+</figure>
+</div>
+</div>
+<div id="tabset-3-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-3-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets/03_palmerpenguins_manual.png" class="img-fluid figure-img"></p>
+<figcaption>Copy the BibTex entry to your clipboard.</figcaption>
+</figure>
+</div>
+</div>
+<div id="tabset-3-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-4-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets/04_palmerpenguins_manual.png" class="img-fluid figure-img"></p>
+<figcaption>In Zotero, click on <code>File</code> -&gt; <code>Import from Clipboard</code> to import the BibTex entry.</figcaption>
+</figure>
+</div>
+</div>
+<div id="tabset-3-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-5-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets/05_palmerpenguins_manual.png" class="img-fluid figure-img"></p>
+<figcaption>After importing the BibTex entry, check your Zotero library to ensure the reference was saved correctly. Note how much less information is included by importing BibTex, however. Compared to the Zotero Connector, we are, at minimum, missing a PDF copy of the document and the date on which we accessed the material.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
 <p>Less commonly, you may need to import references from other software. To do this, export the references from the software in a compatible format, and import them into Zotero. Zotero can import references from a variety of formats, including BibTex, RIS, and EndNote XML.</p>
+</section>
 </section>
 <section id="citing-references" class="level1">
 <h1>Citing references</h1>
 <p>The main point of using Zotero, of course, is to cite references in your documents. Zotero makes this easy by providing plugins for popular word processors like Microsoft Word and LibreOffice. <a href="https://www.zotero.org/support/system_requirements#word_processors">These word processor plugins</a> should be installed automatically when you install Zotero.</p>
-<p>To cite a reference in your document, click on the “Add/Edit Citation” button in the Zotero toolbar, and search for the reference you want to cite. Zotero will insert a citation in the text, and generate a bibliography at the end of the document.</p>
+<p>Later chapters will detail how to use Zotero with RStudio + Quarto and Word, specifically. We briefly detail here how to generate a bibliography directly from Zotero.</p>
 <section id="generating-bibliographies" class="level2">
 <h2 class="anchored" data-anchor-id="generating-bibliographies">Generating Bibliographies</h2>
-<p>If using Zotero with a word processor, you can generate a bibliography by clicking on the “Insert Bibliography” button in the Zotero toolbar. This will insert a bibliography at the current cursor location in your document.</p>
-<p>Alternatively, you can generate a bibliography by clicking on the “Export” button in Zotero, and selecting the citation style you want to use. This will generate a bibliography in the selected style that you can copy and paste into your document. You can generate a bibliography for a single reference, a collection (i.e.&nbsp;a folder), or your entire library.</p>
+<p>You can generate a bibliography by clicking on the “Export” button in Zotero, and selecting the citation style you want to use. This will generate a bibliography in the selected style that you can copy and paste into your document. You can generate a bibliography for a single reference, a collection (i.e.&nbsp;a folder), or your entire library. This option to quickly generate a bibliography is useful if you are using a text editor that does not have a Zotero plugin, or if you simply need a one-and-done bibliography for a smaller project</p>
+<p>For more details, see the <a href="https://www.zotero.org/support/creating_bibliographies">Zotero documentation on creating bibliographies</a>.</p>
 </section>
 </section>
 <section id="other-features" class="level1">
 <h1>Other Features</h1>
-<ul>
-<li>Less important, but still interesting, features offered by Zotero</li>
-<li>Optional to learn this content</li>
-</ul>
+<p>This page has covered the basics of using Zotero, but there are many other features that Zotero offers that you may find useful. Some of these topics will be covered in more detail in optional chapters at the end of this tutorial, but here are a few other features that you may find useful:</p>
 <section id="organizing-references" class="level2">
 <h2 class="anchored" data-anchor-id="organizing-references">Organizing References</h2>
-<ul>
-<li>You can organize your references in Zotero by creating collections and tags.</li>
-<li>To create a collection, click on the “New Collection” button, and give the collection a name.</li>
-<li>To add references to a collection, drag and drop the references into the collection.</li>
-<li>To add tags to a reference, click on the “Tags” tab, and enter the tags you want to add.</li>
-</ul>
+<p>You can organize your references in Zotero by creating collections and tags. To create a collection, click on the “New Collection” button, and give the collection a name. To add references to this collection, simply drag and drop the references into the collection. To add tags to a reference, click on the “Tags” tab, and enter the tags you want to add. These tags are particularly convenient if you want to later search your library for references on a specific topic as defined by you.</p>
 </section>
 <section id="collaborating-with-others" class="level2">
 <h2 class="anchored" data-anchor-id="collaborating-with-others">Collaborating with others</h2>
-<ul>
-<li>You can collaborate with others by sharing your references with them.</li>
-<li>To share your references, click on the “Share” button, and select the people you want to share with.</li>
-<li>To receive shared references, click on the “Receive Shared Library” button, and enter the URL of the shared library.</li>
-</ul>
+<p>You can also collaborate with others by sharing your references with them, generally by creating a Zotero Group. The contents of these groups are shared with all members online, and you can set the group to be public or private. Public groups are open to anyone, while private groups require an invitation to join. You can also create a group library, which is a shared library that all members can edit. This is useful if you are working on a project with others and want to share references with them.</p>
 
 
 </section>
