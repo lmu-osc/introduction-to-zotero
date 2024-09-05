@@ -97,7 +97,7 @@ After inserting your citations, you presumably will want a well-formatted biblio
 :::
 ```
 
-#@ Changing Citation Style
+## Changing Citation Style
 
 The Citation Style Language page talked in depth about the different citation styles available to you. You can change the citation style of your document by adding the `csl: <your-csl-file.csl>` line to the YAML header like below:
 
