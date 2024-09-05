@@ -77,7 +77,9 @@ If you are using RStudio's visual editor, you can insert a citation by clicking 
 
 # Adding a Bibliography
 
-As mentioned in the previous instructions for inserting citations, RStudio will automatically generate a bibliography file for you when you insert a citation. This bibliography file will be automatically updated to include any new citations you add, and you must define the bibliography file to use for your document(s) using the `bibliography: <your-references-file.bib>` line in the YAML header like below:
+As mentioned in the previous instructions for inserting citations, RStudio will automatically generate a bibliography file for you when you insert a citation. This bibliography file will be automatically updated to include any new citations you add, and you must define the bibliography file to use for your document(s) using the `bibliography: <your-references-file.bib>` line in the YAML header like below.
+
+RStudio will generate a file named `references.bib` by default if you have not already created a bibliography file. You can change the name of this file to whatever you like, but you must ensure that the name of the file you specify in the YAML header matches the name of the file you have saved in your project directory.
 
 ``` yaml
 ---
