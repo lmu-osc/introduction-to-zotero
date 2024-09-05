@@ -290,11 +290,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#csl-and-zotero" id="toc-csl-and-zotero" class="nav-link active" data-scroll-target="#csl-and-zotero">CSL and Zotero</a>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a>
+  <ul class="collapse">
+  <li><a href="#citation-style-examples" id="toc-citation-style-examples" class="nav-link" data-scroll-target="#citation-style-examples">Citation Style Examples</a></li>
+  </ul></li>
+  <li><a href="#csl-and-zotero" id="toc-csl-and-zotero" class="nav-link" data-scroll-target="#csl-and-zotero">CSL and Zotero</a>
   <ul class="collapse">
   <li><a href="#what-does-a-csl-file-look-like" id="toc-what-does-a-csl-file-look-like" class="nav-link" data-scroll-target="#what-does-a-csl-file-look-like">What Does a CSL File Look Like?</a></li>
   </ul></li>
-  <li><a href="#citation-style-examples" id="toc-citation-style-examples" class="nav-link" data-scroll-target="#citation-style-examples">Citation Style Examples</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/lmu-osc/introduction-to-zotero/edit/main/citation_style_language.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/introduction-to-zotero/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -320,15 +323,58 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
+<section id="overview" class="level1">
+<h1>Overview</h1>
+<p>As mentioned earlier in the tutorial, Citation Style Language (CSL) is an XML-based format for defining citation and bibliography styles. CSL files are used by citation management software like Zotero to format citations and bibliographies in a specific style.</p>
+<section id="citation-style-examples" class="level2">
+<h2 class="anchored" data-anchor-id="citation-style-examples">Citation Style Examples</h2>
+<p>To demonstrate differences in citation styles, the citation for the same article is shown in several different styles below. The article is “Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson’s Irises” by Allison M. Horst, Alison Presmanes Hill, and Kristen B. Gorman, published in the R Journal in 2022.</p>
+<p>Note that if you use Google Scholar to find article citations, you will see that the 5 examples included below are the default citation styles used by Google Scholar.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 78%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Style Name</th>
+<th style="text-align: left;">Citation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">MLA</td>
+<td style="text-align: left;">Horst, Allison M., Alison Presmanes Hill, and Kristen B. Gorman. “Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson’s Irises.” <em>R Journal</em> 14.1 (2022).</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">APA</td>
+<td style="text-align: left;">Horst, A. M., Hill, A. P., &amp; Gorman, K. B. (2022). Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson’s Irises. <em>R Journal</em>, 14(1).</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Chicago</td>
+<td style="text-align: left;">Horst, Allison M., Alison Presmanes Hill, and Kristen B. Gorman. “Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson’s Irises.” <em>R Journal</em> 14, no. 1 (2022).</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Harvard</td>
+<td style="text-align: left;">Horst, A.M., Hill, A.P. and Gorman, K.B., 2022. Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson’s Irises. <em>R Journal</em>, 14(1).</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Vancouver</td>
+<td style="text-align: left;">Horst AM, Hill AP, Gorman KB. Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson’s Irises. R Journal. 2022 Mar 1;14(1).</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
 <section id="csl-and-zotero" class="level1">
 <h1>CSL and Zotero</h1>
 <p>The main Zotero application comes pre-loaded with several popular citation styles like APA, Chicago, Nature, and Vancouver style. These formats are generally sufficient for most users and scenarios, but, in the event that you need a style that is not included, you can easily add more.</p>
-<p>The styles are written in the Citation Style Language (CSL), a format that is easily modifiable and can be used with other citation management software. Zotero maintains a collection of over 8,000 additional citation styles on the <a href="https://www.zotero.org/styles">Zotero Style Repository</a>. There are two ways to add a new citation style to Zotero:</p>
+<p>Zotero maintains a collection of over 8,000 additional citation styles on the <a href="https://www.zotero.org/styles">Zotero Style Repository</a>. There are two ways to add a new citation style to Zotero:</p>
 <ol type="1">
 <li>The CSL files can be downloaded directly from the Zotero Style Repository. Once you have the file, you can add it to Zotero by dragging and dropping it into the Zotero application, or by attempting to open the file. This should open a prompt asking if you’d like to install the style.</li>
 <li>From within the Zotero application. The directions for this will vary based on your operating system. In general, you can find the option to add a new citation style in the preferences or settings menu where the other citation styles are listed. You may find a button that says “Get additional styles” or “Add style.” Clicking this button will open a window where you can search for and install new styles. (This window, however, is essentially a browser window that opens the Zotero Style Repository.)</li>
 </ol>
-<p>Once you have added a new citation style, it will be available in the Zotero application for you to select when you are creating a bibliography. If you are using Zotero with a word processor, you may need to restart the word processor to see the new style.</p>
+<p>Once you have added a new citation style, it will be available in the Zotero application for you to select when you <em>generate a bibliography directly from Zotero</em>. If you are using Zotero with a word processor, you may need to restart the word processor to see the new style. For text editors like RStudio, you will need to copy the CSL file to the appropriate project directory; this will be covered in detail in the <a href="./citations_in_quarto.html">Citations in Quarto chapter</a>.</p>
 <section id="what-does-a-csl-file-look-like" class="level2">
 <h2 class="anchored" data-anchor-id="what-does-a-csl-file-look-like">What Does a CSL File Look Like?</h2>
 <p>A CSL file is an XML file that contains the information necessary to format citations and bibliographies in a specific style. The file is divided into several sections, including:</p>
@@ -338,7 +384,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Citations: Rules for formatting in-text citations.</li>
 <li>Bibliography: Rules for formatting the bibliography.</li>
 </ul>
-<p>If you’re interested, the collapsed code below is an example of a CSL file that defines the style for formatting citations in Nature style. <strong>Understanding this code is not necessary to use Zotero or CSL files, but it can be helpful if you want to modify or create your own styles.</strong></p>
+<p>If you’re interested, the collapsed code below is an example of a CSL file that defines the style for formatting citations in Nature style. <strong>Understanding the code underlying a CSL file is not necessary to use Zotero CSL files, but it can be helpful if you want to modify or create your own styles.</strong></p>
 <div class="callout callout-style-default callout-note callout-titled" title="XML file for Nature Citation Language Style">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -523,48 +569,9 @@ XML file for Nature Citation Language Style
 </div>
 </div>
 </div>
-</section>
-</section>
-<section id="citation-style-examples" class="level1">
-<h1>Citation Style Examples</h1>
-<p>To demonstrate differences in citation styles, the citation for the same article is shown in several different styles below. The article is “Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson’s Irises” by Allison M. Horst, Alison Presmanes Hill, and Kristen B. Gorman, published in the R Journal in 2022.</p>
-<p>Note that if you use Google Scholar to find article citations, you will notice that the 5 examples included below are the default citation styles used by Google Scholar.</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 21%">
-<col style="width: 78%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: center;">Style Name</th>
-<th style="text-align: left;">Citation</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;">MLA</td>
-<td style="text-align: left;">Horst, Allison M., Alison Presmanes Hill, and Kristen B. Gorman. “Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson’s Irises.” <em>R Journal</em> 14.1 (2022).</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">APA</td>
-<td style="text-align: left;">Horst, A. M., Hill, A. P., &amp; Gorman, K. B. (2022). Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson’s Irises. <em>R Journal</em>, 14(1).</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">Chicago</td>
-<td style="text-align: left;">Horst, Allison M., Alison Presmanes Hill, and Kristen B. Gorman. “Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson’s Irises.” <em>R Journal</em> 14, no. 1 (2022).</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">Harvard</td>
-<td style="text-align: left;">Horst, A.M., Hill, A.P. and Gorman, K.B., 2022. Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson’s Irises. <em>R Journal</em>, 14(1).</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">Vancouver</td>
-<td style="text-align: left;">Horst AM, Hill AP, Gorman KB. Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson’s Irises. R Journal. 2022 Mar 1;14(1).</td>
-</tr>
-</tbody>
-</table>
 
 
+</section>
 </section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->

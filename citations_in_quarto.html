@@ -20,7 +20,61 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -252,7 +306,24 @@ ul.task-list li input[type="checkbox"] {
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar"><div class="quarto-margin-header"><div class="margin-header-item">
 <p><img src="./assets/LMU-OSC_logo.jpg" class="img-fluid" width="175"></p>
 </div></div>
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#inserting-citations" id="toc-inserting-citations" class="nav-link active" data-scroll-target="#inserting-citations">Inserting Citations</a>
+  <ul class="collapse">
+  <li><a href="#rstudio-visual-editor" id="toc-rstudio-visual-editor" class="nav-link" data-scroll-target="#rstudio-visual-editor">RStudio Visual Editor</a></li>
+  <li><a href="#manual-entry" id="toc-manual-entry" class="nav-link" data-scroll-target="#manual-entry">Manual Entry</a></li>
+  </ul></li>
+  <li><a href="#adding-a-bibliography" id="toc-adding-a-bibliography" class="nav-link" data-scroll-target="#adding-a-bibliography">Adding a Bibliography</a>
+  <ul class="collapse">
+  <li><a href="#adding-references-at-the-end-of-the-document" id="toc-adding-references-at-the-end-of-the-document" class="nav-link" data-scroll-target="#adding-references-at-the-end-of-the-document">Adding References at the End of the Document</a></li>
+  <li><a href="#changing-citation-style" id="toc-changing-citation-style" class="nav-link" data-scroll-target="#changing-citation-style">Changing Citation Style</a></li>
+  <li><a href="#a-note-on-updating-citations-in-zotero" id="toc-a-note-on-updating-citations-in-zotero" class="nav-link" data-scroll-target="#a-note-on-updating-citations-in-zotero">A Note on Updating Citations in Zotero</a></li>
+  </ul></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/lmu-osc/introduction-to-zotero/edit/main/citations_in_quarto.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/introduction-to-zotero/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -276,14 +347,177 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p>The instructions on this page largely rely on the use of RStudio. If you are not using RStudio, you should note that whatever text editor you are using may not have the same functionality, and you may need to adjust your workflow accordingly. That said, these instructions also cover text-only editing options that should be viable approaches to editing your document via any text editor.</p>
+<p>One of the benefits of using RStudio is that it will automatically generate a bibliography file for you when you insert a citation. This bibliography file will be automatically updated to include any new citations you add, and it will automatically generate the bibliography in the format you specify in the YAML of your file.</p>
+<p>For other text editors, you must first generate your bibliography file, and then manually add the bibliography to the project directory and the yaml header of your file. You will also need to manually update the bibliography file to include any new citations you add.</p>
+<p>If you choose to stick with a different text editor, you can check out the <a href="https://quarto.org/docs/get-started/authoring/text-editor.html#citations">Tutorial: Authoring</a> Quarto documentation page for more information.</p>
+<section id="inserting-citations" class="level1">
+<h1>Inserting Citations</h1>
+<p>To insert an in-line citation in your document, you will need to use the source’s “citation key” which is a unique identifier for each reference in your Zotero library. This citation key connects your citation to the correct entry in the <code>references.bib</code> file.</p>
+<p>The citation keys generated by RStudio typically follow the format <code>@authorYear</code> or <code>@authorYearLetter</code> when there are multiple matches, but they can be customized to your liking. If you <em>export</em> a library from Zotero, however, a different default method for generating the citation keys will be used. These differences will be discussed in the following sub-sections, <a href="#rstudio-visual-editor">RStudio Visual Editor</a> and <a href="#manual-entry">Manual Entry</a>.</p>
+<p>You can insert a citation in your document by using the <code>@</code> symbol followed by the citation key of the reference you want to cite. For example, I have saved the Zotero Quick Start guide to my Zotero library for this tutorial, and in order to to cite this guide, I would use the citation key <code>[@zotero]</code> in my document:</p>
+<blockquote class="blockquote">
+<p>“Items can be assigned tags. Tags are named by the user. An item can be assigned as many tags as is needed.”<strong>[@zotero]</strong></p>
+</blockquote>
+<p>This will insert a citation in your document that looks like this:</p>
+<blockquote class="blockquote">
+<p>“Items can be assigned tags. Tags are named by the user. An item can be assigned as many tags as is needed.”<span class="citation" data-cites="zotero">(<a href="#ref-zotero" role="doc-biblioref">Zotero, n.d.</a>)</span></p>
+</blockquote>
+<p>Note that the citation key can be inserted in two ways: with or without brackets <code>[]</code>, which yield formatting differences. A citation without brackets, <code>@zotero</code>, will appear inline as “<span class="citation" data-cites="zotero">Zotero (<a href="#ref-zotero" role="doc-biblioref">n.d.</a>)</span>”, while a citation with brackets, <code>[@zotero]</code>, will appear as “<span class="citation" data-cites="zotero">(<a href="#ref-zotero" role="doc-biblioref">Zotero, n.d.</a>)</span>”.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Citation Keys">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Citation Keys
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The citation keys used in RStudio use Pandoc citation syntax. You can find more information on Pandoc citation syntax in the Pandoc documentation on <a href="https://pandoc.org/MANUAL.html#citations">citations</a> and <a href="https://pandoc.org/MANUAL.html#citation-syntax">citation syntax</a>.</p>
+</div>
+</div>
+<section id="rstudio-visual-editor" class="level2">
+<h2 class="anchored" data-anchor-id="rstudio-visual-editor">RStudio Visual Editor</h2>
+<p>If you are using RStudio’s visual editor, you can insert a citation by clicking on the “Insert” menu at the top of the screen and selecting “Citation.” This will open a dialog box where you can search for the reference you want to cite by typing in the author’s name, title, or other identifying information. Once you have found the reference you want to cite, you can click on it to insert the citation into your document.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">1. New Project</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">2. Insert</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">3. Plugin</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false">4. Select</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-5" role="tab" aria-controls="tabset-1-5" aria-selected="false">5. Edit Key</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-6-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-6" role="tab" aria-controls="tabset-1-6" aria-selected="false">6. Review</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-7-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-7" role="tab" aria-controls="tabset-1-7" aria-selected="false">7. Render</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets/citations-in-quarto/01_new_project.png" class="img-fluid figure-img"></p>
+<figcaption>A new, empty project will look similar to this image. Note that you must be in the Visual editor mode in order to see the Insert button. Press this button.</figcaption>
+</figure>
+</div>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets/citations-in-quarto/02_open_insert.png" class="img-fluid figure-img"></p>
+<figcaption>After opening the Insert drop-down section, scroll down to the Citation option and open this.</figcaption>
+</figure>
+</div>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets/citations-in-quarto/03_open_folder.png" class="img-fluid figure-img"></p>
+<figcaption>This should open a plugin that allows you to search your Zotero library as well as PubMed, CrossRef, and directly by DOI numbers (in case you haven’t already saved something to your Zotero library). Open the Zotero folder relevant to your project, the “Zotero Tutorial” in this example.</figcaption>
+</figure>
+</div>
+</div>
+<div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets/citations-in-quarto/04_select_content.png" class="img-fluid figure-img"></p>
+<figcaption>Press once on the citation you would like to insert. Note taht the citation will be highlighted, and there is now a short tag in the bottom left. This is the citation key that will be used by default.</figcaption>
+</figure>
+</div>
+</div>
+<div id="tabset-1-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-5-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets/citations-in-quarto/05_edit_key.png" class="img-fluid figure-img"></p>
+<figcaption>If you’d like to edit the key to something more memorable or informative, press on the pencil button and edit away. In this example, the citation key has been chagned to <code>@zotero-guide</code>. <br><br> Note that citation key changes must be done <strong>the first time you include a new citation</strong> and you cannot have spaces in the name. Press <strong>Insert</strong> when done.</figcaption>
+</figure>
+</div>
+</div>
+<div id="tabset-1-6" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-6-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets/citations-in-quarto/06_inserted_citations.png" class="img-fluid figure-img"></p>
+<figcaption>Your citation is now included inline in the document. Moreover, the bibliography is now connected to your Quarto document with the addition of the <code>bibliography: references.bib</code> text to the yaml header. RStudio will either create or update the <code>references.bib</code> file for you.</figcaption>
+</figure>
+</div>
+</div>
+<div id="tabset-1-7" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-7-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets/citations-in-quarto/07_rendered_pdf.png" class="img-fluid figure-img"></p>
+<figcaption>A version of the example document rendered as a PDF. Note that, while the bibliography is included in the output document, it is not formatted as a proper “References” section. We will revisit this shortly.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="manual-entry" class="level2">
+<h2 class="anchored" data-anchor-id="manual-entry">Manual Entry</h2>
+<p>(Under construction)</p>
 <ul>
-<li><p>Note that the instructions here rely on the use of RStudio. If you are not using RStudio, you should note that whatever text editor you are using may not have the same functionality as RStudio, and you may need to adjust your workflow accordingly. That said, these instructions also cover text-only editing options that should be viable approaches to editing your document to include citations and a bibliography via any text editor.</p></li>
-<li><p>Advantage of using RStudio for this process: it will automatically generate a bibilography file for you when inserting a citation, it will add the bibliography to the yaml of your file, the bibliography file will be automatically updated to include any new citations you add, and it will automatically generate the bibliography in the format you specify in the yaml of your file.</p></li>
-<li><p>For other text editors, you must first generate your bibliography file, and then manually add the bibliography to the yaml of your file. You will also need to manually update the bibliography file to include any new citations you add.</p></li>
-<li><p>If you are using another text editor, you can check out the <a href="https://quarto.org/docs/get-started/authoring/text-editor.html#citations">Tutorial: Authoring</a> Quarto documentation page for more information.</p></li>
+<li>Export your bibliography from Zotero as a BibTex file</li>
+<li>Save this file in your project directory</li>
+<li>Add the following to your YAML header: <code>bibliography: references.bib</code></li>
+<li>Manually add the citation keys to your document. These can be found in the BibTex file you exported from Zotero as the first line for each entry. Note that the default keys are different than what RStudio generates.</li>
 </ul>
+</section>
+</section>
+<section id="adding-a-bibliography" class="level1">
+<h1>Adding a Bibliography</h1>
+<p>As mentioned in the previous instructions for inserting citations, RStudio will automatically generate a bibliography file for you when you insert a citation. This bibliography file will be automatically updated to include any new citations you add, and you must define the bibliography file to use for your document(s) using the <code>bibliography: &lt;your-references-file.bib&gt;</code> line in the YAML header like below.</p>
+<p>RStudio will generate a file named <code>references.bib</code> by default if you have not already created a bibliography file. You can change the name of this file to whatever you like, but you must ensure that the name of the file you specify in the YAML header matches the name of the file you have saved in your project directory.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"My Document"</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">bibliography</span><span class="kw">:</span><span class="at"> references.bib</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="adding-references-at-the-end-of-the-document" class="level2">
+<h2 class="anchored" data-anchor-id="adding-references-at-the-end-of-the-document">Adding References at the End of the Document</h2>
+<p>After inserting your citations, you presumably will want a well-formatted bibliography or references section available at the end of your document. “<a href="https://quarto.org/docs/authoring/citations.html#bibliography-generation">By default, Pandoc will automatically generate a list of works cited and place it in the document if the style calls for it. It will be placed in a div with the id refs if one exists.</a> <span class="citation" data-cites="quarto-citations">(<a href="#ref-quarto-citations" role="doc-biblioref">Quarto Team, n.d.</a>)</span>:”</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">### References</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>::: {#refs}</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This will generate a “References” section at the end of your document with the bibliography formatted according to the citation style you have specified in the YAML header. An example of this can be found at the bottom of this page!</p>
+</section>
+<section id="changing-citation-style" class="level2">
+<h2 class="anchored" data-anchor-id="changing-citation-style">Changing Citation Style</h2>
+<p>The <a href="./citation_style_language.html">Citation Style Language</a> page talked in depth about the different citation styles available to you. You can change the citation style of your document by adding the <code>csl: &lt;your-csl-file.csl&gt;</code> line to the YAML header like below:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"My Document"</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">bibliography</span><span class="kw">:</span><span class="at"> references.bib</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="fu">csl</span><span class="kw">:</span><span class="at"> your-csl-file.csl</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This will change the citation style of your document to the style specified in the CSL file you provide. You can find CSL files for different citation styles on the <a href="https://www.zotero.org/styles">Citation Styles Library</a> website.</p>
+<p>Note that the <code>csl:</code> field can also be a link directly to a CSL file online. For example, the following YAML header will use the Nature citation style:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"My Document"</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">bibliography</span><span class="kw">:</span><span class="at"> references.bib</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="fu">csl</span><span class="kw">:</span><span class="at"> https://www.zotero.org/styles/nature</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="a-note-on-updating-citations-in-zotero" class="level2">
+<h2 class="anchored" data-anchor-id="a-note-on-updating-citations-in-zotero">A Note on Updating Citations in Zotero</h2>
+<p>A current shortcoming with inserting citations into Quarto documents is that the bibliography does not automatically update when you update the references in Zotero.</p>
+<p>That is, if you make changes to the citations <em>within</em> Zotero, you may need to delete the <code>references.bib</code> file and reinsert the citations to force update the bibliography in your project. This sounds a bit complicated, but simply deleting the <code>references.bib</code> file and reinserting a single citation will prompt RStudio to regenerate the <code>references.bib</code> file with the updated references.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Automatic Updates in the Future?">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Automatic Updates in the Future?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>An issue requesting that the bibliography automatically update when references are updated in Zotero was previosuly opened in the RStudio GitHub repository, but it was closed without being addressed. you can find the issue <a href="https://github.com/rstudio/rstudio/issues/11447">here</a>. you can, however, comment that you’d like to see this feature implemented in the future ;).</p>
+</div>
+</div>
+</section>
+</section>
+<section id="references" class="level1">
+<h1>References</h1>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-quarto-citations" class="csl-entry" role="listitem">
+Quarto Team. n.d. <span>“Citations in Quarto: Bibliography Generation.”</span> <a href="https://quarto.org/docs/authoring/citations.html#bibliography-generation">https://quarto.org/docs/authoring/citations.html#bibliography-generation</a>.
+</div>
+<div id="ref-zotero" class="csl-entry" role="listitem">
+Zotero. n.d. <span>“Quick<span>_</span>start<span>_</span>guide [Zotero Documentation].”</span> <a href="https://www.zotero.org/support/quick_start_guide">https://www.zotero.org/support/quick_start_guide</a>.
+</div>
+</div>
 
 
+</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -726,7 +960,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>   
     <div class="nav-footer-center">
 <p>Copyright, 2024 Open Science Center at LMU Munich</p>
-<div class="toc-actions"><ul><li><a href="https://github.com/lmu-osc/introduction-to-zotero/edit/main/citations_in_quarto.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/introduction-to-zotero/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/lmu-osc/introduction-to-zotero/edit/main/citations_in_quarto.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/introduction-to-zotero/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>

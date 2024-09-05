@@ -7,3 +7,8 @@
 .sidebar-item-text.sidebar-link.text-start {
   color: black;
 }
+
+.panel-caption, .figure-caption, .subfigure-caption, .table-caption, figcaption, caption {
+	font-size: 1rem;
+	color: #000000;
+}
