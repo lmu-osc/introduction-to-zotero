@@ -38,7 +38,39 @@ The citation keys used in RStudio use Pandoc citation syntax. You can find more 
 
 ## RStudio Visual Editor
 
+If you are using RStudio's visual editor, you can insert a citation by clicking on the "Insert" menu at the top of the screen and selecting "Citation." This will open a dialog box where you can search for the reference you want to cite by typing in the author's name, title, or other identifying information. Once you have found the reference you want to cite, you can click on it to insert the citation into your document.
 
+::: {.panel-tabset}
+
+## 1. New Project
+
+![](assets/citations-in-quarto/01_new_project)
+
+## 2. Insert
+
+![](assets/citations-in-quarto/02_open_insert)
+
+## 3. Plugin
+
+![](assets/citations-in-quarto/03_open_folder)
+
+## 4. Select
+
+![](assets/citations-in-quarto/04_select_content)
+
+## 5. Edit Key
+
+![](assets/citations-in-quarto/05_edit_key)
+
+## 6. Review
+
+![](assets/citations-in-quarto/06_inserted_citations)
+
+## 7. Render
+
+![](assets/citations-in-quarto/07_rendered_pdf)
+
+:::
 
 
 
