@@ -10,27 +10,27 @@ format: html
 
 ## 1. New Project
 
-![](assets/citations-in-word/01_new_word_file)
+![In a new Word document, the Zotero tab should be available if you have already downloaded Zotero--it automatically installs the Word plugin.](assets/citations-in-word/01_new_word_file)
 
-## . TITLE
+## 2. Add
 
-![](assets/citations-in-word/02_word_zotero_tab)
+![Under the Zotero tab, press the "Add/Edit Citation" button.](assets/citations-in-word/02_word_zotero_tab)
 
-## . TITLE
+## 3. Choose CSL
 
-![](assets/citations-in-word/03_change_citation_style)
+![If this is the first citation you're inserting into the document, you will be prompted to choose the citation style you'd like to use. This can be changed later if needed.](assets/citations-in-word/03_change_citation_style)
 
-## . TITLE
+## 4. Search
 
-![](assets/citations-in-word/04_search_popup)
+![You can now search through your Zotero library for the content you need to cite. This searchbar pop-up will search through your **whole** library, but you can opt to look through a specific folder by pressing the **Z** drop-down button on the left.](assets/citations-in-word/04_search_popup)
 
-## . TITLE
+## 5. Results
 
-![](assets/citations-in-word/05_search_popup_results)
+![The results of your search will appear in a drop-down menu below. You can search for and select multiple documents before inserting them. When you are done adding citations, press **Enter**.](assets/citations-in-word/05_search_popup_results)
 
-## . TITLE
+## 6. Cited
 
-![](assets/citations-in-word/06_citation_inserted)
+![Your in-line citation should now be visible in your document. The next section will discuss how to include the bibliography.](assets/citations-in-word/06_citation_inserted)
 
 
 :::
@@ -39,21 +39,21 @@ format: html
 # Adding a Bibliography
 
 
-## Iniitial Add
+## Initial Add & New Citations
 ::: {.panel-tabset}
 
-## . TITLE
+## 1. Add Bibliography
 
-![](assets/citations-in-word/07_insert_bibliography_button)
+![The bibliography can be added at any time after the first citation has been placed in the document. Simply press the "Add/Edit Bibliography" button.](assets/citations-in-word/07_insert_bibliography_button)
 
-## . TITLE
+## 2.. Results
 
-![](assets/citations-in-word/08_bibliography_inserted)
+![After pressing the button, the bibliography should appear where you had your cursor placed.](assets/citations-in-word/08_bibliography_inserted)
 
 
-## . TITLE
+## 3.. Add New Citations
 
-![](assets/citations-in-word/09_add_new_citation)
+![To add new citations, simply repeat the procedure outlined previously. Some versions of Word and Zotero will automatically update the bibliography, but older versions may require you to press the **Refresh** button!](assets/citations-in-word/09_add_new_citation)
 
 :::
 
@@ -61,22 +61,22 @@ format: html
 
 
 
-## New Citations and Updating
+## Change Style
 
 ::: {.panel-tabset}
 
 
-## . TITLE
+## 1. Doc Preferences
 
-![](assets/citations-in-word/10_document_preferences)
+![Press the **Document Preferences** button to make changes to the citation style of the document.](assets/citations-in-word/10_document_preferences)
 
-## . TITLE
+## 2. Change CSL
 
-![](assets/citations-in-word/11_change_cite_style)
+![Select the new style you'd like to use. If needed, you can first download the style from the Zotero website, install it into Zotero, and then restart both Word and Zotero.](assets/citations-in-word/11_change_cite_style)
 
-## . TITLE
+## 3. See Updates
 
-![](assets/citations-in-word/12_see_new_bibliography)
+![Note that the style of the in-line citations and the bibliography have now been updated to reflect the new CSL file we've chosen.](assets/citations-in-word/12_see_new_bibliography)
 
 
 :::
