@@ -2,3 +2,81 @@
 title: "Citations in Word"
 format: html
 ---
+
+
+# Inserting Citations
+
+::: {.panel-tabset}
+
+## 1. New Project
+
+![](assets/citations-in-word/01_new_word_file)
+
+## . TITLE
+
+![](assets/citations-in-word/02_word_zotero_tab)
+
+## . TITLE
+
+![](assets/citations-in-word/03_change_citation_style)
+
+## . TITLE
+
+![](assets/citations-in-word/04_search_popup)
+
+## . TITLE
+
+![](assets/citations-in-word/05_search_popup_results)
+
+## . TITLE
+
+![](assets/citations-in-word/06_citation_inserted)
+
+
+:::
+
+
+# Adding a Bibliography
+
+
+## Iniitial Add
+::: {.panel-tabset}
+
+## . TITLE
+
+![](assets/citations-in-word/07_insert_bibliography_button)
+
+## . TITLE
+
+![](assets/citations-in-word/08_bibliography_inserted)
+
+
+## . TITLE
+
+![](assets/citations-in-word/09_add_new_citation)
+
+:::
+
+
+
+
+
+## New Citations and Updating
+
+::: {.panel-tabset}
+
+
+## . TITLE
+
+![](assets/citations-in-word/10_document_preferences)
+
+## . TITLE
+
+![](assets/citations-in-word/11_change_cite_style)
+
+## . TITLE
+
+![](assets/citations-in-word/12_see_new_bibliography)
+
+
+:::
