@@ -6,7 +6,7 @@ citation:
   title: "Introduction to Zotero"
   container-title: "LMU Open Science Center"
   url: https://lmu-osc.github.io/introduction-to-renv
-  doi: "DOI HERE"
+  doi: "https://doi.org/10.5281/zenodo.14243118"
 author:
   - name: Pat Callahan
     affiliation:
