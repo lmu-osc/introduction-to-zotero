@@ -8,5 +8,9 @@ authors:
 title: "Introduction to Zotero"
 version: v0.0.1
 date-released: "2024-11-29"
-doi: "DOI HERE--EX: 10.5281/zenodo.14230879"
+doi: "10.5281/zenodo.14243118"
 url: https://lmu-osc.github.io/introduction-to-zotero/
+license:
+  - CC-BY-SA-4.0
+  - CC0-1.0
+publisher: "LMU Open Science Center"
