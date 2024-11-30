@@ -59,7 +59,7 @@ If you are using RStudio's visual editor, you can insert a citation by clicking 
 
 ## 5. Edit Key
 
-![If you'd like to edit the key to something more memorable or informative, press on the pencil button and edit away. In this example, the citation key has been chagned to `@zotero-guide`. <br><br> Note that citation key changes must be done **the first time you include a new citation** and you cannot have spaces in the name. Press **Insert** when done.](assets/citations-in-quarto/05_edit_key)
+![If you'd like to edit the key to something more memorable or informative, press on the pencil button and edit away. In this example, the citation key has been changed to `@zotero-guide`. <br><br> Note that citation key changes must be done **the first time you include a new citation** and you cannot have spaces in the name. Press **Insert** when done.](assets/citations-in-quarto/05_edit_key)
 
 ## 6. Review
 
