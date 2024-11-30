@@ -46,12 +46,12 @@ format: html
 
 ![The bibliography can be added at any time after the first citation has been placed in the document. Simply press the "Add/Edit Bibliography" button.](assets/citations-in-word/07_insert_bibliography_button)
 
-## 2.. Results
+## 2. Results
 
 ![After pressing the button, the bibliography should appear where you had your cursor placed.](assets/citations-in-word/08_bibliography_inserted)
 
 
-## 3.. Add New Citations
+## 3. Add New Citations
 
 ![To add new citations, simply repeat the procedure outlined previously. Some versions of Word and Zotero will automatically update the bibliography, but older versions may require you to press the **Refresh** button!](assets/citations-in-word/09_add_new_citation)
 
