@@ -72,12 +72,12 @@ If you are using RStudio's visual editor, you can insert a citation by clicking 
 
 ## Manual Entry {#manual-entry}
 
-(Under construction)
+If you are not using RStudio as your text editor, you can still insert citations manually by following these steps:
 
--   Export your bibliography from Zotero as a BibTex file
--   Save this file in your project directory
--   Add the following to your YAML header: `bibliography: references.bib`
--   Manually add the citation keys to your document. These can be found in the BibTex file you exported from Zotero as the first line for each entry. Note that the default keys are different than what RStudio generates.
+1.   Export your bibliography from Zotero as a BibTex file
+2.   Save this file in your project directory as `references.bib`
+3.   Add the following to your YAML header: `bibliography: references.bib`
+4.   Insert the citations using the citation keys found in the `references.bib` file. These can be found in the BibTex file you exported from Zotero as the first line for each entry. 
 
 # Adding a Bibliography
 
