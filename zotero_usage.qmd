@@ -3,6 +3,12 @@ title: "Using Zotero"
 format: html
 ---
 
+This page will cover the basics of using Zotero, and is structured around the three main tasks you will need to do when using Zotero:
+
+1. Create a Zotero library or folder for your project(s)
+2. Add references to your library
+3. Cite references in your documents.
+
 
 # Creating a Zotero Library
 
@@ -33,7 +39,6 @@ While creating libraries/folders for your projects is highly recommended and use
 -   Save to Zotero with the Zotero Connector browser extension
 -   Manual entry
 -   Import from online databases.
--   Import from other software.
 
 We will outline the first two methods here, as they are the most common ways to add references to Zotero.
 
@@ -61,9 +66,11 @@ The most common and preferred way of entering references is by using the Zotero 
 
 :::
 
-## Manual Entry
+## Manual Entries
 
-The Zotero Connector is not perfect, however, and you may occassionally need to "manually" enter a reference. To do this, click on the "New Item" button in Zotero, and select the type of reference you want to add. You can then enter the metadata for the reference manually. However, if you can find a BibTex or RIS file for the reference, you can import the reference into Zotero by dragging and dropping the file into the Zotero window, or by copying the BibTex content and then selecting `File` -\> `Import from Clipboard` in Zotero. 
+The Zotero Connector is not perfect, however, and you may occasionally need to "manually" enter a reference. To do this, click on the "New Item" button in Zotero, and select the type of reference you want to add. You can then enter the metadata for the reference manually. This is a more time-consuming process than using the Zotero Connector, but it is necessary if you cannot find the reference online (e.g. a book or a conference presentation).
+
+However, if you can find a BibTex or RIS file for the reference, you can import the reference into Zotero by dragging and dropping the file into the Zotero window, or by copying the BibTex content and then selecting `File` -\> `Import from Clipboard` in Zotero. 
 
 The example below will demonstrate how to manually import a BibTex entry.
 
@@ -92,6 +99,28 @@ The example below will demonstrate how to manually import a BibTex entry.
 :::
 
 Less commonly, you may need to import references from other software. To do this, export the references from the software in a compatible format, and import them into Zotero. Zotero can import references from a variety of formats, including BibTex, RIS, and EndNote XML.
+
+
+## Importing from Online Databases
+
+Zotero can also import references directly from online databases using an identifier such as a DOI, ISBN, or PMID. To do this, click on the "Add Item by Identifier" button in Zotero, and enter the identifier for the reference you want to add. Zotero will then search for the reference online and add it to your library. This is a quick and easy way to add references to your library, but it may not work for all references.
+
+
+::: {.panel-tabset}
+
+## 1. Open the "Add Item by Identifier" Dialog
+
+![Press the wand-like button that opens the import-by-id function](assets/import-by-id/01_zotero_import_id)
+
+## 2. Enter the Identifier
+
+![Enter a valid identifier such as a DOI or PMID](assets/import-by-id/02_zotero_import_id)
+
+## 3. Check Library
+
+![After importing the reference, check your Zotero library to ensure the reference was saved correctly.](assets/import-by-id/03_zotero_import_id)
+
+:::
 
 # Citing references
 
