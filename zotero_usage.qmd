@@ -1,21 +1,20 @@
 ---
 title: "Using Zotero"
 format: html
+bibliography: references.bib
 ---
 
 This page will cover the basics of using Zotero, and is structured around the three main tasks you will need to do when using Zotero:
 
-1. Create a Zotero library or folder for your project(s)
-2. Add references to your library
-3. Cite references in your documents.
-
+1.  Create a Zotero library or folder for your project(s)
+2.  Add references to your library
+3.  Cite references in your documents.
 
 # Creating a Zotero Library
 
-Zotero's library system functions similar to a file system on your computer. You can create folders to organize your references, and add tags to references to help you find them later. The images below show how to create a new folder in Zotero, and what a fresh folder looks like. 
+Zotero's library system functions similar to a file system on your computer. You can create folders to organize your references, and add tags to references to help you find them later. The images below show how to create a new folder in Zotero, and what a fresh folder looks like.
 
-::: {.panel-tabset}
-
+::: panel-tabset
 ## 1. General Library
 
 ![All of your citations can be accessed in the overall **My Library** section.](assets/01_library)
@@ -27,10 +26,7 @@ Zotero's library system functions similar to a file system on your computer. You
 ## 3. A Fresh Folder
 
 ![A new folder will be empty by default, and will now appear in the tab bar on the left size of the Zotero application.](assets/03_empty_folder)
-
 :::
-
-
 
 # Adding References
 
@@ -48,8 +44,7 @@ We will outline the first two methods here, as they are the most common ways to 
 
 The Zotero Connector allows you to save references directly from your browser to your Zotero library. The connector will, when possible, download a PDF of the article and attach it to the reference. If you save content from a webpage that does not have an available PDF download of the content, the Connector will take a snapshot of the webpage to preserve the information in case the page is later changed or removed.
 
-::: {.panel-tabset}
-
+::: panel-tabset
 ## 1. Locate Source
 
 ![Identify the publication, book, website, or other source of information you wish to cite.](assets/01_palmerpenguins)
@@ -65,19 +60,17 @@ The Zotero Connector allows you to save references directly from your browser to
 ## 4. Check Library
 
 ![After saving the reference, check your Zotero library to ensure the reference was saved correctly.](assets/04_palmerpenguins)
-
 :::
 
 ## Manual Entries
 
 The Zotero Connector is not perfect, however, and you may occasionally need to "manually" enter a reference. To do this, click on the "New Item" button in Zotero, and select the type of reference you want to add. You can then enter the metadata for the reference manually. This is a more time-consuming process than using the Zotero Connector, but it is necessary if you cannot find the reference online (e.g. a book or a conference presentation).
 
-However, if you can find a BibTex or RIS file for the reference, you can import the reference into Zotero by dragging and dropping the file into the Zotero window, or by copying the BibTex content and then selecting `File` -\> `Import from Clipboard` in Zotero. 
+However, if you can find a BibTex or RIS file for the reference, you can import the reference into Zotero by dragging and dropping the file into the Zotero window, or by copying the BibTex content and then selecting `File` -\> `Import from Clipboard` in Zotero.
 
 The example below will demonstrate how to manually import a BibTex entry.
 
-::: {.panel-tabset}
-
+::: panel-tabset
 ## 1. Locate Source
 
 ![Identify the object you want to cite. If you can find the publication on Google Scholar, for example, BibTex entries are readily available. Click on the "Cite" button in Google Scholar to access the BibTex entry.](assets/01_palmerpenguins_manual)
@@ -97,18 +90,15 @@ The example below will demonstrate how to manually import a BibTex entry.
 ## 5. Check Library
 
 ![After importing the BibTex entry, check your Zotero library to ensure the reference was saved correctly. Note how much less information is included by importing BibTex, however. Compared to the Zotero Connector, we are, at minimum, missing a PDF copy of the document and the date on which we accessed the material.](assets/05_palmerpenguins_manual)
-
 :::
 
 Less commonly, you may need to import references from other software. To do this, export the references from the software in a compatible format, and import them into Zotero. Zotero can import references from a variety of formats, including BibTex, RIS, and EndNote XML.
 
-
 ## Importing from Online Databases
 
-Zotero can also import references directly from online databases using an identifier such as a DOI, ISBN, or PMID. To do this, click on the "Add Item by Identifier" button in Zotero, and enter the identifier for the reference you want to add. Zotero will then search for the reference online and add it to your library. 
+Zotero can also import references directly from online databases using an identifier such as a DOI, ISBN, or PMID. To do this, click on the "Add Item by Identifier" button in Zotero, and enter the identifier for the reference you want to add. Zotero will then search for the reference online and add it to your library.
 
-::: {.panel-tabset}
-
+::: panel-tabset
 ## 1. Open the "Add Item by Identifier" Dialog
 
 ![Press the wand-like button that opens the import-by-id function](assets/import-by-id/01_zotero_import_id)
@@ -120,22 +110,31 @@ Zotero can also import references directly from online databases using an identi
 ## 3. Check Library
 
 ![After importing the reference, check your Zotero library to ensure the reference was saved correctly.](assets/import-by-id/03_zotero_import_id)
-
 :::
 
 # Citing References with Zotero
 
 The main point of using Zotero, of course, is to cite references in your documents. Zotero makes this easy by providing plugins for popular word processors like Microsoft Word and LibreOffice. [These word processor plugins](https://www.zotero.org/support/system_requirements#word_processors) should be installed automatically when you install Zotero.
 
-Using Zotero to insert citations and bibliographies into Quarto and Word documents are specifically covered in later chapters. 
+Using Zotero to insert citations and bibliographies into Quarto and Word documents are specifically covered in later chapters.
 
 If you are using a text editor that does not have a Zotero plugin, or if you simply need a one-and-done bibliography for a smaller project, you can also generate a bibliography directly within Zotero, detailed next.
 
 ## Generating Bibliographies
 
-You can generate a bibliography by clicking on the "Export" button in Zotero, and selecting the citation style you want to use. This will generate a bibliography in the selected style that you can copy and paste into your document. You can generate a bibliography for a single reference, a collection (i.e. a folder), or your entire library. This option to quickly generate a bibliography is useful if you are using a text editor that does not have a Zotero plugin, or if you simply need a one-and-done bibliography for a smaller project
+### Text Formatted
+
+You can generate a bibliography by right-clicking on the folder or publication of interest, and selecting the option to "Generate Bibliography from Collection." From there, you will be prompted to choose a citation style and an output method (i.e. copy to clipboard, save as file, etc.).
+
+This option to quickly generate a bibliography is useful if you are using a text editor that does not have a Zotero plugin, or if you simply need a one-and-done bibliography for a smaller project
 
 For more details, see the [Zotero documentation on creating bibliographies](https://www.zotero.org/support/creating_bibliographies).
+
+### BibTex and `.bib` Files
+
+[BibTex](https://www.bibtex.org/) is a commonly-used, structured file format for bibliographies [@bibtex]. You will generally not need to make or edit BibTex files if you are using a word processor with a Zotero plugin, as the plugin will automatically generate the bibliography for you. However, if you are using a text editor that does not have a Zotero plugin, you can export a BibTex file from Zotero to generate a bibliography.
+
+To do this, right-click on the folder or publication of interest, and select the option to "Export Collection." You can then choose the BibTex format, and save the file to your computer. You can then include this BibTex file in your document to generate a bibliography.
 
 # Other Features
 
@@ -145,9 +144,8 @@ This page has covered the basics of using Zotero, but there are many other featu
 
 You can organize your references in Zotero by creating collections and tags. To create a collection, click on the "New Collection" button, and give the collection a name. To add references to this collection, simply drag and drop the references into the collection. To add tags to a reference, click on the "Tags" tab, and enter the tags you want to add. These tags are particularly convenient if you want to later search your library for references on a specific topic as defined by you.
 
-
 ## Collaborating with others
 
-You can also collaborate with others by sharing your references with them, generally by creating a [Zotero Group](zotero_groups.html). The contents of these groups are shared with all members online, and you can set the group to be public or private. 
+You can also collaborate with others by sharing your references with them, generally by creating a [Zotero Group](zotero_groups.html). The contents of these groups are shared with all members online, and you can set the group to be public or private.
 
 Public groups are open to anyone, while private groups require an invitation to join. You can also create a group library, which is a shared library that all members can edit. This is useful if you are working on a project with others and want to share references with them.
