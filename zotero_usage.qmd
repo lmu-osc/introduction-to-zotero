@@ -44,7 +44,9 @@ We will outline the first two methods here, as they are the most common ways to 
 
 ## Zotero Connector
 
-The most common and preferred way of entering references is by using the Zotero Connector browser extension. The Zotero Connector allows you to save references directly from your browser to your Zotero library. The connector will, when possible, download a PDF of the article and attach it to the reference. If you save content from a webpage that does not have an available PDF download of the content, the Connector will take a snapshot of the webpage to preserve the information in case the page is later changed or removed.
+**The most common, fastest, and preferred way of entering references is by using the Zotero Connector browser extension.**
+
+The Zotero Connector allows you to save references directly from your browser to your Zotero library. The connector will, when possible, download a PDF of the article and attach it to the reference. If you save content from a webpage that does not have an available PDF download of the content, the Connector will take a snapshot of the webpage to preserve the information in case the page is later changed or removed.
 
 ::: {.panel-tabset}
 
@@ -103,8 +105,7 @@ Less commonly, you may need to import references from other software. To do this
 
 ## Importing from Online Databases
 
-Zotero can also import references directly from online databases using an identifier such as a DOI, ISBN, or PMID. To do this, click on the "Add Item by Identifier" button in Zotero, and enter the identifier for the reference you want to add. Zotero will then search for the reference online and add it to your library. This is a quick and easy way to add references to your library, but it may not work for all references.
-
+Zotero can also import references directly from online databases using an identifier such as a DOI, ISBN, or PMID. To do this, click on the "Add Item by Identifier" button in Zotero, and enter the identifier for the reference you want to add. Zotero will then search for the reference online and add it to your library. 
 
 ::: {.panel-tabset}
 
