@@ -122,11 +122,13 @@ Zotero can also import references directly from online databases using an identi
 
 :::
 
-# Citing references
+# Citing References with Zotero
 
 The main point of using Zotero, of course, is to cite references in your documents. Zotero makes this easy by providing plugins for popular word processors like Microsoft Word and LibreOffice. [These word processor plugins](https://www.zotero.org/support/system_requirements#word_processors) should be installed automatically when you install Zotero.
 
-Later chapters will detail how to use Zotero with RStudio + Quarto and Word, specifically. We briefly detail here how to generate a bibliography directly from Zotero.
+Using Zotero to insert citations and bibliographies into Quarto and Word documents are specifically covered in later chapters. 
+
+If you are using a text editor that does not have a Zotero plugin, or if you simply need a one-and-done bibliography for a smaller project, you can also generate a bibliography directly within Zotero, detailed next.
 
 ## Generating Bibliographies
 
@@ -145,4 +147,6 @@ You can organize your references in Zotero by creating collections and tags. To 
 
 ## Collaborating with others
 
-You can also collaborate with others by sharing your references with them, generally by creating a Zotero Group. The contents of these groups are shared with all members online, and you can set the group to be public or private. Public groups are open to anyone, while private groups require an invitation to join. You can also create a group library, which is a shared library that all members can edit. This is useful if you are working on a project with others and want to share references with them.
+You can also collaborate with others by sharing your references with them, generally by creating a [Zotero Group](zotero_groups.html). The contents of these groups are shared with all members online, and you can set the group to be public or private. 
+
+Public groups are open to anyone, while private groups require an invitation to join. You can also create a group library, which is a shared library that all members can edit. This is useful if you are working on a project with others and want to share references with them.

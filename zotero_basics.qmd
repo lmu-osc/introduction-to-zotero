@@ -33,7 +33,7 @@ Popular examples of citation managers include RefWorks, Mendeley, and EndNote al
 
 # Zotero
 
-Zotero provides the same features as the previously-mentioned citation managers: it helps you organize your research, collects and stores references, and generates citations and bibliographies in a variety of citation styles. The major difference between Zotero and these competitors is that Zotero is free and open-source, which makes it accessible to a wider audience. 
+Zotero provides the same features as the previously-mentioned citation managers: it helps you organize your research, collects and stores references, and generates citations and bibliographies in a variety of citation styles. The major difference between Zotero and these competitors is that **Zotero is free and open-source**, which makes it accessible to a wider audience. 
 
 One of the other major benefits of Zotero is that libraries are full transportable so if you ever leave your current institution or decide to leave Zotero for another citation manager altogether, you can freely export and import your library. The other major citation managers nominally have import/export features, but they may be encrypted and/or require contacting customer support whereas Zotero's is a simple export/import process.
 
