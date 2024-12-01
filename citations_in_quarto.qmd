@@ -29,9 +29,11 @@ bibliography: references.bib
 
 Note that you can name the file something other than `references.bib`, but you must ensure that the name of the file you specify in the YAML header matches the name of the file you have saved in your project directory.
 
-You will rarely need to edit the `references.bib` file directly, but you can open it in a text editor to see the structure of the file. An example of a citation inside of a `references.bib` file might look like this:
+You will rarely need to edit the `references.bib` file directly, but you can open it in a text editor to see the structure of the file. An example of an entry inside of a `references.bib` file might look like this:
 
-``` bibtex
+
+
+```bibtex
 @article{horst2022,
 	title = {Palmer Archipelago Penguins Data in the palmerpenguins R Package - An Alternative to Anderson's Irises},
 	author = {Horst, Allison M. and Hill, Alison Presmanes and Gorman, Kristen B.},
@@ -45,18 +47,20 @@ You will rarely need to edit the `references.bib` file directly, but you can ope
 	doi = {10.32614/RJ-2022-020},
 	url = {https://doi.org/10.32614/RJ-2022-020/}
 }
-```
+``` 
 
 
 ## What is a Citation Key?
 
 Citation keys are unique identifiers for each reference in your bibliography. They are used to insert citations in your document and are typically generated automatically by your text editor. These keys are necessary because they connect your citations to the correct entry in the `references.bib` file.
 
-For example, if you have a reference in your bibliography for the Palmer Penguins data set from 2022 by Allison Horst, the citation key for this reference might be `@horst2022`. You would use this citation key in your document to insert a citation to this reference.
+Extending the `references.bib` example, you would cite the Palmer Penguins data set from 2022 by Allison Horst with the citation key `@horst2022`. You would use this citation key in your document to insert a citation to this reference.
 
+RStudio generates a citation key for each new item you include in a document, and they typically follow the format `@authorYear` or `@authorYearLetter` when there are multiple references matching the format. [^pandoc_cite] These keys can be customized to your liking, **but this should be done only prior to using them the first time**.[^edit_bibtex]
 
+[^pandoc_cite]: The citation keys used in RStudio use Pandoc citation syntax. You can find more information on Pandoc citation syntax in the Pandoc documentation on [citations](https://pandoc.org/MANUAL.html#citations) and [citation syntax](https://pandoc.org/MANUAL.html#citation-syntax).
 
-The citation keys used in RStudio use Pandoc citation syntax. You can find more information on Pandoc citation syntax in the Pandoc documentation on [citations](https://pandoc.org/MANUAL.html#citations) and [citation syntax](https://pandoc.org/MANUAL.html#citation-syntax).
+[^edit_bibtex]: If needed, you can edit the citation keys in the `references.bib` file directly. However, you must ensure that the citation key is unique and does not contain any spaces or special characters.
 
 
 
@@ -71,7 +75,6 @@ The method for inserting citations in Quarto documents described in the first se
 
 When you insert a citation in your document, you will use the citation key of the reference you want to cite.
 
-RStudio generates a citation key for each new item you include in a document, and they typically follow the format `@authorYear` or `@authorYearLetter` when there are multiple matches. These keys can be customized to your liking, **but only prior to using them the firs time**.
 
 If you *export* a library from Zotero, however, a different default method for generating the citation keys will be used. These differences will be discussed in the following sub-sections, [RStudio Visual Editor](#rstudio-visual-editor) and [Manual Entry](#manual-entry).
 
