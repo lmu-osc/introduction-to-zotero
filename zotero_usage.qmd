@@ -114,11 +114,9 @@ Zotero can also import references directly from online databases using an identi
 
 # Citing References with Zotero
 
-The main point of using Zotero, of course, is to cite references in your documents. Zotero makes this easy by providing plugins for popular word processors like Microsoft Word and LibreOffice. [These word processor plugins](https://www.zotero.org/support/system_requirements#word_processors) should be installed automatically when you install Zotero.
+The main point of using Zotero, of course, is to cite references in your documents. Zotero makes this easy by providing plugins for popular word processors like Microsoft Word and LibreOffice. [These word processor plugins](https://www.zotero.org/support/system_requirements#word_processors) should be installed automatically when you install Zotero. 
 
-Using Zotero to insert citations and bibliographies into Quarto and Word documents are specifically covered in later chapters.
-
-If you are using a text editor that does not have a Zotero plugin, or if you simply need a one-and-done bibliography for a smaller project, you can also generate a bibliography directly within Zotero, detailed next.
+Inserting citations and bibliographies into Quarto and Word documents are specifically covered in later chapters. However, we first describe how to manually generate bibliographies and provide some details on the BibTex format.
 
 ## Generating Bibliographies
 
@@ -126,7 +124,7 @@ If you are using a text editor that does not have a Zotero plugin, or if you sim
 
 You can generate a bibliography by right-clicking on the folder or publication of interest, and selecting the option to "Generate Bibliography from Collection." From there, you will be prompted to choose a citation style and an output method (i.e. copy to clipboard, save as file, etc.).
 
-This option to quickly generate a bibliography is useful if you are using a text editor that does not have a Zotero plugin, or if you simply need a one-and-done bibliography for a smaller project
+This option to quickly generate a bibliography is useful if you are using a text editor that does not have a Zotero plugin, or if you simply need a one-and-done bibliography for a smaller project.
 
 For more details, see the [Zotero documentation on creating bibliographies](https://www.zotero.org/support/creating_bibliographies).
 
@@ -135,6 +133,10 @@ For more details, see the [Zotero documentation on creating bibliographies](http
 [BibTex](https://www.bibtex.org/) is a commonly-used, structured file format for bibliographies [@bibtex]. You will generally not need to make or edit BibTex files if you are using a word processor with a Zotero plugin, as the plugin will automatically generate the bibliography for you. However, if you are using a text editor that does not have a Zotero plugin, you can export a BibTex file from Zotero to generate a bibliography.
 
 To do this, right-click on the folder or publication of interest, and select the option to "Export Collection." You can then choose the BibTex format, and save the file to your computer. You can then include this BibTex file in your document to generate a bibliography.
+
+::: {.callout-tip title="BibTex Tip"}
+All you really need to know about BibTex is that it is a structured file format for bibliographies, and Quarto documents should have a `.bib` file in the same directory as the `.qmd` file plus a reference to the `.bib` file in the YAML header. This will be discussed in the [Citations in Quarto](citations_in_quarto.html) chapter.
+:::
 
 # Other Features
 
@@ -149,3 +151,12 @@ You can organize your references in Zotero by creating collections and tags. To 
 You can also collaborate with others by sharing your references with them, generally by creating a [Zotero Group](zotero_groups.html). The contents of these groups are shared with all members online, and you can set the group to be public or private.
 
 Public groups are open to anyone, while private groups require an invitation to join. You can also create a group library, which is a shared library that all members can edit. This is useful if you are working on a project with others and want to share references with them.
+
+## Notetaking
+
+Zotero can function as a note-taking app. To add a note to a reference, click on the "Notes" tab, and enter the note you want to add. These notes can be useful if you want to record your thoughts on a reference, or if you want to summarize the key points of the reference.
+
+### Collecting Quotes in Notes
+
+Zotero also allows you to easily collect quotes from your references that automatically include a citation to the author, paper, and the publication year. This feature specifically works for PDFs that you have saved in your Zotero library. To use this feature, open the PDF of interest, copy the text you want to quote, and paste it into a note. Zotero will automatically include the citation information for the quote.
+
