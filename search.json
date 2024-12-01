@@ -14,7 +14,7 @@
   {
     "objectID": "exercise_2.html",
     "href": "exercise_2.html",
-    "title": "Exercise 1",
+    "title": "Exercise 2",
     "section": "",
     "text": "Change CSL format\n\n\n\n\n Back to top",
     "crumbs": [
@@ -72,23 +72,11 @@
     ]
   },
   {
-    "objectID": "zotero_basics.html#citation-managers",
-    "href": "zotero_basics.html#citation-managers",
-    "title": "Zotero Basics",
-    "section": "Citation Managers",
-    "text": "Citation Managers\nCitation managers are software tools that help you organize your research, collect and store references, and generate citations and bibliographies in a variety of citation styles. They can save you time and effort by automating the process of creating citations and bibliographies, and tend to have plug-ins for popular word processors like Microsoft Word and (sometimes) LibreOffice. Popular examples of citation managers include RefWorks, Mendeley, and EndNote although these are generally paid tools. The focus of this tutorial, however, is on an alternative citation manager called Zotero.",
-    "crumbs": [
-      "Home",
-      "Background",
-      "Zotero Basics"
-    ]
-  },
-  {
     "objectID": "zotero_basics.html#downloading-zotero",
     "href": "zotero_basics.html#downloading-zotero",
     "title": "Zotero Basics",
     "section": "Downloading Zotero",
-    "text": "Downloading Zotero\nTo get started with Zotero, you will need to download the desktop application and browser extension. You can download Zotero from the Zotero website. The website will automatically detect your operating system and provide you with the appropriate download links. Once you have downloaded and installed Zotero, you should download the Zotero Connector for your preferred web browser. The Zotero Connector is available for the Chrome, Firefox, Safari, and Edge browsers.",
+    "text": "Downloading Zotero\nTo get started with Zotero, you will need to download the Zotero desktop application and the browser extension available for the Chrome, Firefox, Safari, and Edge browsers.\nThe Zotero website should automatically detect your operating system and browser, and it will display download links for both pieces of software.",
     "crumbs": [
       "Home",
       "Background",
@@ -100,7 +88,7 @@
     "href": "zotero_usage.html",
     "title": "Using Zotero",
     "section": "",
-    "text": "Zotero’s library system functions similar to a file system on your computer. You can create folders to organize your references, and add tags to references to help you find them later. The images below show how to create a new folder in Zotero, and what a fresh folder looks like.\n\n1. General Library2. Creating a New Folder3. A Fresh Folder\n\n\n\n\n\nAll of your citations can be accessed in the overall My Library section.\n\n\n\n\n\n\n\nPress the folder button in the top left corner to create a new folder, and provide a relevant name.\n\n\n\n\n\n\n\nA new folder will be empty by default, and will now appear in the tab bar on the left size of the Zotero application.",
+    "text": "This page will cover the basics of using Zotero, and is structured around the three main tasks you will need to do when using Zotero:",
     "crumbs": [
       "Home",
       "Background",
@@ -112,7 +100,7 @@
     "href": "zotero_usage.html#zotero-connector",
     "title": "Using Zotero",
     "section": "Zotero Connector",
-    "text": "Zotero Connector\nThe most common and preferred way of entering references is by using the Zotero Connector browser extension. The Zotero Connector allows you to save references directly from your browser to your Zotero library. The connector will, when possible, download a PDF of the article and attach it to the reference. If you save content from a webpage that does not have an available PDF download of the content, the Connector will take a snapshot of the webpage to preserve the information in case the page is later changed or removed.\n\n1. Locate Source2. Open Link3. Download4. Check Library\n\n\n\n\n\nIdentify the publication, book, website, or other source of information you wish to cite.\n\n\n\n\n\n\n\nOpen the website page. Try to find links to PubMed, the original publisher, or similar sites that have PDFs available. Zotero will automatically download these when available. Otherwise, it will attempt to screenshot the website itself.\n\n\n\n\n\n\n\nClick the Zotero Connector button in your browser to save the reference to your Zotero library. The button is generally in the top right corner of your browser. The appearance of this button can change depending on the type of object being cited.\n\n\n\n\n\n\n\nAfter saving the reference, check your Zotero library to ensure the reference was saved correctly.",
+    "text": "Zotero Connector\nThe most common, fastest, and preferred way of entering references is by using the Zotero Connector browser extension.\nThe Zotero Connector allows you to save references directly from your browser to your Zotero library. The connector will, when possible, download a PDF of the article and attach it to the reference. If you save content from a webpage that does not have an available PDF download of the content, the Connector will take a snapshot of the webpage to preserve the information in case the page is later changed or removed.\n\n1. Locate Source2. Open Link3. Download4. Check Library\n\n\n\n\n\nIdentify the publication, book, website, or other source of information you wish to cite.\n\n\n\n\n\n\n\nOpen the website page. Try to find links to PubMed, the original publisher, or similar sites that have PDFs available. Zotero will automatically download these when available. Otherwise, it will attempt to screenshot the website itself.\n\n\n\n\n\n\n\nClick the Zotero Connector button in your browser to save the reference to your Zotero library. The button is generally in the top right corner of your browser. The appearance of this button can change depending on the type of object being cited.\n\n\n\n\n\n\n\nAfter saving the reference, check your Zotero library to ensure the reference was saved correctly.",
     "crumbs": [
       "Home",
       "Background",
@@ -120,11 +108,23 @@
     ]
   },
   {
-    "objectID": "zotero_usage.html#manual-entry",
-    "href": "zotero_usage.html#manual-entry",
+    "objectID": "zotero_usage.html#manual-entries",
+    "href": "zotero_usage.html#manual-entries",
     "title": "Using Zotero",
-    "section": "Manual Entry",
-    "text": "Manual Entry\nThe Zotero Connector is not perfect, however, and you may occassionally need to “manually” enter a reference. To do this, click on the “New Item” button in Zotero, and select the type of reference you want to add. You can then enter the metadata for the reference manually. However, if you can find a BibTex or RIS file for the reference, you can import the reference into Zotero by dragging and dropping the file into the Zotero window, or by copying the BibTex content and then selecting File -&gt; Import from Clipboard in Zotero.\nThe example below will demonstrate how to manually import a BibTex entry.\n\n1. Locate Source2. Open Citation3. Copy BibTex4. Import to Zotero5. Check Library\n\n\n\n\n\nIdentify the object you want to cite. If you can find the publication on Google Scholar, for example, BibTex entries are readily available. Click on the “Cite” button in Google Scholar to access the BibTex entry.\n\n\n\n\n\n\n\nClick on the “BibTex” button in Google Scholar to access the BibTex entry.\n\n\n\n\n\n\n\nCopy the BibTex entry to your clipboard.\n\n\n\n\n\n\n\nIn Zotero, click on File -&gt; Import from Clipboard to import the BibTex entry.\n\n\n\n\n\n\n\nAfter importing the BibTex entry, check your Zotero library to ensure the reference was saved correctly. Note how much less information is included by importing BibTex, however. Compared to the Zotero Connector, we are, at minimum, missing a PDF copy of the document and the date on which we accessed the material.\n\n\n\n\n\nLess commonly, you may need to import references from other software. To do this, export the references from the software in a compatible format, and import them into Zotero. Zotero can import references from a variety of formats, including BibTex, RIS, and EndNote XML.",
+    "section": "Manual Entries",
+    "text": "Manual Entries\nThe Zotero Connector is not perfect, however, and you may occasionally need to “manually” enter a reference. To do this, click on the “New Item” button in Zotero, and select the type of reference you want to add. You can then enter the metadata for the reference manually. This is a more time-consuming process than using the Zotero Connector, but it is necessary if you cannot find the reference online (e.g. a book or a conference presentation).\nHowever, if you can find a BibTex or RIS file for the reference, you can import the reference into Zotero by dragging and dropping the file into the Zotero window, or by copying the BibTex content and then selecting File -&gt; Import from Clipboard in Zotero.\nThe example below will demonstrate how to manually import a BibTex entry.\n\n1. Locate Source2. Open Citation3. Copy BibTex4. Import to Zotero5. Check Library\n\n\n\n\n\nIdentify the object you want to cite. If you can find the publication on Google Scholar, for example, BibTex entries are readily available. Click on the “Cite” button in Google Scholar to access the BibTex entry.\n\n\n\n\n\n\n\nClick on the “BibTex” button in Google Scholar to access the BibTex entry.\n\n\n\n\n\n\n\nCopy the BibTex entry to your clipboard.\n\n\n\n\n\n\n\nIn Zotero, click on File -&gt; Import from Clipboard to import the BibTex entry.\n\n\n\n\n\n\n\nAfter importing the BibTex entry, check your Zotero library to ensure the reference was saved correctly. Note how much less information is included by importing BibTex, however. Compared to the Zotero Connector, we are, at minimum, missing a PDF copy of the document and the date on which we accessed the material.\n\n\n\n\n\nLess commonly, you may need to import references from other software. To do this, export the references from the software in a compatible format, and import them into Zotero. Zotero can import references from a variety of formats, including BibTex, RIS, and EndNote XML.",
+    "crumbs": [
+      "Home",
+      "Background",
+      "Zotero Usage"
+    ]
+  },
+  {
+    "objectID": "zotero_usage.html#importing-from-online-databases",
+    "href": "zotero_usage.html#importing-from-online-databases",
+    "title": "Using Zotero",
+    "section": "Importing from Online Databases",
+    "text": "Importing from Online Databases\nZotero can also import references directly from online databases using an identifier such as a DOI, ISBN, or PMID. To do this, click on the “Add Item by Identifier” button in Zotero, and enter the identifier for the reference you want to add. Zotero will then search for the reference online and add it to your library.\n\n1. Open the “Add Item by Identifier” Dialog2. Enter the Identifier3. Check Library\n\n\n\n\n\nPress the wand-like button that opens the import-by-id function\n\n\n\n\n\n\n\nEnter a valid identifier such as a DOI or PMID\n\n\n\n\n\n\n\nAfter importing the reference, check your Zotero library to ensure the reference was saved correctly.",
     "crumbs": [
       "Home",
       "Background",
@@ -136,7 +136,7 @@
     "href": "zotero_usage.html#generating-bibliographies",
     "title": "Using Zotero",
     "section": "Generating Bibliographies",
-    "text": "Generating Bibliographies\nYou can generate a bibliography by clicking on the “Export” button in Zotero, and selecting the citation style you want to use. This will generate a bibliography in the selected style that you can copy and paste into your document. You can generate a bibliography for a single reference, a collection (i.e. a folder), or your entire library. This option to quickly generate a bibliography is useful if you are using a text editor that does not have a Zotero plugin, or if you simply need a one-and-done bibliography for a smaller project\nFor more details, see the Zotero documentation on creating bibliographies.",
+    "text": "Generating Bibliographies\n\nText Formatted\nYou can generate a bibliography by right-clicking on the folder or publication of interest, and selecting the option to “Generate Bibliography from Collection.” From there, you will be prompted to choose a citation style and an output method (i.e. copy to clipboard, save as file, etc.).\nThis option to quickly generate a bibliography is useful if you are using a text editor that does not have a Zotero plugin, or if you simply need a one-and-done bibliography for a smaller project.\nFor more details, see the Zotero documentation on creating bibliographies.\n\n\nBibTex and .bib Files\nBibTex is a commonly-used, structured file format for bibliographies (“BibTeX,” n.d.). You will generally not need to make or edit BibTex files if you are using a word processor with a Zotero plugin, as the plugin will automatically generate the bibliography for you. However, if you are using a text editor that does not have a Zotero plugin, you can export a BibTex file from Zotero to generate a bibliography.\nTo do this, right-click on the folder or publication of interest, and select the option to “Export Collection.” You can then choose the BibTex format, and save the file to your computer. You can then include this BibTex file in your document to generate a bibliography.\n\n\n\n\n\n\nBibTex Tip\n\n\n\nAll you really need to know about BibTex is that it is a structured file format for bibliographies, and Quarto documents should have a .bib file in the same directory as the .qmd file plus a reference to the .bib file in the YAML header. This will be discussed in the Citations in Quarto chapter.",
     "crumbs": [
       "Home",
       "Background",
@@ -160,7 +160,19 @@
     "href": "zotero_usage.html#collaborating-with-others",
     "title": "Using Zotero",
     "section": "Collaborating with others",
-    "text": "Collaborating with others\nYou can also collaborate with others by sharing your references with them, generally by creating a Zotero Group. The contents of these groups are shared with all members online, and you can set the group to be public or private. Public groups are open to anyone, while private groups require an invitation to join. You can also create a group library, which is a shared library that all members can edit. This is useful if you are working on a project with others and want to share references with them.",
+    "text": "Collaborating with others\nYou can also collaborate with others by sharing your references with them, generally by creating a Zotero Group. The contents of these groups are shared with all members online, and you can set the group to be public or private.\nPublic groups are open to anyone, while private groups require an invitation to join. You can also create a group library, which is a shared library that all members can edit. This is useful if you are working on a project with others and want to share references with them.",
+    "crumbs": [
+      "Home",
+      "Background",
+      "Zotero Usage"
+    ]
+  },
+  {
+    "objectID": "zotero_usage.html#notetaking",
+    "href": "zotero_usage.html#notetaking",
+    "title": "Using Zotero",
+    "section": "Notetaking",
+    "text": "Notetaking\nZotero can function as a note-taking app. To add a note to a reference, click on the “Notes” tab, and enter the note you want to add. These notes can be useful if you want to record your thoughts on a reference, or if you want to summarize the key points of the reference.\n\nCollecting Quotes in Notes\nZotero also allows you to easily collect quotes from your references that automatically include a citation to the author, paper, and the publication year. This feature specifically works for PDFs that you have saved in your Zotero library. To use this feature, open the PDF of interest, copy the text you want to quote, and paste it into a note. Zotero will automatically include the citation information for the quote.",
     "crumbs": [
       "Home",
       "Background",
@@ -191,7 +203,43 @@
     "href": "citations_in_quarto.html",
     "title": "Citations in Quarto",
     "section": "",
-    "text": "The instructions on this page largely rely on the use of RStudio. If you are not using RStudio, you should note that whatever text editor you are using may not have the same functionality, and you may need to adjust your workflow accordingly. That said, these instructions also cover text-only editing options that should be viable approaches to editing your document via any text editor.\nOne of the benefits of using RStudio is that it will automatically generate a bibliography file for you when you insert a citation. This bibliography file will be automatically updated to include any new citations you add, and it will automatically generate the bibliography in the format you specify in the YAML of your file.\nFor other text editors, you must first generate your bibliography file, and then manually add the bibliography to the project directory and the yaml header of your file. You will also need to manually update the bibliography file to include any new citations you add.\nIf you choose to stick with a different text editor, you can check out the Tutorial: Authoring Quarto documentation page for more information.",
+    "text": "This manual expects the use of RStudio because it is highly integrated with Quarto and Zotero. For example, RStudio automatically generates and updates a bibliography file when inserting citations, and this bibliography will be created based on the CSL file you specify in the YAML header.\nThat said, these instructions also cover text-only editing options that should be applicable to editing your document in any text editor. However, you should note that other text editors may not have the same built-in functionality, and may require adjustments to your workflow.\nIf you choose to stick with a different text editor, you can check out the Tutorial: Authoring Quarto documentation page for further reading.",
+    "crumbs": [
+      "Home",
+      "Integrating Zotero",
+      "Citations in Quarto"
+    ]
+  },
+  {
+    "objectID": "citations_in_quarto.html#what-are-references.bib-files",
+    "href": "citations_in_quarto.html#what-are-references.bib-files",
+    "title": "Citations in Quarto",
+    "section": "What are references.bib Files?",
+    "text": "What are references.bib Files?\nA references.bib file is a BibTeX file that contains all of the references you want to cite in your document. This file is used to generate the bibliography at the end of your document, and it is necessary to include this file in your project directory in order to insert citations. You can create this file manually, but it is generally easier to export your references from a citation manager or allow RStudio to manage the creation of the file for you.\nWhen using a references.bib file with a Quarto document, you must specify the name of the file in the YAML header of your document like this:\n---\ntitle: \"Your project title\"\nbibliography: references.bib\n---\nNote that you can name the file something other than references.bib, but you must ensure that the name of the file you specify in the YAML header matches the name of the file you have saved in your project directory.\nYou will rarely need to edit the references.bib file directly, but you can open it in a text editor to see the structure of the file. An example of a citation inside of a references.bib file might look like this:\n@article{horst2022,\n    title = {Palmer Archipelago Penguins Data in the palmerpenguins R Package - An Alternative to Anderson's Irises},\n    author = {Horst, Allison M. and Hill, Alison Presmanes and Gorman, Kristen B.},\n    year = {2022},\n    month = {06},\n    date = {2022-06-21},\n    journal = {The R Journal},\n    pages = {244--254},\n    volume = {14},\n    number = {1},\n    doi = {10.32614/RJ-2022-020},\n    url = {https://doi.org/10.32614/RJ-2022-020/}\n}",
+    "crumbs": [
+      "Home",
+      "Integrating Zotero",
+      "Citations in Quarto"
+    ]
+  },
+  {
+    "objectID": "citations_in_quarto.html#what-is-a-citation-key",
+    "href": "citations_in_quarto.html#what-is-a-citation-key",
+    "title": "Citations in Quarto",
+    "section": "What is a Citation Key?",
+    "text": "What is a Citation Key?\nCitation keys are unique identifiers for each reference in your bibliography. They are used to insert citations in your document and are typically generated automatically by your text editor. These keys are necessary because they connect your citations to the correct entry in the references.bib file.\nFor example, if you have a reference in your bibliography for the Palmer Penguins data set from 2022 by Allison Horst, the citation key for this reference might be @horst2022. You would use this citation key in your document to insert a citation to this reference.\nThe citation keys used in RStudio use Pandoc citation syntax. You can find more information on Pandoc citation syntax in the Pandoc documentation on citations and citation syntax.",
+    "crumbs": [
+      "Home",
+      "Integrating Zotero",
+      "Citations in Quarto"
+    ]
+  },
+  {
+    "objectID": "citations_in_quarto.html#referencing-by-citation-key",
+    "href": "citations_in_quarto.html#referencing-by-citation-key",
+    "title": "Citations in Quarto",
+    "section": "Referencing by Citation Key",
+    "text": "Referencing by Citation Key\nWhen you insert a citation in your document, you will use the citation key of the reference you want to cite.\nRStudio generates a citation key for each new item you include in a document, and they typically follow the format @authorYear or @authorYearLetter when there are multiple matches. These keys can be customized to your liking, but only prior to using them the firs time.\nIf you export a library from Zotero, however, a different default method for generating the citation keys will be used. These differences will be discussed in the following sub-sections, RStudio Visual Editor and Manual Entry.\nYou can insert a citation in your document by using the @ symbol followed by the citation key of the reference you want to cite. For example, I have saved the Zotero Quick Start guide to my Zotero library for this tutorial, and in order to to cite this guide, I would use the citation key [@zotero] in my document. The text would look like this:\n\n“Items can be assigned tags. Tags are named by the user. An item can be assigned as many tags as is needed.”[@zotero]\n\nThis will insert a citation that is displayed in your document like this:\n\n“Items can be assigned tags. Tags are named by the user. An item can be assigned as many tags as is needed.”(Zotero, n.d.)\n\nNote that the citation key can be inserted in two ways: with or without brackets [], which yield formatting differences. A citation without brackets, @zotero, will appear inline as “Zotero (n.d.)”, while a citation with brackets, [@zotero], will appear as “(Zotero, n.d.)”.",
     "crumbs": [
       "Home",
       "Integrating Zotero",
@@ -203,7 +251,7 @@
     "href": "citations_in_quarto.html#rstudio-visual-editor",
     "title": "Citations in Quarto",
     "section": "RStudio Visual Editor",
-    "text": "RStudio Visual Editor\nIf you are using RStudio’s visual editor, you can insert a citation by clicking on the “Insert” menu at the top of the screen and selecting “Citation.” This will open a dialog box where you can search for the reference you want to cite by typing in the author’s name, title, or other identifying information. Once you have found the reference you want to cite, you can click on it to insert the citation into your document.\n\n1. New Project2. Insert3. Plugin4. Select5. Edit Key6. Review7. Render\n\n\n\n\n\nA new, empty project will look similar to this image. Note that you must be in the Visual editor mode in order to see the Insert button. Press this button.\n\n\n\n\n\n\n\nAfter opening the Insert drop-down section, scroll down to the Citation option and open this.\n\n\n\n\n\n\n\nThis should open a plugin that allows you to search your Zotero library as well as PubMed, CrossRef, and directly by DOI numbers (in case you haven’t already saved something to your Zotero library). Open the Zotero folder relevant to your project, the “Zotero Tutorial” in this example.\n\n\n\n\n\n\n\nPress once on the citation you would like to insert. Note taht the citation will be highlighted, and there is now a short tag in the bottom left. This is the citation key that will be used by default.\n\n\n\n\n\n\n\nIf you’d like to edit the key to something more memorable or informative, press on the pencil button and edit away. In this example, the citation key has been chagned to @zotero-guide.  Note that citation key changes must be done the first time you include a new citation and you cannot have spaces in the name. Press Insert when done.\n\n\n\n\n\n\n\nYour citation is now included inline in the document. Moreover, the bibliography is now connected to your Quarto document with the addition of the bibliography: references.bib text to the yaml header. RStudio will either create or update the references.bib file for you.\n\n\n\n\n\n\n\nA version of the example document rendered as a PDF. Note that, while the bibliography is included in the output document, it is not formatted as a proper “References” section. We will revisit this shortly.",
+    "text": "RStudio Visual Editor\nIf you are using RStudio’s visual editor, you can insert a citation by clicking on the “Insert” menu at the top of the screen and selecting “Citation.” This will open a dialog box where you can search for the reference you want to cite by typing in the author’s name, title, or other identifying information. Once you have found the reference you want to cite, you can click on it to insert the citation into your document.\nNote that this process is simply a “visual” short code for inserting the citation key into your document, but is more convenient as it lets you interactively search through your Zotero library and dynamically add citations to your references.bib file.\n\n1. New Project2. Insert3. Plugin4. Select5. Edit Key6. Review7. Render\n\n\n\n\n\nA new, empty project will look similar to this image. Note that you must be in the Visual editor mode in order to see the Insert button. Press this button.\n\n\n\n\n\n\n\nAfter opening the Insert drop-down section, scroll down to the Citation option and open this.\n\n\n\n\n\n\n\nThis should open a plugin that allows you to search your Zotero library as well as PubMed, CrossRef, and directly by DOI numbers (in case you haven’t already saved something to your Zotero library). Open the Zotero folder relevant to your project, the “Zotero Tutorial” in this example.\n\n\n\n\n\n\n\nPress once on the citation you would like to insert. Note taht the citation will be highlighted, and there is now a short tag in the bottom left. This is the citation key that will be used by default.\n\n\n\n\n\n\n\nIf you’d like to edit the key to something more memorable or informative, press on the pencil button and edit away. In this example, the citation key has been changed to @zotero-guide.  Note that citation key changes must be done the first time you include a new citation and you cannot have spaces in the name. Press Insert when done.\n\n\n\n\n\n\n\nYour citation is now included inline in the document. Moreover, the bibliography is now connected to your Quarto document with the addition of the bibliography: references.bib text to the yaml header. RStudio will either create or update the references.bib file for you.\n\n\n\n\n\n\n\nA version of the example document rendered as a PDF. Note that, while the bibliography is included in the output document, it is not formatted as a proper “References” section. We will revisit this shortly.",
     "crumbs": [
       "Home",
       "Integrating Zotero",
@@ -215,7 +263,7 @@
     "href": "citations_in_quarto.html#manual-entry",
     "title": "Citations in Quarto",
     "section": "Manual Entry",
-    "text": "Manual Entry\n(Under construction)\n\nExport your bibliography from Zotero as a BibTex file\nSave this file in your project directory\nAdd the following to your YAML header: bibliography: references.bib\nManually add the citation keys to your document. These can be found in the BibTex file you exported from Zotero as the first line for each entry. Note that the default keys are different than what RStudio generates.",
+    "text": "Manual Entry\nIf you are not using RStudio as your text editor, you can still insert citations manually by following these steps:\n\nExport your bibliography from Zotero as a BibTex file\nSave this file in your project directory as references.bib\nAdd the following to your YAML header: bibliography: references.bib\nInsert the citations using the citation keys found in the references.bib file. These can be found in the BibTex file you exported from Zotero as the first line for each entry.",
     "crumbs": [
       "Home",
       "Integrating Zotero",
@@ -275,7 +323,7 @@
     "href": "citations_in_word.html#initial-add-new-citations",
     "title": "Citations in Word",
     "section": "Initial Add & New Citations",
-    "text": "Initial Add & New Citations\n\n1. Add Bibliography2.. Results3.. Add New Citations\n\n\n\n\n\nThe bibliography can be added at any time after the first citation has been placed in the document. Simply press the “Add/Edit Bibliography” button.\n\n\n\n\n\n\n\nAfter pressing the button, the bibliography should appear where you had your cursor placed.\n\n\n\n\n\n\n\nTo add new citations, simply repeat the procedure outlined previously. Some versions of Word and Zotero will automatically update the bibliography, but older versions may require you to press the Refresh button!",
+    "text": "Initial Add & New Citations\n\n1. Add Bibliography2. Results3. Add New Citations\n\n\n\n\n\nThe bibliography can be added at any time after the first citation has been placed in the document. Simply press the “Add/Edit Bibliography” button.\n\n\n\n\n\n\n\nAfter pressing the button, the bibliography should appear where you had your cursor placed.\n\n\n\n\n\n\n\nTo add new citations, simply repeat the procedure outlined previously. Some versions of Word and Zotero will automatically update the bibliography, but older versions may require you to press the Refresh button!",
     "crumbs": [
       "Home",
       "Integrating Zotero",
@@ -320,7 +368,7 @@
     "href": "index.html",
     "title": "Welcome to the Zotero Tutorial!",
     "section": "",
-    "text": "Tutorial Overview\nThis self-paced tutorial will introduce you to Zotero, a free citation management tool that can help you organize your research and create bibliographies with a specific focus on integrating it with RStudio and Quarto. It is intended to take about 30-60 minutes to complete.\nThe tutorial is split into the following sections:\n\nGetting Started with Zotero\nIntegrating Zotero\nExercises\nAdvanced\n\n\n\n\n\n\n\nSoftware Requirements\n\n\n\nTo complete this tutorial, you will need to have the following software installed on your computer:\n\nZotero\nZotero Connector\nRStudio\nQuarto RStudio comes bundled with Quarto.\n\n\n\n\n\n\n\n Back to top",
+    "text": "Tutorial Overview\nThis self-paced tutorial will introduce you to Zotero, a free citation management tool that can help you organize your research and create bibliographies with a specific focus on integrating it with RStudio and Quarto. It is intended to take about 30-60 minutes to complete.\nThe tutorial is split into the following sections:\n\nGetting Started with Zotero\nIntegrating Zotero\nExercises\nAdvanced\n\n\n\n\n\n\n\nSoftware Requirements\n\n\n\nTo complete this tutorial, you will need to have the following software installed on your computer:\n\nZotero and Zotero Connector\nRStudio\nQuarto\n\nRStudio comes bundled with Quarto. You do not need to install Quarto separately if you have a recent version of RStudio.\n\n\n\n\n\n\n\n\n Back to top",
     "crumbs": [
       "Home",
       "Overview"
