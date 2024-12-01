@@ -18,10 +18,10 @@ The tutorial is split into the following sections:
 
 To complete this tutorial, you will need to have the following software installed on your computer:
 
-- [Zotero](https://www.zotero.org/download/)
-- [Zotero Connector](https://www.zotero.org/download/)
+- [Zotero and Zotero Connector](https://www.zotero.org/download/)
 - [RStudio](https://www.rstudio.com/products/rstudio/download/)
-- [Quarto](https://quarto.org/docs/get-started/) **RStudio comes bundled with Quarto.**
+- [Quarto](https://quarto.org/docs/get-started/)
+  - **RStudio comes bundled with Quarto. You do not need to install Quarto separately if you have a recent version of RStudio.**
 
 :::
 
