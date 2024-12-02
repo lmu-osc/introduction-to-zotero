@@ -6,8 +6,8 @@ authors:
     affiliation: "LMU Open Science Center & LMU Institute for Medical Information Processing, Biometry, and Epidemiology (IBE)"
     orcid: "https://orcid.org/0000-0003-0374-5625"
 title: "Introduction to Zotero"
-version: v0.0.6
-date-released: "2024-11-29"
+version: v0.1.0
+date-released: "2024-12-02"
 doi: "10.5281/zenodo.14243118"
 url: https://lmu-osc.github.io/introduction-to-zotero/
 license: CC-BY-SA-4.0
