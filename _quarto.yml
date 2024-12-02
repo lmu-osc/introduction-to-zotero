@@ -51,9 +51,9 @@ website:
             text: "Citation Style Language"
       - section: "Integrating Zotero"
         contents:
-          - href: citations_in_quarto.qmd
+          - href: integrating_zotero/citations_in_quarto.qmd
             text: "Citations in Quarto"
-          - href: citations_in_word.qmd
+          - href: integrating_zotero/citations_in_word.qmd
             text: "Citations in Word"
       - section: "Exercises"
         contents:
