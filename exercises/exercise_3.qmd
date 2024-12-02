@@ -1,0 +1,15 @@
+---
+title: "Exercise 3: Changing CSL in Quarto"
+editor: visual
+---
+
+
+# Instructions
+
+1. Open the Quarto document you created in the previous exercise.
+1. Go to the [Zotero Style Repository](https://www.zotero.org/styles) and find a style you like. Download the CSL file for that style by clicking on the link, and pressing "Cancel" when asked to add the citation style to Zotero.
+    - This will add the `.csl` file to your downloads folder rather than installing it directly into Zotero.
+1. Add the downloaded CSL file to the same folder as your R Project.
+1. Change the citation style in the YAML front matter to the name of the downloaded CSL file.
+    - The YAML for this should look something like `csl: "my-csl-file.csl"`, and can be listed under the `output` key.
+1. Re-knit your Quarto document. What has changed in the output?

@@ -1,10 +1,20 @@
 ---
-title: "Exercise 1"
+title: "Exercise 1: Using Zotero"
 format: html
 ---
 
--   save references to 3-4 different sources
--   organize them into a folder in Zotero
--   Switch your RStudio viewer to Visual, open Insert, and then Citation
--   edit a tag
--   insert other citations
+
+# Instructions
+
+This exercise is designed to help you get started with Zotero and RStudio. You will need to have Zotero installed on your computer. If you do not have Zotero installed, you can download it from [here](https://www.zotero.org/download/).
+
+1. Create a new folder in Zotero.
+    - Name the folder "Exercise 1".
+    - Add a tag to the folder called "Exercise 1".
+1. Save references to 3-4 different sources in Zotero.
+    - Try to use the Zotero web connector for some of the sources, add 1 manually, and add one by copying/pasting a BibTex entry.
+1. Export the references from Zotero to a BibTex file. This can be done by right-clicking on the folder and selecting "Export Collection".
+1. Export the references from Zotero as a Word document. This can be done by right-clicking on the folder and selecting "Create Bibliography from Collection".
+
+
+*When completed, you can delete the BibTex and Word files you've just created. They will not be needed in subsequent exercises.*
