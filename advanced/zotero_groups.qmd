@@ -1,10 +1,21 @@
 ---
 title: "Zotero Groups"
 format: html
+bibliography: references.bib
 ---
 
+# Video Overview
 
-* can collaborate on a group library
-* storage capacity is based on the plan of the owner of the group. a lab PI, for example, could purchase the $120/year unlimited data plan and share that with the lab members under a lab group
-* can create a public group that anyone can join. is also a good way to share your lab's publications with the world in an easily-downloadable format
-* can create a private group that requires an invitation to join
+This great overview video from Georgia State University Library provides an introduction to Zotero Groups, including what they are, how to create them, how to add references to them, how to share them, and how to collaborate on them [@georgiastateuniversitylibrary2019].
+
+{{< video https://www.youtube.com/watch?v=n4lFk3pIEZ8 >}}
+
+# Zotero Groups Considerations
+
+Zotero Groups are a great way to collaborate with others on a research project. However, there are some considerations to keep in mind when using Zotero Groups:
+
+- **Privacy**: Zotero Groups are public by default, so be sure to set your group to private if you want to keep your references private.
+- **Storage**: Zotero Groups have limited storage space, so be mindful of how many references you add to your group. This will really only be a concern if you wish to include PDF files with your references.
+    - You can use up to 300MB for free. If you need more space, you can upgrade to a paid plan which are available in 2GB, 6GB, and Unlimited sizes for \$20, \$60, and \$120 per year, respectively.
+- **Collaboration**: Zotero Groups allow for collaboration, but be sure to communicate with your collaborators about who can add, edit, and delete references.
+
