@@ -2,6 +2,7 @@
 title: "Citations in Quarto"
 format: html
 bibliography: references.bib
+resource-path: [".."]
 ---
 
 This manual expects the use of RStudio because it is highly integrated with Quarto and Zotero. For example, RStudio automatically generates and updates a bibliography file when inserting citations, and this bibliography will be created based on the CSL file you specify in the YAML header.
@@ -97,31 +98,31 @@ Note that this process is simply a "visual" short code for inserting the citatio
 ::: panel-tabset
 ## 1. New Project
 
-![A new, empty project will look similar to this image. Note that you must be in the Visual editor mode in order to see the Insert button. Press this button.](assets/citations-in-quarto/01_new_project)
+![A new, empty project will look similar to this image. Note that you must be in the Visual editor mode in order to see the Insert button. Press this button.](/assets/citations-in-quarto/01_new_project)
 
 ## 2. Insert
 
-![After opening the Insert drop-down section, scroll down to the Citation option and open this.](assets/citations-in-quarto/02_open_insert)
+![After opening the Insert drop-down section, scroll down to the Citation option and open this.](/assets/citations-in-quarto/02_open_insert)
 
 ## 3. Plugin
 
-![This should open a plugin that allows you to search your Zotero library as well as PubMed, CrossRef, and directly by DOI numbers (in case you haven't already saved something to your Zotero library). Open the Zotero folder relevant to your project, the "Zotero Tutorial" in this example.](assets/citations-in-quarto/03_open_folder)
+![This should open a plugin that allows you to search your Zotero library as well as PubMed, CrossRef, and directly by DOI numbers (in case you haven't already saved something to your Zotero library). Open the Zotero folder relevant to your project, the "Zotero Tutorial" in this example.](/assets/citations-in-quarto/03_open_folder)
 
 ## 4. Select
 
-![Press once on the citation you would like to insert. Note taht the citation will be highlighted, and there is now a short tag in the bottom left. This is the citation key that will be used by default.](assets/citations-in-quarto/04_select_content)
+![Press once on the citation you would like to insert. Note taht the citation will be highlighted, and there is now a short tag in the bottom left. This is the citation key that will be used by default.](/assets/citations-in-quarto/04_select_content)
 
 ## 5. Edit Key
 
-![If you'd like to edit the key to something more memorable or informative, press on the pencil button and edit away. In this example, the citation key has been changed to `@zotero-guide`. <br><br> Note that citation key changes must be done **the first time you include a new citation** and you cannot have spaces in the name. Press **Insert** when done.](assets/citations-in-quarto/05_edit_key)
+![If you'd like to edit the key to something more memorable or informative, press on the pencil button and edit away. In this example, the citation key has been changed to `@zotero-guide`. <br><br> Note that citation key changes must be done **the first time you include a new citation** and you cannot have spaces in the name. Press **Insert** when done.](/assets/citations-in-quarto/05_edit_key)
 
 ## 6. Review
 
-![Your citation is now included inline in the document. Moreover, the bibliography is now connected to your Quarto document with the addition of the `bibliography: references.bib` text to the yaml header. RStudio will either create or update the `references.bib` file for you.](assets/citations-in-quarto/06_inserted_citations)
+![Your citation is now included inline in the document. Moreover, the bibliography is now connected to your Quarto document with the addition of the `bibliography: references.bib` text to the yaml header. RStudio will either create or update the `references.bib` file for you.](/assets/citations-in-quarto/06_inserted_citations)
 
 ## 7. Render
 
-![A version of the example document rendered as a PDF. Note that, while the bibliography is included in the output document, it is not formatted as a proper "References" section. We will revisit this shortly.](assets/citations-in-quarto/07_rendered_pdf)
+![A version of the example document rendered as a PDF. Note that, while the bibliography is included in the output document, it is not formatted as a proper "References" section. We will revisit this shortly.](/assets/citations-in-quarto/07_rendered_pdf)
 :::
 
 ## Manual Entry {#manual-entry}
@@ -161,7 +162,7 @@ This will generate a "References" section at the end of your document with the b
 
 ## Changing Citation Style
 
-The [Citation Style Language](citation_style_language.qmd) page talked in depth about the different citation styles available to you. You can change the citation style of your document by adding the `csl: <your-csl-file.csl>` line to the YAML header like below:
+The [Citation Style Language](/background/citation_style_language.qmd) page talked in depth about the different citation styles available to you. You can change the citation style of your document by adding the `csl: <your-csl-file.csl>` line to the YAML header like below:
 
 ``` yaml
 ---
