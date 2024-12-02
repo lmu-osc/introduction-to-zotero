@@ -1,7 +1,8 @@
 ---
 title: "Using Zotero"
 format: html
-bibliography: references.bib
+bibliography: ../references.bib
+resource-path: [".."]
 ---
 
 This page will cover the basics of using Zotero, and is structured around the three main tasks you will need to do when using Zotero:
@@ -17,15 +18,15 @@ Zotero's library system functions similar to a file system on your computer. You
 ::: panel-tabset
 ## 1. General Library
 
-![All of your citations can be accessed in the overall **My Library** section.](assets/01_library)
+![All of your citations can be accessed in the overall **My Library** section.](/assets/01_library)
 
 ## 2. Creating a New Folder
 
-![Press the folder button in the top left corner to create a new folder, and provide a relevant name.](assets/02_new_folder)
+![Press the folder button in the top left corner to create a new folder, and provide a relevant name.](/assets/02_new_folder)
 
 ## 3. A Fresh Folder
 
-![A new folder will be empty by default, and will now appear in the tab bar on the left size of the Zotero application.](assets/03_empty_folder)
+![A new folder will be empty by default, and will now appear in the tab bar on the left size of the Zotero application.](/assets/03_empty_folder)
 :::
 
 # Adding References
@@ -47,19 +48,19 @@ The Zotero Connector allows you to save references directly from your browser to
 ::: panel-tabset
 ## 1. Locate Source
 
-![Identify the publication, book, website, or other source of information you wish to cite.](assets/01_palmerpenguins)
+![Identify the publication, book, website, or other source of information you wish to cite.](/assets/01_palmerpenguins)
 
 ## 2. Open Link
 
-![Open the website page. Try to find links to PubMed, the original publisher, or similar sites that have PDFs available. Zotero will automatically download these when available. Otherwise, it will attempt to screenshot the website itself.](assets/02_palmerpenguins)
+![Open the website page. Try to find links to PubMed, the original publisher, or similar sites that have PDFs available. Zotero will automatically download these when available. Otherwise, it will attempt to screenshot the website itself.](/assets/02_palmerpenguins)
 
 ## 3. Download
 
-![Click the Zotero Connector button in your browser to save the reference to your Zotero library. The button is generally in the top right corner of your browser. The appearance of this button *can* change depending on the type of object being cited.](assets/03_palmerpenguins)
+![Click the Zotero Connector button in your browser to save the reference to your Zotero library. The button is generally in the top right corner of your browser. The appearance of this button *can* change depending on the type of object being cited.](/assets/03_palmerpenguins)
 
 ## 4. Check Library
 
-![After saving the reference, check your Zotero library to ensure the reference was saved correctly.](assets/04_palmerpenguins)
+![After saving the reference, check your Zotero library to ensure the reference was saved correctly.](/assets/04_palmerpenguins)
 :::
 
 ## Manual Entries
@@ -73,23 +74,23 @@ The example below will demonstrate how to manually import a BibTex entry.
 ::: panel-tabset
 ## 1. Locate Source
 
-![Identify the object you want to cite. If you can find the publication on Google Scholar, for example, BibTex entries are readily available. Click on the "Cite" button in Google Scholar to access the BibTex entry.](assets/01_palmerpenguins_manual)
+![Identify the object you want to cite. If you can find the publication on Google Scholar, for example, BibTex entries are readily available. Click on the "Cite" button in Google Scholar to access the BibTex entry.](/assets/01_palmerpenguins_manual)
 
 ## 2. Open Citation
 
-![Click on the "BibTex" button in Google Scholar to access the BibTex entry.](assets/02_palmerpenguins_manual)
+![Click on the "BibTex" button in Google Scholar to access the BibTex entry.](/assets/02_palmerpenguins_manual)
 
 ## 3. Copy BibTex
 
-![Copy the BibTex entry to your clipboard.](assets/03_palmerpenguins_manual)
+![Copy the BibTex entry to your clipboard.](/assets/03_palmerpenguins_manual)
 
 ## 4. Import to Zotero
 
-![In Zotero, click on `File` -\> `Import from Clipboard` to import the BibTex entry.](assets/04_palmerpenguins_manual)
+![In Zotero, click on `File` -\> `Import from Clipboard` to import the BibTex entry.](/assets/04_palmerpenguins_manual)
 
 ## 5. Check Library
 
-![After importing the BibTex entry, check your Zotero library to ensure the reference was saved correctly. Note how much less information is included by importing BibTex, however. Compared to the Zotero Connector, we are, at minimum, missing a PDF copy of the document and the date on which we accessed the material.](assets/05_palmerpenguins_manual)
+![After importing the BibTex entry, check your Zotero library to ensure the reference was saved correctly. Note how much less information is included by importing BibTex, however. Compared to the Zotero Connector, we are, at minimum, missing a PDF copy of the document and the date on which we accessed the material.](/assets/05_palmerpenguins_manual)
 :::
 
 Less commonly, you may need to import references from other software. To do this, export the references from the software in a compatible format, and import them into Zotero. Zotero can import references from a variety of formats, including BibTex, RIS, and EndNote XML.
@@ -101,15 +102,15 @@ Zotero can also import references directly from online databases using an identi
 ::: panel-tabset
 ## 1. Open the "Add Item by Identifier" Dialog
 
-![Press the wand-like button that opens the import-by-id function](assets/import-by-id/01_zotero_import_id)
+![Press the wand-like button that opens the import-by-id function](/assets/import-by-id/01_zotero_import_id)
 
 ## 2. Enter the Identifier
 
-![Enter a valid identifier such as a DOI or PMID](assets/import-by-id/02_zotero_import_id)
+![Enter a valid identifier such as a DOI or PMID](/assets/import-by-id/02_zotero_import_id)
 
 ## 3. Check Library
 
-![After importing the reference, check your Zotero library to ensure the reference was saved correctly.](assets/import-by-id/03_zotero_import_id)
+![After importing the reference, check your Zotero library to ensure the reference was saved correctly.](/assets/import-by-id/03_zotero_import_id)
 :::
 
 # Citing References with Zotero
