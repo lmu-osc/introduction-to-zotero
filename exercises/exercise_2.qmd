@@ -1,6 +1,15 @@
 ---
-title: "Exercise 2"
+title: "Exercise 2: Integrating with Quarto"
 format: html
 ---
 
--   Change CSL format
+# Instructions
+
+1. Create a new R Project in RStudio.
+1. Create a new Quarto document in the R Project. This should be available as an option in the "New File" dropdown menu under "File".
+1. Make sure you are using the "Visual Editor" mode in Quarto.
+1. Insert a citation into the body of your document by pressing the "Insert" button in the toolbar and scroll down to the "Citation" option.
+1. Select "My Library" under the Zotero tab. Find the "Exercise 1" folder you created in the previous exercise and select a reference to insert.
+1. What has happened to your Quarto file? What has been added to the YAML front matter? What has been added to the body of the document?
+    - A `references.bib` file should have been added to your project, and referenced in the YAML front matter.
+    - A citation should have been added to the body of the document.

@@ -58,9 +58,11 @@ website:
       - section: "Exercises"
         contents:
           - href: exercises/exercise_1.qmd
-            text: "Exercise 1"
+            text: "Exercise 1: Using Zotero"
           - href: exercises/exercise_2.qmd
-            text: "Exercise 2"
+            text: "Exercise 2: Integrating with Quarto"
+          - href: exercises/exercise_3.qmd
+            text: "Exercise 3: Changing CSL"
       - section: "Advanced"
         contents:
           - href: advanced/zotero_groups.qmd
