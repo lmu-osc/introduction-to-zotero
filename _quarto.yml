@@ -57,9 +57,9 @@ website:
             text: "Citations in Word"
       - section: "Exercises"
         contents:
-          - href: exercise_1.qmd
+          - href: exercises/exercise_1.qmd
             text: "Exercise 1"
-          - href: exercise_2.qmd
+          - href: exercises/exercise_2.qmd
             text: "Exercise 2"
       - section: "Advanced"
         contents:
