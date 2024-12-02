@@ -67,8 +67,8 @@ website:
         contents:
           - href: advanced/zotero_groups.qmd
             text: "Zotero Groups"
-          - href: advanced/zotero_plugins.qmd
-            text: "Zotero Plugins"
+          # - href: advanced/zotero_plugins.qmd
+          #   text: "Zotero Plugins"
 
 format:
   html:
