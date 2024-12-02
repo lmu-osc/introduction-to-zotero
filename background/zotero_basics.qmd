@@ -1,6 +1,7 @@
 ---
 title: "Zotero Basics"
 format: html
+resource-path: [".."]
 ---
 
 Hopefully you are already familiar with the concept of citing the work of others and creating bibliographies. If not, don't worry! This tutorial will introduce you to the basics of citations and citation managers, with a specific focus on the Zotero citation manager.
@@ -12,7 +13,7 @@ A citation is a reference to a source of information. They are used to give cred
 
 Citations are typically included in the body of your work as short, in-text references to a work typically denoted by the author's last name and the year of publication. These in-text citations are followed by a bibliography or reference list at the end of your work which includes complete details on the cited works. The format of citations and bibliographies can vary depending on the citation style you are using, but they generally include the following information.
 
-In fact, there are at least 8,000 variations of citation styles in use today, but some of the most common and well-known citation styles are the APA, MLA, Chicago, and Vancouver styles. The format of citations generally changes according to the preferred citation style of your research field and/or by journal preference. This topic is a bit more complex, and is covered more thoroughly in the [Citation Style Language chapter](citation_style_language.qmd), but it is first necessary to understand the basics of citation managers.
+In fact, there are at least 8,000 variations of citation styles in use today, but some of the most common and well-known citation styles are the APA, MLA, Chicago, and Vancouver styles. The format of citations generally changes according to the preferred citation style of your research field and/or by journal preference. This topic is a bit more complex, and is covered more thoroughly in the [Citation Style Language chapter](citation_style_language.html), but it is first necessary to understand the basics of citation managers.
 
 
 # Citation Managers

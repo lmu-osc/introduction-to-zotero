@@ -43,11 +43,11 @@ website:
         href: index.qmd
       - section: "Background"
         contents:
-          - href: zotero_basics.qmd
+          - href: background/zotero_basics.qmd
             text: "Zotero Basics"
-          - href: zotero_usage.qmd
+          - href: background/zotero_usage.qmd
             text: "Zotero Usage"
-          - href: citation_style_language.qmd
+          - href: background/citation_style_language.qmd
             text: "Citation Style Language"
       - section: "Integrating Zotero"
         contents:
