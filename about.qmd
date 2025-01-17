@@ -13,13 +13,18 @@ author:
       - "LMU Open Science Center"
       - "LMU Institute for Medical Information Processing, Biometry, and Epidemiology (IBE)"
     orcid: 0000-0003-0374-5625
+  - name: Dejana Damjanovic
+    affiliation:
+      - "LMU Open Science Center"
+    orcid: 0009-0000-6912-1140
+    # orcid:
 # google-scholar: true
 ---
 
 
 # Contributors
 
-This site was authored by AUTHORS, and edits/contributions were made by EDITORS/AUTHORS.
+This site was authored by Pat Callahan. The "Zotero Groups" chapter was primarily authored by Dejana Damjanovic.
 
 # Licenses
 
