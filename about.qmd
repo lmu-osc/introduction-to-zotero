@@ -16,6 +16,7 @@ author:
   - name: Dejana Damjanovic
     affiliation:
       - "LMU Open Science Center"
+    orcid: 0009-0000-6912-1140
     # orcid:
 # google-scholar: true
 ---
