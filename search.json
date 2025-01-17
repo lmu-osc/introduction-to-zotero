@@ -1,5 +1,53 @@
 [
   {
+    "objectID": "integrating_zotero/citations_in_word.html",
+    "href": "integrating_zotero/citations_in_word.html",
+    "title": "Citations in Word",
+    "section": "",
+    "text": "Zotero also provides a plugin for Microsoft Word that allows you to insert citations and bibliographies directly into your documents. The technical details of this depart from the procedure for inserting citations into a Quarto document, but still follows the same steps of 1) inserting a citation and 2) generating a bibliography.",
+    "crumbs": [
+      "Home",
+      "Integrating Zotero",
+      "Citations in Word"
+    ]
+  },
+  {
+    "objectID": "integrating_zotero/citations_in_word.html#initial-add-new-citations",
+    "href": "integrating_zotero/citations_in_word.html#initial-add-new-citations",
+    "title": "Citations in Word",
+    "section": "Initial Add & New Citations",
+    "text": "Initial Add & New Citations\n\n1. Add Bibliography2. Results3. Add New Citations\n\n\n\n\n\nThe bibliography can be added at any time after the first citation has been placed in the document. Simply press the “Add/Edit Bibliography” button.\n\n\n\n\n\n\n\nAfter pressing the button, the bibliography should appear where you had your cursor placed.\n\n\n\n\n\n\n\nTo add new citations, simply repeat the procedure outlined previously. Some versions of Word and Zotero will automatically update the bibliography, but older versions may require you to press the Refresh button!",
+    "crumbs": [
+      "Home",
+      "Integrating Zotero",
+      "Citations in Word"
+    ]
+  },
+  {
+    "objectID": "integrating_zotero/citations_in_word.html#change-style",
+    "href": "integrating_zotero/citations_in_word.html#change-style",
+    "title": "Citations in Word",
+    "section": "Change Style",
+    "text": "Change Style\nIf, after inserting your first citation, you decide to use a different citation style, you can do so by pressing the “Document Preferences” button under the Zotero tab. This will allow you to change the citation style of the document. Note that this will change the style of all in-line citations and the bibliography.\n\n1. Doc Preferences2. Change CSL3. See Updates\n\n\n\n\n\nPress the Document Preferences button to make changes to the citation style of the document.\n\n\n\n\n\n\n\nSelect the new style you’d like to use. If needed, you can first download the style from the Zotero website, install it into Zotero, and then restart both Word and Zotero.\n\n\n\n\n\n\n\nNote that the style of the in-line citations and the bibliography have now been updated to reflect the new CSL file we’ve chosen.",
+    "crumbs": [
+      "Home",
+      "Integrating Zotero",
+      "Citations in Word"
+    ]
+  },
+  {
+    "objectID": "exercises/exercise_3.html",
+    "href": "exercises/exercise_3.html",
+    "title": "Exercise 3: Changing CSL in Quarto",
+    "section": "",
+    "text": "Instructions\n\nOpen the Quarto document you created in the previous exercise.\nGo to the Zotero Style Repository and find a style you like. Download the CSL file for that style by clicking on the link, and pressing “Cancel” when asked to add the citation style to Zotero.\n\nThis will add the .csl file to your downloads folder rather than installing it directly into Zotero.\n\nAdd the downloaded CSL file to the same folder as your R Project.\nChange the citation style in the YAML front matter to the name of the downloaded CSL file.\n\nThe YAML for this should look something like csl: \"my-csl-file.csl\", and can be listed under the output key.\n\nRe-knit your Quarto document. What has changed in the output?\n\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Home",
+      "Exercises",
+      "Exercise 3: Changing CSL"
+    ]
+  },
+  {
     "objectID": "exercises/exercise_2.html",
     "href": "exercises/exercise_2.html",
     "title": "Exercise 2: Integrating with Quarto",
@@ -12,15 +60,177 @@
     ]
   },
   {
-    "objectID": "exercises/exercise_1.html",
-    "href": "exercises/exercise_1.html",
-    "title": "Exercise 1: Using Zotero",
+    "objectID": "background/zotero_usage.html",
+    "href": "background/zotero_usage.html",
+    "title": "Using Zotero",
     "section": "",
-    "text": "Instructions\nThis exercise is designed to help you get started with Zotero and RStudio. You will need to have Zotero installed on your computer. If you do not have Zotero installed, you can download it from here.\n\nCreate a new folder in Zotero.\n\nName the folder “Exercise 1”.\nAdd a tag to the folder called “Exercise 1”.\n\nSave references to 3-4 different sources in Zotero.\n\nTry to use the Zotero web connector for some of the sources, add 1 manually, and add one by copying/pasting a BibTex entry.\n\nExport the references from Zotero to a BibTex file. This can be done by right-clicking on the folder and selecting “Export Collection”.\nExport the references from Zotero as a Word document. This can be done by right-clicking on the folder and selecting “Create Bibliography from Collection”.\n\nWhen completed, you can delete the BibTex and Word files you’ve just created. They will not be needed in subsequent exercises.\n\n\n\n\n Back to top",
+    "text": "This page will cover the basics of using Zotero, and is structured around the three main tasks you will need to do when using Zotero:",
     "crumbs": [
       "Home",
-      "Exercises",
-      "Exercise 1: Using Zotero"
+      "Background",
+      "Zotero Usage"
+    ]
+  },
+  {
+    "objectID": "background/zotero_usage.html#zotero-connector",
+    "href": "background/zotero_usage.html#zotero-connector",
+    "title": "Using Zotero",
+    "section": "Zotero Connector",
+    "text": "Zotero Connector\nThe most common, fastest, and preferred way of entering references is by using the Zotero Connector browser extension.\nThe Zotero Connector allows you to save references directly from your browser to your Zotero library. The connector will, when possible, download a PDF of the article and attach it to the reference. If you save content from a webpage that does not have an available PDF download of the content, the Connector will take a snapshot of the webpage to preserve the information in case the page is later changed or removed.\n\n1. Locate Source2. Open Link3. Download4. Check Library\n\n\n\n\n\nIdentify the publication, book, website, or other source of information you wish to cite.\n\n\n\n\n\n\n\nOpen the website page. Try to find links to PubMed, the original publisher, or similar sites that have PDFs available. Zotero will automatically download these when available. Otherwise, it will attempt to screenshot the website itself.\n\n\n\n\n\n\n\nClick the Zotero Connector button in your browser to save the reference to your Zotero library. The button is generally in the top right corner of your browser. The appearance of this button can change depending on the type of object being cited.\n\n\n\n\n\n\n\nAfter saving the reference, check your Zotero library to ensure the reference was saved correctly.",
+    "crumbs": [
+      "Home",
+      "Background",
+      "Zotero Usage"
+    ]
+  },
+  {
+    "objectID": "background/zotero_usage.html#manual-entries",
+    "href": "background/zotero_usage.html#manual-entries",
+    "title": "Using Zotero",
+    "section": "Manual Entries",
+    "text": "Manual Entries\nThe Zotero Connector is not perfect, however, and you may occasionally need to “manually” enter a reference. To do this, click on the “New Item” button in Zotero, and select the type of reference you want to add. You can then enter the metadata for the reference manually. This is a more time-consuming process than using the Zotero Connector, but it is necessary if you cannot find the reference online (e.g. a book or a conference presentation).\nHowever, if you can find a BibTex or RIS file for the reference, you can import the reference into Zotero by dragging and dropping the file into the Zotero window, or by copying the BibTex content and then selecting File -&gt; Import from Clipboard in Zotero.\nThe example below will demonstrate how to manually import a BibTex entry.\n\n1. Locate Source2. Open Citation3. Copy BibTex4. Import to Zotero5. Check Library\n\n\n\n\n\nIdentify the object you want to cite. If you can find the publication on Google Scholar, for example, BibTex entries are readily available. Click on the “Cite” button in Google Scholar to access the BibTex entry.\n\n\n\n\n\n\n\nClick on the “BibTex” button in Google Scholar to access the BibTex entry.\n\n\n\n\n\n\n\nCopy the BibTex entry to your clipboard.\n\n\n\n\n\n\n\nIn Zotero, click on File -&gt; Import from Clipboard to import the BibTex entry.\n\n\n\n\n\n\n\nAfter importing the BibTex entry, check your Zotero library to ensure the reference was saved correctly. Note how much less information is included by importing BibTex, however. Compared to the Zotero Connector, we are, at minimum, missing a PDF copy of the document and the date on which we accessed the material.\n\n\n\n\n\nLess commonly, you may need to import references from other software. To do this, export the references from the software in a compatible format, and import them into Zotero. Zotero can import references from a variety of formats, including BibTex, RIS, and EndNote XML.",
+    "crumbs": [
+      "Home",
+      "Background",
+      "Zotero Usage"
+    ]
+  },
+  {
+    "objectID": "background/zotero_usage.html#importing-from-online-databases",
+    "href": "background/zotero_usage.html#importing-from-online-databases",
+    "title": "Using Zotero",
+    "section": "Importing from Online Databases",
+    "text": "Importing from Online Databases\nZotero can also import references directly from online databases using an identifier such as a DOI, ISBN, or PMID. To do this, click on the “Add Item by Identifier” button in Zotero, and enter the identifier for the reference you want to add. Zotero will then search for the reference online and add it to your library.\n\n1. Open the “Add Item by Identifier” Dialog2. Enter the Identifier3. Check Library\n\n\n\n\n\nPress the wand-like button that opens the import-by-id function\n\n\n\n\n\n\n\nEnter a valid identifier such as a DOI or PMID\n\n\n\n\n\n\n\nAfter importing the reference, check your Zotero library to ensure the reference was saved correctly.",
+    "crumbs": [
+      "Home",
+      "Background",
+      "Zotero Usage"
+    ]
+  },
+  {
+    "objectID": "background/zotero_usage.html#generating-bibliographies",
+    "href": "background/zotero_usage.html#generating-bibliographies",
+    "title": "Using Zotero",
+    "section": "Generating Bibliographies",
+    "text": "Generating Bibliographies\n\nText Formatted\nYou can generate a bibliography by right-clicking on the folder or publication of interest, and selecting the option to “Generate Bibliography from Collection.” From there, you will be prompted to choose a citation style and an output method (i.e. copy to clipboard, save as file, etc.).\nThis option to quickly generate a bibliography is useful if you are using a text editor that does not have a Zotero plugin, or if you simply need a one-and-done bibliography for a smaller project.\nFor more details, see the Zotero documentation on creating bibliographies.\n\n\nBibTex and .bib Files\nBibTex is a commonly-used, structured file format for bibliographies (“BibTeX,” n.d.). You will generally not need to make or edit BibTex files if you are using a word processor with a Zotero plugin, as the plugin will automatically generate the bibliography for you. However, if you are using a text editor that does not have a Zotero plugin, you can export a BibTex file from Zotero to generate a bibliography.\nTo do this, right-click on the folder or publication of interest, and select the option to “Export Collection.” You can then choose the BibTex format, and save the file to your computer. You can then include this BibTex file in your document to generate a bibliography.\n\n\n\n\n\n\nBibTex Tip\n\n\n\nAll you really need to know about BibTex is that it is a structured file format for bibliographies, and Quarto documents should have a .bib file in the same directory as the .qmd file plus a reference to the .bib file in the YAML header. This will be discussed in the Citations in Quarto chapter.",
+    "crumbs": [
+      "Home",
+      "Background",
+      "Zotero Usage"
+    ]
+  },
+  {
+    "objectID": "background/zotero_usage.html#organizing-references",
+    "href": "background/zotero_usage.html#organizing-references",
+    "title": "Using Zotero",
+    "section": "Organizing References",
+    "text": "Organizing References\nYou can organize your references in Zotero by creating collections and tags. To create a collection, click on the “New Collection” button, and give the collection a name. To add references to this collection, simply drag and drop the references into the collection. To add tags to a reference, click on the “Tags” tab, and enter the tags you want to add. These tags are particularly convenient if you want to later search your library for references on a specific topic as defined by you.",
+    "crumbs": [
+      "Home",
+      "Background",
+      "Zotero Usage"
+    ]
+  },
+  {
+    "objectID": "background/zotero_usage.html#collaborating-with-others",
+    "href": "background/zotero_usage.html#collaborating-with-others",
+    "title": "Using Zotero",
+    "section": "Collaborating with others",
+    "text": "Collaborating with others\nYou can also collaborate with others by sharing your references with them, generally by creating a Zotero Group. The contents of these groups are shared with all members online, and you can set the group to be public or private.\nPublic groups are open to anyone, while private groups require an invitation to join. You can also create a group library, which is a shared library that all members can edit. This is useful if you are working on a project with others and want to share references with them.",
+    "crumbs": [
+      "Home",
+      "Background",
+      "Zotero Usage"
+    ]
+  },
+  {
+    "objectID": "background/zotero_usage.html#notetaking",
+    "href": "background/zotero_usage.html#notetaking",
+    "title": "Using Zotero",
+    "section": "Notetaking",
+    "text": "Notetaking\nZotero can function as a note-taking app. To add a note to a reference, click on the “Notes” tab, and enter the note you want to add. These notes can be useful if you want to record your thoughts on a reference, or if you want to summarize the key points of the reference.\n\nCollecting Quotes in Notes\nZotero also allows you to easily collect quotes from your references that automatically include a citation to the author, paper, and the publication year. This feature specifically works for PDFs that you have saved in your Zotero library. To use this feature, open the PDF of interest, copy the text you want to quote, and paste it into a note. Zotero will automatically include the citation information for the quote.",
+    "crumbs": [
+      "Home",
+      "Background",
+      "Zotero Usage"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome to the Zotero Tutorial!",
+    "section": "",
+    "text": "Tutorial Overview\nThis self-paced tutorial will introduce you to Zotero, a free citation management tool that can help you organize your research and create bibliographies with a specific focus on integrating it with RStudio and Quarto. It is intended to take about 30-60 minutes to complete.\nThe tutorial is split into the following sections:\n\nGetting Started with Zotero\nIntegrating Zotero\nExercises\nAdvanced\n\n\n\n\n\n\n\nSoftware Requirements\n\n\n\nTo complete this tutorial, you will need to have the following software installed on your computer:\n\nZotero and Zotero Connector\nRStudio\nQuarto\n\nRStudio comes bundled with Quarto. You do not need to install Quarto separately if you have a recent version of RStudio.\n\n\n\n\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Home",
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "LICENSE-CODE.html",
+    "href": "LICENSE-CODE.html",
+    "title": "Creative Commons Zero v1.0 Universal",
+    "section": "",
+    "text": "Creative Commons Zero v1.0 Universal\nCREATIVE COMMONS CORPORATION IS NOT A LAW FIRM AND DOES NOT PROVIDE LEGAL SERVICES. DISTRIBUTION OF THIS DOCUMENT DOES NOT CREATE AN ATTORNEY-CLIENT RELATIONSHIP. CREATIVE COMMONS PROVIDES THIS INFORMATION ON AN “AS-IS” BASIS. CREATIVE COMMONS MAKES NO WARRANTIES REGARDING THE USE OF THIS DOCUMENT OR THE INFORMATION OR WORKS PROVIDED HEREUNDER, AND DISCLAIMS LIABILITY FOR DAMAGES RESULTING FROM THE USE OF THIS DOCUMENT OR THE INFORMATION OR WORKS PROVIDED HEREUNDER.\n\nStatement of Purpose\nThe laws of most jurisdictions throughout the world automatically confer exclusive Copyright and Related Rights (defined below) upon the creator and subsequent owner(s) (each and all, an “owner”) of an original work of authorship and/or a database (each, a “Work”).\nCertain owners wish to permanently relinquish those rights to a Work for the purpose of contributing to a commons of creative, cultural and scientific works (“Commons”) that the public can reliably and without fear of later claims of infringement build upon, modify, incorporate in other works, reuse and redistribute as freely as possible in any form whatsoever and for any purposes, including without limitation commercial purposes. These owners may contribute to the Commons to promote the ideal of a free culture and the further production of creative, cultural and scientific works, or to gain reputation or greater distribution for their Work in part through the use and efforts of others.\nFor these and/or other purposes and motivations, and without any expectation of additional consideration or compensation, the person associating CC0 with a Work (the “Affirmer”), to the extent that he or she is an owner of Copyright and Related Rights in the Work, voluntarily elects to apply CC0 to the Work and publicly distribute the Work under its terms, with knowledge of his or her Copyright and Related Rights in the Work and the meaning and intended legal effect of CC0 on those rights.\n\nCopyright and Related Rights. A Work made available under CC0 may be protected by copyright and related or neighboring rights (“Copyright and Related Rights”). Copyright and Related Rights include, but are not limited to, the following:\n\nthe right to reproduce, adapt, distribute, perform, display, communicate, and translate a Work;\nmoral rights retained by the original author(s) and/or performer(s);\npublicity and privacy rights pertaining to a person’s image or likeness depicted in a Work;\nrights protecting against unfair competition in regards to a Work, subject to the limitations in paragraph 4(a), below;\nrights protecting the extraction, dissemination, use and reuse of data in a Work;\ndatabase rights (such as those arising under Directive 96/9/EC of the European Parliament and of the Council of 11 March 1996 on the legal protection of databases, and under any national implementation thereof, including any amended or successor version of such directive); and\nother similar, equivalent or corresponding rights throughout the world based on applicable law or treaty, and any national implementations thereof.\n\nWaiver. To the greatest extent permitted by, but not in contravention of, applicable law, Affirmer hereby overtly, fully, permanently, irrevocably and unconditionally waives, abandons, and surrenders all of Affirmer’s Copyright and Related Rights and associated claims and causes of action, whether now known or unknown (including existing as well as future claims and causes of action), in the Work (i) in all territories worldwide, (ii) for the maximum duration provided by applicable law or treaty (including future time extensions), (iii) in any current or future medium and for any number of copies, and (iv) for any purpose whatsoever, including without limitation commercial, advertising or promotional purposes (the “Waiver”). Affirmer makes the Waiver for the benefit of each member of the public at large and to the detriment of Affirmer’s heirs and successors, fully intending that such Waiver shall not be subject to revocation, rescission, cancellation, termination, or any other legal or equitable action to disrupt the quiet enjoyment of the Work by the public as contemplated by Affirmer’s express Statement of Purpose.\nPublic License Fallback. Should any part of the Waiver for any reason be judged legally invalid or ineffective under applicable law, then the Waiver shall be preserved to the maximum extent permitted taking into account Affirmer’s express Statement of Purpose. In addition, to the extent the Waiver is so judged Affirmer hereby grants to each affected person a royalty-free, non transferable, non sublicensable, non exclusive, irrevocable and unconditional license to exercise Affirmer’s Copyright and Related Rights in the Work (i) in all territories worldwide, (ii) for the maximum duration provided by applicable law or treaty (including future time extensions), (iii) in any current or future medium and for any number of copies, and (iv) for any purpose whatsoever, including without limitation commercial, advertising or promotional purposes (the “License”). The License shall be deemed effective as of the date CC0 was applied by Affirmer to the Work. Should any part of the License for any reason be judged legally invalid or ineffective under applicable law, such partial invalidity or ineffectiveness shall not invalidate the remainder of the License, and in such case Affirmer hereby affirms that he or she will not (i) exercise any of his or her remaining Copyright and Related Rights in the Work or (ii) assert any associated claims and causes of action with respect to the Work, in either case contrary to Affirmer’s express Statement of Purpose.\nLimitations and Disclaimers.\n\nNo trademark or patent rights held by Affirmer are waived, abandoned, surrendered, licensed or otherwise affected by this document.\nAffirmer offers the Work as-is and makes no representations or warranties of any kind concerning the Work, express, implied, statutory or otherwise, including without limitation warranties of title, merchantability, fitness for a particular purpose, non infringement, or the absence of latent or other defects, accuracy, or the present or absence of errors, whether or not discoverable, all to the greatest extent permissible under applicable law.\nAffirmer disclaims responsibility for clearing rights of other persons that may apply to the Work or any use thereof, including without limitation any person’s Copyright and Related Rights in the Work. Further, Affirmer disclaims responsibility for obtaining any necessary consents, permissions or other rights required for any use of the Work.\nAffirmer understands and acknowledges that Creative Commons is not a party to this document and has no duty or obligation with respect to this CC0 or use of the Work.\n\n\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "advanced/zotero_groups.html",
+    "href": "advanced/zotero_groups.html",
+    "title": "Zotero Groups",
+    "section": "",
+    "text": "This great overview video from Georgia State University Library provides an introduction to Zotero Groups, including what they are, how to create them, how to add references to them, how to share them, and how to collaborate on them (Georgia State University Library 2019).",
+    "crumbs": [
+      "Home",
+      "Advanced",
+      "Zotero Groups"
+    ]
+  },
+  {
+    "objectID": "advanced/zotero_groups.html#purpose-of-zotero-groups",
+    "href": "advanced/zotero_groups.html#purpose-of-zotero-groups",
+    "title": "Zotero Groups",
+    "section": "Purpose of Zotero Groups",
+    "text": "Purpose of Zotero Groups\nZotero Groups are designed to facilitate collaboration for:\n\nStudents working on group projects\nFaculty collaborating across institutions\nResearch teams sharing resources and references\nAny group requiring a centralized space for research materials",
+    "crumbs": [
+      "Home",
+      "Advanced",
+      "Zotero Groups"
+    ]
+  },
+  {
+    "objectID": "advanced/zotero_groups.html#step-by-step-guide-for-zotero-groups",
+    "href": "advanced/zotero_groups.html#step-by-step-guide-for-zotero-groups",
+    "title": "Zotero Groups",
+    "section": "Step-by-Step Guide for Zotero Groups",
+    "text": "Step-by-Step Guide for Zotero Groups\n\n1. Login into your Zotero account\n\n\n\n2. Click on “Groups” and then on “Create a new group”\n\n\n\n\n3. Setting Group Details\n\nNow you can choose a name for your group and the group type. There are 3 options for the group type:\n\n\n\n\n\n\n\n\n\nGroup Type\nAccess\nFile Sharing\nBest For\n\n\n\n\nPublic, Open Membership\nAnyone can join and access\nNot allowed\nSharing resources publicly\n\n\nPublic, Closed Membership\nVisible to all, members by invite\nAllowed for members\nShowcasing work selectively\n\n\nPrivate Membership\nOnly invited members can access\nAllowed for members\nPrivate or sensitive projects\n\n\n\n\n\n4. Adjusting Settings\n\n4.1. Group Settings\n\nHere you can customize your group by:\n\nNaming the group and providing a description\nSelecting a discipline and group type\nAdding a profile picture and related URLs\n\n\n\n4.2 Members Settings\n\nHere you can customize your group by:\n\nSending member invitations\nTransferring group ownership to another member if needed\n\nThere are three roles in Zotero Groups:\n\nRegular Members: Can read and edit the library (based on permissions)\nAdministrators: Can manage group settings, invite members, and adjust permissions\nGroup Owners: Have full administrative rights, including the ability to delete the group or transfer ownership\n\n\n\n4.3 Library Settings\n\nHere you can customize your group by changing the following:\n\nGroup Type: Private, Public/Closed, Public/Opened\nLibrary Reading: Control who can view items in the library\nLibrary Editing: Set permissions for adding, editing, and organizing items\nFile Editing: Enable or restrict file sharing among group members",
+    "crumbs": [
+      "Home",
+      "Advanced",
+      "Zotero Groups"
+    ]
+  },
+  {
+    "objectID": "advanced/zotero_groups.html#interacting-with-groups-in-zotero-client",
+    "href": "advanced/zotero_groups.html#interacting-with-groups-in-zotero-client",
+    "title": "Zotero Groups",
+    "section": "Interacting with Groups in Zotero Client",
+    "text": "Interacting with Groups in Zotero Client\n\nGroup libraries appear under \"Group Libraries\" in the Zotero desktop application.\nSync regularly to ensure updates are shared with all members.\nAdd, edit, and organize items directly within the desktop app.",
+    "crumbs": [
+      "Home",
+      "Advanced",
+      "Zotero Groups"
+    ]
+  },
+  {
+    "objectID": "advanced/zotero_groups.html#best-practices-for-zotero-groups",
+    "href": "advanced/zotero_groups.html#best-practices-for-zotero-groups",
+    "title": "Zotero Groups",
+    "section": "Best Practices for Zotero Groups",
+    "text": "Best Practices for Zotero Groups\n\n1. Structuring the Library\n\nInbox for New Items\n\nCreate a temporary space or tag for unprocessed materials before adding them to the group library:\n\nIn the Zotero desktop app, create a new collection (right-click on your personal library and select “New Collection”).\nName this collection something like “Inbox” or “To Process.”\nWhen saving items to Zotero, apply a tag such as \"Unprocessed.\" You can do this directly when saving an item in your browser or later in the Zotero desktop app.\nFilter by this tag later to review and process these items.\n\n\n\n\n\n\n\nWorkflow Notes\n\nAdd a standalone note describing group workflows, including tag usage, folder structure, and \"related\" item definitions:\n\nIn your group library, select \"New Note\" &gt; \"Standalone Note\" in the toolbar.\nWrite a clear description of the group workflow, including folder usage, tagging conventions, and definitions for \"related\" items.\n\n\n\n\n\n\nFolder-Specific Notes\n\nIn each subfolder (collection), create a standalone note explaining its purpose.\nKeep these notes updated to reflect changes in folder usage.\n\n\n\n\n2. Managing Tags\n\nTag Definitions\n\nAdd a new standalone note in the group library.\nList all tags used by the group and provide a brief explanation of their purpose.\nUpdate the note whenever a new tag is added and communicate changes to group members.\n\n\n\n\nTag Management\n\nAvoid adding too many tags by discussing with group members before creating new ones.\nRegularly review and delete unused or redundant tags.\nOpen the \"Tags\" tab in the right-hand pane of Zotero, where you can add, edit, or delete tags directly.\n\n\n\n\n3. Adding and Organizing Resources\n\nUsing the Zotero Browser Extension\n\nSave items directly to the group library by selecting the desired library from the drop-down menu in the browser extension.\n\n\n\nDragging Items\n\nDrag and drop items from your personal library into the group library.\n\n\n\nOrganizing Items\n\nUse tags and sub-collections to categorize and structure resources effectively.",
+    "crumbs": [
+      "Home",
+      "Advanced",
+      "Zotero Groups"
     ]
   },
   {
@@ -29,6 +239,13 @@
     "title": "Zotero Plugins",
     "section": "",
     "text": "Back to top"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Contributors\nThis site was authored by Pat Callahan. The “Zotero Groups” chapter was primarily authored by Dejana Damjanovic.\n\n\nLicenses\nThe overall project is licensed under the CC BY-SA 4.0 license found at LICENSE; all code snippets are additionally licensed under the CC0 1.0 Universal license found at LICENSE-CODE.\nWhy two licenses? The CC BY-SA 4.0 license is for the content of the website, while the CC0 1.0 Universal license is for the code and configuration files. This is a common practice for websites that include code snippets and other content that may be reused in other projects, particularly because the CC BY-SA 4.0 license is not intended to be used with software.\n\n\nNotes\nThis tutorial was primarily written in 2024 using Zotero versions 6.0.3X through the major 7.0.10 release. Major changes to Zotero can be found at the Zotero changelog, and to confirm that our tutorial is not out-of-date.\n\n\n\n\n Back to topCitationBibTeX citation:@online{callahan2024,\n  author = {Callahan, Pat and Damjanovic, Dejana},\n  title = {Introduction to {Zotero}},\n  date = {2024-11-29},\n  url = {https://lmu-osc.github.io/introduction-to-renv},\n  doi = {https://doi.org/10.5281/zenodo.14243118},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nCallahan, Pat, and Dejana Damjanovic. 2024. “Introduction to\nZotero.” LMU Open Science Center. November 29, 2024.\nhttps://doi.org/https://doi.org/10.5281/zenodo.14243118."
   },
   {
     "objectID": "LICENSE.html",
@@ -43,6 +260,78 @@
     "title": "Creative Commons Attribution-ShareAlike 4.0 International",
     "section": "",
     "text": "By exercising the Licensed Rights (defined below), You accept and agree to be bound by the terms and conditions of this Creative Commons Attribution-ShareAlike 4.0 International Public License (“Public License”). To the extent this Public License may be interpreted as a contract, You are granted the Licensed Rights in consideration of Your acceptance of these terms and conditions, and the Licensor grants You such rights in consideration of benefits the Licensor receives from making the Licensed Material available under these terms and conditions.\n\n\n\nAdapted Material means material subject to Copyright and Similar Rights that is derived from or based upon the Licensed Material and in which the Licensed Material is translated, altered, arranged, transformed, or otherwise modified in a manner requiring permission under the Copyright and Similar Rights held by the Licensor. For purposes of this Public License, where the Licensed Material is a musical work, performance, or sound recording, Adapted Material is always produced where the Licensed Material is synched in timed relation with a moving image.\nAdapter’s License means the license You apply to Your Copyright and Similar Rights in Your contributions to Adapted Material in accordance with the terms and conditions of this Public License.\nBY-SA Compatible License means a license listed at creativecommons.org/compatiblelicenses, approved by Creative Commons as essentially the equivalent of this Public License.\nCopyright and Similar Rights means copyright and/or similar rights closely related to copyright including, without limitation, performance, broadcast, sound recording, and Sui Generis Database Rights, without regard to how the rights are labeled or categorized. For purposes of this Public License, the rights specified in Section 2(b)(1)-(2) are not Copyright and Similar Rights.\nEffective Technological Measures means those measures that, in the absence of proper authority, may not be circumvented under laws fulfilling obligations under Article 11 of the WIPO Copyright Treaty adopted on December 20, 1996, and/or similar international agreements.\nExceptions and Limitations means fair use, fair dealing, and/or any other exception or limitation to Copyright and Similar Rights that applies to Your use of the Licensed Material.\nLicense Elements means the license attributes listed in the name of a Creative Commons Public License. The License Elements of this Public License are Attribution and ShareAlike.\nLicensed Material means the artistic or literary work, database, or other material to which the Licensor applied this Public License.\nLicensed Rights means the rights granted to You subject to the terms and conditions of this Public License, which are limited to all Copyright and Similar Rights that apply to Your use of the Licensed Material and that the Licensor has authority to license.\nLicensor means the individual(s) or entity(ies) granting rights under this Public License.\nShare means to provide material to the public by any means or process that requires permission under the Licensed Rights, such as reproduction, public display, public performance, distribution, dissemination, communication, or importation, and to make material available to the public including in ways that members of the public may access the material from a place and at a time individually chosen by them.\nSui Generis Database Rights means rights other than copyright resulting from Directive 96/9/EC of the European Parliament and of the Council of 11 March 1996 on the legal protection of databases, as amended and/or succeeded, as well as other essentially equivalent rights anywhere in the world.\nYou means the individual or entity exercising the Licensed Rights under this Public License. Your has a corresponding meaning.\n\n\n\n\n\nLicense grant.\n\nSubject to the terms and conditions of this Public License, the Licensor hereby grants You a worldwide, royalty-free, non-sublicensable, non-exclusive, irrevocable license to exercise the Licensed Rights in the Licensed Material to:\nA. reproduce and Share the Licensed Material, in whole or in part; and\nB. produce, reproduce, and Share Adapted Material.\nExceptions and Limitations. For the avoidance of doubt, where Exceptions and Limitations apply to Your use, this Public License does not apply, and You do not need to comply with its terms and conditions.\nTerm. The term of this Public License is specified in Section 6(a).\nMedia and formats; technical modifications allowed. The Licensor authorizes You to exercise the Licensed Rights in all media and formats whether now known or hereafter created, and to make technical modifications necessary to do so. The Licensor waives and/or agrees not to assert any right or authority to forbid You from making technical modifications necessary to exercise the Licensed Rights, including technical modifications necessary to circumvent Effective Technological Measures. For purposes of this Public License, simply making modifications authorized by this Section 2(a)(4) never produces Adapted Material.\nDownstream recipients.\nA. Offer from the Licensor – Licensed Material. Every recipient of the Licensed Material automatically receives an offer from the Licensor to exercise the Licensed Rights under the terms and conditions of this Public License.\nB. Additional offer from the Licensor – Adapted Material. Every recipient of Adapted Material from You automatically receives an offer from the Licensor to exercise the Licensed Rights in the Adapted Material under the conditions of the Adapter’s License You apply.\nC. No downstream restrictions. You may not offer or impose any additional or different terms or conditions on, or apply any Effective Technological Measures to, the Licensed Material if doing so restricts exercise of the Licensed Rights by any recipient of the Licensed Material.\nNo endorsement. Nothing in this Public License constitutes or may be construed as permission to assert or imply that You are, or that Your use of the Licensed Material is, connected with, or sponsored, endorsed, or granted official status by, the Licensor or others designated to receive attribution as provided in Section 3(a)(1)(A)(i).\n\nOther rights.\n\nMoral rights, such as the right of integrity, are not licensed under this Public License, nor are publicity, privacy, and/or other similar personality rights; however, to the extent possible, the Licensor waives and/or agrees not to assert any such rights held by the Licensor to the limited extent necessary to allow You to exercise the Licensed Rights, but not otherwise.\nPatent and trademark rights are not licensed under this Public License.\nTo the extent possible, the Licensor waives any right to collect royalties from You for the exercise of the Licensed Rights, whether directly or through a collecting society under any voluntary or waivable statutory or compulsory licensing scheme. In all other cases the Licensor expressly reserves any right to collect such royalties.\n\n\n\n\n\nYour exercise of the Licensed Rights is expressly made subject to the following conditions.\n\nAttribution.\n\nIf You Share the Licensed Material (including in modified form), You must:\nA. retain the following if it is supplied by the Licensor with the Licensed Material:\n\nidentification of the creator(s) of the Licensed Material and any others designated to receive attribution, in any reasonable manner requested by the Licensor (including by pseudonym if designated);\na copyright notice;\na notice that refers to this Public License;\na notice that refers to the disclaimer of warranties;\na URI or hyperlink to the Licensed Material to the extent reasonably practicable;\n\nB. indicate if You modified the Licensed Material and retain an indication of any previous modifications; and\nC. indicate the Licensed Material is licensed under this Public License, and include the text of, or the URI or hyperlink to, this Public License.\nYou may satisfy the conditions in Section 3(a)(1) in any reasonable manner based on the medium, means, and context in which You Share the Licensed Material. For example, it may be reasonable to satisfy the conditions by providing a URI or hyperlink to a resource that includes the required information.\nIf requested by the Licensor, You must remove any of the information required by Section 3(a)(1)(A) to the extent reasonably practicable.\n\nShareAlike.\n\nIn addition to the conditions in Section 3(a), if You Share Adapted Material You produce, the following conditions also apply.\n\nThe Adapter’s License You apply must be a Creative Commons license with the same License Elements, this version or later, or a BY-SA Compatible License.\nYou must include the text of, or the URI or hyperlink to, the Adapter’s License You apply. You may satisfy this condition in any reasonable manner based on the medium, means, and context in which You Share Adapted Material.\nYou may not offer or impose any additional or different terms or conditions on, or apply any Effective Technological Measures to, Adapted Material that restrict exercise of the rights granted under the Adapter’s License You apply.\n\n\n\n\nWhere the Licensed Rights include Sui Generis Database Rights that apply to Your use of the Licensed Material:\n\nfor the avoidance of doubt, Section 2(a)(1) grants You the right to extract, reuse, reproduce, and Share all or a substantial portion of the contents of the database;\nif You include all or a substantial portion of the database contents in a database in which You have Sui Generis Database Rights, then the database in which You have Sui Generis Database Rights (but not its individual contents) is Adapted Material, including for purposes of Section 3(b); and\nYou must comply with the conditions in Section 3(a) if You Share all or a substantial portion of the contents of the database.\n\nFor the avoidance of doubt, this Section 4 supplements and does not replace Your obligations under this Public License where the Licensed Rights include other Copyright and Similar Rights.\n\n\n\n\nUnless otherwise separately undertaken by the Licensor, to the extent possible, the Licensor offers the Licensed Material as-is and as-available, and makes no representations or warranties of any kind concerning the Licensed Material, whether express, implied, statutory, or other. This includes, without limitation, warranties of title, merchantability, fitness for a particular purpose, non-infringement, absence of latent or other defects, accuracy, or the presence or absence of errors, whether or not known or discoverable. Where disclaimers of warranties are not allowed in full or in part, this disclaimer may not apply to You.\nTo the extent possible, in no event will the Licensor be liable to You on any legal theory (including, without limitation, negligence) or otherwise for any direct, special, indirect, incidental, consequential, punitive, exemplary, or other losses, costs, expenses, or damages arising out of this Public License or use of the Licensed Material, even if the Licensor has been advised of the possibility of such losses, costs, expenses, or damages. Where a limitation of liability is not allowed in full or in part, this limitation may not apply to You.\nThe disclaimer of warranties and limitation of liability provided above shall be interpreted in a manner that, to the extent possible, most closely approximates an absolute disclaimer and waiver of all liability.\n\n\n\n\n\nThis Public License applies for the term of the Copyright and Similar Rights licensed here. However, if You fail to comply with this Public License, then Your rights under this Public License terminate automatically.\nWhere Your right to use the Licensed Material has terminated under Section 6(a), it reinstates:\n\nautomatically as of the date the violation is cured, provided it is cured within 30 days of Your discovery of the violation; or\nupon express reinstatement by the Licensor.\n\nFor the avoidance of doubt, this Section 6(b) does not affect any right the Licensor may have to seek remedies for Your violations of this Public License.\nFor the avoidance of doubt, the Licensor may also offer the Licensed Material under separate terms or conditions or stop distributing the Licensed Material at any time; however, doing so will not terminate this Public License.\nSections 1, 5, 6, 7, and 8 survive termination of this Public License.\n\n\n\n\n\nThe Licensor shall not be bound by any additional or different terms or conditions communicated by You unless expressly agreed.\nAny arrangements, understandings, or agreements regarding the Licensed Material not stated herein are separate from and independent of the terms and conditions of this Public License.\n\n\n\n\n\nFor the avoidance of doubt, this Public License does not, and shall not be interpreted to, reduce, limit, restrict, or impose conditions on any use of the Licensed Material that could lawfully be made without permission under this Public License.\nTo the extent possible, if any provision of this Public License is deemed unenforceable, it shall be automatically reformed to the minimum extent necessary to make it enforceable. If the provision cannot be reformed, it shall be severed from this Public License without affecting the enforceability of the remaining terms and conditions.\nNo term or condition of this Public License will be waived and no failure to comply consented to unless expressly agreed to by the Licensor.\nNothing in this Public License constitutes or may be interpreted as a limitation upon, or waiver of, any privileges and immunities that apply to the Licensor or You, including from the legal processes of any jurisdiction or authority.\n\n\nCreative Commons is not a party to its public licenses. Notwithstanding, Creative Commons may elect to apply one of its public licenses to material it publishes and in those instances will be considered the “Licensor.” The text of the Creative Commons public licenses is dedicated to the public domain under the CC0 Public Domain Dedication. Except for the limited purpose of indicating that material is shared under a Creative Commons public license or as otherwise permitted by the Creative Commons policies published at creativecommons.org/policies, Creative Commons does not authorize the use of the trademark “Creative Commons” or any other trademark or logo of Creative Commons without its prior written consent including, without limitation, in connection with any unauthorized modifications to any of its public licenses or any other arrangements, understandings, or agreements concerning use of licensed material. For the avoidance of doubt, this paragraph does not form part of the public licenses.\nCreative Commons may be contacted at creativecommons.org."
+  },
+  {
+    "objectID": "background/citation_style_language.html",
+    "href": "background/citation_style_language.html",
+    "title": "Citation Style Language (CSL)",
+    "section": "",
+    "text": "As mentioned earlier in the tutorial, Citation Style Language (CSL) is an XML-based format for defining citation and bibliography styles. CSL files are used by citation management software like Zotero to format citations and bibliographies in a specific style.\n\n\nTo demonstrate differences in citation styles, the citation for the same article is shown in several different styles below. The article is “Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson’s Irises” by Allison M. Horst, Alison Presmanes Hill, and Kristen B. Gorman, published in the R Journal in 2022.\nNote that if you use Google Scholar to find article citations, you will see that the 5 examples included below are the default citation styles used by Google Scholar.\n\n\n\n\n\n\n\nStyle Name\nCitation\n\n\n\n\nMLA\nHorst, Allison M., Alison Presmanes Hill, and Kristen B. Gorman. “Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson’s Irises.” R Journal 14.1 (2022).\n\n\nAPA\nHorst, A. M., Hill, A. P., & Gorman, K. B. (2022). Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson’s Irises. R Journal, 14(1).\n\n\nChicago\nHorst, Allison M., Alison Presmanes Hill, and Kristen B. Gorman. “Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson’s Irises.” R Journal 14, no. 1 (2022).\n\n\nHarvard\nHorst, A.M., Hill, A.P. and Gorman, K.B., 2022. Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson’s Irises. R Journal, 14(1).\n\n\nVancouver\nHorst AM, Hill AP, Gorman KB. Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson’s Irises. R Journal. 2022 Mar 1;14(1).",
+    "crumbs": [
+      "Home",
+      "Background",
+      "Citation Style Language"
+    ]
+  },
+  {
+    "objectID": "background/citation_style_language.html#citation-style-examples",
+    "href": "background/citation_style_language.html#citation-style-examples",
+    "title": "Citation Style Language (CSL)",
+    "section": "",
+    "text": "To demonstrate differences in citation styles, the citation for the same article is shown in several different styles below. The article is “Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson’s Irises” by Allison M. Horst, Alison Presmanes Hill, and Kristen B. Gorman, published in the R Journal in 2022.\nNote that if you use Google Scholar to find article citations, you will see that the 5 examples included below are the default citation styles used by Google Scholar.\n\n\n\n\n\n\n\nStyle Name\nCitation\n\n\n\n\nMLA\nHorst, Allison M., Alison Presmanes Hill, and Kristen B. Gorman. “Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson’s Irises.” R Journal 14.1 (2022).\n\n\nAPA\nHorst, A. M., Hill, A. P., & Gorman, K. B. (2022). Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson’s Irises. R Journal, 14(1).\n\n\nChicago\nHorst, Allison M., Alison Presmanes Hill, and Kristen B. Gorman. “Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson’s Irises.” R Journal 14, no. 1 (2022).\n\n\nHarvard\nHorst, A.M., Hill, A.P. and Gorman, K.B., 2022. Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson’s Irises. R Journal, 14(1).\n\n\nVancouver\nHorst AM, Hill AP, Gorman KB. Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson’s Irises. R Journal. 2022 Mar 1;14(1).",
+    "crumbs": [
+      "Home",
+      "Background",
+      "Citation Style Language"
+    ]
+  },
+  {
+    "objectID": "background/citation_style_language.html#what-does-a-csl-file-look-like",
+    "href": "background/citation_style_language.html#what-does-a-csl-file-look-like",
+    "title": "Citation Style Language (CSL)",
+    "section": "What Does a CSL File Look Like?",
+    "text": "What Does a CSL File Look Like?\nA CSL file is an XML file that contains the information necessary to format citations and bibliographies in a specific style. The file is divided into several sections, including:\n\nMetadata: Information about the style, such as the title, author, and version.\nMacros: Definitions for common elements like names, dates, and titles.\nCitations: Rules for formatting in-text citations.\nBibliography: Rules for formatting the bibliography.\n\nIf you’re interested, the collapsed code below is an example of a CSL file that defines the style for formatting citations in Nature style. Understanding the code underlying a CSL file is not necessary to use Zotero CSL files, but it can be helpful if you want to modify or create your own styles.\n\n\n\n\n\n\nXML file for Nature Citation Language Style\n\n\n\n\n\n&lt;?xml version=\"1.0\" encoding=\"utf-8\"?&gt;\n&lt;style xmlns=\"http://purl.org/net/xbiblio/csl\" class=\"in-text\" version=\"1.0\" demote-non-dropping-particle=\"sort-only\" default-locale=\"en-GB\"&gt;\n  &lt;info&gt;\n    &lt;title&gt;Nature&lt;/title&gt;\n    &lt;id&gt;http://www.zotero.org/styles/nature&lt;/id&gt;\n    &lt;link href=\"http://www.zotero.org/styles/nature\" rel=\"self\"/&gt;\n    &lt;link href=\"http://www.nature.com/nature/authors/gta/index.html#a5.4\" rel=\"documentation\"/&gt;\n    &lt;link href=\"http://www.nature.com/srep/publish/guidelines#references\" rel=\"documentation\"/&gt;\n    &lt;author&gt;\n      &lt;name&gt;Michael Berkowitz&lt;/name&gt;\n      &lt;email&gt;mberkowi@gmu.edu&lt;/email&gt;\n    &lt;/author&gt;\n    &lt;category citation-format=\"numeric\"/&gt;\n    &lt;category field=\"science\"/&gt;\n    &lt;category field=\"generic-base\"/&gt;\n    &lt;issn&gt;0028-0836&lt;/issn&gt;\n    &lt;eissn&gt;1476-4687&lt;/eissn&gt;\n    &lt;updated&gt;2024-01-22T03:08:05+00:00&lt;/updated&gt;\n    &lt;rights license=\"http://creativecommons.org/licenses/by-sa/3.0/\"&gt;This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License&lt;/rights&gt;\n  &lt;/info&gt;\n  &lt;macro name=\"title\"&gt;\n    &lt;choose&gt;\n      &lt;if type=\"bill book graphic legal_case legislation motion_picture report song\" match=\"any\"&gt;\n        &lt;text variable=\"title\" font-style=\"italic\" text-case=\"title\"/&gt;\n      &lt;/if&gt;\n      &lt;else&gt;\n        &lt;text variable=\"title\"/&gt;\n      &lt;/else&gt;\n    &lt;/choose&gt;\n  &lt;/macro&gt;\n  &lt;macro name=\"author\"&gt;\n    &lt;names variable=\"author\"&gt;\n      &lt;name sort-separator=\", \" delimiter=\", \" and=\"symbol\" initialize-with=\". \" delimiter-precedes-last=\"never\" name-as-sort-order=\"all\"/&gt;\n      &lt;label form=\"short\" prefix=\", \"/&gt;\n      &lt;et-al font-style=\"italic\"/&gt;\n    &lt;/names&gt;\n  &lt;/macro&gt;\n  &lt;macro name=\"access\"&gt;\n    &lt;choose&gt;\n      &lt;if variable=\"volume\" type=\"article dataset software\" match=\"any\"/&gt;\n      &lt;else-if variable=\"DOI\"&gt;\n        &lt;text variable=\"DOI\" prefix=\"doi:\"/&gt;\n      &lt;/else-if&gt;\n    &lt;/choose&gt;\n  &lt;/macro&gt;\n  &lt;macro name=\"access-data\"&gt;\n    &lt;choose&gt;\n      &lt;if type=\"dataset software\" match=\"any\"&gt;\n        &lt;text variable=\"DOI\" prefix=\"https://doi.org/\"/&gt;\n      &lt;/if&gt;\n    &lt;/choose&gt;\n  &lt;/macro&gt;\n  &lt;macro name=\"issuance\"&gt;\n    &lt;choose&gt;\n      &lt;if type=\"bill book graphic legal_case legislation motion_picture song thesis chapter paper-conference\" match=\"any\"&gt;\n        &lt;group delimiter=\"; \" suffix=\".\"&gt;\n          &lt;group delimiter=\", \" prefix=\"(\" suffix=\")\"&gt;\n            &lt;text variable=\"publisher\" form=\"long\"/&gt;\n            &lt;text variable=\"publisher-place\"/&gt;\n            &lt;date variable=\"issued\"&gt;\n              &lt;date-part name=\"year\"/&gt;\n            &lt;/date&gt;\n          &lt;/group&gt;\n        &lt;/group&gt;\n      &lt;/if&gt;\n      &lt;else-if type=\"article\"&gt;\n        &lt;group delimiter=\" \"&gt;\n          &lt;choose&gt;\n            &lt;if variable=\"genre\" match=\"any\"&gt;\n              &lt;text variable=\"genre\" text-case=\"capitalize-first\"/&gt;\n            &lt;/if&gt;\n            &lt;else&gt;\n              &lt;text term=\"article\" text-case=\"capitalize-first\"/&gt;\n            &lt;/else&gt;\n          &lt;/choose&gt;\n          &lt;text term=\"at\"/&gt;\n          &lt;choose&gt;\n            &lt;if variable=\"DOI\" match=\"any\"&gt;\n              &lt;text variable=\"DOI\" prefix=\"https://doi.org/\"/&gt;\n            &lt;/if&gt;\n            &lt;else&gt;\n              &lt;text variable=\"URL\"/&gt;\n            &lt;/else&gt;\n          &lt;/choose&gt;\n          &lt;date date-parts=\"year\" form=\"text\" variable=\"issued\" prefix=\"(\" suffix=\")\"/&gt;\n        &lt;/group&gt;\n      &lt;/else-if&gt;\n      &lt;else-if type=\"dataset software\" match=\"any\"&gt;\n        &lt;group delimiter=\" \"&gt;\n          &lt;text variable=\"publisher\"/&gt;\n          &lt;text macro=\"access-data\"/&gt;\n          &lt;date date-parts=\"year\" form=\"text\" variable=\"issued\" prefix=\"(\" suffix=\")\"/&gt;\n        &lt;/group&gt;\n      &lt;/else-if&gt;\n      &lt;else-if type=\"report webpage post post-weblog\" match=\"any\"&gt;\n        &lt;group delimiter=\" \"&gt;\n          &lt;text variable=\"URL\"/&gt;\n          &lt;date date-parts=\"year\" form=\"text\" variable=\"issued\" prefix=\"(\" suffix=\")\"/&gt;\n        &lt;/group&gt;\n      &lt;/else-if&gt;\n      &lt;else&gt;\n        &lt;date variable=\"issued\" prefix=\"(\" suffix=\")\"&gt;\n          &lt;date-part name=\"year\"/&gt;\n        &lt;/date&gt;\n      &lt;/else&gt;\n    &lt;/choose&gt;\n  &lt;/macro&gt;\n  &lt;macro name=\"container-title\"&gt;\n    &lt;choose&gt;\n      &lt;if type=\"article-journal\"&gt;\n        &lt;text variable=\"container-title\" font-style=\"italic\" form=\"short\"/&gt;\n      &lt;/if&gt;\n      &lt;else&gt;\n        &lt;text variable=\"container-title\" font-style=\"italic\"/&gt;\n      &lt;/else&gt;\n    &lt;/choose&gt;\n  &lt;/macro&gt;\n  &lt;macro name=\"editor\"&gt;\n    &lt;choose&gt;\n      &lt;if type=\"chapter paper-conference\" match=\"any\"&gt;\n        &lt;names variable=\"editor\" prefix=\"(\" suffix=\")\"&gt;\n          &lt;label form=\"short\" suffix=\" \"/&gt;\n          &lt;name and=\"symbol\" delimiter-precedes-last=\"never\" initialize-with=\". \" name-as-sort-order=\"all\"/&gt;\n        &lt;/names&gt;\n      &lt;/if&gt;\n    &lt;/choose&gt;\n  &lt;/macro&gt;\n  &lt;macro name=\"volume\"&gt;\n    &lt;choose&gt;\n      &lt;if type=\"article-journal\" match=\"any\"&gt;\n        &lt;text variable=\"volume\" font-weight=\"bold\" suffix=\",\"/&gt;\n      &lt;/if&gt;\n      &lt;else&gt;\n        &lt;group delimiter=\" \"&gt;\n          &lt;label variable=\"volume\" form=\"short\"/&gt;\n          &lt;text variable=\"volume\"/&gt;\n        &lt;/group&gt;\n      &lt;/else&gt;\n    &lt;/choose&gt;\n  &lt;/macro&gt;\n  &lt;citation collapse=\"citation-number\"&gt;\n    &lt;sort&gt;\n      &lt;key variable=\"citation-number\"/&gt;\n    &lt;/sort&gt;\n    &lt;layout vertical-align=\"sup\" delimiter=\",\"&gt;\n      &lt;text variable=\"citation-number\"/&gt;\n    &lt;/layout&gt;\n  &lt;/citation&gt;\n  &lt;bibliography et-al-min=\"6\" et-al-use-first=\"1\" second-field-align=\"flush\" entry-spacing=\"0\" line-spacing=\"2\"&gt;\n    &lt;layout suffix=\".\"&gt;\n      &lt;text variable=\"citation-number\" suffix=\".\"/&gt;\n      &lt;group delimiter=\" \"&gt;\n        &lt;text macro=\"author\" suffix=\".\"/&gt;\n        &lt;text macro=\"title\" suffix=\".\"/&gt;\n        &lt;choose&gt;\n          &lt;if type=\"chapter paper-conference\" match=\"any\"&gt;\n            &lt;text term=\"in\"/&gt;\n          &lt;/if&gt;\n        &lt;/choose&gt;\n        &lt;text macro=\"container-title\"/&gt;\n        &lt;text macro=\"editor\"/&gt;\n        &lt;text macro=\"volume\"/&gt;\n        &lt;text variable=\"page\"/&gt;\n        &lt;text macro=\"issuance\"/&gt;\n        &lt;text macro=\"access\"/&gt;\n      &lt;/group&gt;\n    &lt;/layout&gt;\n  &lt;/bibliography&gt;\n&lt;/style&gt;",
+    "crumbs": [
+      "Home",
+      "Background",
+      "Citation Style Language"
+    ]
+  },
+  {
+    "objectID": "background/zotero_basics.html",
+    "href": "background/zotero_basics.html",
+    "title": "Zotero Basics",
+    "section": "",
+    "text": "Hopefully you are already familiar with the concept of citing the work of others and creating bibliographies. If not, don’t worry! This tutorial will introduce you to the basics of citations and citation managers, with a specific focus on the Zotero citation manager.",
+    "crumbs": [
+      "Home",
+      "Background",
+      "Zotero Basics"
+    ]
+  },
+  {
+    "objectID": "background/zotero_basics.html#downloading-zotero",
+    "href": "background/zotero_basics.html#downloading-zotero",
+    "title": "Zotero Basics",
+    "section": "Downloading Zotero",
+    "text": "Downloading Zotero\nTo get started with Zotero, you will need to download the Zotero desktop application and the browser extension available for the Chrome, Firefox, Safari, and Edge browsers.\nThe Zotero website should automatically detect your operating system and browser, and it will display download links for both pieces of software.",
+    "crumbs": [
+      "Home",
+      "Background",
+      "Zotero Basics"
+    ]
+  },
+  {
+    "objectID": "exercises/exercise_1.html",
+    "href": "exercises/exercise_1.html",
+    "title": "Exercise 1: Using Zotero",
+    "section": "",
+    "text": "Instructions\nThis exercise is designed to help you get started with Zotero and RStudio. You will need to have Zotero installed on your computer. If you do not have Zotero installed, you can download it from here.\n\nCreate a new folder in Zotero.\n\nName the folder “Exercise 1”.\nAdd a tag to the folder called “Exercise 1”.\n\nSave references to 3-4 different sources in Zotero.\n\nTry to use the Zotero web connector for some of the sources, add 1 manually, and add one by copying/pasting a BibTex entry.\n\nExport the references from Zotero to a BibTex file. This can be done by right-clicking on the folder and selecting “Export Collection”.\nExport the references from Zotero as a Word document. This can be done by right-clicking on the folder and selecting “Create Bibliography from Collection”.\n\nWhen completed, you can delete the BibTex and Word files you’ve just created. They will not be needed in subsequent exercises.\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Home",
+      "Exercises",
+      "Exercise 1: Using Zotero"
+    ]
   },
   {
     "objectID": "integrating_zotero/citations_in_quarto.html",
@@ -162,247 +451,6 @@
       "Home",
       "Integrating Zotero",
       "Citations in Quarto"
-    ]
-  },
-  {
-    "objectID": "background/zotero_basics.html",
-    "href": "background/zotero_basics.html",
-    "title": "Zotero Basics",
-    "section": "",
-    "text": "Hopefully you are already familiar with the concept of citing the work of others and creating bibliographies. If not, don’t worry! This tutorial will introduce you to the basics of citations and citation managers, with a specific focus on the Zotero citation manager.",
-    "crumbs": [
-      "Home",
-      "Background",
-      "Zotero Basics"
-    ]
-  },
-  {
-    "objectID": "background/zotero_basics.html#downloading-zotero",
-    "href": "background/zotero_basics.html#downloading-zotero",
-    "title": "Zotero Basics",
-    "section": "Downloading Zotero",
-    "text": "Downloading Zotero\nTo get started with Zotero, you will need to download the Zotero desktop application and the browser extension available for the Chrome, Firefox, Safari, and Edge browsers.\nThe Zotero website should automatically detect your operating system and browser, and it will display download links for both pieces of software.",
-    "crumbs": [
-      "Home",
-      "Background",
-      "Zotero Basics"
-    ]
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "Contributors\nThis site was authored by AUTHORS, and edits/contributions were made by EDITORS/AUTHORS.\n\n\nLicenses\nThe overall project is licensed under the CC BY-SA 4.0 license found at LICENSE; all code snippets are additionally licensed under the CC0 1.0 Universal license found at LICENSE-CODE.\nWhy two licenses? The CC BY-SA 4.0 license is for the content of the website, while the CC0 1.0 Universal license is for the code and configuration files. This is a common practice for websites that include code snippets and other content that may be reused in other projects, particularly because the CC BY-SA 4.0 license is not intended to be used with software.\n\n\nNotes\nThis tutorial was primarily written in 2024 using Zotero versions 6.0.3X through the major 7.0.10 release. Major changes to Zotero can be found at the Zotero changelog, and to confirm that our tutorial is not out-of-date.\n\n\n\n\n Back to topCitationBibTeX citation:@online{callahan2024,\n  author = {Callahan, Pat},\n  title = {Introduction to {Zotero}},\n  date = {2024-11-29},\n  url = {https://lmu-osc.github.io/introduction-to-renv},\n  doi = {https://doi.org/10.5281/zenodo.14243118},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nCallahan, Pat. 2024. “Introduction to Zotero.” LMU Open\nScience Center. November 29, 2024. https://doi.org/https://doi.org/10.5281/zenodo.14243118."
-  },
-  {
-    "objectID": "LICENSE-CODE.html",
-    "href": "LICENSE-CODE.html",
-    "title": "Creative Commons Zero v1.0 Universal",
-    "section": "",
-    "text": "Creative Commons Zero v1.0 Universal\nCREATIVE COMMONS CORPORATION IS NOT A LAW FIRM AND DOES NOT PROVIDE LEGAL SERVICES. DISTRIBUTION OF THIS DOCUMENT DOES NOT CREATE AN ATTORNEY-CLIENT RELATIONSHIP. CREATIVE COMMONS PROVIDES THIS INFORMATION ON AN “AS-IS” BASIS. CREATIVE COMMONS MAKES NO WARRANTIES REGARDING THE USE OF THIS DOCUMENT OR THE INFORMATION OR WORKS PROVIDED HEREUNDER, AND DISCLAIMS LIABILITY FOR DAMAGES RESULTING FROM THE USE OF THIS DOCUMENT OR THE INFORMATION OR WORKS PROVIDED HEREUNDER.\n\nStatement of Purpose\nThe laws of most jurisdictions throughout the world automatically confer exclusive Copyright and Related Rights (defined below) upon the creator and subsequent owner(s) (each and all, an “owner”) of an original work of authorship and/or a database (each, a “Work”).\nCertain owners wish to permanently relinquish those rights to a Work for the purpose of contributing to a commons of creative, cultural and scientific works (“Commons”) that the public can reliably and without fear of later claims of infringement build upon, modify, incorporate in other works, reuse and redistribute as freely as possible in any form whatsoever and for any purposes, including without limitation commercial purposes. These owners may contribute to the Commons to promote the ideal of a free culture and the further production of creative, cultural and scientific works, or to gain reputation or greater distribution for their Work in part through the use and efforts of others.\nFor these and/or other purposes and motivations, and without any expectation of additional consideration or compensation, the person associating CC0 with a Work (the “Affirmer”), to the extent that he or she is an owner of Copyright and Related Rights in the Work, voluntarily elects to apply CC0 to the Work and publicly distribute the Work under its terms, with knowledge of his or her Copyright and Related Rights in the Work and the meaning and intended legal effect of CC0 on those rights.\n\nCopyright and Related Rights. A Work made available under CC0 may be protected by copyright and related or neighboring rights (“Copyright and Related Rights”). Copyright and Related Rights include, but are not limited to, the following:\n\nthe right to reproduce, adapt, distribute, perform, display, communicate, and translate a Work;\nmoral rights retained by the original author(s) and/or performer(s);\npublicity and privacy rights pertaining to a person’s image or likeness depicted in a Work;\nrights protecting against unfair competition in regards to a Work, subject to the limitations in paragraph 4(a), below;\nrights protecting the extraction, dissemination, use and reuse of data in a Work;\ndatabase rights (such as those arising under Directive 96/9/EC of the European Parliament and of the Council of 11 March 1996 on the legal protection of databases, and under any national implementation thereof, including any amended or successor version of such directive); and\nother similar, equivalent or corresponding rights throughout the world based on applicable law or treaty, and any national implementations thereof.\n\nWaiver. To the greatest extent permitted by, but not in contravention of, applicable law, Affirmer hereby overtly, fully, permanently, irrevocably and unconditionally waives, abandons, and surrenders all of Affirmer’s Copyright and Related Rights and associated claims and causes of action, whether now known or unknown (including existing as well as future claims and causes of action), in the Work (i) in all territories worldwide, (ii) for the maximum duration provided by applicable law or treaty (including future time extensions), (iii) in any current or future medium and for any number of copies, and (iv) for any purpose whatsoever, including without limitation commercial, advertising or promotional purposes (the “Waiver”). Affirmer makes the Waiver for the benefit of each member of the public at large and to the detriment of Affirmer’s heirs and successors, fully intending that such Waiver shall not be subject to revocation, rescission, cancellation, termination, or any other legal or equitable action to disrupt the quiet enjoyment of the Work by the public as contemplated by Affirmer’s express Statement of Purpose.\nPublic License Fallback. Should any part of the Waiver for any reason be judged legally invalid or ineffective under applicable law, then the Waiver shall be preserved to the maximum extent permitted taking into account Affirmer’s express Statement of Purpose. In addition, to the extent the Waiver is so judged Affirmer hereby grants to each affected person a royalty-free, non transferable, non sublicensable, non exclusive, irrevocable and unconditional license to exercise Affirmer’s Copyright and Related Rights in the Work (i) in all territories worldwide, (ii) for the maximum duration provided by applicable law or treaty (including future time extensions), (iii) in any current or future medium and for any number of copies, and (iv) for any purpose whatsoever, including without limitation commercial, advertising or promotional purposes (the “License”). The License shall be deemed effective as of the date CC0 was applied by Affirmer to the Work. Should any part of the License for any reason be judged legally invalid or ineffective under applicable law, such partial invalidity or ineffectiveness shall not invalidate the remainder of the License, and in such case Affirmer hereby affirms that he or she will not (i) exercise any of his or her remaining Copyright and Related Rights in the Work or (ii) assert any associated claims and causes of action with respect to the Work, in either case contrary to Affirmer’s express Statement of Purpose.\nLimitations and Disclaimers.\n\nNo trademark or patent rights held by Affirmer are waived, abandoned, surrendered, licensed or otherwise affected by this document.\nAffirmer offers the Work as-is and makes no representations or warranties of any kind concerning the Work, express, implied, statutory or otherwise, including without limitation warranties of title, merchantability, fitness for a particular purpose, non infringement, or the absence of latent or other defects, accuracy, or the present or absence of errors, whether or not discoverable, all to the greatest extent permissible under applicable law.\nAffirmer disclaims responsibility for clearing rights of other persons that may apply to the Work or any use thereof, including without limitation any person’s Copyright and Related Rights in the Work. Further, Affirmer disclaims responsibility for obtaining any necessary consents, permissions or other rights required for any use of the Work.\nAffirmer understands and acknowledges that Creative Commons is not a party to this document and has no duty or obligation with respect to this CC0 or use of the Work.\n\n\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "background/zotero_usage.html",
-    "href": "background/zotero_usage.html",
-    "title": "Using Zotero",
-    "section": "",
-    "text": "This page will cover the basics of using Zotero, and is structured around the three main tasks you will need to do when using Zotero:",
-    "crumbs": [
-      "Home",
-      "Background",
-      "Zotero Usage"
-    ]
-  },
-  {
-    "objectID": "background/zotero_usage.html#zotero-connector",
-    "href": "background/zotero_usage.html#zotero-connector",
-    "title": "Using Zotero",
-    "section": "Zotero Connector",
-    "text": "Zotero Connector\nThe most common, fastest, and preferred way of entering references is by using the Zotero Connector browser extension.\nThe Zotero Connector allows you to save references directly from your browser to your Zotero library. The connector will, when possible, download a PDF of the article and attach it to the reference. If you save content from a webpage that does not have an available PDF download of the content, the Connector will take a snapshot of the webpage to preserve the information in case the page is later changed or removed.\n\n1. Locate Source2. Open Link3. Download4. Check Library\n\n\n\n\n\nIdentify the publication, book, website, or other source of information you wish to cite.\n\n\n\n\n\n\n\nOpen the website page. Try to find links to PubMed, the original publisher, or similar sites that have PDFs available. Zotero will automatically download these when available. Otherwise, it will attempt to screenshot the website itself.\n\n\n\n\n\n\n\nClick the Zotero Connector button in your browser to save the reference to your Zotero library. The button is generally in the top right corner of your browser. The appearance of this button can change depending on the type of object being cited.\n\n\n\n\n\n\n\nAfter saving the reference, check your Zotero library to ensure the reference was saved correctly.",
-    "crumbs": [
-      "Home",
-      "Background",
-      "Zotero Usage"
-    ]
-  },
-  {
-    "objectID": "background/zotero_usage.html#manual-entries",
-    "href": "background/zotero_usage.html#manual-entries",
-    "title": "Using Zotero",
-    "section": "Manual Entries",
-    "text": "Manual Entries\nThe Zotero Connector is not perfect, however, and you may occasionally need to “manually” enter a reference. To do this, click on the “New Item” button in Zotero, and select the type of reference you want to add. You can then enter the metadata for the reference manually. This is a more time-consuming process than using the Zotero Connector, but it is necessary if you cannot find the reference online (e.g. a book or a conference presentation).\nHowever, if you can find a BibTex or RIS file for the reference, you can import the reference into Zotero by dragging and dropping the file into the Zotero window, or by copying the BibTex content and then selecting File -&gt; Import from Clipboard in Zotero.\nThe example below will demonstrate how to manually import a BibTex entry.\n\n1. Locate Source2. Open Citation3. Copy BibTex4. Import to Zotero5. Check Library\n\n\n\n\n\nIdentify the object you want to cite. If you can find the publication on Google Scholar, for example, BibTex entries are readily available. Click on the “Cite” button in Google Scholar to access the BibTex entry.\n\n\n\n\n\n\n\nClick on the “BibTex” button in Google Scholar to access the BibTex entry.\n\n\n\n\n\n\n\nCopy the BibTex entry to your clipboard.\n\n\n\n\n\n\n\nIn Zotero, click on File -&gt; Import from Clipboard to import the BibTex entry.\n\n\n\n\n\n\n\nAfter importing the BibTex entry, check your Zotero library to ensure the reference was saved correctly. Note how much less information is included by importing BibTex, however. Compared to the Zotero Connector, we are, at minimum, missing a PDF copy of the document and the date on which we accessed the material.\n\n\n\n\n\nLess commonly, you may need to import references from other software. To do this, export the references from the software in a compatible format, and import them into Zotero. Zotero can import references from a variety of formats, including BibTex, RIS, and EndNote XML.",
-    "crumbs": [
-      "Home",
-      "Background",
-      "Zotero Usage"
-    ]
-  },
-  {
-    "objectID": "background/zotero_usage.html#importing-from-online-databases",
-    "href": "background/zotero_usage.html#importing-from-online-databases",
-    "title": "Using Zotero",
-    "section": "Importing from Online Databases",
-    "text": "Importing from Online Databases\nZotero can also import references directly from online databases using an identifier such as a DOI, ISBN, or PMID. To do this, click on the “Add Item by Identifier” button in Zotero, and enter the identifier for the reference you want to add. Zotero will then search for the reference online and add it to your library.\n\n1. Open the “Add Item by Identifier” Dialog2. Enter the Identifier3. Check Library\n\n\n\n\n\nPress the wand-like button that opens the import-by-id function\n\n\n\n\n\n\n\nEnter a valid identifier such as a DOI or PMID\n\n\n\n\n\n\n\nAfter importing the reference, check your Zotero library to ensure the reference was saved correctly.",
-    "crumbs": [
-      "Home",
-      "Background",
-      "Zotero Usage"
-    ]
-  },
-  {
-    "objectID": "background/zotero_usage.html#generating-bibliographies",
-    "href": "background/zotero_usage.html#generating-bibliographies",
-    "title": "Using Zotero",
-    "section": "Generating Bibliographies",
-    "text": "Generating Bibliographies\n\nText Formatted\nYou can generate a bibliography by right-clicking on the folder or publication of interest, and selecting the option to “Generate Bibliography from Collection.” From there, you will be prompted to choose a citation style and an output method (i.e. copy to clipboard, save as file, etc.).\nThis option to quickly generate a bibliography is useful if you are using a text editor that does not have a Zotero plugin, or if you simply need a one-and-done bibliography for a smaller project.\nFor more details, see the Zotero documentation on creating bibliographies.\n\n\nBibTex and .bib Files\nBibTex is a commonly-used, structured file format for bibliographies (“BibTeX,” n.d.). You will generally not need to make or edit BibTex files if you are using a word processor with a Zotero plugin, as the plugin will automatically generate the bibliography for you. However, if you are using a text editor that does not have a Zotero plugin, you can export a BibTex file from Zotero to generate a bibliography.\nTo do this, right-click on the folder or publication of interest, and select the option to “Export Collection.” You can then choose the BibTex format, and save the file to your computer. You can then include this BibTex file in your document to generate a bibliography.\n\n\n\n\n\n\nBibTex Tip\n\n\n\nAll you really need to know about BibTex is that it is a structured file format for bibliographies, and Quarto documents should have a .bib file in the same directory as the .qmd file plus a reference to the .bib file in the YAML header. This will be discussed in the Citations in Quarto chapter.",
-    "crumbs": [
-      "Home",
-      "Background",
-      "Zotero Usage"
-    ]
-  },
-  {
-    "objectID": "background/zotero_usage.html#organizing-references",
-    "href": "background/zotero_usage.html#organizing-references",
-    "title": "Using Zotero",
-    "section": "Organizing References",
-    "text": "Organizing References\nYou can organize your references in Zotero by creating collections and tags. To create a collection, click on the “New Collection” button, and give the collection a name. To add references to this collection, simply drag and drop the references into the collection. To add tags to a reference, click on the “Tags” tab, and enter the tags you want to add. These tags are particularly convenient if you want to later search your library for references on a specific topic as defined by you.",
-    "crumbs": [
-      "Home",
-      "Background",
-      "Zotero Usage"
-    ]
-  },
-  {
-    "objectID": "background/zotero_usage.html#collaborating-with-others",
-    "href": "background/zotero_usage.html#collaborating-with-others",
-    "title": "Using Zotero",
-    "section": "Collaborating with others",
-    "text": "Collaborating with others\nYou can also collaborate with others by sharing your references with them, generally by creating a Zotero Group. The contents of these groups are shared with all members online, and you can set the group to be public or private.\nPublic groups are open to anyone, while private groups require an invitation to join. You can also create a group library, which is a shared library that all members can edit. This is useful if you are working on a project with others and want to share references with them.",
-    "crumbs": [
-      "Home",
-      "Background",
-      "Zotero Usage"
-    ]
-  },
-  {
-    "objectID": "background/zotero_usage.html#notetaking",
-    "href": "background/zotero_usage.html#notetaking",
-    "title": "Using Zotero",
-    "section": "Notetaking",
-    "text": "Notetaking\nZotero can function as a note-taking app. To add a note to a reference, click on the “Notes” tab, and enter the note you want to add. These notes can be useful if you want to record your thoughts on a reference, or if you want to summarize the key points of the reference.\n\nCollecting Quotes in Notes\nZotero also allows you to easily collect quotes from your references that automatically include a citation to the author, paper, and the publication year. This feature specifically works for PDFs that you have saved in your Zotero library. To use this feature, open the PDF of interest, copy the text you want to quote, and paste it into a note. Zotero will automatically include the citation information for the quote.",
-    "crumbs": [
-      "Home",
-      "Background",
-      "Zotero Usage"
-    ]
-  },
-  {
-    "objectID": "background/citation_style_language.html",
-    "href": "background/citation_style_language.html",
-    "title": "Citation Style Language (CSL)",
-    "section": "",
-    "text": "As mentioned earlier in the tutorial, Citation Style Language (CSL) is an XML-based format for defining citation and bibliography styles. CSL files are used by citation management software like Zotero to format citations and bibliographies in a specific style.\n\n\nTo demonstrate differences in citation styles, the citation for the same article is shown in several different styles below. The article is “Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson’s Irises” by Allison M. Horst, Alison Presmanes Hill, and Kristen B. Gorman, published in the R Journal in 2022.\nNote that if you use Google Scholar to find article citations, you will see that the 5 examples included below are the default citation styles used by Google Scholar.\n\n\n\n\n\n\n\nStyle Name\nCitation\n\n\n\n\nMLA\nHorst, Allison M., Alison Presmanes Hill, and Kristen B. Gorman. “Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson’s Irises.” R Journal 14.1 (2022).\n\n\nAPA\nHorst, A. M., Hill, A. P., & Gorman, K. B. (2022). Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson’s Irises. R Journal, 14(1).\n\n\nChicago\nHorst, Allison M., Alison Presmanes Hill, and Kristen B. Gorman. “Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson’s Irises.” R Journal 14, no. 1 (2022).\n\n\nHarvard\nHorst, A.M., Hill, A.P. and Gorman, K.B., 2022. Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson’s Irises. R Journal, 14(1).\n\n\nVancouver\nHorst AM, Hill AP, Gorman KB. Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson’s Irises. R Journal. 2022 Mar 1;14(1).",
-    "crumbs": [
-      "Home",
-      "Background",
-      "Citation Style Language"
-    ]
-  },
-  {
-    "objectID": "background/citation_style_language.html#citation-style-examples",
-    "href": "background/citation_style_language.html#citation-style-examples",
-    "title": "Citation Style Language (CSL)",
-    "section": "",
-    "text": "To demonstrate differences in citation styles, the citation for the same article is shown in several different styles below. The article is “Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson’s Irises” by Allison M. Horst, Alison Presmanes Hill, and Kristen B. Gorman, published in the R Journal in 2022.\nNote that if you use Google Scholar to find article citations, you will see that the 5 examples included below are the default citation styles used by Google Scholar.\n\n\n\n\n\n\n\nStyle Name\nCitation\n\n\n\n\nMLA\nHorst, Allison M., Alison Presmanes Hill, and Kristen B. Gorman. “Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson’s Irises.” R Journal 14.1 (2022).\n\n\nAPA\nHorst, A. M., Hill, A. P., & Gorman, K. B. (2022). Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson’s Irises. R Journal, 14(1).\n\n\nChicago\nHorst, Allison M., Alison Presmanes Hill, and Kristen B. Gorman. “Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson’s Irises.” R Journal 14, no. 1 (2022).\n\n\nHarvard\nHorst, A.M., Hill, A.P. and Gorman, K.B., 2022. Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson’s Irises. R Journal, 14(1).\n\n\nVancouver\nHorst AM, Hill AP, Gorman KB. Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson’s Irises. R Journal. 2022 Mar 1;14(1).",
-    "crumbs": [
-      "Home",
-      "Background",
-      "Citation Style Language"
-    ]
-  },
-  {
-    "objectID": "background/citation_style_language.html#what-does-a-csl-file-look-like",
-    "href": "background/citation_style_language.html#what-does-a-csl-file-look-like",
-    "title": "Citation Style Language (CSL)",
-    "section": "What Does a CSL File Look Like?",
-    "text": "What Does a CSL File Look Like?\nA CSL file is an XML file that contains the information necessary to format citations and bibliographies in a specific style. The file is divided into several sections, including:\n\nMetadata: Information about the style, such as the title, author, and version.\nMacros: Definitions for common elements like names, dates, and titles.\nCitations: Rules for formatting in-text citations.\nBibliography: Rules for formatting the bibliography.\n\nIf you’re interested, the collapsed code below is an example of a CSL file that defines the style for formatting citations in Nature style. Understanding the code underlying a CSL file is not necessary to use Zotero CSL files, but it can be helpful if you want to modify or create your own styles.\n\n\n\n\n\n\nXML file for Nature Citation Language Style\n\n\n\n\n\n&lt;?xml version=\"1.0\" encoding=\"utf-8\"?&gt;\n&lt;style xmlns=\"http://purl.org/net/xbiblio/csl\" class=\"in-text\" version=\"1.0\" demote-non-dropping-particle=\"sort-only\" default-locale=\"en-GB\"&gt;\n  &lt;info&gt;\n    &lt;title&gt;Nature&lt;/title&gt;\n    &lt;id&gt;http://www.zotero.org/styles/nature&lt;/id&gt;\n    &lt;link href=\"http://www.zotero.org/styles/nature\" rel=\"self\"/&gt;\n    &lt;link href=\"http://www.nature.com/nature/authors/gta/index.html#a5.4\" rel=\"documentation\"/&gt;\n    &lt;link href=\"http://www.nature.com/srep/publish/guidelines#references\" rel=\"documentation\"/&gt;\n    &lt;author&gt;\n      &lt;name&gt;Michael Berkowitz&lt;/name&gt;\n      &lt;email&gt;mberkowi@gmu.edu&lt;/email&gt;\n    &lt;/author&gt;\n    &lt;category citation-format=\"numeric\"/&gt;\n    &lt;category field=\"science\"/&gt;\n    &lt;category field=\"generic-base\"/&gt;\n    &lt;issn&gt;0028-0836&lt;/issn&gt;\n    &lt;eissn&gt;1476-4687&lt;/eissn&gt;\n    &lt;updated&gt;2024-01-22T03:08:05+00:00&lt;/updated&gt;\n    &lt;rights license=\"http://creativecommons.org/licenses/by-sa/3.0/\"&gt;This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License&lt;/rights&gt;\n  &lt;/info&gt;\n  &lt;macro name=\"title\"&gt;\n    &lt;choose&gt;\n      &lt;if type=\"bill book graphic legal_case legislation motion_picture report song\" match=\"any\"&gt;\n        &lt;text variable=\"title\" font-style=\"italic\" text-case=\"title\"/&gt;\n      &lt;/if&gt;\n      &lt;else&gt;\n        &lt;text variable=\"title\"/&gt;\n      &lt;/else&gt;\n    &lt;/choose&gt;\n  &lt;/macro&gt;\n  &lt;macro name=\"author\"&gt;\n    &lt;names variable=\"author\"&gt;\n      &lt;name sort-separator=\", \" delimiter=\", \" and=\"symbol\" initialize-with=\". \" delimiter-precedes-last=\"never\" name-as-sort-order=\"all\"/&gt;\n      &lt;label form=\"short\" prefix=\", \"/&gt;\n      &lt;et-al font-style=\"italic\"/&gt;\n    &lt;/names&gt;\n  &lt;/macro&gt;\n  &lt;macro name=\"access\"&gt;\n    &lt;choose&gt;\n      &lt;if variable=\"volume\" type=\"article dataset software\" match=\"any\"/&gt;\n      &lt;else-if variable=\"DOI\"&gt;\n        &lt;text variable=\"DOI\" prefix=\"doi:\"/&gt;\n      &lt;/else-if&gt;\n    &lt;/choose&gt;\n  &lt;/macro&gt;\n  &lt;macro name=\"access-data\"&gt;\n    &lt;choose&gt;\n      &lt;if type=\"dataset software\" match=\"any\"&gt;\n        &lt;text variable=\"DOI\" prefix=\"https://doi.org/\"/&gt;\n      &lt;/if&gt;\n    &lt;/choose&gt;\n  &lt;/macro&gt;\n  &lt;macro name=\"issuance\"&gt;\n    &lt;choose&gt;\n      &lt;if type=\"bill book graphic legal_case legislation motion_picture song thesis chapter paper-conference\" match=\"any\"&gt;\n        &lt;group delimiter=\"; \" suffix=\".\"&gt;\n          &lt;group delimiter=\", \" prefix=\"(\" suffix=\")\"&gt;\n            &lt;text variable=\"publisher\" form=\"long\"/&gt;\n            &lt;text variable=\"publisher-place\"/&gt;\n            &lt;date variable=\"issued\"&gt;\n              &lt;date-part name=\"year\"/&gt;\n            &lt;/date&gt;\n          &lt;/group&gt;\n        &lt;/group&gt;\n      &lt;/if&gt;\n      &lt;else-if type=\"article\"&gt;\n        &lt;group delimiter=\" \"&gt;\n          &lt;choose&gt;\n            &lt;if variable=\"genre\" match=\"any\"&gt;\n              &lt;text variable=\"genre\" text-case=\"capitalize-first\"/&gt;\n            &lt;/if&gt;\n            &lt;else&gt;\n              &lt;text term=\"article\" text-case=\"capitalize-first\"/&gt;\n            &lt;/else&gt;\n          &lt;/choose&gt;\n          &lt;text term=\"at\"/&gt;\n          &lt;choose&gt;\n            &lt;if variable=\"DOI\" match=\"any\"&gt;\n              &lt;text variable=\"DOI\" prefix=\"https://doi.org/\"/&gt;\n            &lt;/if&gt;\n            &lt;else&gt;\n              &lt;text variable=\"URL\"/&gt;\n            &lt;/else&gt;\n          &lt;/choose&gt;\n          &lt;date date-parts=\"year\" form=\"text\" variable=\"issued\" prefix=\"(\" suffix=\")\"/&gt;\n        &lt;/group&gt;\n      &lt;/else-if&gt;\n      &lt;else-if type=\"dataset software\" match=\"any\"&gt;\n        &lt;group delimiter=\" \"&gt;\n          &lt;text variable=\"publisher\"/&gt;\n          &lt;text macro=\"access-data\"/&gt;\n          &lt;date date-parts=\"year\" form=\"text\" variable=\"issued\" prefix=\"(\" suffix=\")\"/&gt;\n        &lt;/group&gt;\n      &lt;/else-if&gt;\n      &lt;else-if type=\"report webpage post post-weblog\" match=\"any\"&gt;\n        &lt;group delimiter=\" \"&gt;\n          &lt;text variable=\"URL\"/&gt;\n          &lt;date date-parts=\"year\" form=\"text\" variable=\"issued\" prefix=\"(\" suffix=\")\"/&gt;\n        &lt;/group&gt;\n      &lt;/else-if&gt;\n      &lt;else&gt;\n        &lt;date variable=\"issued\" prefix=\"(\" suffix=\")\"&gt;\n          &lt;date-part name=\"year\"/&gt;\n        &lt;/date&gt;\n      &lt;/else&gt;\n    &lt;/choose&gt;\n  &lt;/macro&gt;\n  &lt;macro name=\"container-title\"&gt;\n    &lt;choose&gt;\n      &lt;if type=\"article-journal\"&gt;\n        &lt;text variable=\"container-title\" font-style=\"italic\" form=\"short\"/&gt;\n      &lt;/if&gt;\n      &lt;else&gt;\n        &lt;text variable=\"container-title\" font-style=\"italic\"/&gt;\n      &lt;/else&gt;\n    &lt;/choose&gt;\n  &lt;/macro&gt;\n  &lt;macro name=\"editor\"&gt;\n    &lt;choose&gt;\n      &lt;if type=\"chapter paper-conference\" match=\"any\"&gt;\n        &lt;names variable=\"editor\" prefix=\"(\" suffix=\")\"&gt;\n          &lt;label form=\"short\" suffix=\" \"/&gt;\n          &lt;name and=\"symbol\" delimiter-precedes-last=\"never\" initialize-with=\". \" name-as-sort-order=\"all\"/&gt;\n        &lt;/names&gt;\n      &lt;/if&gt;\n    &lt;/choose&gt;\n  &lt;/macro&gt;\n  &lt;macro name=\"volume\"&gt;\n    &lt;choose&gt;\n      &lt;if type=\"article-journal\" match=\"any\"&gt;\n        &lt;text variable=\"volume\" font-weight=\"bold\" suffix=\",\"/&gt;\n      &lt;/if&gt;\n      &lt;else&gt;\n        &lt;group delimiter=\" \"&gt;\n          &lt;label variable=\"volume\" form=\"short\"/&gt;\n          &lt;text variable=\"volume\"/&gt;\n        &lt;/group&gt;\n      &lt;/else&gt;\n    &lt;/choose&gt;\n  &lt;/macro&gt;\n  &lt;citation collapse=\"citation-number\"&gt;\n    &lt;sort&gt;\n      &lt;key variable=\"citation-number\"/&gt;\n    &lt;/sort&gt;\n    &lt;layout vertical-align=\"sup\" delimiter=\",\"&gt;\n      &lt;text variable=\"citation-number\"/&gt;\n    &lt;/layout&gt;\n  &lt;/citation&gt;\n  &lt;bibliography et-al-min=\"6\" et-al-use-first=\"1\" second-field-align=\"flush\" entry-spacing=\"0\" line-spacing=\"2\"&gt;\n    &lt;layout suffix=\".\"&gt;\n      &lt;text variable=\"citation-number\" suffix=\".\"/&gt;\n      &lt;group delimiter=\" \"&gt;\n        &lt;text macro=\"author\" suffix=\".\"/&gt;\n        &lt;text macro=\"title\" suffix=\".\"/&gt;\n        &lt;choose&gt;\n          &lt;if type=\"chapter paper-conference\" match=\"any\"&gt;\n            &lt;text term=\"in\"/&gt;\n          &lt;/if&gt;\n        &lt;/choose&gt;\n        &lt;text macro=\"container-title\"/&gt;\n        &lt;text macro=\"editor\"/&gt;\n        &lt;text macro=\"volume\"/&gt;\n        &lt;text variable=\"page\"/&gt;\n        &lt;text macro=\"issuance\"/&gt;\n        &lt;text macro=\"access\"/&gt;\n      &lt;/group&gt;\n    &lt;/layout&gt;\n  &lt;/bibliography&gt;\n&lt;/style&gt;",
-    "crumbs": [
-      "Home",
-      "Background",
-      "Citation Style Language"
-    ]
-  },
-  {
-    "objectID": "integrating_zotero/citations_in_word.html",
-    "href": "integrating_zotero/citations_in_word.html",
-    "title": "Citations in Word",
-    "section": "",
-    "text": "Zotero also provides a plugin for Microsoft Word that allows you to insert citations and bibliographies directly into your documents. The technical details of this depart from the procedure for inserting citations into a Quarto document, but still follows the same steps of 1) inserting a citation and 2) generating a bibliography.",
-    "crumbs": [
-      "Home",
-      "Integrating Zotero",
-      "Citations in Word"
-    ]
-  },
-  {
-    "objectID": "integrating_zotero/citations_in_word.html#initial-add-new-citations",
-    "href": "integrating_zotero/citations_in_word.html#initial-add-new-citations",
-    "title": "Citations in Word",
-    "section": "Initial Add & New Citations",
-    "text": "Initial Add & New Citations\n\n1. Add Bibliography2. Results3. Add New Citations\n\n\n\n\n\nThe bibliography can be added at any time after the first citation has been placed in the document. Simply press the “Add/Edit Bibliography” button.\n\n\n\n\n\n\n\nAfter pressing the button, the bibliography should appear where you had your cursor placed.\n\n\n\n\n\n\n\nTo add new citations, simply repeat the procedure outlined previously. Some versions of Word and Zotero will automatically update the bibliography, but older versions may require you to press the Refresh button!",
-    "crumbs": [
-      "Home",
-      "Integrating Zotero",
-      "Citations in Word"
-    ]
-  },
-  {
-    "objectID": "integrating_zotero/citations_in_word.html#change-style",
-    "href": "integrating_zotero/citations_in_word.html#change-style",
-    "title": "Citations in Word",
-    "section": "Change Style",
-    "text": "Change Style\nIf, after inserting your first citation, you decide to use a different citation style, you can do so by pressing the “Document Preferences” button under the Zotero tab. This will allow you to change the citation style of the document. Note that this will change the style of all in-line citations and the bibliography.\n\n1. Doc Preferences2. Change CSL3. See Updates\n\n\n\n\n\nPress the Document Preferences button to make changes to the citation style of the document.\n\n\n\n\n\n\n\nSelect the new style you’d like to use. If needed, you can first download the style from the Zotero website, install it into Zotero, and then restart both Word and Zotero.\n\n\n\n\n\n\n\nNote that the style of the in-line citations and the bibliography have now been updated to reflect the new CSL file we’ve chosen.",
-    "crumbs": [
-      "Home",
-      "Integrating Zotero",
-      "Citations in Word"
-    ]
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Welcome to the Zotero Tutorial!",
-    "section": "",
-    "text": "Tutorial Overview\nThis self-paced tutorial will introduce you to Zotero, a free citation management tool that can help you organize your research and create bibliographies with a specific focus on integrating it with RStudio and Quarto. It is intended to take about 30-60 minutes to complete.\nThe tutorial is split into the following sections:\n\nGetting Started with Zotero\nIntegrating Zotero\nExercises\nAdvanced\n\n\n\n\n\n\n\nSoftware Requirements\n\n\n\nTo complete this tutorial, you will need to have the following software installed on your computer:\n\nZotero and Zotero Connector\nRStudio\nQuarto\n\nRStudio comes bundled with Quarto. You do not need to install Quarto separately if you have a recent version of RStudio.\n\n\n\n\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Home",
-      "Overview"
-    ]
-  },
-  {
-    "objectID": "advanced/zotero_groups.html",
-    "href": "advanced/zotero_groups.html",
-    "title": "Zotero Groups",
-    "section": "",
-    "text": "Video Overview\nThis great overview video from Georgia State University Library provides an introduction to Zotero Groups, including what they are, how to create them, how to add references to them, how to share them, and how to collaborate on them (Georgia State University Library 2019).\n\n\n\nZotero Groups Considerations\nZotero Groups are a great way to collaborate with others on a research project. However, there are some considerations to keep in mind when using Zotero Groups:\n\nPrivacy: Zotero Groups are public by default, so be sure to set your group to private if you want to keep your references private.\nStorage: Zotero Groups have limited storage space, so be mindful of how many references you add to your group. This will really only be a concern if you wish to include PDF files with your references.\n\nYou can use up to 300MB for free. If you need more space, you can upgrade to a paid plan which are available in 2GB, 6GB, and Unlimited sizes for $20, $60, and $120 per year, respectively.\n\nCollaboration: Zotero Groups allow for collaboration, but be sure to communicate with your collaborators about who can add, edit, and delete references.\n\n\n\n\n\n\n Back to topReferences\n\nGeorgia State University Library. 2019. “Zotero: Setting up Shared Group Libraries,” October. https://www.youtube.com/watch?v=n4lFk3pIEZ8.",
-    "crumbs": [
-      "Home",
-      "Advanced",
-      "Zotero Groups"
-    ]
-  },
-  {
-    "objectID": "exercises/exercise_3.html",
-    "href": "exercises/exercise_3.html",
-    "title": "Exercise 3: Changing CSL in Quarto",
-    "section": "",
-    "text": "Instructions\n\nOpen the Quarto document you created in the previous exercise.\nGo to the Zotero Style Repository and find a style you like. Download the CSL file for that style by clicking on the link, and pressing “Cancel” when asked to add the citation style to Zotero.\n\nThis will add the .csl file to your downloads folder rather than installing it directly into Zotero.\n\nAdd the downloaded CSL file to the same folder as your R Project.\nChange the citation style in the YAML front matter to the name of the downloaded CSL file.\n\nThe YAML for this should look something like csl: \"my-csl-file.csl\", and can be listed under the output key.\n\nRe-knit your Quarto document. What has changed in the output?\n\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Home",
-      "Exercises",
-      "Exercise 3: Changing CSL"
     ]
   }
 ]
