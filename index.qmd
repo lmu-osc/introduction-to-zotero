@@ -9,10 +9,10 @@ This self-paced tutorial will introduce you to Zotero, a free citation managemen
 
 The tutorial is split into the following sections:
 
-1. [Getting Started with Zotero](zotero_basics.qmd)
-2. [Integrating Zotero](citations_in_quarto.qmd)
-3. [Exercises](exercise_1.qmd)
-4. [Advanced](zotero_groups.qmd)
+1. [Getting Started with Zotero](background/zotero_basics.qmd)
+2. [Integrating Zotero](integrating_zotero/citations_in_quarto.qmd)
+3. [Exercises](exercises/exercise_1.qmd)
+4. [Advanced](advanced/zotero_groups.qmd)
 
 ::: {.callout-tip title="Software Requirements"}
 
