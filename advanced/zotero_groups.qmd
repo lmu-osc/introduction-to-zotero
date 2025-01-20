@@ -49,7 +49,7 @@ height="2.928674540682415in"}
 
 ### 2. Click on "Groups" and then on "Create a new group"
 
-![](.../assets/groups-media/image4.png){width="6.267716535433071in"
+![](../assets/groups-media/image4.png){width="6.267716535433071in"
 height="0.5972222222222222in"}
 
 ![](../assets/groups-media/image13.png){width="6.109375546806649in"
