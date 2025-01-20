@@ -26,5 +26,11 @@ To complete this tutorial, you will need to have the following software installe
 :::
 
 
+::: {.callout-tip title="Exercises"}
 
+We recommend completing all of the steps outlined in the Background and Integrating Zotero sections of this tutorial *as you read through them.* The Exercises section of this tutorial essentially rehashes the same content, but is intended to review and consolidate the topics discussed.
+
+Moreover, while this tutorial can be completed with any code text editor, we highly recommend using RStudio because it is well-integrated with Zotero.
+
+:::
 
