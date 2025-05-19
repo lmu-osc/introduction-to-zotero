@@ -184,14 +184,44 @@ csl: https://www.zotero.org/styles/nature
 ---
 ```
 
-## A Note on Updating Citations in Zotero
+## Keeping the .bib File Updated Outside of Zotero
+
+By default, exporting a libary from Zotero will create a bibliography file in your destination directory that is not automatically updated once you add/change references in Zotero. In order to have a reference.bib file that is dynamically updated (see the [discussion on the Zotero forum here](https://forums.zotero.org/discussion/89720/keeping-a-bibtex-file-per-collection-in-sync-with-zotero)), you need to first install the [BetterBibTeX plugin](https://retorque.re/zotero-better-bibtex/).
+
+::: panel-tabset
+
+## 1. Export Library
+
+![Right-click on the collection to export and then click Export Library.](/assets/betterbibtex-automatic-updates/01-export-libary)
+
+## 2. Select BetterBibTeX
+
+![From the Format drop-down menu, select Better BibTex ](/assets/betterbibtex-automatic-updates/02-select-betterbibtex)
+
+## 3. Set Up Automatic Updating
+
+![Tick Keep Updated and press OK](/assets/betterbibtex-automatic-updates/03-keep-updated)
+
+## 4. Save Exported Reference File
+
+![Navigate to the RStudio folder and save your reference file as references.bib](/assets/betterbibtex-automatic-updates/04-save-file)
+
+## 5. Check folder
+
+![Check your folder for the references.bib file](/assets/betterbibtex-automatic-updates/05-check-folder)
+:::
+
+To test the automatic updates, you can add a new paper to your library. 
+
+
+## A Note on Updating Citations within Zotero
 
 A current shortcoming with inserting citations into Quarto documents is that the bibliography does not automatically update when you update the references in Zotero.
 
 That is, if you make changes to the citations *within* Zotero, you may need to delete the `references.bib` file and reinsert the citations to force update the bibliography in your project. This sounds a bit complicated, but simply deleting the `references.bib` file and reinserting a single citation will prompt RStudio to regenerate the `references.bib` file with the updated references.
 
 ::: {.callout-tip title="Automatic Updates in the Future?"}
-An issue requesting that the bibliography automatically update when references are updated in Zotero was previosuly opened in the RStudio GitHub repository, but it was closed without being addressed. you can find the issue [here](https://github.com/rstudio/rstudio/issues/11447). you can, however, comment that you'd like to see this feature implemented in the future ;).
+An issue requesting that the bibliography automatically update when references are updated in Zotero was previosuly opened in the RStudio GitHub repository, but it was closed without being addressed. you can find the issue [here](https://github.com/rstudio/rstudio/issues/11447). You can, however, comment that you'd like to see this feature implemented in the future ;).
 :::
 
 # References
