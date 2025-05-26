@@ -4,23 +4,7 @@ format: html
 bibliography: references.bib
 ---
 
-# Video Overview
-
-This great overview video from Georgia State University Library provides an introduction to Zotero Groups, including what they are, how to create them, how to add references to them, how to share them, and how to collaborate on them [@georgiastateuniversitylibrary2019].
-
-{{< video https://www.youtube.com/watch?v=n4lFk3pIEZ8 >}}
-
-# Zotero Groups Considerations
-
-Zotero Groups are a great way to collaborate with others on a research project. However, there are some considerations to keep in mind when using Zotero Groups:
-
-- **Privacy**: Zotero Groups are public by default, so be sure to set your group to private if you want to keep your references private.
-- **Storage**: Zotero Groups have limited storage space, so be mindful of how many references you add to your group. This will really only be a concern if you wish to include PDF files with your references.
-    - You can use up to 300MB for free. If you need more space, you can upgrade to a paid plan which are available in 2GB, 6GB, and Unlimited sizes for \$20, \$60, and \$120 per year, respectively.
-- **Collaboration**: Zotero Groups allow for collaboration, but be sure to communicate with your collaborators about who can add, edit, and delete references.
-
-
-# **Comprehensive Guide to Zotero Groups**
+# Collaborating with Zotero Groups
 
 Zotero Groups provide an excellent platform for collaborative research,
 enabling users to share, organize, and manage references and resources
@@ -28,7 +12,7 @@ effectively. This tutorial combines best practices, step-by-step
 instructions, and general recommendations from various trusted resources
 to help you make the most of Zotero Groups.
 
-## **Purpose of Zotero Groups**
+## Purpose of Zotero Groups
 
 Zotero Groups are designed to facilitate collaboration for:
 
@@ -40,28 +24,23 @@ Zotero Groups are designed to facilitate collaboration for:
 
 -   Any group requiring a centralized space for research materials
 
-## **Step-by-Step Guide for Zotero Groups**
-
-### 1. Login into your Zotero account
-
-![](../assets/groups-media/image2.png){width="6.317708880139983in"
-height="2.928674540682415in"}
-
-### 2. Click on "Groups" and then on "Create a new group"
-
-![](../assets/groups-media/image4.png){width="6.267716535433071in"
-height="0.5972222222222222in"}
-
-![](../assets/groups-media/image13.png){width="6.109375546806649in"
+![](/assets/groups-media/image13.png){width="6.109375546806649in"
 height="2.8111242344706913in"}
 
-### 3. Setting Group Details
+## Video Overview
 
-![](../assets/groups-media/image7.png){width="6.267716535433071in"
-height="3.0555555555555554in"}
+This great overview video from Georgia State University Library provides an introduction to Zotero Groups, including what they are, how to create them, how to add references to them, how to share them, and how to collaborate on them [@georgiastateuniversitylibrary2019].
 
-Now you can choose a name for your group and the group type. There are 3
-options for the group type:
+{{< video https://www.youtube.com/watch?v=n4lFk3pIEZ8 >}}
+
+
+# Zotero Group Features
+
+Before creating a group, it is important to reflect on which type of group you want, what the primary purpose of the group is and how you want others to interact within the sources shared within the group. 
+
+## Group Types
+
+The group type defines the characteristics of accessing the group and sharing materials and depends on the intended purpose of the group. 
 
   -----------------------------------------------------------------------
   **Group Type**    **Access**        **File Sharing**  **Best For**
@@ -77,32 +56,8 @@ options for the group type:
                     access                              projects
   -----------------------------------------------------------------------
 
-### 4. Adjusting Settings
-
-#### 4.1. Group Settings
-
-![](../assets/groups-media/image12.png){width="6.267716535433071in"
-height="2.888888888888889in"}
-
-Here you can customize your group by:
-
--   Naming the group and providing a description
-
--   Selecting a discipline and group type
-
--   Adding a profile picture and related URLs
-
-#### 4.2 Members Settings
-
-![](../assets/groups-media/image8.png){width="6.267716535433071in" height="2.875in"}
-
-Here you can customize your group by:
-
--   Sending member invitations
-
--   Transferring group ownership to another member if needed
-
-There are three roles in Zotero Groups:
+## Member Roles
+Members within a Zotero group can be assigned one of three roles to determine how they interact with the shared materials:
 
 1.  **Regular Members**: Can read and edit the library (based on
     permissions)
@@ -113,12 +68,10 @@ There are three roles in Zotero Groups:
 3.  **Group Owners**: Have full administrative rights, including the
     ability to delete the group or transfer ownership
 
-#### 4.3 Library Settings
 
-![](../assets/groups-media/image9.png){width="6.267716535433071in"
-height="3.2083333333333335in"}
+## Group Library settings
 
-Here you can customize your group by changing the following:
+Important group parameters are the following: 
 
 -   **Group Type:** Private, Public/Closed, Public/Opened
 
@@ -129,108 +82,46 @@ Here you can customize your group by changing the following:
 
 -   **File Editing**: Enable or restrict file sharing among group
     members
+       
 
-## **Interacting with Groups in Zotero Client**
+# Step-by-Step Guide for creating a Zotero Group
 
--   Group libraries appear under \"Group Libraries\" in the Zotero
-    desktop application.
+::: panel-tabset
+## Login to Zotero Account
 
--   Sync regularly to ensure updates are shared with all members.
+![Login to your Zotero account.](/assets/groups-media/01-login)
 
--   Add, edit, and organize items directly within the desktop app.
+## Create New Group
 
-## **Best Practices for Zotero Groups**
+![In the top menu, click on "Groups" and then on "Create a new group"](/assets/groups-media/02-new-group)
 
-### **1. Structuring the Library**
+## Set up the Group
 
-#### **Inbox for New Items**
+![Choose a name for your group and the group type (Public, Open Membership; Public, CLosed Membership; Private)](/assets/groups-media/03-group-type)
 
--   Create a temporary space or tag for unprocessed materials before
-    adding them to the group library:
+## Adjust Group Settings
 
-    -   In the Zotero desktop app, create a new collection (right-click
-        on your personal library and select "New Collection").
+![Customize settings for group description, discipline, group picture and urls](/assets/groups-media/04-group-settings)
 
-    -   Name this collection something like "Inbox" or "To Process."
+## Adjust Member Settings
 
-    -   When saving items to Zotero, apply a tag such as
-        \"Unprocessed.\" You can do this directly when saving an item in
-        your browser or later in the Zotero desktop app.
+![Customize group by inviting members, managing roles and transferring ownership of the group to rolers)](/assets/groups-media/05-member-settings)
 
-    -   Filter by this tag later to review and process these items.
+## Adjust Library Settings
 
-![](../assets/groups-media/image11.png){width="6.267716535433071in"
-height="3.361111111111111in"}
+![Customize group by visibility and editing and viewing permissions)](/assets/groups-media/06-library-settings)
 
-![](../assets/groups-media/image5.png){width="6.267716535433071in"
-height="2.8055555555555554in"}
+:::
 
-![](../assets/groups-media/image3.png){width="6.267716535433071in"
-height="2.9722222222222223in"}
 
-#### **Workflow Notes**
+## Interacting with Groups in Zotero Application
 
--   Add a standalone note describing group workflows, including tag
-    usage, folder structure, and \"related\" item definitions:
+Group libraries appear under \"Group Libraries\" in the Zotero desktop application. Similar to your other colllections, you can add, edit and organise your sources for your group directly within the desktop application. It is important to sync regularly to ensure updates are shared with all collaborating members.
 
-    -   In your group library, select \"New Note\" \> \"Standalone
-        Note\" in the toolbar.
+## Considerations for Zotero Groups
 
-    -   Write a clear description of the group workflow, including
-        folder usage, tagging conventions, and definitions for
-        \"related\" items.
+Zotero Groups are a great way to collaborate with others on a research project and to share sources. However, there are some considerations to keep in mind when using Zotero Groups:
 
-![](../assets/groups-media/image1.png){width="6.267716535433071in"
-height="3.361111111111111in"}
-
-![](../assets/groups-media/image10.png){width="6.267716535433071in"
-height="3.2083333333333335in"}
-
-#### **Folder-Specific Notes**
-
--   In each subfolder (collection), create a standalone note explaining
-    its purpose.
-
--   Keep these notes updated to reflect changes in folder usage.
-
-### **2. Managing Tags**
-
-#### **Tag Definitions**
-
--   Add a new standalone note in the group library.
-
--   List all tags used by the group and provide a brief explanation of
-    their purpose.
-
--   Update the note whenever a new tag is added and communicate changes
-    to group members.
-
-![](../assets/groups-media/image6.png){width="6.267716535433071in"
-height="3.1944444444444446in"}
-
-#### **Tag Management**
-
--   Avoid adding too many tags by discussing with group members before
-    creating new ones.
-
--   Regularly review and delete unused or redundant tags.
-
--   Open the \"Tags\" tab in the right-hand pane of Zotero, where you
-    can add, edit, or delete tags directly.
-
-### **3. Adding and Organizing Resources**
-
-#### **Using the Zotero Browser Extension**
-
--   Save items directly to the group library by selecting the desired
-    library from the drop-down menu in the browser extension.
-
-#### **Dragging Items**
-
--   Drag and drop items from your personal library into the group
-    library.
-
-#### **Organizing Items**
-
--   Use tags and sub-collections to categorize and structure resources
-    effectively.
+- **Privacy**: Zotero Groups are public by default, so be sure to set your group to private if you want to keep your references private.
+- **Storage**: Zotero Groups have limited storage space, so be mindful of how many references you add to your group. This will really only be a concern if you wish to include PDF files with your references. You can use up to 300MB for free. If you need more space, you can upgrade to a paid plan which are available in 2GB, 6GB, and Unlimited sizes for \$20, \$60, and \$120 per year, respectively.
+- **Collaboration**: Zotero Groups allow for collaboration, but be sure to communicate with your collaborators about who can add, edit, and delete references.
