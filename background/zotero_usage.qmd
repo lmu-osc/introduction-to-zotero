@@ -149,9 +149,9 @@ You can organize your references in Zotero by creating collections and tags. To 
 
 ## Collaborating with others
 
-You can also collaborate with others by sharing your references with them, generally by creating a [Zotero Group](zotero_groups.html). The contents of these groups are shared with all members online, and you can set the group to be public or private.
+You can also collaborate with others by sharing your references with them, generally by creating a Zotero group, see the [Zotero Groups chapter](zotero-groups.qmd) for details. The contents of these groups are shared with all members online, and you can set the group to be public or private.
 
-Public groups are open to anyone, while private groups require an invitation to join. You can also create a group library, which is a shared library that all members can edit. This is useful if you are working on a project with others and want to share references with them. For more information, go to Zotero Groups in the Advanced section. 
+Public groups are open to anyone, while private groups require an invitation to join. You can also create a group library, which is a shared library that all members can edit. This is useful if you are working on a project with others and want to share references with them.
 
 ## Notetaking
 
