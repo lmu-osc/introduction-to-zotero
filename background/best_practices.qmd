@@ -1,5 +1,5 @@
 ---
-title: "Best Practises"
+title: "Best Practices"
 format: html
 resource-path: [".."]
 ---
