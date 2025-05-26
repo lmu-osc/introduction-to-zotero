@@ -48,9 +48,10 @@ Citation keys are unique identifiers for each reference in your bibliography. Th
 
 Before you can use citations within your Quarto document, you will have to follow these steps:
 
-1.  Export your bibliography from Zotero as a BibTex file
-2.  Save this file in your project directory where your Quarto document is located as `references.bib`
-3.  Add the following to your YAML header: `bibliography: references.bib`, like this:
+1.  Export your citations from Zotero as a BibTex file by right-clicking on the collection and then on `Export Collection`.
+2.  Select `BibTex` as file format from the drop-down menu and press `Ok`.
+3.  Save this file in your project directory where your Quarto document is located as `references.bib`
+4.  Add the following to your YAML header: `bibliography: references.bib`, like this:
 
 ``` yaml
 ---
@@ -62,8 +63,6 @@ bibliography: references.bib
 ## Referencing by Citation Key in RStudio
 
 After you have set up your `references.bib` file in your directory, you can use the citation keys found in the `references.bib` file to cite your sources in your Quarto document. The citation keys can be found in the BibTex file you exported from Zotero as the first line for each entry, or you can check directly with the entry in the Zotero application. For example, the citation key for the Palmer Penguins data set from 2022 by Allison Horst is `@horstPalmerArchipelagoPenguins2022a` in my `references.bib` file.
-
-<!-- For example, extending the `references.bib` example, based on the entry in Zotero, you can cite the Palmer Penguins data set from 2022 by Allison Horst with the citation key `@horstPalmerArchipelagoPenguins2022a`. You would use this citation key in your document to insert a citation to this reference. -->
 
 You can insert a citation in your Quarto document by using the `@` symbol followed by the citation key of the reference you want to cite. For example, in order to cite the paper by Allison Horst and colleagues, I would use the citation key `[@horstPalmerArchipelagoPenguins2022a]` in my document. The text would look like this:
 
@@ -98,7 +97,7 @@ Note that this process is simply a "visual" short code for inserting the citatio
 
 ## 3. Plugin
 
-![This should open a plugin that allows you to search your Zotero library as well as PubMed, CrossRef, and directly by DOI numbers (in case you haven't already saved something to your Zotero library). Open the Zotero folder relevant to your project, the "Zotero Tutorial" in this example.](/assets/citations-in-quarto/03_open_folder)
+![This should open a plugin that allows you to search your Zotero library as well as PubMed, CrossRef, and directly by DOI numbers (in case you haven't already saved something to your Zotero library). Open the Zotero folder relevant to your project, the "Zotero tutorial" in this example.](/assets/citations-in-quarto/03_open_folder)
 
 ## 4. Select
 
@@ -106,7 +105,7 @@ Note that this process is simply a "visual" short code for inserting the citatio
 
 ## 5. Edit Key
 
-![If you'd like to edit the key to something more memorable or informative, press on the pencil button and edit away. In this example, the citation key has been changed to `@zotero-guide`. <br><br> Note that citation key changes must be done **the first time you include a new citation** and you cannot have spaces in the name. Press **Insert** when done.](/assets/citations-in-quarto/05_edit_key)
+![If you'd like to edit the key to something more memorable or informative, press on the pencil button and edit away. In this example, the citation key will **not** be edited. <br><br> Note that citation key edits must be done **the first time you include a new citation** and you cannot have spaces in the name. Press **Insert** when done.](/assets/citations-in-quarto/05_edit_key)
 
 ## 6. Review
 
