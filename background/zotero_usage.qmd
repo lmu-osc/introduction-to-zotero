@@ -69,7 +69,7 @@ The Zotero Connector is not perfect, however, and you may occasionally need to "
 
 However, if you can find a BibTex or RIS file for the reference, you can import the reference into Zotero by dragging and dropping the file into the Zotero window, or by copying the BibTex content and then selecting `File` -\> `Import from Clipboard` in Zotero.
 
-The example below will demonstrate how to manually import a BibTex entry.
+The example below will demonstrate how to manually import a BibTex entry. All you really need to know about [BibTex](https://www.bibtex.org/) is that it is a commonly-used, structured file format for bibliographic entries and bibliographies [@bibtex].
 
 ::: panel-tabset
 ## 1. Locate Source
@@ -123,20 +123,20 @@ Inserting citations and bibliographies into Quarto and Word documents are specif
 
 ### Text Formatted
 
-You can generate a bibliography by right-clicking on the folder or publication of interest, and selecting the option to "Generate Bibliography from Collection." From there, you will be prompted to choose a citation style and an output method (i.e. copy to clipboard, save as file, etc.).
+You can generate a bibliography by right-clicking on the folder or publication of interest, and selecting the option to "Create Bibliography from Collection." From there, you will be prompted to choose a citation style and an output method (i.e. copy to clipboard, save as file, etc.).
 
-This option to quickly generate a bibliography is useful if you are using a text editor that does not have a Zotero plugin, or if you simply need a one-and-done bibliography for a smaller project.
+This option to quickly generate a bibliography is useful if you are using a text editor that does not have a Zotero plugin to paste the bibliography to, or if you simply need a one-and-done bibliography for a smaller project.
 
 For more details, see the [Zotero documentation on creating bibliographies](https://www.zotero.org/support/creating_bibliographies).
 
 ### BibTex and `.bib` Files
 
-[BibTex](https://www.bibtex.org/) is a commonly-used, structured file format for bibliographies [@bibtex]. You will generally not need to make or edit BibTex files if you are using a word processor with a Zotero plugin, as the plugin will automatically generate the bibliography for you. However, if you are using a text editor that does not have a Zotero plugin, you can export a BibTex file from Zotero to generate a bibliography.
+If you are using a text editor that does not have a Zotero plugin, you can export a BibTex file directly from Zotero to generate a bibliography. However, you will generally not need to make or edit BibTex files if you are using a word processor with a Zotero plugin, as the plugin will automatically generate the bibliography for you. 
 
-To do this, right-click on the folder or publication of interest, and select the option to "Export Collection." You can then choose the BibTex format, and save the file to your computer. You can then include this BibTex file in your document to generate a bibliography.
+To export a BibTex file from Zotero, right-click on the folder or publication of interest, and select the option to "Export Collection." You can then choose the BibTex format from the drop-down menu, and save the `.bib` file to your computer. You can then include this BibTex file in your document to generate a bibliography.
 
 ::: {.callout-tip title="BibTex Tip"}
-All you really need to know about BibTex is that it is a structured file format for bibliographies, and Quarto documents should have a `.bib` file in the same directory as the `.qmd` file plus a reference to the `.bib` file in the YAML header. This will be discussed in the [Citations in Quarto](citations_in_quarto.html) chapter.
+For citations in Quarto, it is important to know that Quarto documents should have a `.bib` file in the same directory as the `.qmd` file plus a reference to the `.bib` file in the YAML header. This will be discussed in the [Citations in Quarto](citations_in_quarto.html) chapter.
 :::
 
 # Other Features
@@ -151,7 +151,7 @@ You can organize your references in Zotero by creating collections and tags. To 
 
 You can also collaborate with others by sharing your references with them, generally by creating a [Zotero Group](zotero_groups.html). The contents of these groups are shared with all members online, and you can set the group to be public or private.
 
-Public groups are open to anyone, while private groups require an invitation to join. You can also create a group library, which is a shared library that all members can edit. This is useful if you are working on a project with others and want to share references with them.
+Public groups are open to anyone, while private groups require an invitation to join. You can also create a group library, which is a shared library that all members can edit. This is useful if you are working on a project with others and want to share references with them. For more information, go to Zotero Groups in the Advanced section. 
 
 ## Notetaking
 
