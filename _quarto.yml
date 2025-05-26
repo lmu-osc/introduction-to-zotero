@@ -55,7 +55,7 @@ website:
             text: "Citations in Quarto"
           - href: integrating_zotero/citations_in_word.qmd
             text: "Citations in Word"
-      - text: "Best Practises"
+      - text: "Best Practices"
         href: background/best_practises.qmd
       - section: "Exercises"
         contents:
