@@ -18,15 +18,15 @@ Zotero's library system functions similar to a file system on your computer. You
 ::: panel-tabset
 ## 1. General Library
 
-![All of your citations can be accessed in the overall **My Library** section.](/assets/01_library)
+![All of your citations can be accessed in the overall **My Library** section.](/assets/create-library/01_library)
 
 ## 2. Creating a New Folder
 
-![Press the folder button in the top left corner to create a new folder, and provide a relevant name.](/assets/02_new_folder)
+![Press the folder button in the top left corner to create a new folder, and provide a relevant name.](/assets/create-library/02_new_folder)
 
 ## 3. A Fresh Folder
 
-![A new folder will be empty by default, and will now appear in the tab bar on the left size of the Zotero application.](/assets/03_empty_folder)
+![A new folder will be empty by default, and will now appear in the tab bar on the left size of the Zotero application.](/assets/create-library/03_empty_folder)
 :::
 
 # Adding References
@@ -48,19 +48,19 @@ The Zotero Connector allows you to save references directly from your browser to
 ::: panel-tabset
 ## 1. Locate Source
 
-![Identify the publication, book, website, or other source of information you wish to cite.](/assets/01_palmerpenguins)
+![Identify the publication, book, website, or other source of information you wish to cite.](/assets/add-references/01_palmerpenguins)
 
 ## 2. Open Link
 
-![Open the website page. Try to find links to PubMed, the original publisher, or similar sites that have PDFs available. Zotero will automatically download these when available. Otherwise, it will attempt to screenshot the website itself.](/assets/02_palmerpenguins)
+![Open the website page. Try to find links to PubMed, the original publisher, or similar sites that have PDFs available. Zotero will automatically download these when available. Otherwise, it will attempt to screenshot the website itself.](/assets/add-references/02_palmerpenguins)
 
 ## 3. Download
 
-![Click the Zotero Connector button in your browser to save the reference to your Zotero library. The button is generally in the top right corner of your browser. The appearance of this button *can* change depending on the type of object being cited.](/assets/03_palmerpenguins)
+![Click the Zotero Connector button in your browser to save the reference to your Zotero library. The button is generally in the top right corner of your browser. The appearance of this button *can* change depending on the type of object being cited.](/assets/add-references/03_palmerpenguins)
 
 ## 4. Check Library
 
-![After saving the reference, check your Zotero library to ensure the reference was saved correctly.](/assets/04_palmerpenguins)
+![After saving the reference, check your Zotero library to ensure the reference was saved correctly.](/assets/add-references/04_palmerpenguins)
 :::
 
 ## Manual Entries
@@ -69,28 +69,28 @@ The Zotero Connector is not perfect, however, and you may occasionally need to "
 
 However, if you can find a BibTex or RIS file for the reference, you can import the reference into Zotero by dragging and dropping the file into the Zotero window, or by copying the BibTex content and then selecting `File` -\> `Import from Clipboard` in Zotero.
 
-The example below will demonstrate how to manually import a BibTex entry.
+The example below will demonstrate how to manually import a BibTex entry. All you really need to know about [BibTex](https://www.bibtex.org/) is that it is a commonly-used, structured file format for bibliographic entries and bibliographies [@bibtex].
 
 ::: panel-tabset
 ## 1. Locate Source
 
-![Identify the object you want to cite. If you can find the publication on Google Scholar, for example, BibTex entries are readily available. Click on the "Cite" button in Google Scholar to access the BibTex entry.](/assets/01_palmerpenguins_manual)
+![Identify the object you want to cite. If you can find the publication on Google Scholar, for example, BibTex entries are readily available. Click on the "Cite" button in Google Scholar to access the BibTex entry.](/assets/manual-entry/01_palmerpenguins_manual)
 
 ## 2. Open Citation
 
-![Click on the "BibTex" button in Google Scholar to access the BibTex entry.](/assets/02_palmerpenguins_manual)
+![Click on the "BibTex" button in Google Scholar to access the BibTex entry.](/assets/manual-entry/02_palmerpenguins_manual)
 
 ## 3. Copy BibTex
 
-![Copy the BibTex entry to your clipboard.](/assets/03_palmerpenguins_manual)
+![Copy the BibTex entry to your clipboard.](/assets/manual-entry/03_palmerpenguins_manual)
 
 ## 4. Import to Zotero
 
-![In Zotero, click on `File` -\> `Import from Clipboard` to import the BibTex entry.](/assets/04_palmerpenguins_manual)
+![In Zotero, click on `File` -\> `Import from Clipboard` to import the BibTex entry.](/assets/manual-entry/04_palmerpenguins_manual)
 
 ## 5. Check Library
 
-![After importing the BibTex entry, check your Zotero library to ensure the reference was saved correctly. Note how much less information is included by importing BibTex, however. Compared to the Zotero Connector, we are, at minimum, missing a PDF copy of the document and the date on which we accessed the material.](/assets/05_palmerpenguins_manual)
+![After importing the BibTex entry, check your Zotero library to ensure the reference was saved correctly. Note how much less information is included by importing BibTex, however. Compared to the Zotero Connector, we are, at minimum, missing a PDF copy of the document and the date on which we accessed the material.](/assets/manual-entry/05_palmerpenguins_manual)
 :::
 
 Less commonly, you may need to import references from other software. To do this, export the references from the software in a compatible format, and import them into Zotero. Zotero can import references from a variety of formats, including BibTex, RIS, and EndNote XML.
@@ -123,20 +123,20 @@ Inserting citations and bibliographies into Quarto and Word documents are specif
 
 ### Text Formatted
 
-You can generate a bibliography by right-clicking on the folder or publication of interest, and selecting the option to "Generate Bibliography from Collection." From there, you will be prompted to choose a citation style and an output method (i.e. copy to clipboard, save as file, etc.).
+You can generate a bibliography by right-clicking on the folder or publication of interest, and selecting the option to "Create Bibliography from Collection." From there, you will be prompted to choose a citation style and an output method (i.e. copy to clipboard, save as file, etc.).
 
-This option to quickly generate a bibliography is useful if you are using a text editor that does not have a Zotero plugin, or if you simply need a one-and-done bibliography for a smaller project.
+This option to quickly generate a bibliography is useful if you are using a text editor that does not have a Zotero plugin to paste the bibliography to, or if you simply need a one-and-done bibliography for a smaller project.
 
 For more details, see the [Zotero documentation on creating bibliographies](https://www.zotero.org/support/creating_bibliographies).
 
 ### BibTex and `.bib` Files
 
-[BibTex](https://www.bibtex.org/) is a commonly-used, structured file format for bibliographies [@bibtex]. You will generally not need to make or edit BibTex files if you are using a word processor with a Zotero plugin, as the plugin will automatically generate the bibliography for you. However, if you are using a text editor that does not have a Zotero plugin, you can export a BibTex file from Zotero to generate a bibliography.
+If you are using a text editor that does not have a Zotero plugin, you can export a BibTex file directly from Zotero to generate a bibliography. However, you will generally not need to make or edit BibTex files if you are using a word processor with a Zotero plugin, as the plugin will automatically generate the bibliography for you. 
 
-To do this, right-click on the folder or publication of interest, and select the option to "Export Collection." You can then choose the BibTex format, and save the file to your computer. You can then include this BibTex file in your document to generate a bibliography.
+To export a BibTex file from Zotero, right-click on the folder or publication of interest, and select the option to "Export Collection." You can then choose the BibTex format from the drop-down menu, and save the `.bib` file to your computer. You can then include this BibTex file in your document to generate a bibliography.
 
 ::: {.callout-tip title="BibTex Tip"}
-All you really need to know about BibTex is that it is a structured file format for bibliographies, and Quarto documents should have a `.bib` file in the same directory as the `.qmd` file plus a reference to the `.bib` file in the YAML header. This will be discussed in the [Citations in Quarto](citations_in_quarto.html) chapter.
+For citations in Quarto, it is important to know that Quarto documents should have a `.bib` file in the same directory as the `.qmd` file plus a reference to the `.bib` file in the YAML header. This will be discussed in the [Citations in Quarto](citations_in_quarto.html) chapter.
 :::
 
 # Other Features
@@ -149,7 +149,7 @@ You can organize your references in Zotero by creating collections and tags. To 
 
 ## Collaborating with others
 
-You can also collaborate with others by sharing your references with them, generally by creating a [Zotero Group](zotero_groups.html). The contents of these groups are shared with all members online, and you can set the group to be public or private.
+You can also collaborate with others by sharing your references with them, generally by creating a Zotero group, see the [Zotero Groups chapter](zotero-groups.qmd) for details. The contents of these groups are shared with all members online, and you can set the group to be public or private.
 
 Public groups are open to anyone, while private groups require an invitation to join. You can also create a group library, which is a shared library that all members can edit. This is useful if you are working on a project with others and want to share references with them.
 
