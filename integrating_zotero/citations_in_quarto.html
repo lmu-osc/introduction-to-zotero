@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.42">
+<meta name="generator" content="quarto-1.7.32">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -21,8 +21,9 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 /* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -33,7 +34,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -87,15 +88,16 @@ div.csl-indent {
 <link href="../integrating_zotero/citations_in_word.html" rel="next">
 <link href="../background/citation_style_language.html" rel="prev">
 <link href="../assets/LMU-OSC_favicon.jpg" rel="icon" type="image/jpeg">
-<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-2ea0b0a295ba233782e965d276c547ad.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-5bfcac40c9c70d691b4c0c610d517a5f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -143,7 +145,7 @@ div.csl-indent {
 <link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="nav-sidebar docked nav-fixed">
+<body class="nav-sidebar docked nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -274,6 +276,12 @@ div.csl-indent {
 </li>
       </ul>
   </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../background/best_practices.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Best Practices</span></a>
+  </div>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
@@ -339,15 +347,15 @@ div.csl-indent {
   </ul></li>
   <li><a href="#inserting-citations" id="toc-inserting-citations" class="nav-link" data-scroll-target="#inserting-citations">Inserting Citations</a>
   <ul class="collapse">
-  <li><a href="#referencing-by-citation-key" id="toc-referencing-by-citation-key" class="nav-link" data-scroll-target="#referencing-by-citation-key">Referencing by Citation Key</a></li>
+  <li><a href="#referencing-by-citation-key-in-rstudio" id="toc-referencing-by-citation-key-in-rstudio" class="nav-link" data-scroll-target="#referencing-by-citation-key-in-rstudio">Referencing by Citation Key in RStudio</a></li>
   <li><a href="#rstudio-visual-editor" id="toc-rstudio-visual-editor" class="nav-link" data-scroll-target="#rstudio-visual-editor">RStudio Visual Editor</a></li>
-  <li><a href="#manual-entry" id="toc-manual-entry" class="nav-link" data-scroll-target="#manual-entry">Manual Entry</a></li>
-  </ul></li>
-  <li><a href="#adding-a-bibliography" id="toc-adding-a-bibliography" class="nav-link" data-scroll-target="#adding-a-bibliography">Adding a Bibliography</a>
+  <li><a href="#automatic-generation-of-bibliography-file" id="toc-automatic-generation-of-bibliography-file" class="nav-link" data-scroll-target="#automatic-generation-of-bibliography-file">Automatic Generation of Bibliography File</a></li>
+  <li><a href="#a-note-on-updating-citations-within-zotero" id="toc-a-note-on-updating-citations-within-zotero" class="nav-link" data-scroll-target="#a-note-on-updating-citations-within-zotero">A Note on Updating Citations within Zotero</a>
   <ul class="collapse">
+  <li><a href="#automatically-updating-the-bibliography-file-via-zotero" id="toc-automatically-updating-the-bibliography-file-via-zotero" class="nav-link" data-scroll-target="#automatically-updating-the-bibliography-file-via-zotero">Automatically Updating the Bibliography File via Zotero</a></li>
+  </ul></li>
   <li><a href="#adding-references-at-the-end-of-the-document" id="toc-adding-references-at-the-end-of-the-document" class="nav-link" data-scroll-target="#adding-references-at-the-end-of-the-document">Adding References at the End of the Document</a></li>
   <li><a href="#changing-citation-style" id="toc-changing-citation-style" class="nav-link" data-scroll-target="#changing-citation-style">Changing Citation Style</a></li>
-  <li><a href="#a-note-on-updating-citations-in-zotero" id="toc-a-note-on-updating-citations-in-zotero" class="nav-link" data-scroll-target="#a-note-on-updating-citations-in-zotero">A Note on Updating Citations in Zotero</a></li>
   </ul></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
   </ul>
@@ -384,62 +392,56 @@ div.csl-indent {
 <section id="what-are-references.bib-files" class="level2">
 <h2 class="anchored" data-anchor-id="what-are-references.bib-files">What are <code>references.bib</code> Files?</h2>
 <p>A <code>references.bib</code> file is a BibTeX file that contains all of the references you want to cite in your document. This file is used to generate the bibliography at the end of your document, and it is necessary to include this file in your project directory in order to insert citations. You can create this file manually, but it is generally easier to export your references from a citation manager or allow RStudio to manage the creation of the file for you.</p>
-<p>When using a <code>references.bib</code> file with a Quarto document, you must specify the name of the file in the YAML header of your document like this:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Your project title"</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">bibliography</span><span class="kw">:</span><span class="at"> references.bib</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Note that you can name the file something other than <code>references.bib</code>, but you must ensure that the name of the file you specify in the YAML header matches the name of the file you have saved in your project directory.</p>
 <p>You will rarely need to edit the <code>references.bib</code> file directly, but you can open it in a text editor to see the structure of the file. An example of an entry inside of a <code>references.bib</code> file might look like this:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode bibtex code-with-copy"><code class="sourceCode bibtex"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="va">@article</span>{<span class="ot">horst2022</span>,</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="dt">title</span> = {Palmer Archipelago Penguins Data in the palmerpenguins R Package - An Alternative to Anderson's Irises},</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="dt">author</span> = {Horst, Allison M. and Hill, Alison Presmanes and Gorman, Kristen B.},</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="dt">year</span> = {2022},</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    <span class="dt">month</span> = {06},</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    <span class="dt">date</span> = {2022-06-21},</span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    <span class="dt">journal</span> = {The R Journal},</span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    <span class="dt">pages</span> = {244--254},</span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    <span class="dt">volume</span> = {14},</span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    <span class="dt">number</span> = {1},</span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>    <span class="dt">doi</span> = {10.32614/RJ-2022-020},</span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>    <span class="dt">url</span> = {https://doi.org/10.32614/RJ-2022-020/}</span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bibtex code-with-copy"><code class="sourceCode bibtex"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="va">@article</span>{<span class="ot">horst2022</span>,</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="dt">title</span> = {Palmer Archipelago Penguins Data in the palmerpenguins R Package - An Alternative to Anderson's Irises},</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="dt">author</span> = {Horst, Allison M. and Hill, Alison Presmanes and Gorman, Kristen B.},</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="dt">year</span> = {2022},</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="dt">month</span> = {06},</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="dt">date</span> = {2022-06-21},</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    <span class="dt">journal</span> = {The R Journal},</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    <span class="dt">pages</span> = {244--254},</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    <span class="dt">volume</span> = {14},</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    <span class="dt">number</span> = {1},</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    <span class="dt">doi</span> = {10.32614/RJ-2022-020},</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    <span class="dt">url</span> = {https://doi.org/10.32614/RJ-2022-020/}</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Note that you can name the file something other than <code>references.bib</code>, but you must ensure that the name of the file you specify in the YAML header matches the name of the file you have saved in your project directory.</p>
 </section>
 <section id="what-is-a-citation-key" class="level2">
 <h2 class="anchored" data-anchor-id="what-is-a-citation-key">What is a Citation Key?</h2>
 <p>Citation keys are unique identifiers for each reference in your bibliography. They are used to insert citations in your document and are typically generated automatically by your text editor. These keys are necessary because they connect your citations to the correct entry in the <code>references.bib</code> file.</p>
-<p>Extending the <code>references.bib</code> example, you would cite the Palmer Penguins data set from 2022 by Allison Horst with the citation key <code>@horst2022</code>. You would use this citation key in your document to insert a citation to this reference.</p>
-<p>RStudio generates a citation key for each new item you include in a document, and they typically follow the format <code>@authorYear</code> or <code>@authorYearLetter</code> when there are multiple references matching the format. <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> These keys can be customized to your liking, <strong>but this should be done only prior to using them the first time</strong>.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
 </section>
 </section>
 <section id="inserting-citations" class="level1">
 <h1>Inserting Citations</h1>
-<div class="callout callout-style-default callout-tip callout-titled" title="The General Approach">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-The General Approach
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>The method for inserting citations in Quarto documents described in the first section is the most general approach, and will work for any text editor. Note that if you are using RStudio, you should use the “Source” editing mode for this method. You can use the “Visual” editor to insert citations on a point-and-click basis, which is covered in the next section.</p>
-</div>
-</div>
-<section id="referencing-by-citation-key" class="level2">
-<h2 class="anchored" data-anchor-id="referencing-by-citation-key">Referencing by Citation Key</h2>
-<p>When you insert a citation in your document, you will use the citation key of the reference you want to cite.</p>
-<p>If you <em>export</em> a library from Zotero, however, a different default method for generating the citation keys will be used. These differences will be discussed in the following sub-sections, <a href="#rstudio-visual-editor">RStudio Visual Editor</a> and <a href="#manual-entry">Manual Entry</a>.</p>
-<p>You can insert a citation in your document by using the <code>@</code> symbol followed by the citation key of the reference you want to cite. For example, I have saved the Zotero Quick Start guide to my Zotero library for this tutorial, and in order to to cite this guide, I would use the citation key <code>[@zotero]</code> in my document. The text would look like this:</p>
+<p>Before you can use citations within your Quarto document, you will have to follow these steps:</p>
+<ol type="1">
+<li>Export your citations from Zotero as a BibTex file by right-clicking on the collection and then on <code>Export Collection</code>.</li>
+<li>Select <code>BibTex</code> as file format from the drop-down menu and press <code>Ok</code>.</li>
+<li>Save this file in your project directory where your Quarto document is located as <code>references.bib</code></li>
+<li>Add the following to your YAML header: <code>bibliography: references.bib</code>, like this:</li>
+</ol>
+<div class="sourceCode" id="cb2"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Your project title"</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">bibliography</span><span class="kw">:</span><span class="at"> references.bib</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="referencing-by-citation-key-in-rstudio" class="level2">
+<h2 class="anchored" data-anchor-id="referencing-by-citation-key-in-rstudio">Referencing by Citation Key in RStudio</h2>
+<p>After you have set up your <code>references.bib</code> file in your directory, you can use the citation keys found in the <code>references.bib</code> file to cite your sources in your Quarto document. The citation keys can be found in the BibTex file you exported from Zotero as the first line for each entry, or you can check directly with the entry in the Zotero application. For example, the citation key for the Palmer Penguins data set from 2022 by Allison Horst is <code>@horstPalmerArchipelagoPenguins2022a</code> in my <code>references.bib</code> file.</p>
+<p>You can insert a citation in your Quarto document by using the <code>@</code> symbol followed by the citation key of the reference you want to cite. For example, in order to cite the paper by Allison Horst and colleagues, I would use the citation key <code>[@horstPalmerArchipelagoPenguins2022a]</code> in my document. The text would look like this:</p>
 <blockquote class="blockquote">
-<p>“Items can be assigned tags. Tags are named by the user. An item can be assigned as many tags as is needed.”<strong>[@zotero]</strong></p>
+<p>“Previous work generated specific criteria for an easily accessible dataset for the public.”<strong>[@horstPalmerArchipelagoPenguins2022a]</strong></p>
 </blockquote>
 <p>This will insert a citation that is displayed in your document like this:</p>
 <blockquote class="blockquote">
-<p>“Items can be assigned tags. Tags are named by the user. An item can be assigned as many tags as is needed.”<span class="citation" data-cites="zotero">(<a href="#ref-zotero" role="doc-biblioref">Zotero, n.d.</a>)</span></p>
+<p>“Previous work generated specific criteria for an easily accessible dataset for the public.”<span class="citation" data-cites="horstPalmerArchipelagoPenguins2022a">(<a href="#ref-horstPalmerArchipelagoPenguins2022a" role="doc-biblioref">Horst, Presmanes Hill, and Gorman 2022</a>)</span></p>
 </blockquote>
-<p>Note that the citation key can be inserted in two ways: with or without brackets <code>[]</code>, which yield formatting differences. A citation without brackets, <code>@zotero</code>, will appear inline as “<span class="citation" data-cites="zotero">Zotero (<a href="#ref-zotero" role="doc-biblioref">n.d.</a>)</span>”, while a citation with brackets, <code>[@zotero]</code>, will appear as “<span class="citation" data-cites="zotero">(<a href="#ref-zotero" role="doc-biblioref">Zotero, n.d.</a>)</span>”.</p>
+<p>Note that the citation key can be inserted in two ways: with or without brackets <code>[]</code>, which yield formatting differences. A citation without brackets, <code>@horstPalmerArchipelagoPenguins2022a</code>, will appear inline as “<span class="citation" data-cites="horstPalmerArchipelagoPenguins2022a">Horst, Presmanes Hill, and Gorman (<a href="#ref-horstPalmerArchipelagoPenguins2022a" role="doc-biblioref">2022</a>)</span>”, while a citation with brackets, <code>[@horstPalmerArchipelagoPenguins2022a]</code>, will appear as “<span class="citation" data-cites="horstPalmerArchipelagoPenguins2022a">(<a href="#ref-horstPalmerArchipelagoPenguins2022a" role="doc-biblioref">Horst, Presmanes Hill, and Gorman 2022</a>)</span>”.</p>
+<!-- If you *export* a library from Zotero, however, a different default method for generating the citation keys will be used. These differences will be discussed in the following sub-sections, [RStudio Visual Editor](#rstudio-visual-editor) and [Manual Entry](#manual-entry). -->
+<!-- ::: {.callout-tip title="The General Approach"} -->
+<!-- The method for inserting citations in Quarto documents described here is the most general approach, and will work for any text editor. Note that if you are using RStudio, you should use the "Source" editing mode for this method. You can use the "Visual" editor to insert citations on a point-and-click basis, which is covered in the next section. -->
+<!-- ::: -->
 </section>
 <section id="rstudio-visual-editor" class="level2">
 <h2 class="anchored" data-anchor-id="rstudio-visual-editor">RStudio Visual Editor</h2>
@@ -468,7 +470,7 @@ The General Approach
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="../assets/citations-in-quarto/03_open_folder.png" class="img-fluid figure-img"></p>
-<figcaption>This should open a plugin that allows you to search your Zotero library as well as PubMed, CrossRef, and directly by DOI numbers (in case you haven’t already saved something to your Zotero library). Open the Zotero folder relevant to your project, the “Zotero Tutorial” in this example.</figcaption>
+<figcaption>This should open a plugin that allows you to search your Zotero library as well as PubMed, CrossRef, and directly by DOI numbers (in case you haven’t already saved something to your Zotero library). Open the Zotero folder relevant to your project, the “Zotero tutorial” in this example.</figcaption>
 </figure>
 </div>
 </div>
@@ -484,7 +486,7 @@ The General Approach
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="../assets/citations-in-quarto/05_edit_key.png" class="img-fluid figure-img"></p>
-<figcaption>If you’d like to edit the key to something more memorable or informative, press on the pencil button and edit away. In this example, the citation key has been changed to <code>@zotero-guide</code>. <br><br> Note that citation key changes must be done <strong>the first time you include a new citation</strong> and you cannot have spaces in the name. Press <strong>Insert</strong> when done.</figcaption>
+<figcaption>If you’d like to edit the key to something more memorable or informative, press on the pencil button and edit away. In this example, the citation key will <strong>not</strong> be edited. <br><br> Note that citation key edits must be done <strong>the first time you include a new citation</strong> and you cannot have spaces in the name. Press <strong>Insert</strong> when done.</figcaption>
 </figure>
 </div>
 </div>
@@ -507,28 +509,112 @@ The General Approach
 </div>
 </div>
 </section>
-<section id="manual-entry" class="level2">
-<h2 class="anchored" data-anchor-id="manual-entry">Manual Entry</h2>
-<p>If you are not using RStudio as your text editor, you can still insert citations manually by following these steps:</p>
-<ol type="1">
-<li>Export your bibliography from Zotero as a BibTex file</li>
-<li>Save this file in your project directory as <code>references.bib</code></li>
-<li>Add the following to your YAML header: <code>bibliography: references.bib</code></li>
-<li>Insert the citations using the citation keys found in the <code>references.bib</code> file. These can be found in the BibTex file you exported from Zotero as the first line for each entry.</li>
-</ol>
-</section>
-</section>
-<section id="adding-a-bibliography" class="level1">
-<h1>Adding a Bibliography</h1>
-<p>As mentioned in the previous instructions for inserting citations, RStudio will automatically generate a bibliography file for you when you insert a citation. This bibliography file will be automatically updated to include any new citations you add, and you must define the bibliography file to use for your document(s) using the <code>bibliography: &lt;your-references-file.bib&gt;</code> line in the YAML header like below.</p>
-<p>RStudio will generate a file named <code>references.bib</code> by default if you have not already created a bibliography file. You can change the name of this file to whatever you like, but you must ensure that the name of the file you specify in the YAML header matches the name of the file you have saved in your project directory.</p>
+<section id="automatic-generation-of-bibliography-file" class="level2">
+<h2 class="anchored" data-anchor-id="automatic-generation-of-bibliography-file">Automatic Generation of Bibliography File</h2>
+<p>If you did <strong>not</strong> export a <code>references.bib</code> file from Zotero, you can automatically generate a bibliography file within RStudio when you insert a citation. This bibliography file created by RStudio will be automatically updated to include any new citations you add. You still must define the name of the bibliography file RStudio should create for your citations using the <code>bibliography: &lt;your-references-file.bib&gt;</code> line in the YAML header like below.</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"My Document"</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">bibliography</span><span class="kw">:</span><span class="at"> references.bib</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">bibliography</span><span class="kw">:</span><span class="at"> my-references.bib</span></span>
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Here, RStudio generates a citation key for each new item you include in a document. They typically follow the format <code>@authorYear</code> or <code>@authorYearLetter</code> when there are multiple references matching the format. <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> These keys can be customized to your liking, <strong>but this should be done only prior to using them the first time</strong>.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> Also note that the citation keys do not necessarily match the citation keys within your Zotero application.</p>
+<p>Inserting citations without a pre-exported <code>references.bib</code> file works as follows:</p>
+<ol type="1">
+<li>In the “Visual” editor, type the <code>@</code> symbol</li>
+<li>From the drop-down menu select the reference you want to cite or use the DOI</li>
+<li>When prompted, change the Citation ID (if really necessary) and click <code>Ok</code></li>
+<li>Check the automatically created <code>my-references.bib</code> file</li>
+</ol>
+</section>
+<section id="a-note-on-updating-citations-within-zotero" class="level2">
+<h2 class="anchored" data-anchor-id="a-note-on-updating-citations-within-zotero">A Note on Updating Citations within Zotero</h2>
+<p>A current shortcoming with the default method of inserting citations by exporting the <code>references.bib</code> file from Zotero and saving it in your working directory or getting RStudio to generate the bibliography file for you is that the bibliography file does <strong>not</strong> automatically update when you update the references in Zotero. If you make changes to the citations <em>within</em> Zotero, you may need to delete the <code>references.bib</code> file and re-export it or reinsert the citations to force updating of the bibliography in your project. This sounds a bit complicated, but simply deleting the <code>references.bib</code> file and reinserting a single citation will prompt RStudio to regenerate a new <code>references.bib</code> file with the updated references. However, a much more practical and less time-consuming way is to export a <code>references.bib</code> file directly from Zotero that is <strong>automatically updated</strong> when changes to the Zotero entires occur, see the next section.</p>
+<section id="automatically-updating-the-bibliography-file-via-zotero" class="level3">
+<h3 class="anchored" data-anchor-id="automatically-updating-the-bibliography-file-via-zotero">Automatically Updating the Bibliography File via Zotero</h3>
+<p>In order to create a bibliography file that is autmatically updated when changes occur (see the <a href="https://forums.zotero.org/discussion/89720/keeping-a-bibtex-file-per-collection-in-sync-with-zotero">discussion on the Zotero forum here</a>), you need to first install the <a href="https://retorque.re/zotero-better-bibtex/">Better BibTeX plugin</a>. Next, follow these steps:</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">1. Export Library</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">2. Select Better BibTeX</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false">3. Set Up Automatic Updating</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-4" role="tab" aria-controls="tabset-2-4" aria-selected="false">4. Save Exported Reference File</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-5" role="tab" aria-controls="tabset-2-5" aria-selected="false">5. Check folder</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/betterbibtex-automatic-updates/01-export-library.png" class="img-fluid figure-img"></p>
+<figcaption>Right-click on the collection to export and then click Export Library.</figcaption>
+</figure>
+</div>
+</div>
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/betterbibtex-automatic-updates/02-select-betterbibtex.png" class="img-fluid figure-img"></p>
+<figcaption>From the Format drop-down menu, select Better BibTex</figcaption>
+</figure>
+</div>
+</div>
+<div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/betterbibtex-automatic-updates/03-keep-updated.png" class="img-fluid figure-img"></p>
+<figcaption>Tick Keep Updated and press OK</figcaption>
+</figure>
+</div>
+</div>
+<div id="tabset-2-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-4-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/betterbibtex-automatic-updates/04-save-file.png" class="img-fluid figure-img"></p>
+<figcaption>Navigate to the RStudio folder and save your reference file as references.bib</figcaption>
+</figure>
+</div>
+</div>
+<div id="tabset-2-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-5-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/betterbibtex-automatic-updates/05-check-folder.png" class="img-fluid figure-img"></p>
+<figcaption>Check your folder for the references.bib file</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<p>To test the automatic updateing of your bibliography, you can add a new source to your Zotero library and then insert the source as a citation in your Quarto document. Note that you can manage different important settings for <code>Better BibTex</code> directly in the Zotero settings, for example for citation key formatting or, importantly, for automatic export:</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true">1. Open Settings</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false">2. Select Better BibTeX</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false">3. Check Automatic Export</a></li></ul>
+<div class="tab-content">
+<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/betterbibtex-settings/01-open-settings.png" class="img-fluid figure-img"></p>
+<figcaption>Click on Edit and then find Settings at the bottom of the drop-down menu.</figcaption>
+</figure>
+</div>
+</div>
+<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/betterbibtex-settings/02-settings.png" class="img-fluid figure-img"></p>
+<figcaption>From the Format drop-down menu, select Better BibTex</figcaption>
+</figure>
+</div>
+</div>
+<div id="tabset-3-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-3-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/betterbibtex-settings/03-export.png" class="img-fluid figure-img"></p>
+<figcaption>Check Automatic Export settings and adjust accordingly. Click on Export Now to manually force automatic updating for recent changes. Also revisit the Export Child Collection setting.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<p>To avoid the shortcoming of manual updating of bibliography files or manual deletion of the <code>reference.bib</code> file, we strongly recommend using the Better BibTex plugin.</p>
+<!-- ::: {.callout-tip title="Automatic Updates in the Future?"} -->
+<!-- An issue requesting that the bibliography automatically update when references are updated in Zotero was previosuly opened in the RStudio GitHub repository, but it was closed without being addressed. you can find the issue [here](https://github.com/rstudio/rstudio/issues/11447). You can, however, comment that you'd like to see this feature implemented in the future ;). -->
+<!-- ::: -->
+</section>
+</section>
 <section id="adding-references-at-the-end-of-the-document" class="level2">
 <h2 class="anchored" data-anchor-id="adding-references-at-the-end-of-the-document">Adding References at the End of the Document</h2>
-<p>After inserting your citations, you presumably will want a well-formatted bibliography or references section available at the end of your document. “<a href="https://quarto.org/docs/authoring/citations.html#bibliography-generation">By default, Pandoc will automatically generate a list of works cited and place it in the document if the style calls for it. It will be placed in a div with the id refs if one exists.</a> <span class="citation" data-cites="quarto-citations">(<a href="#ref-quarto-citations" role="doc-biblioref">Quarto Team, n.d.</a>)</span>:”</p>
+<p>After inserting your citations, you will presumably want a well-formatted bibliography or references section available at the end of your document. “<a href="https://quarto.org/docs/authoring/citations.html#bibliography-generation">By default, Pandoc will automatically generate a list of works cited and place it in the document if the style calls for it. It will be placed in a div with the id refs if one exists.</a> <span class="citation" data-cites="quarto-citations">(<a href="#ref-quarto-citations" role="doc-biblioref"><strong>quarto-citations?</strong></a>)</span>:”</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">### References</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>::: {#refs}</span>
@@ -551,33 +637,12 @@ The General Approach
 <span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="fu">csl</span><span class="kw">:</span><span class="at"> https://www.zotero.org/styles/nature</span></span>
 <span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="a-note-on-updating-citations-in-zotero" class="level2">
-<h2 class="anchored" data-anchor-id="a-note-on-updating-citations-in-zotero">A Note on Updating Citations in Zotero</h2>
-<p>A current shortcoming with inserting citations into Quarto documents is that the bibliography does not automatically update when you update the references in Zotero.</p>
-<p>That is, if you make changes to the citations <em>within</em> Zotero, you may need to delete the <code>references.bib</code> file and reinsert the citations to force update the bibliography in your project. This sounds a bit complicated, but simply deleting the <code>references.bib</code> file and reinserting a single citation will prompt RStudio to regenerate the <code>references.bib</code> file with the updated references.</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="Automatic Updates in the Future?">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Automatic Updates in the Future?
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>An issue requesting that the bibliography automatically update when references are updated in Zotero was previosuly opened in the RStudio GitHub repository, but it was closed without being addressed. you can find the issue <a href="https://github.com/rstudio/rstudio/issues/11447">here</a>. you can, however, comment that you’d like to see this feature implemented in the future ;).</p>
-</div>
-</div>
-</section>
 </section>
 <section id="references" class="level1">
 <h1>References</h1>
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-quarto-citations" class="csl-entry" role="listitem">
-Quarto Team. n.d. <span>“Citations in Quarto: Bibliography Generation.”</span> <a href="https://quarto.org/docs/authoring/citations.html#bibliography-generation">https://quarto.org/docs/authoring/citations.html#bibliography-generation</a>.
-</div>
-<div id="ref-zotero" class="csl-entry" role="listitem">
-Zotero. n.d. <span>“Quick<span>_</span>start<span>_</span>guide [Zotero Documentation].”</span> <a href="https://www.zotero.org/support/quick_start_guide">https://www.zotero.org/support/quick_start_guide</a>.
+<div id="ref-horstPalmerArchipelagoPenguins2022a" class="csl-entry" role="listitem">
+Horst, Allison M., Alison Presmanes Hill, and Kristen B. Gorman. 2022. <span>“Palmer <span>Archipelago</span> <span>Penguins</span> <span>Data</span> in the Palmerpenguins <span>R</span> <span>Package</span> - <span>An</span> <span>Alternative</span> to <span>Anderson</span>’s <span>Irises</span>.”</span> <em>The R Journal</em> 14 (1): 244–54. <a href="https://doi.org/10.32614/RJ-2022-020">https://doi.org/10.32614/RJ-2022-020</a>.
 </div>
 </div>
 
@@ -593,236 +658,242 @@ Zotero. n.d. <span>“Quick<span>_</span>start<span>_</span>guide [Zotero Docume
 </ol>
 </section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
-window.document.addEventListener("DOMContentLoaded", function (event) {
-  const toggleBodyColorMode = (bsSheetEl) => {
-    const mode = bsSheetEl.getAttribute("data-mode");
-    const bodyEl = window.document.querySelector("body");
-    if (mode === "dark") {
-      bodyEl.classList.add("quarto-dark");
-      bodyEl.classList.remove("quarto-light");
-    } else {
-      bodyEl.classList.add("quarto-light");
-      bodyEl.classList.remove("quarto-dark");
-    }
-  }
-  const toggleBodyColorPrimary = () => {
-    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
-    if (bsSheetEl) {
-      toggleBodyColorMode(bsSheetEl);
-    }
-  }
-  toggleBodyColorPrimary();  
-  const icon = "";
-  const anchorJS = new window.AnchorJS();
-  anchorJS.options = {
-    placement: 'right',
-    icon: icon
-  };
-  anchorJS.add('.anchored');
-  const isCodeAnnotation = (el) => {
-    for (const clz of el.classList) {
-      if (clz.startsWith('code-annotation-')) {                     
-        return true;
-      }
-    }
-    return false;
-  }
-  const onCopySuccess = function(e) {
-    // button target
-    const button = e.trigger;
-    // don't keep focus
-    button.blur();
-    // flash "checked"
-    button.classList.add('code-copy-button-checked');
-    var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
-    let tooltip;
-    if (window.bootstrap) {
-      button.setAttribute("data-bs-toggle", "tooltip");
-      button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
-      tooltip = new bootstrap.Tooltip(button, 
-        { trigger: "manual", 
-          customClass: "code-copy-button-tooltip",
-          offset: [0, -8]});
-      tooltip.show();    
-    }
-    setTimeout(function() {
-      if (tooltip) {
-        tooltip.hide();
-        button.removeAttribute("data-bs-title");
-        button.removeAttribute("data-bs-toggle");
-        button.removeAttribute("data-bs-placement");
-      }
-      button.setAttribute("title", currentTitle);
-      button.classList.remove('code-copy-button-checked');
-    }, 1000);
-    // clear code selection
-    e.clearSelection();
-  }
-  const getTextToCopy = function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-  }
-  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-    text: getTextToCopy
-  });
-  clipboard.on('success', onCopySuccess);
-  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-      text: getTextToCopy,
-      container: window.document.getElementById('quarto-embedded-source-code-modal')
-    });
-    clipboardModal.on('success', onCopySuccess);
-  }
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-    var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/lmu-osc\.github\.io\/introduction-to-zotero\/");
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-    }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-        // undo the damage that might have been done by quarto-nav.js in the case of
-        // links that we want to consider external
-        if (link.dataset.originalHref !== undefined) {
-          link.href = link.dataset.originalHref;
-        }
-      }
-    }
-  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-    const config = {
-      allowHTML: true,
-      maxWidth: 500,
-      delay: 100,
-      arrow: false,
-      appendTo: function(el) {
-          return el.parentElement;
-      },
-      interactive: true,
-      interactiveBorder: 10,
-      theme: 'quarto',
-      placement: 'bottom-start',
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
     };
-    if (contentFn) {
-      config.content = contentFn;
-    }
-    if (onTriggerFn) {
-      config.onTrigger = onTriggerFn;
-    }
-    if (onUntriggerFn) {
-      config.onUntrigger = onUntriggerFn;
-    }
-    window.tippy(el, config); 
-  }
-  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-  for (var i=0; i<noterefs.length; i++) {
-    const ref = noterefs[i];
-    tippyHover(ref, function() {
-      // use id or data attribute instead here
-      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-      try { href = new URL(href).hash; } catch {}
-      const id = href.replace(/^#\/?/, "");
-      const note = window.document.getElementById(id);
-      if (note) {
-        return note.innerHTML;
-      } else {
-        return "";
-      }
-    });
-  }
-  const xrefs = window.document.querySelectorAll('a.quarto-xref');
-  const processXRef = (id, note) => {
-    // Strip column container classes
-    const stripColumnClz = (el) => {
-      el.classList.remove("page-full", "page-columns");
-      if (el.children) {
-        for (const child of el.children) {
-          stripColumnClz(child);
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
         }
       }
+      return false;
     }
-    stripColumnClz(note)
-    if (id === null || id.startsWith('sec-')) {
-      // Special case sections, only their first couple elements
-      const container = document.createElement("div");
-      if (note.children && note.children.length > 2) {
-        container.appendChild(note.children[0].cloneNode(true));
-        for (let i = 1; i < note.children.length; i++) {
-          const child = note.children[i];
-          if (child.tagName === "P" && child.innerText === "") {
-            continue;
-          } else {
-            container.appendChild(child.cloneNode(true));
-            break;
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
           }
         }
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(container);
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/lmu-osc\.github\.io\/introduction-to-zotero\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
         }
-        return container.innerHTML
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
       } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
         if (window.Quarto?.typesetMath) {
           window.Quarto.typesetMath(note);
         }
-        return note.innerHTML;
-      }
-    } else {
-      // Remove any anchor links if they are present
-      const anchorLink = note.querySelector('a.anchorjs-link');
-      if (anchorLink) {
-        anchorLink.remove();
-      }
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(note);
-      }
-      if (note.classList.contains("callout")) {
-        return note.outerHTML;
-      } else {
-        return note.innerHTML;
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
       }
     }
-  }
-  for (var i=0; i<xrefs.length; i++) {
-    const xref = xrefs[i];
-    tippyHover(xref, undefined, function(instance) {
-      instance.disable();
-      let url = xref.getAttribute('href');
-      let hash = undefined; 
-      if (url.startsWith('#')) {
-        hash = url;
-      } else {
-        try { hash = new URL(url).hash; } catch {}
-      }
-      if (hash) {
-        const id = hash.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note !== null) {
-          try {
-            const html = processXRef(id, note.cloneNode(true));
-            instance.setContent(html);
-          } finally {
-            instance.enable();
-            instance.show();
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
           }
         } else {
-          // See if we can fetch this
-          fetch(url.split('#')[0])
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
           .then(res => res.text())
           .then(html => {
             const parser = new DOMParser();
             const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.getElementById(id);
+            const note = htmlDoc.querySelector('main.content');
             if (note !== null) {
-              const html = processXRef(id, note);
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
               instance.setContent(html);
             } 
           }).finally(() => {
@@ -830,185 +901,161 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             instance.show();
           });
         }
-      } else {
-        // See if we can fetch a full url (with no hash to target)
-        // This is a special case and we should probably do some content thinning / targeting
-        fetch(url)
-        .then(res => res.text())
-        .then(html => {
-          const parser = new DOMParser();
-          const htmlDoc = parser.parseFromString(html, "text/html");
-          const note = htmlDoc.querySelector('main.content');
-          if (note !== null) {
-            // This should only happen for chapter cross references
-            // (since there is no id in the URL)
-            // remove the first header
-            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-              note.children[0].remove();
-            }
-            const html = processXRef(null, note);
-            instance.setContent(html);
-          } 
-        }).finally(() => {
-          instance.enable();
-          instance.show();
-        });
-      }
-    }, function(instance) {
-    });
-  }
-      let selectedAnnoteEl;
-      const selectorForAnnotation = ( cell, annotation) => {
-        let cellAttr = 'data-code-cell="' + cell + '"';
-        let lineAttr = 'data-code-annotation="' +  annotation + '"';
-        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
-        return selector;
-      }
-      const selectCodeLines = (annoteEl) => {
-        const doc = window.document;
-        const targetCell = annoteEl.getAttribute("data-target-cell");
-        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
-        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
-        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
-        const lineIds = lines.map((line) => {
-          return targetCell + "-" + line;
-        })
-        let top = null;
-        let height = null;
-        let parent = null;
-        if (lineIds.length > 0) {
-            //compute the position of the single el (top and bottom and make a div)
-            const el = window.document.getElementById(lineIds[0]);
-            top = el.offsetTop;
-            height = el.offsetHeight;
-            parent = el.parentElement.parentElement;
-          if (lineIds.length > 1) {
-            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-            height = bottom - top;
-          }
-          if (top !== null && height !== null && parent !== null) {
-            // cook up a div (if necessary) and position it 
-            let div = window.document.getElementById("code-annotation-line-highlight");
-            if (div === null) {
-              div = window.document.createElement("div");
-              div.setAttribute("id", "code-annotation-line-highlight");
-              div.style.position = 'absolute';
-              parent.appendChild(div);
-            }
-            div.style.top = top - 2 + "px";
-            div.style.height = height + 4 + "px";
-            div.style.left = 0;
-            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-            if (gutterDiv === null) {
-              gutterDiv = window.document.createElement("div");
-              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-              gutterDiv.style.position = 'absolute';
-              const codeCell = window.document.getElementById(targetCell);
-              const gutter = codeCell.querySelector('.code-annotation-gutter');
-              gutter.appendChild(gutterDiv);
-            }
-            gutterDiv.style.top = top - 2 + "px";
-            gutterDiv.style.height = height + 4 + "px";
-          }
-          selectedAnnoteEl = annoteEl;
-        }
-      };
-      const unselectCodeLines = () => {
-        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
-        elementsIds.forEach((elId) => {
-          const div = window.document.getElementById(elId);
-          if (div) {
-            div.remove();
-          }
-        });
-        selectedAnnoteEl = undefined;
-      };
-        // Handle positioning of the toggle
-    window.addEventListener(
-      "resize",
-      throttle(() => {
-        elRect = undefined;
-        if (selectedAnnoteEl) {
-          selectCodeLines(selectedAnnoteEl);
-        }
-      }, 10)
-    );
-    function throttle(fn, ms) {
-    let throttle = false;
-    let timer;
-      return (...args) => {
-        if(!throttle) { // first call gets through
-            fn.apply(this, args);
-            throttle = true;
-        } else { // all the others get throttled
-            if(timer) clearTimeout(timer); // cancel #2
-            timer = setTimeout(() => {
-              fn.apply(this, args);
-              timer = throttle = false;
-            }, ms);
-        }
-      };
-    }
-      // Attach click handler to the DT
-      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
-      for (const annoteDlNode of annoteDls) {
-        annoteDlNode.addEventListener('click', (event) => {
-          const clickedEl = event.target;
-          if (clickedEl !== selectedAnnoteEl) {
-            unselectCodeLines();
-            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
-            if (activeEl) {
-              activeEl.classList.remove('code-annotation-active');
-            }
-            selectCodeLines(clickedEl);
-            clickedEl.classList.add('code-annotation-active');
-          } else {
-            // Unselect the line
-            unselectCodeLines();
-            clickedEl.classList.remove('code-annotation-active');
-          }
-        });
-      }
-  const findCites = (el) => {
-    const parentEl = el.parentElement;
-    if (parentEl) {
-      const cites = parentEl.dataset.cites;
-      if (cites) {
-        return {
-          el,
-          cites: cites.split(' ')
-        };
-      } else {
-        return findCites(el.parentElement)
-      }
-    } else {
-      return undefined;
-    }
-  };
-  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-  for (var i=0; i<bibliorefs.length; i++) {
-    const ref = bibliorefs[i];
-    const citeInfo = findCites(ref);
-    if (citeInfo) {
-      tippyHover(citeInfo.el, function() {
-        var popup = window.document.createElement('div');
-        citeInfo.cites.forEach(function(cite) {
-          var citeDiv = window.document.createElement('div');
-          citeDiv.classList.add('hanging-indent');
-          citeDiv.classList.add('csl-entry');
-          var biblioDiv = window.document.getElementById('ref-' + cite);
-          if (biblioDiv) {
-            citeDiv.innerHTML = biblioDiv.innerHTML;
-          }
-          popup.appendChild(citeDiv);
-        });
-        return popup.innerHTML;
+      }, function(instance) {
       });
     }
-  }
-});
-</script>
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="../background/citation_style_language.html" class="pagination-link" aria-label="Citation Style Language">

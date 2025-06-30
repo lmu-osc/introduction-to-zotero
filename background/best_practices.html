@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Exercise 2: Integrating with Quarto – Introduction to Zotero</title>
+<title>Best Practices – Introduction to Zotero</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../exercises/exercise_3.html" rel="next">
-<link href="../exercises/exercise_1.html" rel="prev">
+<link href="../exercises/exercise_1.html" rel="next">
+<link href="../integrating_zotero/citations_in_word.html" rel="prev">
 <link href="../assets/LMU-OSC_favicon.jpg" rel="icon" type="image/jpeg">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -143,7 +143,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../exercises/exercise_1.html">Exercises</a></li><li class="breadcrumb-item"><a href="../exercises/exercise_2.html">Exercise 2: Integrating with Quarto</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../background/best_practices.html">Best Practices</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -223,7 +223,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../background/best_practices.html" class="sidebar-item-text sidebar-link">
+  <a href="../background/best_practices.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Best Practices</span></a>
   </div>
 </li>
@@ -244,7 +244,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../exercises/exercise_2.html" class="sidebar-item-text sidebar-link active">
+  <a href="../exercises/exercise_2.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Exercise 2: Integrating with Quarto</span></a>
   </div>
 </li>
@@ -285,16 +285,17 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#instructions" id="toc-instructions" class="nav-link active" data-scroll-target="#instructions">Instructions</a></li>
+  <li><a href="#organizing-your-library" id="toc-organizing-your-library" class="nav-link active" data-scroll-target="#organizing-your-library">Organizing your library</a></li>
+  <li><a href="#workflow" id="toc-workflow" class="nav-link" data-scroll-target="#workflow">Workflow</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/lmu-osc/introduction-to-zotero/edit/main/exercises/exercise_2.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/introduction-to-zotero/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/lmu-osc/introduction-to-zotero/edit/main/background/best_practices.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/introduction-to-zotero/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../exercises/exercise_1.html">Exercises</a></li><li class="breadcrumb-item"><a href="../exercises/exercise_2.html">Exercise 2: Integrating with Quarto</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Exercise 2: Integrating with Quarto</h1>
+<h1 class="title">Best Practices</h1>
 </div>
 
 
@@ -311,20 +312,50 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="instructions" class="level1">
-<h1>Instructions</h1>
-<ol type="1">
-<li>Create a new R Project in RStudio.</li>
-<li>Create a new Quarto document in the R Project. This should be available as an option in the “New File” dropdown menu under “File”.</li>
-<li>Make sure you are using the “Visual Editor” mode in Quarto.</li>
-<li>Insert a citation into the body of your document by pressing the “Insert” button in the toolbar and scroll down to the “Citation” option.</li>
-<li>Select “My Library” under the Zotero tab. Find the “Exercise 1” folder you created in the previous exercise and select a reference to insert.</li>
-<li>What has happened to your Quarto file? What has been added to the YAML front matter? What has been added to the body of the document?
+<p>There are a number of different ways that can make your interaction with Zotero as smooth and effortless as possible. Below we collected a number of tips that can help you get started.</p>
+<section id="organizing-your-library" class="level1">
+<h1>Organizing your library</h1>
+<p>Create a temporary space or tag for unprocessed materials before adding them to the group library:</p>
 <ul>
-<li>A <code>references.bib</code> file should have been added to your project, and referenced in the YAML front matter.</li>
-<li>A citation should have been added to the body of the document.</li>
-</ul></li>
-</ol>
+<li><p>In the Zotero desktop app, create a new collection (right-click on your personal library and select “New Collection”).</p></li>
+<li><p>Name this collection something like “Inbox” or “To Process.”</p></li>
+<li><p>When saving items to Zotero, apply a tag such as "Unprocessed." You can do this directly when saving an item in your browser or later in the Zotero desktop app.</p></li>
+<li><p>Filter by this tag later to review and process these items.</p></li>
+<li><p>Use subcollections to remain organized</p></li>
+</ul>
+</section>
+<section id="workflow" class="level1">
+<h1>Workflow</h1>
+<p>In each collection, a separate standalone note explaining the purpose of the folder, the group workflow, tagging conventions, folder structure and definitions for “related” items. Always keep this note updated and communicate any changes in the workflow or tagging conventions to the other group members.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Create Note</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Describe Workflow</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Describe Tagging Conventions</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/groups-media/07-create-note.png" class="img-fluid figure-img"></p>
+<figcaption>In your group library, select “New Note” and then “Standalone Note” from the toolbar.</figcaption>
+</figure>
+</div>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/groups-media/08-describe-workflow.png" class="img-fluid figure-img"></p>
+<figcaption>Write a clear description of the group workflow, including the purpose of the folder, folder usage, and definitions for “related” items.</figcaption>
+</figure>
+</div>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/groups-media/09-describe-tagging.png" class="img-fluid figure-img"></p>
+<figcaption>In a separate note, list all the used tags and write a clear description of the tagging conventions. Avoid adding too many tags and regularly delete unused or redundant tags. Directly edit tags in the “Tags” tab on the right-hand pane in Zotero</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
 
 
 </section>
@@ -731,13 +762,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../exercises/exercise_1.html" class="pagination-link" aria-label="Exercise 1: Using Zotero">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Exercise 1: Using Zotero</span>
+      <a href="../integrating_zotero/citations_in_word.html" class="pagination-link" aria-label="Citations in Word">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Citations in Word</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../exercises/exercise_3.html" class="pagination-link" aria-label="Exercise 3: Changing CSL">
-        <span class="nav-page-text">Exercise 3: Changing CSL</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../exercises/exercise_1.html" class="pagination-link" aria-label="Exercise 1: Using Zotero">
+        <span class="nav-page-text">Exercise 1: Using Zotero</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -749,7 +780,7 @@ ul.task-list li input[type="checkbox"] {
     </div>   
     <div class="nav-footer-center">
 <p>Copyright, 2024 Open Science Center at LMU Munich</p>
-<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/lmu-osc/introduction-to-zotero/edit/main/exercises/exercise_2.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/introduction-to-zotero/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/lmu-osc/introduction-to-zotero/edit/main/background/best_practices.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/introduction-to-zotero/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
