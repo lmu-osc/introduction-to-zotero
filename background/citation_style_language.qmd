@@ -5,34 +5,7 @@ format: html
 
 # Overview
 
-As mentioned earlier in the tutorial, Citation Style Language (CSL) is an XML-based format for defining citation and bibliography styles. CSL files are used by citation management software like Zotero to format citations and bibliographies in a specific style. 
-
-## Citation Style Examples
-
-To demonstrate differences in citation styles, the citation for the same article is shown in several different styles below. The article is "Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson's Irises" by Allison M. Horst, Alison Presmanes Hill, and Kristen B. Gorman, published in the R Journal in 2022.
-
-Note that if you use Google Scholar to find article citations, you will see that the 5 examples included below are the default citation styles used by Google Scholar.
- 
- 
-Style Name | Citation
-:-:|:----------
-MLA | Horst, Allison M., Alison Presmanes Hill, and Kristen B. Gorman. "Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson's Irises." *R Journal* 14.1 (2022).
-APA | Horst, A. M., Hill, A. P., & Gorman, K. B. (2022). Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson's Irises. *R Journal*, 14(1).
-Chicago | Horst, Allison M., Alison Presmanes Hill, and Kristen B. Gorman. "Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson's Irises." *R Journal* 14, no. 1 (2022).
-Harvard | Horst, A.M., Hill, A.P. and Gorman, K.B., 2022. Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson's Irises. *R Journal*, 14(1).
-Vancouver | Horst AM, Hill AP, Gorman KB. Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson's Irises. R Journal. 2022 Mar 1;14(1).
-
-
-# CSL and Zotero
-
-The main Zotero application comes pre-loaded with several popular citation styles like APA, Chicago, Nature, and Vancouver style. These formats are generally sufficient for most users and scenarios, but, in the event that you need a style that is not included, you can easily add more. 
-
-Zotero maintains a collection of over 8,000 additional citation styles on the [Zotero Style Repository](https://www.zotero.org/styles). There are two ways to add a new citation style to Zotero:
-
-1. The CSL files can be downloaded directly from the Zotero Style Repository. Once you have the file, you can add it to Zotero by dragging and dropping it into the Zotero application, or by attempting to open the file. This should open a prompt asking if you'd like to install the style.
-2. From within the Zotero application. The directions for this will vary based on your operating system. In general, you can find the option to add a new citation style in the preferences or settings menu where the other citation styles are listed. You may find a button that says "Get additional styles" or "Add style." Clicking this button will open a window where you can search for and install new styles. (This window, however, is essentially a browser window that opens the Zotero Style Repository.)
-
-Once you have added a new citation style, it will be available in the Zotero application for you to select when you *generate a bibliography directly from Zotero*. If you are using Zotero with a word processor, you may need to restart the word processor to see the new style. For text editors like RStudio, you will need to copy the CSL file to the appropriate project directory; this will be covered in detail in the [Citations in Quarto chapter](citations_in_quarto.qmd).
+As mentioned earlier in the tutorial, Citation Style Language (CSL) is an XML-based format for defining citation and bibliography styles. CSL files are used by citation management software like Zotero to format citations and bibliographies in a specific style. This section is particularly interesting if you want to modify or edit your own citation styles. 
 
 ## What Does a CSL File Look Like?
 
@@ -219,9 +192,30 @@ If you're interested, the collapsed code below is an example of a CSL file that 
 ```
 :::
 
+## Citation Style Examples
+
+To demonstrate differences in citation styles, the citation for the same article is shown in several different styles below. The article is "Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson's Irises" by Allison M. Horst, Alison Presmanes Hill, and Kristen B. Gorman, published in the R Journal in 2022.
+
+Note that if you use Google Scholar to find article citations, you will see that the 5 examples included below are the default citation styles used by Google Scholar.
+ 
+ 
+Style Name | Citation
+:-:|:----------
+MLA | Horst, Allison M., Alison Presmanes Hill, and Kristen B. Gorman. "Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson's Irises." *R Journal* 14.1 (2022).
+APA | Horst, A. M., Hill, A. P., & Gorman, K. B. (2022). Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson's Irises. *R Journal*, 14(1).
+Chicago | Horst, Allison M., Alison Presmanes Hill, and Kristen B. Gorman. "Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson's Irises." *R Journal* 14, no. 1 (2022).
+Harvard | Horst, A.M., Hill, A.P. and Gorman, K.B., 2022. Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson's Irises. *R Journal*, 14(1).
+Vancouver | Horst AM, Hill AP, Gorman KB. Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson's Irises. R Journal. 2022 Mar 1;14(1).
 
 
+# CSL and Zotero
 
+The main Zotero application comes pre-loaded with several popular citation styles like APA, Chicago, Nature, and Vancouver style. These formats are generally sufficient for most users and scenarios, but, in the event that you need a style that is not included, you can easily add more. 
 
+Zotero maintains a collection of over 8,000 additional citation styles on the [Zotero Style Repository](https://www.zotero.org/styles). There are two ways to add a new citation style to Zotero:
 
+1. From outside the Zotero application: The CSL files can be downloaded directly from the Zotero Style Repository. Once you have the file, you can add it to Zotero by dragging and dropping it into the Zotero application, or by attempting to open the file. This should open a prompt asking if you'd like to install the style.
+2. From within the Zotero application: The directions for this will vary based on your operating system. In general, you can find the option to add a new citation style in the preferences or settings menu where the other citation styles are listed. You may find a button that says "Get additional styles" or "Add style." Clicking this button will open a window where you can search for and install new styles (this window, however, is essentially a browser window that opens the Zotero Style Repository).
+
+Once you have added a new citation style, it will be available in the Zotero application for you to select when you *generate a bibliography directly from Zotero*. If you are using Zotero with a word processor, you may need to restart the word processor to see the new style. For text editors like RStudio, you will need to copy the CSL file to the appropriate project directory; this will be covered in detail in the [Citations in Quarto chapter](citations_in_quarto.qmd).
 

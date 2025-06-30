@@ -11,7 +11,7 @@ Hopefully you are already familiar with the concept of citing the work of others
 
 A citation is a reference to a source of information. They are used to give credit to the original author of a work that you are using in your research, and they also allow readers to locate the original source of the information.
 
-Citations are typically included in the body of your work as short, in-text references to a work typically denoted by the author's last name and the year of publication. These in-text citations are followed by a bibliography or reference list at the end of your work which includes complete details on the cited works. The format of citations and bibliographies can vary depending on the citation style you are using, but they generally include the following information.
+Citations are typically included in the body of your work as short, in-text references to a work typically denoted by the author's last name and the year of publication. These in-text citations are followed by a bibliography or reference list at the end of your work which includes complete details on the cited works. The format of citations and bibliographies can vary depending on the citation style you are using.
 
 In fact, there are at least 8,000 variations of citation styles in use today, but some of the most common and well-known citation styles are the APA, MLA, Chicago, and Vancouver styles. The format of citations generally changes according to the preferred citation style of your research field and/or by journal preference. This topic is a bit more complex, and is covered more thoroughly in the [Citation Style Language chapter](citation_style_language.html), but it is first necessary to understand the basics of citation managers.
 
@@ -27,7 +27,7 @@ What features are included in citation managers? Here are some of the most impor
 * **Generating Citations**: Citation managers can generate citations in a variety of citation styles, including APA, MLA, Chicago, and Vancouver.
 * **Creating Bibliographies**: You can create bibliographies with the click of a button, saving you time and effort.
 * **Collaboration**: Some citation managers allow you to collaborate with others on shared projects, making it easy to work together on research.
-* **Integration with Word Processors**: Citation managers can integrate with word processors like Microsoft Word, LibreOffice, and Quarto allowing you to insert citations and bibliographies directly into your documents.
+* **Integration with Word Processors**: Citation managers can integrate with writing tools like Microsoft Word, LibreOffice, and Quarto allowing you to insert citations and bibliographies directly into your documents.
 
 Popular examples of citation managers include RefWorks, Mendeley, and EndNote although these are generally paid tools. The focus of this tutorial, however, is on an alternative citation manager called Zotero.
 
@@ -36,7 +36,7 @@ Popular examples of citation managers include RefWorks, Mendeley, and EndNote al
 
 Zotero provides the same features as the previously-mentioned citation managers: it helps you organize your research, collects and stores references, and generates citations and bibliographies in a variety of citation styles. The major difference between Zotero and these competitors is that **Zotero is free and open-source**, which makes it accessible to a wider audience. 
 
-One of the other major benefits of Zotero is that libraries are full transportable so if you ever leave your current institution or decide to leave Zotero for another citation manager altogether, you can freely export and import your library. The other major citation managers nominally have import/export features, but they may be encrypted and/or require contacting customer support whereas Zotero's is a simple export/import process.
+One of the other major benefits of Zotero is that libraries are fully transportable so if you ever leave your current institution or decide to leave Zotero for another citation manager altogether, you can freely export and import your library. The other major citation managers nominally have import/export features, but they may be encrypted and/or require contacting customer support whereas Zotero's is a simple export/import process.
 
 Zotero is available as a standalone application for Windows, macOS, and Linux, and includes a browser extension for Firefox, Chrome, and Safari that allows you to save references directly from your web browser with a single click. The desktop application and browser extension are the core offerings of Zotero, but there is also a web-based version with up to 300 MB free storage that can be accessed from any device with an internet connection and a mobile application for the iPhone (Android app in progress). Other features of Zotero include:
 
