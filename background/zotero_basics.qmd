@@ -27,7 +27,7 @@ What features are included in citation managers? Here are some of the most impor
 * **Generating Citations**: Citation managers can generate citations in a variety of citation styles, including APA, MLA, Chicago, and Vancouver.
 * **Creating Bibliographies**: You can create bibliographies with the click of a button, saving you time and effort.
 * **Collaboration**: Some citation managers allow you to collaborate with others on shared projects, making it easy to work together on research.
-* **Integration with Writing Tools**: Citation managers can integrate with writing tools like Microsoft Word, LibreOffice, and Quarto allowing you to insert citations and bibliographies directly into your documents.
+* **Integration with Word Processors**: Citation managers can integrate with writing tools like Microsoft Word, LibreOffice, and Quarto allowing you to insert citations and bibliographies directly into your documents.
 
 Popular examples of citation managers include RefWorks, Mendeley, and EndNote although these are generally paid tools. The focus of this tutorial, however, is on an alternative citation manager called Zotero.
 
