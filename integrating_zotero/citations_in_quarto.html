@@ -2,13 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.9.37">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>Citations in Quarto – Introduction to Zotero</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -59,7 +62,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
-  margin-bottom: 0em;
 }
 .hanging-indent div.csl-entry {
   margin-left:2em;
@@ -94,10 +96,10 @@ div.csl-indent {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-5bfcac40c9c70d691b4c0c610d517a5f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-a9c4168c3b45dead4fd9d7eca0774dc1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -126,6 +128,7 @@ div.csl-indent {
 }</script>
 <!-- Matomo -->
 <script>
+if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
   var _paq = window._paq = window._paq || [];
   /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
   _paq.push(["disableCookies"]);
@@ -138,6 +141,7 @@ div.csl-indent {
     var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
     g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
   })();
+}
 </script>
 <!-- End Matomo Code -->
 
@@ -393,7 +397,7 @@ div.csl-indent {
 <h2 class="anchored" data-anchor-id="what-are-references.bib-files">What are <code>references.bib</code> Files?</h2>
 <p>A <code>references.bib</code> file is a BibTeX file that contains all of the references you want to cite in your document. This file is used to generate the bibliography at the end of your document, and it is necessary to include this file in your project directory in order to insert citations. You can create this file manually, but it is generally easier to export your references from a citation manager or allow RStudio to manage the creation of the file for you.</p>
 <p>You will rarely need to edit the <code>references.bib</code> file directly, but you can open it in a text editor to see the structure of the file. An example of an entry inside of a <code>references.bib</code> file might look like this:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bibtex code-with-copy"><code class="sourceCode bibtex"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="va">@article</span>{<span class="ot">horst2022</span>,</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bibtex code-with-copy"><code class="sourceCode bibtex"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="va">@article</span>{<span class="ot">horst2022</span>,</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="dt">title</span> = {Palmer Archipelago Penguins Data in the palmerpenguins R Package - An Alternative to Anderson's Irises},</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="dt">author</span> = {Horst, Allison M. and Hill, Alison Presmanes and Gorman, Kristen B.},</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="dt">year</span> = {2022},</span>
@@ -405,7 +409,7 @@ div.csl-indent {
 <span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    <span class="dt">number</span> = {1},</span>
 <span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    <span class="dt">doi</span> = {10.32614/RJ-2022-020},</span>
 <span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    <span class="dt">url</span> = {https://doi.org/10.32614/RJ-2022-020/}</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Note that you can name the file something other than <code>references.bib</code>, but you must ensure that the name of the file you specify in the YAML header matches the name of the file you have saved in your project directory.</p>
 </section>
 <section id="what-is-a-citation-key" class="level2">
@@ -422,10 +426,10 @@ div.csl-indent {
 <li>Save this file in your project directory where your Quarto document is located as <code>references.bib</code></li>
 <li>Add the following to your YAML header: <code>bibliography: references.bib</code>, like this:</li>
 </ol>
-<div class="sourceCode" id="cb2"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Your project title"</span></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">bibliography</span><span class="kw">:</span><span class="at"> references.bib</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <section id="referencing-by-citation-key-in-rstudio" class="level2">
 <h2 class="anchored" data-anchor-id="referencing-by-citation-key-in-rstudio">Referencing by Citation Key in RStudio</h2>
 <p>After you have set up your <code>references.bib</code> file in your directory, you can use the citation keys found in the <code>references.bib</code> file to cite your sources in your Quarto document. The citation keys can be found in the BibTex file you exported from Zotero as the first line for each entry, or you can check directly with the entry in the Zotero application. For example, the citation key for the Palmer Penguins data set from 2022 by Allison Horst is <code>@horstPalmerArchipelagoPenguins2022a</code> in my <code>references.bib</code> file.</p>
@@ -435,9 +439,9 @@ div.csl-indent {
 </blockquote>
 <p>This will insert a citation that is displayed in your document like this:</p>
 <blockquote class="blockquote">
-<p>“Previous work generated specific criteria for an easily accessible dataset for the public.”<span class="citation" data-cites="horstPalmerArchipelagoPenguins2022a">(<a href="#ref-horstPalmerArchipelagoPenguins2022a" role="doc-biblioref">Horst, Presmanes Hill, and Gorman 2022</a>)</span></p>
+<p>“Previous work generated specific criteria for an easily accessible dataset for the public.”<span class="citation" data-cites="horstPalmerArchipelagoPenguins2022a">(<a href="#ref-horstPalmerArchipelagoPenguins2022a" role="doc-biblioref">Horst et al. 2022</a>)</span></p>
 </blockquote>
-<p>Note that the citation key can be inserted in two ways: with or without brackets <code>[]</code>, which yield formatting differences. A citation without brackets, <code>@horstPalmerArchipelagoPenguins2022a</code>, will appear inline as “<span class="citation" data-cites="horstPalmerArchipelagoPenguins2022a">Horst, Presmanes Hill, and Gorman (<a href="#ref-horstPalmerArchipelagoPenguins2022a" role="doc-biblioref">2022</a>)</span>”, while a citation with brackets, <code>[@horstPalmerArchipelagoPenguins2022a]</code>, will appear as “<span class="citation" data-cites="horstPalmerArchipelagoPenguins2022a">(<a href="#ref-horstPalmerArchipelagoPenguins2022a" role="doc-biblioref">Horst, Presmanes Hill, and Gorman 2022</a>)</span>”.</p>
+<p>Note that the citation key can be inserted in two ways: with or without brackets <code>[]</code>, which yield formatting differences. A citation without brackets, <code>@horstPalmerArchipelagoPenguins2022a</code>, will appear inline as “<span class="citation" data-cites="horstPalmerArchipelagoPenguins2022a">Horst et al. (<a href="#ref-horstPalmerArchipelagoPenguins2022a" role="doc-biblioref">2022</a>)</span>”, while a citation with brackets, <code>[@horstPalmerArchipelagoPenguins2022a]</code>, will appear as “<span class="citation" data-cites="horstPalmerArchipelagoPenguins2022a">(<a href="#ref-horstPalmerArchipelagoPenguins2022a" role="doc-biblioref">Horst et al. 2022</a>)</span>”.</p>
 <!-- If you *export* a library from Zotero, however, a different default method for generating the citation keys will be used. These differences will be discussed in the following sub-sections, [RStudio Visual Editor](#rstudio-visual-editor) and [Manual Entry](#manual-entry). -->
 <!-- ::: {.callout-tip title="The General Approach"} -->
 <!-- The method for inserting citations in Quarto documents described here is the most general approach, and will work for any text editor. Note that if you are using RStudio, you should use the "Source" editing mode for this method. You can use the "Visual" editor to insert citations on a point-and-click basis, which is covered in the next section. -->
@@ -448,7 +452,7 @@ div.csl-indent {
 <p>If you are using RStudio’s visual editor, you can insert a citation by clicking on the “Insert” menu at the top of the screen and selecting “Citation.” This will open a dialog box where you can search for the reference you want to cite by typing in the author’s name, title, or other identifying information. Once you have found the reference you want to cite, you can click on it to insert the citation into your document.</p>
 <p>Note that this process is simply a “visual” short code for inserting the citation key into your document, but is more convenient as it lets you interactively search through your Zotero library and dynamically add citations to your <code>references.bib</code> file.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">1. New Project</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">2. Insert</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">3. Plugin</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false">4. Select</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-5" role="tab" aria-controls="tabset-1-5" aria-selected="false">5. Edit Key</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-6-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-6" role="tab" aria-controls="tabset-1-6" aria-selected="false">6. Review</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-7-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-7" role="tab" aria-controls="tabset-1-7" aria-selected="false">7. Render</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">1. New Project</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">2. Insert</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">3. Plugin</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false" href="">4. Select</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-5" role="tab" aria-controls="tabset-1-5" aria-selected="false" href="">5. Edit Key</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-6-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-6" role="tab" aria-controls="tabset-1-6" aria-selected="false" href="">6. Review</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-7-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-7" role="tab" aria-controls="tabset-1-7" aria-selected="false" href="">7. Render</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <div class="quarto-figure quarto-figure-center">
@@ -512,10 +516,10 @@ div.csl-indent {
 <section id="automatic-generation-of-bibliography-file" class="level2">
 <h2 class="anchored" data-anchor-id="automatic-generation-of-bibliography-file">Automatic Generation of Bibliography File</h2>
 <p>If you did <strong>not</strong> export a <code>references.bib</code> file from Zotero, you can automatically generate a bibliography file within RStudio when you insert a citation. This bibliography file created by RStudio will be automatically updated to include any new citations you add. You still must define the name of the bibliography file RStudio should create for your citations using the <code>bibliography: &lt;your-references-file.bib&gt;</code> line in the YAML header like below.</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"My Document"</span></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">bibliography</span><span class="kw">:</span><span class="at"> my-references.bib</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Here, RStudio generates a citation key for each new item you include in a document. They typically follow the format <code>@authorYear</code> or <code>@authorYearLetter</code> when there are multiple references matching the format. <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> These keys can be customized to your liking, <strong>but this should be done only prior to using them the first time</strong>.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> Also note that the citation keys do not necessarily match the citation keys within your Zotero application.</p>
 <p>Inserting citations without a pre-exported <code>references.bib</code> file works as follows:</p>
 <ol type="1">
@@ -532,7 +536,7 @@ div.csl-indent {
 <h3 class="anchored" data-anchor-id="automatically-updating-the-bibliography-file-via-zotero">Automatically Updating the Bibliography File via Zotero</h3>
 <p>In order to create a bibliography file that is autmatically updated when changes occur (see the <a href="https://forums.zotero.org/discussion/89720/keeping-a-bibtex-file-per-collection-in-sync-with-zotero">discussion on the Zotero forum here</a>), you need to first install the <a href="https://retorque.re/zotero-better-bibtex/">Better BibTeX plugin</a>. Next, follow these steps:</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">1. Export Library</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">2. Select Better BibTeX</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false">3. Set Up Automatic Updating</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-4" role="tab" aria-controls="tabset-2-4" aria-selected="false">4. Save Exported Reference File</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-5" role="tab" aria-controls="tabset-2-5" aria-selected="false">5. Check folder</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">1. Export Library</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">2. Select Better BibTeX</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false" href="">3. Set Up Automatic Updating</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-4" role="tab" aria-controls="tabset-2-4" aria-selected="false" href="">4. Save Exported Reference File</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-5" role="tab" aria-controls="tabset-2-5" aria-selected="false" href="">5. Check folder</a></li></ul>
 <div class="tab-content">
 <div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
 <div class="quarto-figure quarto-figure-center">
@@ -578,7 +582,7 @@ div.csl-indent {
 </div>
 <p>To test the automatic updateing of your bibliography, you can add a new source to your Zotero library and then insert the source as a citation in your Quarto document. Note that you can manage different important settings for <code>Better BibTex</code> directly in the Zotero settings, for example for citation key formatting or, importantly, for automatic export:</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true">1. Open Settings</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false">2. Select Better BibTeX</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false">3. Check Automatic Export</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true" href="">1. Open Settings</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false" href="">2. Select Better BibTeX</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false" href="">3. Check Automatic Export</a></li></ul>
 <div class="tab-content">
 <div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
 <div class="quarto-figure quarto-figure-center">
@@ -615,32 +619,32 @@ div.csl-indent {
 <section id="adding-references-at-the-end-of-the-document" class="level2">
 <h2 class="anchored" data-anchor-id="adding-references-at-the-end-of-the-document">Adding References at the End of the Document</h2>
 <p>After inserting your citations, you will presumably want a well-formatted bibliography or references section available at the end of your document. “<a href="https://quarto.org/docs/authoring/citations.html#bibliography-generation">By default, Pandoc will automatically generate a list of works cited and place it in the document if the style calls for it. It will be placed in a div with the id refs if one exists.</a> <span class="citation" data-cites="quarto-citations">(<a href="#ref-quarto-citations" role="doc-biblioref"><strong>quarto-citations?</strong></a>)</span>:”</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">### References</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">### References</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>::: {#refs}</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>This will generate a “References” section at the end of your document with the bibliography formatted according to the citation style you have specified in the YAML header. An example of this can be found at the bottom of this page!</p>
 </section>
 <section id="changing-citation-style" class="level2">
 <h2 class="anchored" data-anchor-id="changing-citation-style">Changing Citation Style</h2>
 <p>The <a href="../background/citation_style_language.html">Citation Style Language</a> page talked in depth about the different citation styles available to you. You can change the citation style of your document by adding the <code>csl: &lt;your-csl-file.csl&gt;</code> line to the YAML header like below:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"My Document"</span></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fu">bibliography</span><span class="kw">:</span><span class="at"> references.bib</span></span>
 <span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="fu">csl</span><span class="kw">:</span><span class="at"> your-csl-file.csl</span></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>This will change the citation style of your document to the style specified in the CSL file you provide. You can find CSL files for different citation styles on the <a href="https://www.zotero.org/styles">Citation Styles Library</a> website.</p>
 <p>Note that the <code>csl:</code> field can also be a link directly to a CSL file online. For example, the following YAML header will use the Nature citation style:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"My Document"</span></span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="fu">bibliography</span><span class="kw">:</span><span class="at"> references.bib</span></span>
 <span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="fu">csl</span><span class="kw">:</span><span class="at"> https://www.zotero.org/styles/nature</span></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 </section>
 <section id="references" class="level1">
 <h1>References</h1>
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
 <div id="ref-horstPalmerArchipelagoPenguins2022a" class="csl-entry" role="listitem">
 Horst, Allison M., Alison Presmanes Hill, and Kristen B. Gorman. 2022. <span>“Palmer <span>Archipelago</span> <span>Penguins</span> <span>Data</span> in the Palmerpenguins <span>R</span> <span>Package</span> - <span>An</span> <span>Alternative</span> to <span>Anderson</span>’s <span>Irises</span>.”</span> <em>The R Journal</em> 14 (1): 244–54. <a href="https://doi.org/10.32614/RJ-2022-020">https://doi.org/10.32614/RJ-2022-020</a>.
 </div>
@@ -708,13 +712,14 @@ Horst, Allison M., Alison Presmanes Hill, and Kristen B. Gorman. 2022. <span>“
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
