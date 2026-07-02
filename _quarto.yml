@@ -56,12 +56,12 @@ website:
         href: background/best-practices.qmd
       - section: "Exercises"
         contents:
-          - href: exercises/exercise-1.qmd
-            text: "Exercise 1: Using Zotero"
-          - href: exercises/exercise-2.qmd
-            text: "Exercise 2: Integrating with Quarto"
-          - href: exercises/exercise-3.qmd
-            text: "Exercise 3: Changing CSL"
+          - href: exercises/use-zotero.qmd
+            text: "Basic Zotero Usage"
+          - href: exercises/quarto-citations.qmd
+            text: "Integrating with Quarto"
+          - href: exercises/change-csl.qmd
+            text: "Changing CSL"
       - section: "Advanced"
         contents:
           - href: advanced/zotero-groups.qmd

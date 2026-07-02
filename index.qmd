@@ -11,7 +11,7 @@ The tutorial is split into the following sections:
 
 1. [Getting Started with Zotero](background/zotero-basics.qmd)
 2. [Integrating Zotero](integrating-zotero/citations-in-quarto.qmd)
-3. [Exercises](exercises/exercise-1.qmd)
+3. [Exercises](exercises/use-zotero.qmd)
 4. [Advanced](advanced/zotero-groups.qmd)
 
 ::: {.callout-tip title="Software Requirements"}
