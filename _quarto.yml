@@ -40,33 +40,33 @@ website:
         href: index.qmd
       - section: "Background"
         contents:
-          - href: background/zotero_basics.qmd
+          - href: background/zotero-basics.qmd
             text: "Zotero Basics"
-          - href: background/zotero_usage.qmd
+          - href: background/zotero-usage.qmd
             text: "Zotero Usage"
-          - href: background/citation_style_language.qmd
+          - href: background/citation-style-language.qmd
             text: "Citation Style Language"
       - section: "Integrating Zotero"
         contents:
-          - href: integrating_zotero/citations_in_quarto.qmd
+          - href: integrating-zotero/citations-in-quarto.qmd
             text: "Citations in Quarto"
-          - href: integrating_zotero/citations_in_word.qmd
+          - href: integrating-zotero/citations-in-word.qmd
             text: "Citations in Word"
       - text: "Best Practices"
-        href: background/best_practices.qmd
+        href: background/best-practices.qmd
       - section: "Exercises"
         contents:
-          - href: exercises/exercise_1.qmd
+          - href: exercises/exercise-1.qmd
             text: "Exercise 1: Using Zotero"
-          - href: exercises/exercise_2.qmd
+          - href: exercises/exercise-2.qmd
             text: "Exercise 2: Integrating with Quarto"
-          - href: exercises/exercise_3.qmd
+          - href: exercises/exercise-3.qmd
             text: "Exercise 3: Changing CSL"
       - section: "Advanced"
         contents:
-          - href: advanced/zotero_groups.qmd
+          - href: advanced/zotero-groups.qmd
             text: "Zotero Groups"
-          # - href: advanced/zotero_plugins.qmd
+          # - href: advanced/zotero-plugins.qmd
           #   text: "Zotero Plugins"
 
 format:
