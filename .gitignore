@@ -58,4 +58,8 @@ rsconnect/
 .httr-oauth
 .quarto
 _site/
+**_files/
 _outline.md
+
+
+**/*.quarto_ipynb
