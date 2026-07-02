@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Exercise 1: Using Zotero – Introduction to Zotero</title>
+<title>Citations in Word – Introduction to Zotero</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -33,6 +33,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../background/best-practices.html" rel="next">
+<link href="../integrating-zotero/citations-in-quarto.html" rel="prev">
 <link href="../assets/lmu-osc-favicon.jpg" rel="icon" type="image/jpeg">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -148,7 +150,7 @@ if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Exercise 1: Using Zotero</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../integrating-zotero/citations-in-quarto.html">Integrating Zotero</a></li><li class="breadcrumb-item"><a href="../integrating-zotero/citations-in-word.html">Citations in Word</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -220,7 +222,7 @@ if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../integrating-zotero/citations-in-word.html" class="sidebar-item-text sidebar-link">
+  <a href="../integrating-zotero/citations-in-word.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Citations in Word</span></a>
   </div>
 </li>
@@ -290,16 +292,21 @@ if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#instructions" id="toc-instructions" class="nav-link active" data-scroll-target="#instructions">Instructions</a></li>
+  <li><a href="#inserting-citations" id="toc-inserting-citations" class="nav-link active" data-scroll-target="#inserting-citations">Inserting Citations</a></li>
+  <li><a href="#adding-a-bibliography" id="toc-adding-a-bibliography" class="nav-link" data-scroll-target="#adding-a-bibliography">Adding a Bibliography</a>
+  <ul class="collapse">
+  <li><a href="#initial-add-new-citations" id="toc-initial-add-new-citations" class="nav-link" data-scroll-target="#initial-add-new-citations">Initial Add &amp; New Citations</a></li>
+  <li><a href="#change-style" id="toc-change-style" class="nav-link" data-scroll-target="#change-style">Change Style</a></li>
+  </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/lmu-osc/introduction-to-zotero/edit/main/exercises/exercise_1.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/introduction-to-zotero/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/lmu-osc/introduction-to-zotero/edit/main/integrating-zotero/citations-in-word.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/introduction-to-zotero/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../integrating-zotero/citations-in-quarto.html">Integrating Zotero</a></li><li class="breadcrumb-item"><a href="../integrating-zotero/citations-in-word.html">Citations in Word</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Exercise 1: Using Zotero</h1>
+<h1 class="title">Citations in Word</h1>
 </div>
 
 
@@ -316,25 +323,134 @@ if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
 </header>
 
 
-<section id="instructions" class="level1">
-<h1>Instructions</h1>
-<p>This exercise is designed to help you get started with Zotero and RStudio. You will need to have Zotero installed on your computer. If you do not have Zotero installed, you can download it from <a href="https://www.zotero.org/download/">here</a>.</p>
-<ol type="1">
-<li>Create a new folder in Zotero.
-<ul>
-<li>Name the folder “Exercise 1”.</li>
-<li>Add a tag to the folder called “Exercise 1”.</li>
-</ul></li>
-<li>Save references to 3-4 different sources in Zotero.
-<ul>
-<li>Try to use the Zotero web connector for some of the sources, add 1 manually, and add one by copying/pasting a BibTex entry.</li>
-</ul></li>
-<li>Export the references from Zotero to a BibTex file. This can be done by right-clicking on the folder and selecting “Export Collection”.</li>
-<li>Export the references from Zotero as a Word document. This can be done by right-clicking on the folder and selecting “Create Bibliography from Collection”.</li>
-</ol>
-<p><em>When completed, you can delete the BibTex and Word files you’ve just created. They will not be needed in subsequent exercises.</em></p>
+<p>Zotero also provides a plugin for Microsoft Word that allows you to insert citations and bibliographies directly into your documents. The technical details of this depart from the procedure for inserting citations into a Quarto document, but still follows the same steps of 1) inserting a citation and 2) generating a bibliography.</p>
+<section id="inserting-citations" class="level1">
+<h1>Inserting Citations</h1>
+<p>The Zotero plugin for Word should have been automatically downloaded and installed when you installed Zotero. You can confirm this by checking for a Zotero tab in the toolbar of a new Word document. If the tab is not visible, you may need to restart Word or reinstall Zotero.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">1. New Project</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">2. Add</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">3. Choose CSL</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false" href="">4. Search</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-5" role="tab" aria-controls="tabset-1-5" aria-selected="false" href="">5. Results</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-6-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-6" role="tab" aria-controls="tabset-1-6" aria-selected="false" href="">6. Cited</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/citations-in-word/01-new-word-file.png" class="img-fluid figure-img"></p>
+<figcaption>In a new Word document, the Zotero tab should be available if you have already downloaded Zotero–it automatically installs the Word plugin.</figcaption>
+</figure>
+</div>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/citations-in-word/02-word-zotero-tab.png" class="img-fluid figure-img"></p>
+<figcaption>Under the Zotero tab, press the “Add/Edit Citation” button.</figcaption>
+</figure>
+</div>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/citations-in-word/03-change-citation-style.png" class="img-fluid figure-img"></p>
+<figcaption>If this is the first citation you’re inserting into the document, you will be prompted to choose the citation style you’d like to use. This can be changed later if needed.</figcaption>
+</figure>
+</div>
+</div>
+<div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/citations-in-word/04-search-popup.png" class="img-fluid figure-img"></p>
+<figcaption>You can now search through your Zotero library for the content you need to cite. This searchbar pop-up will search through your <strong>whole</strong> library, but you can opt to look through a specific folder by pressing the <strong>Z</strong> drop-down button on the left.</figcaption>
+</figure>
+</div>
+</div>
+<div id="tabset-1-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-5-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/citations-in-word/05-search-popup-results.png" class="img-fluid figure-img"></p>
+<figcaption>The results of your search will appear in a drop-down menu below. You can search for and select multiple documents before inserting them. When you are done adding citations, press <strong>Enter</strong>.</figcaption>
+</figure>
+</div>
+</div>
+<div id="tabset-1-6" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-6-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/citations-in-word/06-citation-inserted.png" class="img-fluid figure-img"></p>
+<figcaption>Your in-line citation should now be visible in your document. The next section will discuss how to include the bibliography.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="adding-a-bibliography" class="level1">
+<h1>Adding a Bibliography</h1>
+<p>Note that adding citations and adding the bibliography are two separate steps. The bibliography can be added at any time after the first citation has been placed in the document. Simply press the “Add/Edit Bibliography” button. You may occassionally need to press the “Refresh” button to update the bibliography.</p>
+<section id="initial-add-new-citations" class="level2">
+<h2 class="anchored" data-anchor-id="initial-add-new-citations">Initial Add &amp; New Citations</h2>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">1. Add Bibliography</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">2. Results</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false" href="">3. Add New Citations</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/citations-in-word/07-insert-bibliography-button.png" class="img-fluid figure-img"></p>
+<figcaption>The bibliography can be added at any time after the first citation has been placed in the document. Simply press the “Add/Edit Bibliography” button.</figcaption>
+</figure>
+</div>
+</div>
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/citations-in-word/08-bibliography-inserted.png" class="img-fluid figure-img"></p>
+<figcaption>After pressing the button, the bibliography should appear where you had your cursor placed.</figcaption>
+</figure>
+</div>
+</div>
+<div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/citations-in-word/09-add-new-citation.png" class="img-fluid figure-img"></p>
+<figcaption>To add new citations, simply repeat the procedure outlined previously. Some versions of Word and Zotero will automatically update the bibliography, but older versions may require you to press the <strong>Refresh</strong> button!</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="change-style" class="level2">
+<h2 class="anchored" data-anchor-id="change-style">Change Style</h2>
+<p>If, after inserting your first citation, you decide to use a different citation style, you can do so by pressing the “Document Preferences” button under the Zotero tab. This will allow you to change the citation style of the document. Note that this will change the style of all in-line citations and the bibliography.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true" href="">1. Doc Preferences</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false" href="">2. Change CSL</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false" href="">3. See Updates</a></li></ul>
+<div class="tab-content">
+<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/citations-in-word/10-document-preferences.png" class="img-fluid figure-img"></p>
+<figcaption>Press the <strong>Document Preferences</strong> button to make changes to the citation style of the document.</figcaption>
+</figure>
+</div>
+</div>
+<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/citations-in-word/11-change-cite-style.png" class="img-fluid figure-img"></p>
+<figcaption>Select the new style you’d like to use. If needed, you can first download the style from the Zotero website, install it into Zotero, and then restart both Word and Zotero.</figcaption>
+</figure>
+</div>
+</div>
+<div id="tabset-3-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-3-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/citations-in-word/12-see-new-bibliography.png" class="img-fluid figure-img"></p>
+<figcaption>Note that the style of the in-line citations and the bibliography have now been updated to reflect the new CSL file we’ve chosen.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
 
 
+</section>
 </section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
@@ -738,6 +854,18 @@ if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
     }
   });
   </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../integrating-zotero/citations-in-quarto.html" class="pagination-link" aria-label="Citations in Quarto">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Citations in Quarto</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../background/best-practices.html" class="pagination-link" aria-label="Best Practices">
+        <span class="nav-page-text">Best Practices</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
@@ -746,7 +874,7 @@ if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
     </div>   
     <div class="nav-footer-center">
 <p>Copyright, 2024 Open Science Center at LMU Munich</p>
-<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/lmu-osc/introduction-to-zotero/edit/main/exercises/exercise_1.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/introduction-to-zotero/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/lmu-osc/introduction-to-zotero/edit/main/integrating-zotero/citations-in-word.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/introduction-to-zotero/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>

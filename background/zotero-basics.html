@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Exercise 1: Using Zotero – Introduction to Zotero</title>
+<title>Zotero Basics – Introduction to Zotero</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -33,6 +33,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../background/zotero-usage.html" rel="next">
+<link href="../index.html" rel="prev">
 <link href="../assets/lmu-osc-favicon.jpg" rel="icon" type="image/jpeg">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -148,7 +150,7 @@ if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Exercise 1: Using Zotero</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../background/zotero-basics.html">Background</a></li><li class="breadcrumb-item"><a href="../background/zotero-basics.html">Zotero Basics</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -185,7 +187,7 @@ if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../background/zotero-basics.html" class="sidebar-item-text sidebar-link">
+  <a href="../background/zotero-basics.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Zotero Basics</span></a>
   </div>
 </li>
@@ -290,16 +292,21 @@ if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#instructions" id="toc-instructions" class="nav-link active" data-scroll-target="#instructions">Instructions</a></li>
+  <li><a href="#citations" id="toc-citations" class="nav-link active" data-scroll-target="#citations">Citations</a></li>
+  <li><a href="#citation-managers" id="toc-citation-managers" class="nav-link" data-scroll-target="#citation-managers">Citation Managers</a></li>
+  <li><a href="#zotero" id="toc-zotero" class="nav-link" data-scroll-target="#zotero">Zotero</a>
+  <ul class="collapse">
+  <li><a href="#downloading-zotero" id="toc-downloading-zotero" class="nav-link" data-scroll-target="#downloading-zotero">Downloading Zotero</a></li>
+  </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/lmu-osc/introduction-to-zotero/edit/main/exercises/exercise_1.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/introduction-to-zotero/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/lmu-osc/introduction-to-zotero/edit/main/background/zotero-basics.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/introduction-to-zotero/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../background/zotero-basics.html">Background</a></li><li class="breadcrumb-item"><a href="../background/zotero-basics.html">Zotero Basics</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Exercise 1: Using Zotero</h1>
+<h1 class="title">Zotero Basics</h1>
 </div>
 
 
@@ -316,25 +323,44 @@ if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
 </header>
 
 
-<section id="instructions" class="level1">
-<h1>Instructions</h1>
-<p>This exercise is designed to help you get started with Zotero and RStudio. You will need to have Zotero installed on your computer. If you do not have Zotero installed, you can download it from <a href="https://www.zotero.org/download/">here</a>.</p>
-<ol type="1">
-<li>Create a new folder in Zotero.
+<p>Hopefully you are already familiar with the concept of citing the work of others and creating bibliographies. If not, don’t worry! This tutorial will introduce you to the basics of citations and citation managers, with a specific focus on the Zotero citation manager.</p>
+<section id="citations" class="level1">
+<h1>Citations</h1>
+<p>A citation is a reference to a source of information. They are used to give credit to the original author of a work that you are using in your research, and they also allow readers to locate the original source of the information.</p>
+<p>Citations are typically included in the body of your work as short, in-text references to a work typically denoted by the author’s last name and the year of publication. These in-text citations are followed by a bibliography or reference list at the end of your work which includes complete details on the cited works. The format of citations and bibliographies can vary depending on the citation style you are using.</p>
+<p>In fact, there are at least 8,000 variations of citation styles in use today, but some of the most common and well-known citation styles are the APA, MLA, Chicago, and Vancouver styles. The format of citations generally changes according to the preferred citation style of your research field and/or by journal preference. This topic is a bit more complex, and is covered more thoroughly in the <a href="../background/citation-style-language.html">Citation Style Language chapter</a>, but it is first necessary to understand the basics of citation managers.</p>
+</section>
+<section id="citation-managers" class="level1">
+<h1>Citation Managers</h1>
+<p>Citation managers are software that help you organize your research, and they can save you significant time and effort by automating the process of creating citations and bibliographies.</p>
+<p>What features are included in citation managers? Here are some of the most important:</p>
 <ul>
-<li>Name the folder “Exercise 1”.</li>
-<li>Add a tag to the folder called “Exercise 1”.</li>
-</ul></li>
-<li>Save references to 3-4 different sources in Zotero.
+<li><strong>Reference Organization</strong>: Citation managers allow you to organize your references into folders or collections, making it easy to keep track of your research.</li>
+<li><strong>Importing References</strong>: You can import references from a variety of sources, including library databases, websites, and PDFs.</li>
+<li><strong>Generating Citations</strong>: Citation managers can generate citations in a variety of citation styles, including APA, MLA, Chicago, and Vancouver.</li>
+<li><strong>Creating Bibliographies</strong>: You can create bibliographies with the click of a button, saving you time and effort.</li>
+<li><strong>Collaboration</strong>: Some citation managers allow you to collaborate with others on shared projects, making it easy to work together on research.</li>
+<li><strong>Integration with Word Processors</strong>: Citation managers can integrate with writing tools like Microsoft Word, LibreOffice, and Quarto allowing you to insert citations and bibliographies directly into your documents.</li>
+</ul>
+<p>Popular examples of citation managers include RefWorks, Mendeley, and EndNote although these are generally paid tools. The focus of this tutorial, however, is on an alternative citation manager called Zotero.</p>
+</section>
+<section id="zotero" class="level1">
+<h1>Zotero</h1>
+<p>Zotero provides the same features as the previously-mentioned citation managers: it helps you organize your research, collects and stores references, and generates citations and bibliographies in a variety of citation styles. The major difference between Zotero and these competitors is that <strong>Zotero is free and open-source</strong>, which makes it accessible to a wider audience.</p>
+<p>One of the other major benefits of Zotero is that libraries are fully transportable so if you ever leave your current institution or decide to leave Zotero for another citation manager altogether, you can freely export and import your library. The other major citation managers nominally have import/export features, but they may be encrypted and/or require contacting customer support whereas Zotero’s is a simple export/import process.</p>
+<p>Zotero is available as a standalone application for Windows, macOS, and Linux, and includes a browser extension for Firefox, Chrome, and Safari that allows you to save references directly from your web browser with a single click. The desktop application and browser extension are the core offerings of Zotero, but there is also a web-based version with up to 300 MB free storage that can be accessed from any device with an internet connection and a mobile application for the iPhone (Android app in progress). Other features of Zotero include:</p>
 <ul>
-<li>Try to use the Zotero web connector for some of the sources, add 1 manually, and add one by copying/pasting a BibTex entry.</li>
-</ul></li>
-<li>Export the references from Zotero to a BibTex file. This can be done by right-clicking on the folder and selecting “Export Collection”.</li>
-<li>Export the references from Zotero as a Word document. This can be done by right-clicking on the folder and selecting “Create Bibliography from Collection”.</li>
-</ol>
-<p><em>When completed, you can delete the BibTex and Word files you’ve just created. They will not be needed in subsequent exercises.</em></p>
+<li>The ability to collaborate on group libraries using either public or private groups</li>
+<li>An active user community that has created a wide range of plugins and add-ons to extend its functionality</li>
+<li>Integration with numerous word processors and text editors, including Microsoft Word, LibreOffice, Google Docs, and RStudio</li>
+</ul>
+<section id="downloading-zotero" class="level2">
+<h2 class="anchored" data-anchor-id="downloading-zotero">Downloading Zotero</h2>
+<p>To get started with Zotero, you will need to download the <a href="https://www.zotero.org/download/">Zotero desktop application</a> and the browser extension available for the Chrome, Firefox, Safari, and Edge browsers.</p>
+<p>The Zotero website should automatically detect your operating system and browser, and it will display download links for both pieces of software.</p>
 
 
+</section>
 </section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
@@ -738,6 +764,18 @@ if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
     }
   });
   </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../index.html" class="pagination-link" aria-label="Overview">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Overview</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../background/zotero-usage.html" class="pagination-link" aria-label="Zotero Usage">
+        <span class="nav-page-text">Zotero Usage</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
@@ -746,7 +784,7 @@ if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
     </div>   
     <div class="nav-footer-center">
 <p>Copyright, 2024 Open Science Center at LMU Munich</p>
-<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/lmu-osc/introduction-to-zotero/edit/main/exercises/exercise_1.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/introduction-to-zotero/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/lmu-osc/introduction-to-zotero/edit/main/background/zotero-basics.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/introduction-to-zotero/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>

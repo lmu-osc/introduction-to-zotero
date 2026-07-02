@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Exercise 1: Using Zotero – Introduction to Zotero</title>
+<title>Best Practices – Introduction to Zotero</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -33,6 +33,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../exercises/use-zotero.html" rel="next">
+<link href="../integrating-zotero/citations-in-word.html" rel="prev">
 <link href="../assets/lmu-osc-favicon.jpg" rel="icon" type="image/jpeg">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -148,7 +150,7 @@ if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Exercise 1: Using Zotero</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../background/best-practices.html">Best Practices</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -228,7 +230,7 @@ if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../background/best-practices.html" class="sidebar-item-text sidebar-link">
+  <a href="../background/best-practices.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Best Practices</span></a>
   </div>
 </li>
@@ -290,16 +292,17 @@ if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#instructions" id="toc-instructions" class="nav-link active" data-scroll-target="#instructions">Instructions</a></li>
+  <li><a href="#organizing-your-library" id="toc-organizing-your-library" class="nav-link active" data-scroll-target="#organizing-your-library">Organizing your library</a></li>
+  <li><a href="#workflow" id="toc-workflow" class="nav-link" data-scroll-target="#workflow">Workflow</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/lmu-osc/introduction-to-zotero/edit/main/exercises/exercise_1.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/introduction-to-zotero/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/lmu-osc/introduction-to-zotero/edit/main/background/best-practices.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/introduction-to-zotero/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Exercise 1: Using Zotero</h1>
+<h1 class="title">Best Practices</h1>
 </div>
 
 
@@ -316,23 +319,50 @@ if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
 </header>
 
 
-<section id="instructions" class="level1">
-<h1>Instructions</h1>
-<p>This exercise is designed to help you get started with Zotero and RStudio. You will need to have Zotero installed on your computer. If you do not have Zotero installed, you can download it from <a href="https://www.zotero.org/download/">here</a>.</p>
-<ol type="1">
-<li>Create a new folder in Zotero.
+<p>There are a number of different ways that can make your interaction with Zotero as smooth and effortless as possible. Below we collected a number of tips that can help you get started.</p>
+<section id="organizing-your-library" class="level1">
+<h1>Organizing your library</h1>
+<p>Create a temporary space or tag for unprocessed materials before adding them to the group library:</p>
 <ul>
-<li>Name the folder “Exercise 1”.</li>
-<li>Add a tag to the folder called “Exercise 1”.</li>
-</ul></li>
-<li>Save references to 3-4 different sources in Zotero.
-<ul>
-<li>Try to use the Zotero web connector for some of the sources, add 1 manually, and add one by copying/pasting a BibTex entry.</li>
-</ul></li>
-<li>Export the references from Zotero to a BibTex file. This can be done by right-clicking on the folder and selecting “Export Collection”.</li>
-<li>Export the references from Zotero as a Word document. This can be done by right-clicking on the folder and selecting “Create Bibliography from Collection”.</li>
-</ol>
-<p><em>When completed, you can delete the BibTex and Word files you’ve just created. They will not be needed in subsequent exercises.</em></p>
+<li><p>In the Zotero desktop app, create a new collection (right-click on your personal library and select “New Collection”).</p></li>
+<li><p>Name this collection something like “Inbox” or “To Process.”</p></li>
+<li><p>When saving items to Zotero, apply a tag such as "Unprocessed." You can do this directly when saving an item in your browser or later in the Zotero desktop app.</p></li>
+<li><p>Filter by this tag later to review and process these items.</p></li>
+<li><p>Use subcollections to remain organized</p></li>
+</ul>
+</section>
+<section id="workflow" class="level1">
+<h1>Workflow</h1>
+<p>In each collection, a separate standalone note explaining the purpose of the folder, the group workflow, tagging conventions, folder structure and definitions for “related” items. Always keep this note updated and communicate any changes in the workflow or tagging conventions to the other group members.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Create Note</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Describe Workflow</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">Describe Tagging Conventions</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/groups-media/07-create-note.png" class="img-fluid figure-img"></p>
+<figcaption>In your group library, select “New Note” and then “Standalone Note” from the toolbar.</figcaption>
+</figure>
+</div>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/groups-media/08-describe-workflow.png" class="img-fluid figure-img"></p>
+<figcaption>Write a clear description of the group workflow, including the purpose of the folder, folder usage, and definitions for “related” items.</figcaption>
+</figure>
+</div>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/groups-media/09-describe-tagging.png" class="img-fluid figure-img"></p>
+<figcaption>In a separate note, list all the used tags and write a clear description of the tagging conventions. Avoid adding too many tags and regularly delete unused or redundant tags. Directly edit tags in the “Tags” tab on the right-hand pane in Zotero</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
 
 
 </section>
@@ -738,6 +768,18 @@ if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
     }
   });
   </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../integrating-zotero/citations-in-word.html" class="pagination-link" aria-label="Citations in Word">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Citations in Word</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../exercises/use-zotero.html" class="pagination-link" aria-label="Basic Zotero Usage">
+        <span class="nav-page-text">Basic Zotero Usage</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
@@ -746,7 +788,7 @@ if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
     </div>   
     <div class="nav-footer-center">
 <p>Copyright, 2024 Open Science Center at LMU Munich</p>
-<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/lmu-osc/introduction-to-zotero/edit/main/exercises/exercise_1.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/introduction-to-zotero/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/lmu-osc/introduction-to-zotero/edit/main/background/best-practices.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/introduction-to-zotero/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>

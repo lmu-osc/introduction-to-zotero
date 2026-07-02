@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Exercise 1: Using Zotero – Introduction to Zotero</title>
+<title>Accessibility – Introduction to Zotero</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -148,7 +148,7 @@ if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Exercise 1: Using Zotero</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Accessibility</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -158,7 +158,7 @@ if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
   </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -286,25 +286,18 @@ if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar"><div class="quarto-margin-header"><div class="margin-header-item">
 <p><img src="../assets/lmu-osc-logo.svg" class="img-fluid" width="175"></p>
 </div></div>
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#instructions" id="toc-instructions" class="nav-link active" data-scroll-target="#instructions">Instructions</a></li>
-  </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/lmu-osc/introduction-to-zotero/edit/main/exercises/exercise_1.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/introduction-to-zotero/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-body" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Exercise 1: Using Zotero</h1>
+<h1 class="title">Accessibility</h1>
 </div>
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-body">
 
     
   
@@ -316,26 +309,128 @@ if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
 </header>
 
 
-<section id="instructions" class="level1">
-<h1>Instructions</h1>
-<p>This exercise is designed to help you get started with Zotero and RStudio. You will need to have Zotero installed on your computer. If you do not have Zotero installed, you can download it from <a href="https://www.zotero.org/download/">here</a>.</p>
-<ol type="1">
-<li>Create a new folder in Zotero.
+<style>
+  /* css styles */
+:root {
+    --primary-color: #00883A;
+    --primary-light: rgba(43, 134, 75, 0.1);
+    --text-dark: #333333;
+    --text-light: #ffffff;
+    --osc-white: #ffffff;
+    --text-light: #5f5f5f;
+    --lmu-black: #232323;
+  }
+  
+#quarto-content.page-columns main.column-page{
+    margin:0 auto;
+    max-width: 1200px;
+    padding: 5rem;
+    width:100%;
+    background-color: #f9fcf9;
+}
+
+
+.accessibility-container h4{
+    font-size: 1.1rem;
+    line-height: 1.5;
+    font-weight: 600; 
+    color:var(--primary-color);
+}
+.accessibility-container h5{
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 600; 
+    color:var(--text-light);
+}
+
+.accessibility-container p,
+.accessibility-container li{
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.85;
+    font-weight:400;
+    color: var(--text-light);
+}
+
+.accessibility-container a{
+    color:var(--primary-color);
+}
+
+</style>
+<div class="accessibility-container">
+<p>The Ludwig-Maximilians-Universität München strives to make its offers accessible in accordance with § 9 Act on Digitalisation in the Free State of Bavaria (Bayerisches Digitalgesetz – BayDig).</p>
+<p>This Accessibility Statement applies to applications available at <a href="https://www.lmu.de/de/index.html">https://www.lmu.de/de/index.html</a>, <a href="https://www.lmu.de/de/index.html">https://www.lmu.de/de/index.html</a> and all subdomain pages.</p>
+<section id="status-of-compliance" class="level4">
+<h4 class="anchored" data-anchor-id="status-of-compliance">Status of Compliance</h4>
+<p>Partially compliant: This application partially corresponds to § 1 BayEGovV.</p>
+<section id="legal-name" class="level5">
+<h5 class="anchored" data-anchor-id="legal-name">Legal Name</h5>
+<p>Ludwig-Maximilians-Universität München</p>
+</section>
+<section id="websites" class="level5">
+<h5 class="anchored" data-anchor-id="websites">Website(s):</h5>
+<p><a href="https://www.lmu.de/de/index.html">https://www.lmu.de/de/index.html</a>, <a href="https://www.lmu.de/de/index.html">https://www.lmu.de/de/index.html</a> and all subdomain pages.</p>
+</section>
+</section>
+<section id="known-accessibility-issues" class="level4">
+<h4 class="anchored" data-anchor-id="known-accessibility-issues">Known Accessibility Issues</h4>
+<p>List and explanation of the problems encountered when implementing the accessibility of these websites</p>
+<section id="content-not-accessible-to-people-with-disabilities" class="level5">
+<h5 class="anchored" data-anchor-id="content-not-accessible-to-people-with-disabilities">Content Not Accessible to People With Disabilities</h5>
 <ul>
-<li>Name the folder “Exercise 1”.</li>
-<li>Add a tag to the folder called “Exercise 1”.</li>
-</ul></li>
-<li>Save references to 3-4 different sources in Zotero.
-<ul>
-<li>Try to use the Zotero web connector for some of the sources, add 1 manually, and add one by copying/pasting a BibTex entry.</li>
-</ul></li>
-<li>Export the references from Zotero to a BibTex file. This can be done by right-clicking on the folder and selecting “Export Collection”.</li>
-<li>Export the references from Zotero as a Word document. This can be done by right-clicking on the folder and selecting “Create Bibliography from Collection”.</li>
-</ol>
-<p><em>When completed, you can delete the BibTex and Word files you’ve just created. They will not be needed in subsequent exercises.</em></p>
+<li>Apart from the main pages, alternative text-based content for images and tables may be missing. There may also be errors in content hierarchy and links may be unintelligible.</li>
+<li>PDF documents created before 09/23/2018 have not yet been converted to a fully accessible format.</li>
+<li>Some documents have been provided by institutions of the LMU, which are not yet all available in a fully accessible version.</li>
+<li>Many of our videos also lack subtitles and audio descriptions. We will be adding written directions for the maps used to give directions.</li>
+<li>Quotes are often not indicated as such using the appropriate HTML tag.</li>
+<li>Responsive design (for viewing on mobile devices) is only partially available for the websites, screen orientation is otherwise limited to landscape format. For non-responsive pages, texts do not wrap correctly in a small viewport.</li>
+<li>Fields for inputting user data are not always sufficiently designated as such.</li>
+<li>Words or passages in other languages are not always indicated as such.</li>
+<li>Because of the Google Search plugin, the criteria for “valid HTML text” is not being fulfilled.</li>
+</ul>
+</section>
+</section>
+<section id="explanation" class="level4">
+<h4 class="anchored" data-anchor-id="explanation">Explanation</h4>
+<p>All LMU websites are currently undergoing a complete relaunch. It therefore no longer makes sense to revise the existing websites.<br>
+The deficiencies of the old website have been listed above.</p>
+<p><strong>Creation Date</strong>: 09/22/2019<br>
+<strong>Methodology</strong>: Self-assessment</p>
+</section>
+<section id="feedback-mechanism" class="level4">
+<h4 class="anchored" data-anchor-id="feedback-mechanism">Feedback Mechanism</h4>
+<p>As a user, you can inform us of any shortcomings in complying with accessibility requirements or request information in an accessible format that is not required to be displayed in an accessible format.</p>
+<section id="contact-information" class="level5">
+<h5 class="anchored" data-anchor-id="contact-information">Contact Information</h5>
+<p>Unit VI.5 Internet Services<br>
+Martiusstraße 4<br>
+80802 Munich<br>
+Mail: <a href="mailto:it.internet@verwaltung.uni-muenchen.de">it.internet@verwaltung.uni-muenchen.de</a><br>
+Phone: +49 (0) 89 / 2180-9832</p>
+</section>
+</section>
+<section id="enforcement-procedure" class="level4">
+<h4 class="anchored" data-anchor-id="enforcement-procedure">Enforcement Procedure</h4>
+<p>If a request for contact remains unanswered in whole or in part within six weeks, the Landesamt für Digitalisierung, Breitband und Vermessung (Agency for Digitisation, High-Speed Internet and Surveying) will, at the request of the user, examine whether measures are necessary with regard to the monitoring of the obligated party.</p>
+<section id="contact-information-of-the-agency-responsible-for-the-enforcement-procedure" class="level5">
+<h5 class="anchored" data-anchor-id="contact-information-of-the-agency-responsible-for-the-enforcement-procedure">Contact information of the agency responsible for the enforcement procedure</h5>
+<p>Landesamt für Digitalisierung, Breitband und Vermessung Alexandrastraße 4<br>
+80538 Munich<br>
+Phone: +49 89 2129-1111<br>
+Fax: +49 89 2129-1113<br>
+Email:<a href="mailto:service@geodaten.bayern.de">service@geodaten.bayern.de</a><br>
+<a href="https://www.ldbv.bayern.de/service/kontakt/">https://www.ldbv.bayern.de/service/kontakt/</a></p>
+</section>
+<section id="other-help-services" class="level5">
+<h5 class="anchored" data-anchor-id="other-help-services">Other Help Services</h5>
+<p>Students with disabilities are supported by the <a href="https://www.lmu.de/de/workspace-fuer-studierende/support-angebote/studieren-mit-beeintraechtigung/">Beratungsstelle für Studierende mit Behinderung und chronischer Erkrankung</a> (Counselling Center for Students with Disabilities and Chronic Illnesses).</p>
+<p>The <a href="https://login.lmu.de/idp/profile/SAML2/Redirect/SSO?execution=e3s1">Schwerbehindertenvertretung (Representative for Disabled Persons)</a> (access protected on the service portal) can support employees.</p>
+<p>:::</p>
 
 
 </section>
+</section>
+</div>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -746,7 +841,7 @@ if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
     </div>   
     <div class="nav-footer-center">
 <p>Copyright, 2024 Open Science Center at LMU Munich</p>
-<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/lmu-osc/introduction-to-zotero/edit/main/exercises/exercise_1.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/introduction-to-zotero/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+<div class="toc-actions"><ul><li><a href="https://github.com/lmu-osc/introduction-to-zotero/edit/main/footer/accessibilty.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/introduction-to-zotero/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
