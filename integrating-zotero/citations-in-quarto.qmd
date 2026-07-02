@@ -1,8 +1,6 @@
 ---
 title: "Citations in Quarto"
 format: html
-bibliography: references.bib
-resource-path: [".."]
 ---
 
 This manual expects the use of RStudio because it is highly integrated with Quarto and Zotero. For example, RStudio automatically generates and updates a bibliography file when inserting citations, and this bibliography will be created based on the CSL file you specify in the YAML header.

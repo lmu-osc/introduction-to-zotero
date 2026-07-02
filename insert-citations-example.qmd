@@ -1,8 +1,6 @@
 ---
 title: "Insert Citations Example"
-editor: visual
 format: pdf
-bibliography: references.bib
 ---
 
 # All About Inserting Citations

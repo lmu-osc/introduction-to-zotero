@@ -1,7 +1,6 @@
 ---
 title: "Zotero Groups"
 format: html
-bibliography: references.bib
 ---
 
 # Collaborating with Zotero Groups

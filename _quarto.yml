@@ -12,9 +12,9 @@ website:
   repo-actions: [edit, issue]
   back-to-top-navigation: true
   page-navigation: true
-  favicon: assets/lmu-osc-favicon.svg
+  favicon: assets/lmu-osc-favicon.jpg
   margin-header: |
-    ![](/assets/lmu-osc-logo.jpg){width="175"}
+    ![](/assets/lmu-osc-logo.svg){width="175"}
 
   navbar:
     right:
@@ -82,3 +82,5 @@ format:
       sidebar-width: 300px
     include-in-header:
       - file: matomo-analytics.html
+
+bibliography: references.bib
