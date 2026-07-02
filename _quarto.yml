@@ -38,6 +38,7 @@ website:
       - text: "Overview"
         href: index.qmd
       - section: "Background"
+        href: background/index.qmd
         contents:
           - href: background/zotero-basics.qmd
             text: "Zotero Basics"
@@ -46,6 +47,7 @@ website:
           - href: background/citation-style-language.qmd
             text: "Citation Style Language"
       - section: "Integrating Zotero"
+        href: integrating-zotero/index.qmd
         contents:
           - href: integrating-zotero/citations-in-quarto.qmd
             text: "Citations in Quarto"
@@ -54,6 +56,7 @@ website:
       - text: "Best Practices"
         href: background/best-practices.qmd
       - section: "Exercises"
+        href: exercises/index.qmd
         contents:
           - href: exercises/use-zotero.qmd
             text: "Basic Zotero Usage"
@@ -62,6 +65,7 @@ website:
           - href: exercises/change-csl.qmd
             text: "Changing CSL"
       - section: "Advanced"
+        href: advanced/index.qmd
         contents:
           - href: advanced/zotero-groups.qmd
             text: "Zotero Groups"

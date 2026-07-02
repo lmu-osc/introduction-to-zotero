@@ -1,0 +1,7 @@
+---
+title: "Advanced Topics"
+---
+
+This section covers more advanced Zotero features for those who want to go beyond the basics and explore collaborative research workflows.
+
+- **[Zotero Groups](zotero-groups.qmd)** covers how to create and manage shared group libraries for collaborative research, including group types (public, closed, private), member roles, and library permissions.

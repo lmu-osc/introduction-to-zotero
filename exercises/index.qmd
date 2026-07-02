@@ -1,0 +1,9 @@
+---
+title: "Exercises"
+---
+
+This section provides hands-on exercises to practice and consolidate what you've learned in the Background and Integrating Zotero sections. Each exercise builds on the previous one.
+
+- **[Exercise 1: Basic Zotero Usage](use-zotero.qmd)** — create a Zotero folder, save references using different methods, and export them as BibTeX and Word bibliography files.
+- **[Exercise 2: Integrating with Quarto](quarto-citations.qmd)** — create a new R Project and Quarto document, then insert a citation using RStudio's Visual Editor.
+- **[Exercise 3: Changing CSL in Quarto](change-csl.qmd)** — download a CSL file from the Zotero Style Repository, add it to your project, and apply it to change your document's citation style.

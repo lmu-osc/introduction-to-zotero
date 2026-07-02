@@ -1,0 +1,8 @@
+---
+title: "Integrating Zotero"
+---
+
+This section covers how to use Zotero citations within the tools you write in: Quarto documents and Microsoft Word. Both chapters follow the same basic workflow of inserting citations and generating a bibliography, adapted to each environment.
+
+- **[Citations in Quarto](citations-in-quarto.qmd)** covers BibTeX and `.bib` files, citation keys, inserting citations via RStudio's Visual Editor, automatic bibliography generation, and keeping your bibliography in sync with Zotero using the Better BibTeX plugin.
+- **[Citations in Word](citations-in-word.qmd)** demonstrates using the Zotero Word plugin to insert citations, add a bibliography, and change citation styles — all from within the Zotero tab in Microsoft Word.
