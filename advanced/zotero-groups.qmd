@@ -23,7 +23,7 @@ Zotero Groups are designed to facilitate collaboration for:
 
 -   Any group requiring a centralized space for research materials
 
-![](/assets/groups-media/image13.png){width="6.109375546806649in"
+![](/assets/groups-media/image-13.png){width="6.109375546806649in"
 height="2.8111242344706913in"}
 
 ## Video Overview

@@ -63,3 +63,5 @@ _outline.md
 
 
 **/*.quarto_ipynb
+
+.posit/assistant
