@@ -15,3 +15,4 @@ README
 CITATION.cff
 _quarto.yml
 404.qmd
+assets/**
