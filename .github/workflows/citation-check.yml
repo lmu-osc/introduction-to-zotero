@@ -1,10 +1,11 @@
 on:
   workflow_dispatch:
   push:
+    branches: [main]
     paths:
-    - CITATION.cff
+      - CITATION.cff
 
-name: CITATION.cff
+name: Check CITATION.cff is Valid
 jobs:
   Validate-CITATION-cff:
     runs-on: ubuntu-latest

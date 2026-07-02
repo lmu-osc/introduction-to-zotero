@@ -1,7 +1,6 @@
 project:
   type: website
 
-
 website:
   title: "Introduction to Zotero"
   page-footer:
@@ -13,10 +12,9 @@ website:
   repo-actions: [edit, issue]
   back-to-top-navigation: true
   page-navigation: true
-  favicon: assets/LMU-OSC_favicon.jpg
+  favicon: assets/lmu-osc-favicon.jpg
   margin-header: |
-    ![](/assets/LMU-OSC_logo.jpg){width="175"}
-
+    ![](/assets/lmu-osc-logo.svg){width="175"}
 
   navbar:
     right:
@@ -28,56 +26,57 @@ website:
       - icon: github
         menu:
           - text: Source Code
-            url:  https://github.com/lmu-osc/introduction-to-zotero
+            url: https://github.com/lmu-osc/introduction-to-zotero
           - text: Report a Bug
-            url:  https://github.com/lmu-osc/introduction-to-zotero/issues
+            url: https://github.com/lmu-osc/introduction-to-zotero/issues
       - icon: house-heart
-        url: https://www.osc.uni-muenchen.de/index.html
-
+        url: https://www.osc.lmu.de/
 
   sidebar:
     style: "docked"
-    # background: "#cfc7c6"
     contents:
       - text: "Overview"
         href: index.qmd
       - section: "Background"
         contents:
-          - href: background/zotero_basics.qmd
+          - href: background/zotero-basics.qmd
             text: "Zotero Basics"
-          - href: background/zotero_usage.qmd
+          - href: background/zotero-usage.qmd
             text: "Zotero Usage"
-          - href: background/citation_style_language.qmd
+          - href: background/citation-style-language.qmd
             text: "Citation Style Language"
       - section: "Integrating Zotero"
         contents:
-          - href: integrating_zotero/citations_in_quarto.qmd
+          - href: integrating-zotero/citations-in-quarto.qmd
             text: "Citations in Quarto"
-          - href: integrating_zotero/citations_in_word.qmd
+          - href: integrating-zotero/citations-in-word.qmd
             text: "Citations in Word"
       - text: "Best Practices"
-        href: background/best_practices.qmd
+        href: background/best-practices.qmd
       - section: "Exercises"
         contents:
-          - href: exercises/exercise_1.qmd
-            text: "Exercise 1: Using Zotero"
-          - href: exercises/exercise_2.qmd
-            text: "Exercise 2: Integrating with Quarto"
-          - href: exercises/exercise_3.qmd
-            text: "Exercise 3: Changing CSL"
+          - href: exercises/use-zotero.qmd
+            text: "Basic Zotero Usage"
+          - href: exercises/quarto-citations.qmd
+            text: "Integrating with Quarto"
+          - href: exercises/change-csl.qmd
+            text: "Changing CSL"
       - section: "Advanced"
         contents:
-          - href: advanced/zotero_groups.qmd
+          - href: advanced/zotero-groups.qmd
             text: "Zotero Groups"
-          # - href: advanced/zotero_plugins.qmd
+          # - href: advanced/zotero-plugins.qmd
           #   text: "Zotero Plugins"
 
 format:
   html:
     theme:
       - cosmo
-      - custom.scss
-    css: styles.css
+      - lmu-osc-custom.scss
+    css:
+      - assets/bootstrap-grid.min.css
+      - https://raw.githubusercontent.com/lmu-osc/branding-resources/refs/heads/main/lmu-osc-styles.css
+      - footer/footer-style.css
     toc: true
     fontsize: 13pt
     code-overflow: wrap
@@ -86,4 +85,4 @@ format:
     include-in-header:
       - file: matomo-analytics.html
 
-
+bibliography: references.bib

@@ -1,0 +1,8 @@
+---
+title: "Insert Citations Example"
+format: pdf
+---
+
+# All About Inserting Citations
+
+Here is some text I'd like to cite from the Zotero Guide[@zotero-guide].
