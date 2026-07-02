@@ -30,11 +30,10 @@ website:
           - text: Report a Bug
             url: https://github.com/lmu-osc/introduction-to-zotero/issues
       - icon: house-heart
-        url: https://www.osc.uni-muenchen.de/index.html
+        url: https://www.osc.lmu.de/
 
   sidebar:
     style: "docked"
-    # background: "#cfc7c6"
     contents:
       - text: "Overview"
         href: index.qmd
@@ -73,8 +72,11 @@ format:
   html:
     theme:
       - cosmo
-      - custom.scss
-    css: styles.css
+      - lmu-osc-custom.scss
+    css:
+      - assets/bootstrap-grid.min.css
+      - https://raw.githubusercontent.com/lmu-osc/branding-resources/refs/heads/main/lmu-osc-styles.css
+      - footer/footer-style.css
     toc: true
     fontsize: 13pt
     code-overflow: wrap
