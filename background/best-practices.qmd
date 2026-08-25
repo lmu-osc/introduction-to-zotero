@@ -1,7 +1,5 @@
 ---
 title: "Best Practices"
-format: html
-resource-path: [".."]
 ---
 
 There are a number of different ways that can make your interaction with Zotero as smooth and effortless as possible. Below we collected a number of tips that can help you get started. 

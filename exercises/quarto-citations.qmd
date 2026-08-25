@@ -1,6 +1,5 @@
 ---
 title: "Exercise 2: Integrating with Quarto"
-format: html
 ---
 
 # Instructions

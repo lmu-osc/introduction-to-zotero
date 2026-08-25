@@ -1,7 +1,5 @@
 ---
 title: "Citations in Word"
-format: html
-resource-path: [".."]
 ---
 
 Zotero also provides a plugin for Microsoft Word that allows you to insert citations and bibliographies directly into your documents. The technical details of this depart from the procedure for inserting citations into a Quarto document, but still follows the same steps of 1) inserting a citation and 2) generating a bibliography.

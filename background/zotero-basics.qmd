@@ -1,7 +1,5 @@
 ---
 title: "Zotero Basics"
-format: html
-resource-path: [".."]
 ---
 
 Hopefully you are already familiar with the concept of citing the work of others and creating bibliographies. If not, don't worry! This tutorial will introduce you to the basics of citations and citation managers, with a specific focus on the Zotero citation manager.

@@ -1,6 +1,5 @@
 ---
 title: "Using Zotero"
-format: html
 ---
 
 This page will cover the basics of using Zotero, and is structured around the three main tasks you will need to do when using Zotero:
@@ -134,7 +133,7 @@ If you are using a text editor that does not have a Zotero plugin, you can expor
 To export a BibTex file from Zotero, right-click on the folder or publication of interest, and select the option to "Export Collection." You can then choose the BibTex format from the drop-down menu, and save the `.bib` file to your computer. You can then include this BibTex file in your document to generate a bibliography.
 
 ::: {.callout-tip title="BibTex Tip"}
-For citations in Quarto, it is important to know that Quarto documents should have a `.bib` file in the same directory as the `.qmd` file plus a reference to the `.bib` file in the YAML header. This will be discussed in the [Citations in Quarto](citations_in_quarto.html) chapter.
+For citations in Quarto, it is important to know that Quarto documents should have a `.bib` file in the same directory as the `.qmd` file plus a reference to the `.bib` file in the YAML header. This will be discussed in the [Citations in Quarto](../integrating-zotero/citations-in-quarto.qmd) chapter.
 :::
 
 # Other Features

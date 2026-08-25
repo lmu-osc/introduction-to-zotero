@@ -1,6 +1,7 @@
 ---
 title: "Welcome to the Zotero Tutorial!"
-format: html
+subtitle: A self-paced introduction to Zotero for organizing references and citing in RStudio, Quarto, and Word
+description: Learn how to use Zotero to organize your research, create bibliographies, and integrate citations with Quarto and Microsoft Word.
 ---
 
 # Tutorial Overview
@@ -34,3 +35,28 @@ Moreover, while this tutorial can be completed with any code text editor, we hig
 
 :::
 
+
+:::: {.columns}
+
+::: {.column width="47.5%"}
+
+::: {.callout-tip title="Support the LMU Open Science Center!"}
+
+**Like this tutorial? Be sure to give [the repository]({{< meta repo-url >}}) a star and [follow us on GitHub](https://github.com/lmu-osc)!**
+:::
+
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="47.5%"}
+
+
+::: {.callout-tip title="Questions about this tutorial?"}
+**If you have questions for the author of this tutorial, please take a look at the [About](about.qmd) page.**
+:::
+
+:::
+
+::::

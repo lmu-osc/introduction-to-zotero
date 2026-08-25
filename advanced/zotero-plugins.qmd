@@ -1,4 +1,3 @@
 ---
 title: "Zotero Plugins"
-format: html
 ---
