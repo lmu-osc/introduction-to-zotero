@@ -4,6 +4,7 @@
 _site/**
 .quarto/**
 .github/**
+_extensions/
 assets/bootstrap-grid.min.css
 
 # Common documentation files to ignore
@@ -15,4 +16,3 @@ README
 CITATION.cff
 _quarto.yml
 404.qmd
-assets/**
