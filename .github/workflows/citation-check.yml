@@ -3,7 +3,7 @@ on:
   push:
     branches: [main]
     paths:
-      - CITATION.cff
+    - CITATION.cff
 
 name: Check CITATION.cff is Valid
 jobs:
