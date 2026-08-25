@@ -4,7 +4,7 @@ editor: visual
 ---
 
 
-# Instructions
+## Instructions
 
 1. Open the Quarto document you created in the previous exercise.
 1. Go to the [Zotero Style Repository](https://www.zotero.org/styles) and find a style you like. Download the CSL file for that style by clicking on the link, and pressing "Cancel" when asked to add the citation style to Zotero.

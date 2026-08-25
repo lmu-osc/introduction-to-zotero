@@ -1,10 +1,9 @@
 ---
 title: "Exercise 1: Using Zotero"
-format: html
 ---
 
 
-# Instructions
+## Instructions
 
 This exercise is designed to help you get started with Zotero and RStudio. You will need to have Zotero installed on your computer. If you do not have Zotero installed, you can download it from [here](https://www.zotero.org/download/).
 
