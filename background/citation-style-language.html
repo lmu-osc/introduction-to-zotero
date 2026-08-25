@@ -73,17 +73,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <meta name="quarto:offset" content="../">
 <link href="../integrating-zotero/index.html" rel="next">
 <link href="../background/zotero-usage.html" rel="prev">
-<link href="../assets/lmu-osc-favicon.jpg" rel="icon" type="image/jpeg">
+<link href="../site_libs/quarto-contrib/quarto-project/lmu-osc/tutorial-template/_extensions/lmu-osc/osc-brand/lmu-osc-favicon.jpg" rel="icon" type="image/jpeg">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-3c3f1368ed8db972a012dae01a8e5220.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-97e28f47ad423cfcb72627c3f906fd98.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-3c3f1368ed8db972a012dae01a8e5220.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-341dcaf373810ade3fa689f494de2849.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-188b87d2eecf63d90488fc07321c5074.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-eb085aa7c0f1d8411752f2c1fdfaa824.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-188b87d2eecf63d90488fc07321c5074.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -110,6 +114,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 <!-- Matomo -->
 <script>
 if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
@@ -130,18 +135,183 @@ if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
 <!-- End Matomo Code -->
 
 
-<link rel="stylesheet" href="../assets/bootstrap-grid.min.css">
-<link rel="stylesheet" href="https://raw.githubusercontent.com/lmu-osc/branding-resources/refs/heads/main/lmu-osc-styles.css">
+<link rel="stylesheet" href="../site_libs/quarto-contrib/quarto-project/lmu-osc/tutorial-template/assets/bootstrap-grid.min.css">
 <link rel="stylesheet" href="../footer/footer-style.css">
 </head>
 
-<body class="nav-sidebar docked nav-fixed quarto-light">
+<body class="nav-sidebar docked nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../site_libs/quarto-contrib/quarto-project/lmu-osc/tutorial-template/_extensions/lmu-osc/osc-brand/lmu-osc-favicon.jpg" alt="LMU Open Science Center open book icon" class="navbar-logo light-content">
+    <img src="../site_libs/quarto-contrib/quarto-project/lmu-osc/tutorial-template/_extensions/lmu-osc/osc-brand/lmu-osc-favicon.jpg" alt="LMU Open Science Center open book icon" class="navbar-logo dark-content">
+    </a>
     <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Introduction to Zotero</span>
     </a>
@@ -163,7 +333,7 @@ if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
+            <div class="quarto-navbar-tools tools-wide">
     <div class="dropdown">
       <a href="" title="" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label=""><i class="bi bi-github"></i></a>
       <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
@@ -180,6 +350,12 @@ if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
       </ul>
     </div>
     <a href="https://www.osc.lmu.de/" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-house-heart"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -201,6 +377,12 @@ if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+      <a href="../index.html" class="sidebar-logo-link">
+      <img src="../site_libs/quarto-contrib/quarto-project/lmu-osc/tutorial-template/_extensions/lmu-osc/osc-brand/lmu-osc-logo.svg" alt="LMU Open Science Center logo" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="../site_libs/quarto-contrib/quarto-project/lmu-osc/tutorial-template/_extensions/lmu-osc/osc-brand/lmu-osc-logo-dark.svg" alt="LMU Open Science Center logo" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      </a>
+      </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
@@ -323,11 +505,8 @@ if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar"><div class="quarto-margin-header"><div class="margin-header-item">
-<p><img src="../assets/lmu-osc-logo.svg" class="img-fluid" width="175"></p>
-</div></div>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
    
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a>
@@ -337,14 +516,15 @@ if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
   </ul></li>
   <li><a href="#csl-and-zotero" id="toc-csl-and-zotero" class="nav-link" data-scroll-target="#csl-and-zotero">CSL and Zotero</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/lmu-osc/introduction-to-zotero/edit/main/background/citation-style-language.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/introduction-to-zotero/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/lmu-osc/introduction-to-zotero/edit/main/background/citation-style-language.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/introduction-to-zotero/blob/main/background/citation-style-language.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/lmu-osc/introduction-to-zotero/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
+
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../background/index.html">Background</a></li><li class="breadcrumb-item"><a href="../background/citation-style-language.html">Citation Style Language</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Citation Style Language (CSL)</h1>
+<div class="quarto-title-block"><div><h1 class="title">Citation Style Language (CSL)</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
 </div>
 
 
@@ -361,11 +541,11 @@ if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
 </header>
 
 
-<section id="overview" class="level1">
-<h1>Overview</h1>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
 <p>As mentioned earlier in the tutorial, Citation Style Language (CSL) is an XML-based format for defining citation and bibliography styles. CSL files are used by citation management software like Zotero to format citations and bibliographies in a specific style. This section is particularly interesting if you want to modify or edit your own citation styles.</p>
-<section id="what-does-a-csl-file-look-like" class="level2">
-<h2 class="anchored" data-anchor-id="what-does-a-csl-file-look-like">What Does a CSL File Look Like?</h2>
+<section id="what-does-a-csl-file-look-like" class="level3">
+<h3 class="anchored" data-anchor-id="what-does-a-csl-file-look-like">What Does a CSL File Look Like?</h3>
 <p>A CSL file is an XML file that contains the information necessary to format citations and bibliographies in a specific style. The file is divided into several sections, including:</p>
 <ul>
 <li>Metadata: Information about the style, such as the title, author, and version.</li>
@@ -559,8 +739,8 @@ if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
 </div>
 </div>
 </section>
-<section id="citation-style-examples" class="level2">
-<h2 class="anchored" data-anchor-id="citation-style-examples">Citation Style Examples</h2>
+<section id="citation-style-examples" class="level3">
+<h3 class="anchored" data-anchor-id="citation-style-examples">Citation Style Examples</h3>
 <p>To demonstrate differences in citation styles, the citation for the same article is shown in several different styles below. The article is “Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson’s Irises” by Allison M. Horst, Alison Presmanes Hill, and Kristen B. Gorman, published in the R Journal in 2022.</p>
 <p>Note that if you use Google Scholar to find article citations, you will see that the 5 examples included below are the default citation styles used by Google Scholar.</p>
 <table class="caption-top table">
@@ -599,8 +779,8 @@ if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
 </table>
 </section>
 </section>
-<section id="csl-and-zotero" class="level1">
-<h1>CSL and Zotero</h1>
+<section id="csl-and-zotero" class="level2">
+<h2 class="anchored" data-anchor-id="csl-and-zotero">CSL and Zotero</h2>
 <p>The main Zotero application comes pre-loaded with several popular citation styles like APA, Chicago, Nature, and Vancouver style. These formats are generally sufficient for most users and scenarios, but, in the event that you need a style that is not included, you can easily add more.</p>
 <p>Zotero maintains a collection of over 8,000 additional citation styles on the <a href="https://www.zotero.org/styles">Zotero Style Repository</a>. There are two ways to add a new citation style to Zotero:</p>
 <ol type="1">
@@ -610,11 +790,26 @@ if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
 <p>Once you have added a new citation style, it will be available in the Zotero application for you to select when you <em>generate a bibliography directly from Zotero</em>. If you are using Zotero with a word processor, you may need to restart the word processor to see the new style. For text editors like RStudio, you will need to copy the CSL file to the appropriate project directory; this will be covered in detail in the <a href="../integrating-zotero/citations-in-quarto.html">Citations in Quarto chapter</a>.</p>
 
 
+<!-- -->
+
 </section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {
@@ -684,6 +879,57 @@ if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
       });
       clipboardModal.on('success', onCopySuccess);
     }
+    const viewSource = window.document.getElementById('quarto-view-source') ||
+                       window.document.getElementById('quarto-code-tools-source');
+    if (viewSource) {
+      const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+      viewSource.addEventListener("click", function(e) {
+        if (sourceUrl) {
+          // rstudio viewer pane
+          if (/\bcapabilities=\b/.test(window.location)) {
+            window.open(sourceUrl);
+          } else {
+            window.location.href = sourceUrl;
+          }
+        } else {
+          const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+          modal.show();
+        }
+        return false;
+      });
+    }
+    function toggleCodeHandler(show) {
+      return function(e) {
+        const cellDetails = window.document.querySelectorAll(".cell details.code-fold");
+        for (let i=0; i<cellDetails.length; i++) {
+          const details = cellDetails[i];
+          if (show) {
+            details.open = true;
+          } else {
+            details.removeAttribute("open");
+          }
+        }
+        const cellCodeDivs = window.document.querySelectorAll(".cell div.sourceCode.cell-code");
+        const fromCls = show ? "hidden" : "unhidden";
+        const toCls = show ? "unhidden" : "hidden";
+        for (let i=0; i<cellCodeDivs.length; i++) {
+          const codeDiv = cellCodeDivs[i];
+          if (codeDiv.classList.contains(fromCls)) {
+            codeDiv.classList.remove(fromCls);
+            codeDiv.classList.add(toCls);
+          } 
+        }
+        return false;
+      }
+    }
+    const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+    if (hideAllCode) {
+      hideAllCode.addEventListener("click", toggleCodeHandler(false));
+    }
+    const showAllCode = window.document.getElementById("quarto-show-all-code");
+    if (showAllCode) {
+      showAllCode.addEventListener("click", toggleCodeHandler(true));
+    }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
         var filterRegex = new RegExp("https:\/\/lmu-osc\.github\.io\/introduction-to-zotero\/");
@@ -700,6 +946,13 @@ if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+            // default icon
+            link.classList.add("external");
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -1024,7 +1277,227 @@ if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
         <span class="nav-page-text">Integrating Zotero</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
-</nav>
+</nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Citation Style Language (CSL)"</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="fu">## Overview</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>As mentioned earlier in the tutorial, Citation Style Language (CSL) is an XML-based format for defining citation and bibliography styles. CSL files are used by citation management software like Zotero to format citations and bibliographies in a specific style. This section is particularly interesting if you want to modify or edit your own citation styles. </span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="fu">### What Does a CSL File Look Like?</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>A CSL file is an XML file that contains the information necessary to format citations and bibliographies in a specific style. The file is divided into several sections, including:</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Metadata: Information about the style, such as the title, author, and version.</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Macros: Definitions for common elements like names, dates, and titles.</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Citations: Rules for formatting in-text citations.</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Bibliography: Rules for formatting the bibliography.</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>If you're interested, the collapsed code below is an example of a CSL file that defines the style for formatting citations in Nature style. **Understanding the code underlying a CSL file is not necessary to use Zotero CSL files, but it can be helpful if you want to modify or create your own styles.**</span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>:::{.callout-note collapse="true" title="XML file for Nature Citation Language Style"}</span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a><span class="in">```xml</span></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a><span class="fu">&lt;?xml</span> <span class="ot">version=</span><span class="st">"1.0"</span> <span class="ot">encoding=</span><span class="st">"utf-8"</span><span class="fu">?&gt;</span></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">style</span> <span class="ot">xmlns=</span><span class="st">"http://purl.org/net/xbiblio/csl"</span> <span class="ot">class=</span><span class="st">"in-text"</span> <span class="ot">version=</span><span class="st">"1.0"</span> <span class="ot">demote-non-dropping-particle=</span><span class="st">"sort-only"</span> <span class="ot">default-locale=</span><span class="st">"en-GB"</span>&gt;</span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">info</span>&gt;</span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">title</span>&gt;Nature&lt;/<span class="kw">title</span>&gt;</span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">id</span>&gt;http://www.zotero.org/styles/nature&lt;/<span class="kw">id</span>&gt;</span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">link</span> <span class="ot">href=</span><span class="st">"http://www.zotero.org/styles/nature"</span> <span class="ot">rel=</span><span class="st">"self"</span>/&gt;</span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">link</span> <span class="ot">href=</span><span class="st">"http://www.nature.com/nature/authors/gta/index.html#a5.4"</span> <span class="ot">rel=</span><span class="st">"documentation"</span>/&gt;</span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">link</span> <span class="ot">href=</span><span class="st">"http://www.nature.com/srep/publish/guidelines#references"</span> <span class="ot">rel=</span><span class="st">"documentation"</span>/&gt;</span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">author</span>&gt;</span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>      &lt;<span class="kw">name</span>&gt;Michael Berkowitz&lt;/<span class="kw">name</span>&gt;</span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>      &lt;<span class="kw">email</span>&gt;mberkowi@gmu.edu&lt;/<span class="kw">email</span>&gt;</span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">author</span>&gt;</span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">category</span> <span class="ot">citation-format=</span><span class="st">"numeric"</span>/&gt;</span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">category</span> <span class="ot">field=</span><span class="st">"science"</span>/&gt;</span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">category</span> <span class="ot">field=</span><span class="st">"generic-base"</span>/&gt;</span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">issn</span>&gt;0028-0836&lt;/<span class="kw">issn</span>&gt;</span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">eissn</span>&gt;1476-4687&lt;/<span class="kw">eissn</span>&gt;</span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">updated</span>&gt;2024-01-22T03:08:05+00:00&lt;/<span class="kw">updated</span>&gt;</span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">rights</span> <span class="ot">license=</span><span class="st">"http://creativecommons.org/licenses/by-sa/3.0/"</span>&gt;This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License&lt;/<span class="kw">rights</span>&gt;</span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a>  &lt;/<span class="kw">info</span>&gt;</span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">macro</span> <span class="ot">name=</span><span class="st">"title"</span>&gt;</span>
+<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">choose</span>&gt;</span>
+<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a>      &lt;<span class="kw">if</span> <span class="ot">type=</span><span class="st">"bill book graphic legal_case legislation motion_picture report song"</span> <span class="ot">match=</span><span class="st">"any"</span>&gt;</span>
+<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">text</span> <span class="ot">variable=</span><span class="st">"title"</span> <span class="ot">font-style=</span><span class="st">"italic"</span> <span class="ot">text-case=</span><span class="st">"title"</span>/&gt;</span>
+<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a>      &lt;/<span class="kw">if</span>&gt;</span>
+<span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a>      &lt;<span class="kw">else</span>&gt;</span>
+<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">text</span> <span class="ot">variable=</span><span class="st">"title"</span>/&gt;</span>
+<span id="cb2-49"><a href="#cb2-49" aria-hidden="true" tabindex="-1"></a>      &lt;/<span class="kw">else</span>&gt;</span>
+<span id="cb2-50"><a href="#cb2-50" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">choose</span>&gt;</span>
+<span id="cb2-51"><a href="#cb2-51" aria-hidden="true" tabindex="-1"></a>  &lt;/<span class="kw">macro</span>&gt;</span>
+<span id="cb2-52"><a href="#cb2-52" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">macro</span> <span class="ot">name=</span><span class="st">"author"</span>&gt;</span>
+<span id="cb2-53"><a href="#cb2-53" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">names</span> <span class="ot">variable=</span><span class="st">"author"</span>&gt;</span>
+<span id="cb2-54"><a href="#cb2-54" aria-hidden="true" tabindex="-1"></a>      &lt;<span class="kw">name</span> <span class="ot">sort-separator=</span><span class="st">", "</span> <span class="ot">delimiter=</span><span class="st">", "</span> <span class="ot">and=</span><span class="st">"symbol"</span> <span class="ot">initialize-with=</span><span class="st">". "</span> <span class="ot">delimiter-precedes-last=</span><span class="st">"never"</span> <span class="ot">name-as-sort-order=</span><span class="st">"all"</span>/&gt;</span>
+<span id="cb2-55"><a href="#cb2-55" aria-hidden="true" tabindex="-1"></a>      &lt;<span class="kw">label</span> <span class="ot">form=</span><span class="st">"short"</span> <span class="ot">prefix=</span><span class="st">", "</span>/&gt;</span>
+<span id="cb2-56"><a href="#cb2-56" aria-hidden="true" tabindex="-1"></a>      &lt;<span class="kw">et-al</span> <span class="ot">font-style=</span><span class="st">"italic"</span>/&gt;</span>
+<span id="cb2-57"><a href="#cb2-57" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">names</span>&gt;</span>
+<span id="cb2-58"><a href="#cb2-58" aria-hidden="true" tabindex="-1"></a>  &lt;/<span class="kw">macro</span>&gt;</span>
+<span id="cb2-59"><a href="#cb2-59" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">macro</span> <span class="ot">name=</span><span class="st">"access"</span>&gt;</span>
+<span id="cb2-60"><a href="#cb2-60" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">choose</span>&gt;</span>
+<span id="cb2-61"><a href="#cb2-61" aria-hidden="true" tabindex="-1"></a>      &lt;<span class="kw">if</span> <span class="ot">variable=</span><span class="st">"volume"</span> <span class="ot">type=</span><span class="st">"article dataset software"</span> <span class="ot">match=</span><span class="st">"any"</span>/&gt;</span>
+<span id="cb2-62"><a href="#cb2-62" aria-hidden="true" tabindex="-1"></a>      &lt;<span class="kw">else-if</span> <span class="ot">variable=</span><span class="st">"DOI"</span>&gt;</span>
+<span id="cb2-63"><a href="#cb2-63" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">text</span> <span class="ot">variable=</span><span class="st">"DOI"</span> <span class="ot">prefix=</span><span class="st">"doi:"</span>/&gt;</span>
+<span id="cb2-64"><a href="#cb2-64" aria-hidden="true" tabindex="-1"></a>      &lt;/<span class="kw">else-if</span>&gt;</span>
+<span id="cb2-65"><a href="#cb2-65" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">choose</span>&gt;</span>
+<span id="cb2-66"><a href="#cb2-66" aria-hidden="true" tabindex="-1"></a>  &lt;/<span class="kw">macro</span>&gt;</span>
+<span id="cb2-67"><a href="#cb2-67" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">macro</span> <span class="ot">name=</span><span class="st">"access-data"</span>&gt;</span>
+<span id="cb2-68"><a href="#cb2-68" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">choose</span>&gt;</span>
+<span id="cb2-69"><a href="#cb2-69" aria-hidden="true" tabindex="-1"></a>      &lt;<span class="kw">if</span> <span class="ot">type=</span><span class="st">"dataset software"</span> <span class="ot">match=</span><span class="st">"any"</span>&gt;</span>
+<span id="cb2-70"><a href="#cb2-70" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">text</span> <span class="ot">variable=</span><span class="st">"DOI"</span> <span class="ot">prefix=</span><span class="st">"https://doi.org/"</span>/&gt;</span>
+<span id="cb2-71"><a href="#cb2-71" aria-hidden="true" tabindex="-1"></a>      &lt;/<span class="kw">if</span>&gt;</span>
+<span id="cb2-72"><a href="#cb2-72" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">choose</span>&gt;</span>
+<span id="cb2-73"><a href="#cb2-73" aria-hidden="true" tabindex="-1"></a>  &lt;/<span class="kw">macro</span>&gt;</span>
+<span id="cb2-74"><a href="#cb2-74" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">macro</span> <span class="ot">name=</span><span class="st">"issuance"</span>&gt;</span>
+<span id="cb2-75"><a href="#cb2-75" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">choose</span>&gt;</span>
+<span id="cb2-76"><a href="#cb2-76" aria-hidden="true" tabindex="-1"></a>      &lt;<span class="kw">if</span> <span class="ot">type=</span><span class="st">"bill book graphic legal_case legislation motion_picture song thesis chapter paper-conference"</span> <span class="ot">match=</span><span class="st">"any"</span>&gt;</span>
+<span id="cb2-77"><a href="#cb2-77" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">group</span> <span class="ot">delimiter=</span><span class="st">"; "</span> <span class="ot">suffix=</span><span class="st">"."</span>&gt;</span>
+<span id="cb2-78"><a href="#cb2-78" aria-hidden="true" tabindex="-1"></a>          &lt;<span class="kw">group</span> <span class="ot">delimiter=</span><span class="st">", "</span> <span class="ot">prefix=</span><span class="st">"("</span> <span class="ot">suffix=</span><span class="st">")"</span>&gt;</span>
+<span id="cb2-79"><a href="#cb2-79" aria-hidden="true" tabindex="-1"></a>            &lt;<span class="kw">text</span> <span class="ot">variable=</span><span class="st">"publisher"</span> <span class="ot">form=</span><span class="st">"long"</span>/&gt;</span>
+<span id="cb2-80"><a href="#cb2-80" aria-hidden="true" tabindex="-1"></a>            &lt;<span class="kw">text</span> <span class="ot">variable=</span><span class="st">"publisher-place"</span>/&gt;</span>
+<span id="cb2-81"><a href="#cb2-81" aria-hidden="true" tabindex="-1"></a>            &lt;<span class="kw">date</span> <span class="ot">variable=</span><span class="st">"issued"</span>&gt;</span>
+<span id="cb2-82"><a href="#cb2-82" aria-hidden="true" tabindex="-1"></a>              &lt;<span class="kw">date-part</span> <span class="ot">name=</span><span class="st">"year"</span>/&gt;</span>
+<span id="cb2-83"><a href="#cb2-83" aria-hidden="true" tabindex="-1"></a>            &lt;/<span class="kw">date</span>&gt;</span>
+<span id="cb2-84"><a href="#cb2-84" aria-hidden="true" tabindex="-1"></a>          &lt;/<span class="kw">group</span>&gt;</span>
+<span id="cb2-85"><a href="#cb2-85" aria-hidden="true" tabindex="-1"></a>        &lt;/<span class="kw">group</span>&gt;</span>
+<span id="cb2-86"><a href="#cb2-86" aria-hidden="true" tabindex="-1"></a>      &lt;/<span class="kw">if</span>&gt;</span>
+<span id="cb2-87"><a href="#cb2-87" aria-hidden="true" tabindex="-1"></a>      &lt;<span class="kw">else-if</span> <span class="ot">type=</span><span class="st">"article"</span>&gt;</span>
+<span id="cb2-88"><a href="#cb2-88" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">group</span> <span class="ot">delimiter=</span><span class="st">" "</span>&gt;</span>
+<span id="cb2-89"><a href="#cb2-89" aria-hidden="true" tabindex="-1"></a>          &lt;<span class="kw">choose</span>&gt;</span>
+<span id="cb2-90"><a href="#cb2-90" aria-hidden="true" tabindex="-1"></a>            &lt;<span class="kw">if</span> <span class="ot">variable=</span><span class="st">"genre"</span> <span class="ot">match=</span><span class="st">"any"</span>&gt;</span>
+<span id="cb2-91"><a href="#cb2-91" aria-hidden="true" tabindex="-1"></a>              &lt;<span class="kw">text</span> <span class="ot">variable=</span><span class="st">"genre"</span> <span class="ot">text-case=</span><span class="st">"capitalize-first"</span>/&gt;</span>
+<span id="cb2-92"><a href="#cb2-92" aria-hidden="true" tabindex="-1"></a>            &lt;/<span class="kw">if</span>&gt;</span>
+<span id="cb2-93"><a href="#cb2-93" aria-hidden="true" tabindex="-1"></a>            &lt;<span class="kw">else</span>&gt;</span>
+<span id="cb2-94"><a href="#cb2-94" aria-hidden="true" tabindex="-1"></a>              &lt;<span class="kw">text</span> <span class="ot">term=</span><span class="st">"article"</span> <span class="ot">text-case=</span><span class="st">"capitalize-first"</span>/&gt;</span>
+<span id="cb2-95"><a href="#cb2-95" aria-hidden="true" tabindex="-1"></a>            &lt;/<span class="kw">else</span>&gt;</span>
+<span id="cb2-96"><a href="#cb2-96" aria-hidden="true" tabindex="-1"></a>          &lt;/<span class="kw">choose</span>&gt;</span>
+<span id="cb2-97"><a href="#cb2-97" aria-hidden="true" tabindex="-1"></a>          &lt;<span class="kw">text</span> <span class="ot">term=</span><span class="st">"at"</span>/&gt;</span>
+<span id="cb2-98"><a href="#cb2-98" aria-hidden="true" tabindex="-1"></a>          &lt;<span class="kw">choose</span>&gt;</span>
+<span id="cb2-99"><a href="#cb2-99" aria-hidden="true" tabindex="-1"></a>            &lt;<span class="kw">if</span> <span class="ot">variable=</span><span class="st">"DOI"</span> <span class="ot">match=</span><span class="st">"any"</span>&gt;</span>
+<span id="cb2-100"><a href="#cb2-100" aria-hidden="true" tabindex="-1"></a>              &lt;<span class="kw">text</span> <span class="ot">variable=</span><span class="st">"DOI"</span> <span class="ot">prefix=</span><span class="st">"https://doi.org/"</span>/&gt;</span>
+<span id="cb2-101"><a href="#cb2-101" aria-hidden="true" tabindex="-1"></a>            &lt;/<span class="kw">if</span>&gt;</span>
+<span id="cb2-102"><a href="#cb2-102" aria-hidden="true" tabindex="-1"></a>            &lt;<span class="kw">else</span>&gt;</span>
+<span id="cb2-103"><a href="#cb2-103" aria-hidden="true" tabindex="-1"></a>              &lt;<span class="kw">text</span> <span class="ot">variable=</span><span class="st">"URL"</span>/&gt;</span>
+<span id="cb2-104"><a href="#cb2-104" aria-hidden="true" tabindex="-1"></a>            &lt;/<span class="kw">else</span>&gt;</span>
+<span id="cb2-105"><a href="#cb2-105" aria-hidden="true" tabindex="-1"></a>          &lt;/<span class="kw">choose</span>&gt;</span>
+<span id="cb2-106"><a href="#cb2-106" aria-hidden="true" tabindex="-1"></a>          &lt;<span class="kw">date</span> <span class="ot">date-parts=</span><span class="st">"year"</span> <span class="ot">form=</span><span class="st">"text"</span> <span class="ot">variable=</span><span class="st">"issued"</span> <span class="ot">prefix=</span><span class="st">"("</span> <span class="ot">suffix=</span><span class="st">")"</span>/&gt;</span>
+<span id="cb2-107"><a href="#cb2-107" aria-hidden="true" tabindex="-1"></a>        &lt;/<span class="kw">group</span>&gt;</span>
+<span id="cb2-108"><a href="#cb2-108" aria-hidden="true" tabindex="-1"></a>      &lt;/<span class="kw">else-if</span>&gt;</span>
+<span id="cb2-109"><a href="#cb2-109" aria-hidden="true" tabindex="-1"></a>      &lt;<span class="kw">else-if</span> <span class="ot">type=</span><span class="st">"dataset software"</span> <span class="ot">match=</span><span class="st">"any"</span>&gt;</span>
+<span id="cb2-110"><a href="#cb2-110" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">group</span> <span class="ot">delimiter=</span><span class="st">" "</span>&gt;</span>
+<span id="cb2-111"><a href="#cb2-111" aria-hidden="true" tabindex="-1"></a>          &lt;<span class="kw">text</span> <span class="ot">variable=</span><span class="st">"publisher"</span>/&gt;</span>
+<span id="cb2-112"><a href="#cb2-112" aria-hidden="true" tabindex="-1"></a>          &lt;<span class="kw">text</span> <span class="ot">macro=</span><span class="st">"access-data"</span>/&gt;</span>
+<span id="cb2-113"><a href="#cb2-113" aria-hidden="true" tabindex="-1"></a>          &lt;<span class="kw">date</span> <span class="ot">date-parts=</span><span class="st">"year"</span> <span class="ot">form=</span><span class="st">"text"</span> <span class="ot">variable=</span><span class="st">"issued"</span> <span class="ot">prefix=</span><span class="st">"("</span> <span class="ot">suffix=</span><span class="st">")"</span>/&gt;</span>
+<span id="cb2-114"><a href="#cb2-114" aria-hidden="true" tabindex="-1"></a>        &lt;/<span class="kw">group</span>&gt;</span>
+<span id="cb2-115"><a href="#cb2-115" aria-hidden="true" tabindex="-1"></a>      &lt;/<span class="kw">else-if</span>&gt;</span>
+<span id="cb2-116"><a href="#cb2-116" aria-hidden="true" tabindex="-1"></a>      &lt;<span class="kw">else-if</span> <span class="ot">type=</span><span class="st">"report webpage post post-weblog"</span> <span class="ot">match=</span><span class="st">"any"</span>&gt;</span>
+<span id="cb2-117"><a href="#cb2-117" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">group</span> <span class="ot">delimiter=</span><span class="st">" "</span>&gt;</span>
+<span id="cb2-118"><a href="#cb2-118" aria-hidden="true" tabindex="-1"></a>          &lt;<span class="kw">text</span> <span class="ot">variable=</span><span class="st">"URL"</span>/&gt;</span>
+<span id="cb2-119"><a href="#cb2-119" aria-hidden="true" tabindex="-1"></a>          &lt;<span class="kw">date</span> <span class="ot">date-parts=</span><span class="st">"year"</span> <span class="ot">form=</span><span class="st">"text"</span> <span class="ot">variable=</span><span class="st">"issued"</span> <span class="ot">prefix=</span><span class="st">"("</span> <span class="ot">suffix=</span><span class="st">")"</span>/&gt;</span>
+<span id="cb2-120"><a href="#cb2-120" aria-hidden="true" tabindex="-1"></a>        &lt;/<span class="kw">group</span>&gt;</span>
+<span id="cb2-121"><a href="#cb2-121" aria-hidden="true" tabindex="-1"></a>      &lt;/<span class="kw">else-if</span>&gt;</span>
+<span id="cb2-122"><a href="#cb2-122" aria-hidden="true" tabindex="-1"></a>      &lt;<span class="kw">else</span>&gt;</span>
+<span id="cb2-123"><a href="#cb2-123" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">date</span> <span class="ot">variable=</span><span class="st">"issued"</span> <span class="ot">prefix=</span><span class="st">"("</span> <span class="ot">suffix=</span><span class="st">")"</span>&gt;</span>
+<span id="cb2-124"><a href="#cb2-124" aria-hidden="true" tabindex="-1"></a>          &lt;<span class="kw">date-part</span> <span class="ot">name=</span><span class="st">"year"</span>/&gt;</span>
+<span id="cb2-125"><a href="#cb2-125" aria-hidden="true" tabindex="-1"></a>        &lt;/<span class="kw">date</span>&gt;</span>
+<span id="cb2-126"><a href="#cb2-126" aria-hidden="true" tabindex="-1"></a>      &lt;/<span class="kw">else</span>&gt;</span>
+<span id="cb2-127"><a href="#cb2-127" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">choose</span>&gt;</span>
+<span id="cb2-128"><a href="#cb2-128" aria-hidden="true" tabindex="-1"></a>  &lt;/<span class="kw">macro</span>&gt;</span>
+<span id="cb2-129"><a href="#cb2-129" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">macro</span> <span class="ot">name=</span><span class="st">"container-title"</span>&gt;</span>
+<span id="cb2-130"><a href="#cb2-130" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">choose</span>&gt;</span>
+<span id="cb2-131"><a href="#cb2-131" aria-hidden="true" tabindex="-1"></a>      &lt;<span class="kw">if</span> <span class="ot">type=</span><span class="st">"article-journal"</span>&gt;</span>
+<span id="cb2-132"><a href="#cb2-132" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">text</span> <span class="ot">variable=</span><span class="st">"container-title"</span> <span class="ot">font-style=</span><span class="st">"italic"</span> <span class="ot">form=</span><span class="st">"short"</span>/&gt;</span>
+<span id="cb2-133"><a href="#cb2-133" aria-hidden="true" tabindex="-1"></a>      &lt;/<span class="kw">if</span>&gt;</span>
+<span id="cb2-134"><a href="#cb2-134" aria-hidden="true" tabindex="-1"></a>      &lt;<span class="kw">else</span>&gt;</span>
+<span id="cb2-135"><a href="#cb2-135" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">text</span> <span class="ot">variable=</span><span class="st">"container-title"</span> <span class="ot">font-style=</span><span class="st">"italic"</span>/&gt;</span>
+<span id="cb2-136"><a href="#cb2-136" aria-hidden="true" tabindex="-1"></a>      &lt;/<span class="kw">else</span>&gt;</span>
+<span id="cb2-137"><a href="#cb2-137" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">choose</span>&gt;</span>
+<span id="cb2-138"><a href="#cb2-138" aria-hidden="true" tabindex="-1"></a>  &lt;/<span class="kw">macro</span>&gt;</span>
+<span id="cb2-139"><a href="#cb2-139" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">macro</span> <span class="ot">name=</span><span class="st">"editor"</span>&gt;</span>
+<span id="cb2-140"><a href="#cb2-140" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">choose</span>&gt;</span>
+<span id="cb2-141"><a href="#cb2-141" aria-hidden="true" tabindex="-1"></a>      &lt;<span class="kw">if</span> <span class="ot">type=</span><span class="st">"chapter paper-conference"</span> <span class="ot">match=</span><span class="st">"any"</span>&gt;</span>
+<span id="cb2-142"><a href="#cb2-142" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">names</span> <span class="ot">variable=</span><span class="st">"editor"</span> <span class="ot">prefix=</span><span class="st">"("</span> <span class="ot">suffix=</span><span class="st">")"</span>&gt;</span>
+<span id="cb2-143"><a href="#cb2-143" aria-hidden="true" tabindex="-1"></a>          &lt;<span class="kw">label</span> <span class="ot">form=</span><span class="st">"short"</span> <span class="ot">suffix=</span><span class="st">" "</span>/&gt;</span>
+<span id="cb2-144"><a href="#cb2-144" aria-hidden="true" tabindex="-1"></a>          &lt;<span class="kw">name</span> <span class="ot">and=</span><span class="st">"symbol"</span> <span class="ot">delimiter-precedes-last=</span><span class="st">"never"</span> <span class="ot">initialize-with=</span><span class="st">". "</span> <span class="ot">name-as-sort-order=</span><span class="st">"all"</span>/&gt;</span>
+<span id="cb2-145"><a href="#cb2-145" aria-hidden="true" tabindex="-1"></a>        &lt;/<span class="kw">names</span>&gt;</span>
+<span id="cb2-146"><a href="#cb2-146" aria-hidden="true" tabindex="-1"></a>      &lt;/<span class="kw">if</span>&gt;</span>
+<span id="cb2-147"><a href="#cb2-147" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">choose</span>&gt;</span>
+<span id="cb2-148"><a href="#cb2-148" aria-hidden="true" tabindex="-1"></a>  &lt;/<span class="kw">macro</span>&gt;</span>
+<span id="cb2-149"><a href="#cb2-149" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">macro</span> <span class="ot">name=</span><span class="st">"volume"</span>&gt;</span>
+<span id="cb2-150"><a href="#cb2-150" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">choose</span>&gt;</span>
+<span id="cb2-151"><a href="#cb2-151" aria-hidden="true" tabindex="-1"></a>      &lt;<span class="kw">if</span> <span class="ot">type=</span><span class="st">"article-journal"</span> <span class="ot">match=</span><span class="st">"any"</span>&gt;</span>
+<span id="cb2-152"><a href="#cb2-152" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">text</span> <span class="ot">variable=</span><span class="st">"volume"</span> <span class="ot">font-weight=</span><span class="st">"bold"</span> <span class="ot">suffix=</span><span class="st">","</span>/&gt;</span>
+<span id="cb2-153"><a href="#cb2-153" aria-hidden="true" tabindex="-1"></a>      &lt;/<span class="kw">if</span>&gt;</span>
+<span id="cb2-154"><a href="#cb2-154" aria-hidden="true" tabindex="-1"></a>      &lt;<span class="kw">else</span>&gt;</span>
+<span id="cb2-155"><a href="#cb2-155" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">group</span> <span class="ot">delimiter=</span><span class="st">" "</span>&gt;</span>
+<span id="cb2-156"><a href="#cb2-156" aria-hidden="true" tabindex="-1"></a>          &lt;<span class="kw">label</span> <span class="ot">variable=</span><span class="st">"volume"</span> <span class="ot">form=</span><span class="st">"short"</span>/&gt;</span>
+<span id="cb2-157"><a href="#cb2-157" aria-hidden="true" tabindex="-1"></a>          &lt;<span class="kw">text</span> <span class="ot">variable=</span><span class="st">"volume"</span>/&gt;</span>
+<span id="cb2-158"><a href="#cb2-158" aria-hidden="true" tabindex="-1"></a>        &lt;/<span class="kw">group</span>&gt;</span>
+<span id="cb2-159"><a href="#cb2-159" aria-hidden="true" tabindex="-1"></a>      &lt;/<span class="kw">else</span>&gt;</span>
+<span id="cb2-160"><a href="#cb2-160" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">choose</span>&gt;</span>
+<span id="cb2-161"><a href="#cb2-161" aria-hidden="true" tabindex="-1"></a>  &lt;/<span class="kw">macro</span>&gt;</span>
+<span id="cb2-162"><a href="#cb2-162" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">citation</span> <span class="ot">collapse=</span><span class="st">"citation-number"</span>&gt;</span>
+<span id="cb2-163"><a href="#cb2-163" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">sort</span>&gt;</span>
+<span id="cb2-164"><a href="#cb2-164" aria-hidden="true" tabindex="-1"></a>      &lt;<span class="kw">key</span> <span class="ot">variable=</span><span class="st">"citation-number"</span>/&gt;</span>
+<span id="cb2-165"><a href="#cb2-165" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">sort</span>&gt;</span>
+<span id="cb2-166"><a href="#cb2-166" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">layout</span> <span class="ot">vertical-align=</span><span class="st">"sup"</span> <span class="ot">delimiter=</span><span class="st">","</span>&gt;</span>
+<span id="cb2-167"><a href="#cb2-167" aria-hidden="true" tabindex="-1"></a>      &lt;<span class="kw">text</span> <span class="ot">variable=</span><span class="st">"citation-number"</span>/&gt;</span>
+<span id="cb2-168"><a href="#cb2-168" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">layout</span>&gt;</span>
+<span id="cb2-169"><a href="#cb2-169" aria-hidden="true" tabindex="-1"></a>  &lt;/<span class="kw">citation</span>&gt;</span>
+<span id="cb2-170"><a href="#cb2-170" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">bibliography</span> <span class="ot">et-al-min=</span><span class="st">"6"</span> <span class="ot">et-al-use-first=</span><span class="st">"1"</span> <span class="ot">second-field-align=</span><span class="st">"flush"</span> <span class="ot">entry-spacing=</span><span class="st">"0"</span> <span class="ot">line-spacing=</span><span class="st">"2"</span>&gt;</span>
+<span id="cb2-171"><a href="#cb2-171" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">layout</span> <span class="ot">suffix=</span><span class="st">"."</span>&gt;</span>
+<span id="cb2-172"><a href="#cb2-172" aria-hidden="true" tabindex="-1"></a>      &lt;<span class="kw">text</span> <span class="ot">variable=</span><span class="st">"citation-number"</span> <span class="ot">suffix=</span><span class="st">"."</span>/&gt;</span>
+<span id="cb2-173"><a href="#cb2-173" aria-hidden="true" tabindex="-1"></a>      &lt;<span class="kw">group</span> <span class="ot">delimiter=</span><span class="st">" "</span>&gt;</span>
+<span id="cb2-174"><a href="#cb2-174" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">text</span> <span class="ot">macro=</span><span class="st">"author"</span> <span class="ot">suffix=</span><span class="st">"."</span>/&gt;</span>
+<span id="cb2-175"><a href="#cb2-175" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">text</span> <span class="ot">macro=</span><span class="st">"title"</span> <span class="ot">suffix=</span><span class="st">"."</span>/&gt;</span>
+<span id="cb2-176"><a href="#cb2-176" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">choose</span>&gt;</span>
+<span id="cb2-177"><a href="#cb2-177" aria-hidden="true" tabindex="-1"></a>          &lt;<span class="kw">if</span> <span class="ot">type=</span><span class="st">"chapter paper-conference"</span> <span class="ot">match=</span><span class="st">"any"</span>&gt;</span>
+<span id="cb2-178"><a href="#cb2-178" aria-hidden="true" tabindex="-1"></a>            &lt;<span class="kw">text</span> <span class="ot">term=</span><span class="st">"in"</span>/&gt;</span>
+<span id="cb2-179"><a href="#cb2-179" aria-hidden="true" tabindex="-1"></a>          &lt;/<span class="kw">if</span>&gt;</span>
+<span id="cb2-180"><a href="#cb2-180" aria-hidden="true" tabindex="-1"></a>        &lt;/<span class="kw">choose</span>&gt;</span>
+<span id="cb2-181"><a href="#cb2-181" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">text</span> <span class="ot">macro=</span><span class="st">"container-title"</span>/&gt;</span>
+<span id="cb2-182"><a href="#cb2-182" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">text</span> <span class="ot">macro=</span><span class="st">"editor"</span>/&gt;</span>
+<span id="cb2-183"><a href="#cb2-183" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">text</span> <span class="ot">macro=</span><span class="st">"volume"</span>/&gt;</span>
+<span id="cb2-184"><a href="#cb2-184" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">text</span> <span class="ot">variable=</span><span class="st">"page"</span>/&gt;</span>
+<span id="cb2-185"><a href="#cb2-185" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">text</span> <span class="ot">macro=</span><span class="st">"issuance"</span>/&gt;</span>
+<span id="cb2-186"><a href="#cb2-186" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">text</span> <span class="ot">macro=</span><span class="st">"access"</span>/&gt;</span>
+<span id="cb2-187"><a href="#cb2-187" aria-hidden="true" tabindex="-1"></a>      &lt;/<span class="kw">group</span>&gt;</span>
+<span id="cb2-188"><a href="#cb2-188" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">layout</span>&gt;</span>
+<span id="cb2-189"><a href="#cb2-189" aria-hidden="true" tabindex="-1"></a>  &lt;/<span class="kw">bibliography</span>&gt;</span>
+<span id="cb2-190"><a href="#cb2-190" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">style</span>&gt;</span>
+<span id="cb2-191"><a href="#cb2-191" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb2-192"><a href="#cb2-192" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb2-193"><a href="#cb2-193" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-194"><a href="#cb2-194" aria-hidden="true" tabindex="-1"></a><span class="fu">### Citation Style Examples</span></span>
+<span id="cb2-195"><a href="#cb2-195" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-196"><a href="#cb2-196" aria-hidden="true" tabindex="-1"></a>To demonstrate differences in citation styles, the citation for the same article is shown in several different styles below. The article is "Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson's Irises" by Allison M. Horst, Alison Presmanes Hill, and Kristen B. Gorman, published in the R Journal in 2022.</span>
+<span id="cb2-197"><a href="#cb2-197" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-198"><a href="#cb2-198" aria-hidden="true" tabindex="-1"></a>Note that if you use Google Scholar to find article citations, you will see that the 5 examples included below are the default citation styles used by Google Scholar.</span>
+<span id="cb2-199"><a href="#cb2-199" aria-hidden="true" tabindex="-1"></a> </span>
+<span id="cb2-200"><a href="#cb2-200" aria-hidden="true" tabindex="-1"></a> </span>
+<span id="cb2-201"><a href="#cb2-201" aria-hidden="true" tabindex="-1"></a>Style Name | Citation</span>
+<span id="cb2-202"><a href="#cb2-202" aria-hidden="true" tabindex="-1"></a>:-:|:----------</span>
+<span id="cb2-203"><a href="#cb2-203" aria-hidden="true" tabindex="-1"></a>MLA | Horst, Allison M., Alison Presmanes Hill, and Kristen B. Gorman. "Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson's Irises." *R Journal* 14.1 (2022).</span>
+<span id="cb2-204"><a href="#cb2-204" aria-hidden="true" tabindex="-1"></a>APA | Horst, A. M., Hill, A. P., &amp; Gorman, K. B. (2022). Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson's Irises. *R Journal*, 14(1).</span>
+<span id="cb2-205"><a href="#cb2-205" aria-hidden="true" tabindex="-1"></a>Chicago | Horst, Allison M., Alison Presmanes Hill, and Kristen B. Gorman. "Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson's Irises." *R Journal* 14, no. 1 (2022).</span>
+<span id="cb2-206"><a href="#cb2-206" aria-hidden="true" tabindex="-1"></a>Harvard | Horst, A.M., Hill, A.P. and Gorman, K.B., 2022. Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson's Irises. *R Journal*, 14(1).</span>
+<span id="cb2-207"><a href="#cb2-207" aria-hidden="true" tabindex="-1"></a>Vancouver | Horst AM, Hill AP, Gorman KB. Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson's Irises. R Journal. 2022 Mar 1;14(1).</span>
+<span id="cb2-208"><a href="#cb2-208" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-209"><a href="#cb2-209" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-210"><a href="#cb2-210" aria-hidden="true" tabindex="-1"></a><span class="fu">## CSL and Zotero</span></span>
+<span id="cb2-211"><a href="#cb2-211" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-212"><a href="#cb2-212" aria-hidden="true" tabindex="-1"></a>The main Zotero application comes pre-loaded with several popular citation styles like APA, Chicago, Nature, and Vancouver style. These formats are generally sufficient for most users and scenarios, but, in the event that you need a style that is not included, you can easily add more. </span>
+<span id="cb2-213"><a href="#cb2-213" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-214"><a href="#cb2-214" aria-hidden="true" tabindex="-1"></a>Zotero maintains a collection of over 8,000 additional citation styles on the <span class="co">[</span><span class="ot">Zotero Style Repository</span><span class="co">](https://www.zotero.org/styles)</span>. There are two ways to add a new citation style to Zotero:</span>
+<span id="cb2-215"><a href="#cb2-215" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-216"><a href="#cb2-216" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>From outside the Zotero application: The CSL files can be downloaded directly from the Zotero Style Repository. Once you have the file, you can add it to Zotero by dragging and dropping it into the Zotero application, or by attempting to open the file. This should open a prompt asking if you'd like to install the style.</span>
+<span id="cb2-217"><a href="#cb2-217" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>From within the Zotero application: The directions for this will vary based on your operating system. In general, you can find the option to add a new citation style in the preferences or settings menu where the other citation styles are listed. You may find a button that says "Get additional styles" or "Add style." Clicking this button will open a window where you can search for and install new styles (this window, however, is essentially a browser window that opens the Zotero Style Repository).</span>
+<span id="cb2-218"><a href="#cb2-218" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-219"><a href="#cb2-219" aria-hidden="true" tabindex="-1"></a>Once you have added a new citation style, it will be available in the Zotero application for you to select when you *generate a bibliography directly from Zotero*. If you are using Zotero with a word processor, you may need to restart the word processor to see the new style. For text editors like RStudio, you will need to copy the CSL file to the appropriate project directory; this will be covered in detail in the <span class="co">[</span><span class="ot">Citations in Quarto chapter</span><span class="co">](../integrating-zotero/citations-in-quarto.qmd)</span>.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+</div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
@@ -1032,15 +1505,104 @@ if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
       &nbsp;
     </div>   
     <div class="nav-footer-center">
-<p>Copyright, 2024 Open Science Center at LMU Munich</p>
-<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/lmu-osc/introduction-to-zotero/edit/main/background/citation-style-language.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/introduction-to-zotero/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+<p>© 2024 Pat Callahan, Dejana Damjanovic. Published by LMU Open Science Center. Licensed under CC BY-SA 4.0.</p>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/lmu-osc/introduction-to-zotero/edit/main/background/citation-style-language.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/introduction-to-zotero/blob/main/background/citation-style-language.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/lmu-osc/introduction-to-zotero/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
+  </div>
+</footer>
+<footer class="osc-footer-card text-white py-5">
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-12 col-md-6 col-lg-3 ">
+        <h4 class="fw-bold fs-5 fs-lg-4 text-white">
+          Ludwig-Maximilians-Universität<br>
+          LMU Open Science Center
+        </h4>
+        <p class="mb-0 mt-1 fw-normal fs-5">
+          Leopoldstr. 13<br>
+          80802 München
+        </p>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-3">
+        <h4 class="fw-semibold fs-5 text-white">Contact</h4>
+        <ul class="list-unstyled mt-2 mb-0">
+          <li>
+            <a href="mailto:felix.schoenbrodt@psy.lmu.de" class="text-white text-decoration-underline">
+              <i class="bi bi-envelope me-1"></i>
+              Prof. Dr. Felix Schönbrodt (Managing Director)
+            </a>
+          </li>
+          <li>
+            <a href="mailto:malika.ihle@lmu.de" class="text-white text-decoration-underline">
+              <i class="bi bi-envelope me-1"></i>
+              Dr. Malika Ihle (Coordinator) 
+            </a>
+          </li>
+          <li>
+            <a href="mailto:osc@lmu.de" class="text-white text-decoration-underline">
+              <i class="bi bi-envelope me-1"></i>
+              OSC team
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-3">
+        <h4 class="fw-semibold fs-5 text-white">Join Us</h4>
+        <ul class="list-unstyled mt-2 mb-0">
+          <li>
+            <a href="https://lists.lrz.de/mailman/listinfo/lmu-osc" target="_blank" class="text-white text-decoration-underline" aria-label="Subscribe to our announcement list (opens in new window)">
+              Subscribe to our announcement list
+            </a>
+          </li>
+          <li>
+            <a href="https://www.osc.lmu.de/about/join-us.html" target="_blank" class="text-white text-decoration-underline" aria-label="Become a member (opens in new window)">
+              Become a member
+            </a>
+          </li>
+          <li>
+            <a href="https://matrix.to/#/#lmu-open-science-center:matrix.lmu.de" target="_blank" class="text-white text-decoration-underline" aria-label="Chat with us on Matrix (opens in new window)">
+              Chat with us on Matrix
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-3 d-flex align-items-start gap-3 osc-footer-socials">
+        <a href="https://github.com/lmu-osc" target="_blank" class="text-white fs-3" aria-label="LMU Open Science Center on GitHub (opens in new window)">
+          <i class="bi bi-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/company/lmu-open-science-center/" target="_blank" class="text-white fs-3" aria-label="LMU Open Science Center on LinkedIn (opens in new window)">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="https://bsky.app/profile/lmu-osc.bsky.social" target="_blank" class="text-white fs-3" aria-label="LMU Open Science Center on Bluesky (opens in new window)">
+          <i class="bi bi-bluesky"></i>
+        </a>
+        <a href="https://scicomm.xyz/@lmu_osc" target="_blank" class="text-white fs-3" aria-label="LMU Open Science Center on Mastodon (opens in new window)">
+          <i class="bi bi-mastodon"></i>
+        </a>
+      </div>
+
+    </div>
+
+    <hr class="my-4 border-light">
+
+    <div class="d-flex flex-wrap gap-3 small">
+      <a href="../footer/imprint.html" class="text-white text-decoration-underline">Imprint</a>
+      <span aria-hidden="true">|</span>
+      <a href="../footer/privacy.html" class="text-white text-decoration-underline">Privacy Policy</a>
+      <span aria-hidden="true">|</span>
+      <a href="../footer/accessibilty.html" class="text-white text-decoration-underline">Accessibility</a>
+    </div>
+
   </div>
 </footer>
 
 
 
 
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
