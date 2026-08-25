@@ -2,11 +2,11 @@
 title: "Citation Style Language (CSL)"
 ---
 
-# Overview
+## Overview
 
 As mentioned earlier in the tutorial, Citation Style Language (CSL) is an XML-based format for defining citation and bibliography styles. CSL files are used by citation management software like Zotero to format citations and bibliographies in a specific style. This section is particularly interesting if you want to modify or edit your own citation styles. 
 
-## What Does a CSL File Look Like?
+### What Does a CSL File Look Like?
 
 A CSL file is an XML file that contains the information necessary to format citations and bibliographies in a specific style. The file is divided into several sections, including:
 
@@ -191,7 +191,7 @@ If you're interested, the collapsed code below is an example of a CSL file that 
 ```
 :::
 
-## Citation Style Examples
+### Citation Style Examples
 
 To demonstrate differences in citation styles, the citation for the same article is shown in several different styles below. The article is "Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson's Irises" by Allison M. Horst, Alison Presmanes Hill, and Kristen B. Gorman, published in the R Journal in 2022.
 
@@ -207,7 +207,7 @@ Harvard | Horst, A.M., Hill, A.P. and Gorman, K.B., 2022. Palmer Archipelago Pen
 Vancouver | Horst AM, Hill AP, Gorman KB. Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson's Irises. R Journal. 2022 Mar 1;14(1).
 
 
-# CSL and Zotero
+## CSL and Zotero
 
 The main Zotero application comes pre-loaded with several popular citation styles like APA, Chicago, Nature, and Vancouver style. These formats are generally sufficient for most users and scenarios, but, in the event that you need a style that is not included, you can easily add more. 
 

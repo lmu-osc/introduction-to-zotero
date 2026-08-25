@@ -2,7 +2,7 @@
 title: "Zotero Groups"
 ---
 
-# Collaborating with Zotero Groups
+## Collaborating with Zotero Groups
 
 Zotero Groups provide an excellent platform for collaborative research,
 enabling users to share, organize, and manage references and resources
@@ -10,7 +10,7 @@ effectively. This tutorial combines best practices, step-by-step
 instructions, and general recommendations from various trusted resources
 to help you make the most of Zotero Groups.
 
-## Purpose of Zotero Groups
+### Purpose of Zotero Groups
 
 Zotero Groups are designed to facilitate collaboration for:
 
@@ -25,18 +25,18 @@ Zotero Groups are designed to facilitate collaboration for:
 ![](/assets/groups-media/image-13.png){width="6.109375546806649in"
 height="2.8111242344706913in"}
 
-## Video Overview
+### Video Overview
 
 This great overview video from Georgia State University Library provides an introduction to Zotero Groups, including what they are, how to create them, how to add references to them, how to share them, and how to collaborate on them [@georgiastateuniversitylibrary2019].
 
 {{< video https://www.youtube.com/watch?v=n4lFk3pIEZ8 >}}
 
 
-# Zotero Group Features
+## Zotero Group Features
 
 Before creating a group, it is important to reflect on which type of group you want, what the primary purpose of the group is and how you want others to interact within the sources shared within the group. 
 
-## Group Types
+### Group Types
 
 The group type defines the characteristics of accessing the group and sharing materials and depends on the intended purpose of the group. 
 
@@ -54,7 +54,7 @@ The group type defines the characteristics of accessing the group and sharing ma
                     access                              projects
   -----------------------------------------------------------------------
 
-## Member Roles
+### Member Roles
 Members within a Zotero group can be assigned one of three roles to determine how they interact with the shared materials:
 
 1.  **Regular Members**: Can read and edit the library (based on
@@ -67,7 +67,7 @@ Members within a Zotero group can be assigned one of three roles to determine ho
     ability to delete the group or transfer ownership
 
 
-## Group Library settings
+### Group Library settings
 
 Important group parameters are the following: 
 
@@ -82,41 +82,41 @@ Important group parameters are the following:
     members
        
 
-# Step-by-Step Guide for creating a Zotero Group
+## Step-by-Step Guide for creating a Zotero Group
 
 ::: panel-tabset
-## Login to Zotero Account
+### Login to Zotero Account
 
 ![Login to your Zotero account.](/assets/groups-media/01-login)
 
-## Create New Group
+### Create New Group
 
 ![In the top menu, click on "Groups" and then on "Create a new group"](/assets/groups-media/02-new-group)
 
-## Set up the Group
+### Set up the Group
 
 ![Choose a name for your group and the group type (Public, Open Membership; Public, CLosed Membership; Private)](/assets/groups-media/03-group-type)
 
-## Adjust Group Settings
+### Adjust Group Settings
 
 ![Customize settings for group description, discipline, group picture and urls](/assets/groups-media/04-group-settings)
 
-## Adjust Member Settings
+### Adjust Member Settings
 
 ![Customize group by inviting members, managing roles and transferring ownership of the group to rolers)](/assets/groups-media/05-member-settings)
 
-## Adjust Library Settings
+### Adjust Library Settings
 
 ![Customize group by visibility and editing and viewing permissions)](/assets/groups-media/06-library-settings)
 
 :::
 
 
-## Interacting with Groups in Zotero Application
+### Interacting with Groups in Zotero Application
 
 Group libraries appear under \"Group Libraries\" in the Zotero desktop application. Similar to your other colllections, you can add, edit and organise your sources for your group directly within the desktop application. It is important to sync regularly to ensure updates are shared with all collaborating members.
 
-## Considerations for Zotero Groups
+### Considerations for Zotero Groups
 
 Zotero Groups are a great way to collaborate with others on a research project and to share sources. However, there are some considerations to keep in mind when using Zotero Groups:
 

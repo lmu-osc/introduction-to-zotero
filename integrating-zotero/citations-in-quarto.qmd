@@ -8,11 +8,11 @@ That said, these instructions also cover text-only editing options that should b
 
 If you choose to stick with a different text editor, you can check out the [Tutorial: Authoring](https://quarto.org/docs/get-started/authoring/text-editor.html#citations) Quarto documentation page for further reading.
 
-# Background
+## Background
 
 Before discussing the approaches for inserting citations, we first need to cover `references.bib` files and "citation keys."
 
-## What are `references.bib` Files?
+### What are `references.bib` Files?
 
 A `references.bib` file is a BibTeX file that contains all of the references you want to cite in your document. This file is used to generate the bibliography at the end of your document, and it is necessary to include this file in your project directory in order to insert citations. You can create this file manually, but it is generally easier to export your references from a citation manager or allow RStudio to manage the creation of the file for you.
 
@@ -36,12 +36,12 @@ You will rarely need to edit the `references.bib` file directly, but you can ope
 
 Note that you can name the file something other than `references.bib`, but you must ensure that the name of the file you specify in the YAML header matches the name of the file you have saved in your project directory.
 
-## What is a Citation Key?
+### What is a Citation Key?
 
 Citation keys are unique identifiers for each reference in your bibliography. They are used to insert citations in your document and are typically generated automatically by your text editor. These keys are necessary because they connect your citations to the correct entry in the `references.bib` file.
 
 
-# Inserting Citations
+## Inserting Citations
 
 Before you can use citations within your Quarto document, you will have to follow these steps:
 
@@ -57,7 +57,7 @@ bibliography: references.bib
 ---
 ```
 
-## Referencing by Citation Key in RStudio
+### Referencing by Citation Key in RStudio
 
 After you have set up your `references.bib` file in your directory, you can use the citation keys found in the `references.bib` file to cite your sources in your Quarto document. The citation keys can be found in the BibTex file you exported from Zotero as the first line for each entry, or you can check directly with the entry in the Zotero application. For example, the citation key for the Palmer Penguins data set from 2022 by Allison Horst is `@horstPalmerArchipelagoPenguins2022a` in my `references.bib` file.
 
@@ -77,43 +77,43 @@ Note that the citation key can be inserted in two ways: with or without brackets
 <!-- The method for inserting citations in Quarto documents described here is the most general approach, and will work for any text editor. Note that if you are using RStudio, you should use the "Source" editing mode for this method. You can use the "Visual" editor to insert citations on a point-and-click basis, which is covered in the next section. -->
 <!-- ::: -->
 
-## RStudio Visual Editor {#rstudio-visual-editor}
+### RStudio Visual Editor {#rstudio-visual-editor}
 
 If you are using RStudio's visual editor, you can insert a citation by clicking on the "Insert" menu at the top of the screen and selecting "Citation." This will open a dialog box where you can search for the reference you want to cite by typing in the author's name, title, or other identifying information. Once you have found the reference you want to cite, you can click on it to insert the citation into your document.
 
 Note that this process is simply a "visual" short code for inserting the citation key into your document, but is more convenient as it lets you interactively search through your Zotero library and dynamically add citations to your `references.bib` file.
 
 ::: panel-tabset
-## 1. New Project
+### 1. New Project
 
 ![A new, empty project will look similar to this image. Note that you must be in the Visual editor mode in order to see the Insert button. Press this button.](/assets/citations-in-quarto/01-new-project)
 
-## 2. Insert
+### 2. Insert
 
 ![After opening the Insert drop-down section, scroll down to the Citation option and open this.](/assets/citations-in-quarto/02-open-insert)
 
-## 3. Plugin
+### 3. Plugin
 
 ![This should open a plugin that allows you to search your Zotero library as well as PubMed, CrossRef, and directly by DOI numbers (in case you haven't already saved something to your Zotero library). Open the Zotero folder relevant to your project, the "Zotero tutorial" in this example.](/assets/citations-in-quarto/03-open-folder)
 
-## 4. Select
+### 4. Select
 
 ![Press once on the citation you would like to insert. Note taht the citation will be highlighted, and there is now a short tag in the bottom left. This is the citation key that will be used by default.](/assets/citations-in-quarto/04-select-content)
 
-## 5. Edit Key
+### 5. Edit Key
 
 ![If you'd like to edit the key to something more memorable or informative, press on the pencil button and edit away. In this example, the citation key will **not** be edited. <br><br> Note that citation key edits must be done **the first time you include a new citation** and you cannot have spaces in the name. Press **Insert** when done.](/assets/citations-in-quarto/05-edit-key)
 
-## 6. Review
+### 6. Review
 
 ![Your citation is now included inline in the document. Moreover, the bibliography is now connected to your Quarto document with the addition of the `bibliography: references.bib` text to the yaml header. RStudio will either create or update the `references.bib` file for you.](/assets/citations-in-quarto/06-inserted-citations)
 
-## 7. Render
+### 7. Render
 
 ![A version of the example document rendered as a PDF. Note that, while the bibliography is included in the output document, it is not formatted as a proper "References" section. We will revisit this shortly.](/assets/citations-in-quarto/07-rendered-pdf)
 :::
 
-## Automatic Generation of Bibliography File
+### Automatic Generation of Bibliography File
 
 If you did **not** export a `references.bib` file from Zotero, you can automatically generate a bibliography file within RStudio when you insert a citation. This bibliography file created by RStudio will be automatically updated to include any new citations you add. You still must define the name of the bibliography file RStudio should create for your citations using the `bibliography: <your-references-file.bib>` line in the YAML header like below. 
 
@@ -137,32 +137,32 @@ Inserting citations without a pre-exported `references.bib` file works as follow
 4. Check the automatically created `my-references.bib` file
 
 
-## A Note on Updating Citations within Zotero
+### A Note on Updating Citations within Zotero
 
 A current shortcoming with the default method of inserting citations by exporting the `references.bib` file from Zotero and saving it in your working directory or getting RStudio to generate the bibliography file for you is that the bibliography  file does **not** automatically update when you update the references in Zotero. If you make changes to the citations *within* Zotero, you may need to delete the `references.bib` file and re-export it or reinsert the citations to force updating of the bibliography in your project. This sounds a bit complicated, but simply deleting the `references.bib` file and reinserting a single citation will prompt RStudio to regenerate a new `references.bib` file with the updated references. However, a much more practical and less time-consuming way is to export a `references.bib` file directly from Zotero that is **automatically updated** when changes to the Zotero entires occur, see the next section.
 
-### Automatically Updating the Bibliography File via Zotero
+#### Automatically Updating the Bibliography File via Zotero
 
 In order to create a bibliography file that is autmatically updated when changes occur (see the [discussion on the Zotero forum here](https://forums.zotero.org/discussion/89720/keeping-a-bibtex-file-per-collection-in-sync-with-zotero)), you need to first install the [Better BibTeX plugin](https://retorque.re/zotero-better-bibtex/). Next, follow these steps:
 
 ::: panel-tabset
-## 1. Export Library
+### 1. Export Library
 
 ![Right-click on the collection to export and then click Export Library.](/assets/betterbibtex-automatic-updates/01-export-library)
 
-## 2. Select Better BibTeX
+### 2. Select Better BibTeX
 
 ![From the Format drop-down menu, select Better BibTex](/assets/betterbibtex-automatic-updates/02-select-betterbibtex)
 
-## 3. Set Up Automatic Updating
+### 3. Set Up Automatic Updating
 
 ![Tick Keep Updated and press OK](/assets/betterbibtex-automatic-updates/03-keep-updated)
 
-## 4. Save Exported Reference File
+### 4. Save Exported Reference File
 
 ![Navigate to the RStudio folder and save your reference file as references.bib](/assets/betterbibtex-automatic-updates/04-save-file)
 
-## 5. Check folder
+### 5. Check folder
 
 ![Check your folder for the references.bib file](/assets/betterbibtex-automatic-updates/05-check-folder)
 :::
@@ -170,15 +170,15 @@ In order to create a bibliography file that is autmatically updated when changes
 To test the automatic updateing of your bibliography, you can add a new source to your Zotero library and then insert the source as a citation in your Quarto document. Note that you can manage different important settings for `Better BibTex` directly in the Zotero settings, for example for citation key formatting or, importantly, for automatic export:
 
 ::: panel-tabset
-## 1. Open Settings
+### 1. Open Settings
 
 ![Click on Edit and then find Settings at the bottom of the drop-down menu.](/assets/betterbibtex-settings/01-open-settings)
 
-## 2. Select Better BibTeX
+### 2. Select Better BibTeX
 
 ![From the Format drop-down menu, select Better BibTex](/assets/betterbibtex-settings/02-settings)
 
-## 3. Check Automatic Export
+### 3. Check Automatic Export
 
 ![Check Automatic Export settings and adjust accordingly. Click on Export Now to manually force automatic updating for recent changes. Also revisit the Export Child Collection setting.](/assets/betterbibtex-settings/03-export)
 :::
@@ -191,7 +191,7 @@ To avoid the shortcoming of manual updating of bibliography files or manual dele
 <!-- ::: -->
 
 
-## Adding References at the End of the Document
+### Adding References at the End of the Document
 
 After inserting your citations, you will presumably want a well-formatted bibliography or references section available at the end of your document. "[By default, Pandoc will automatically generate a list of works cited and place it in the document if the style calls for it. It will be placed in a div with the id refs if one exists.](https://quarto.org/docs/authoring/citations.html#bibliography-generation) [@quarto-citations]:"
 
@@ -204,7 +204,7 @@ After inserting your citations, you will presumably want a well-formatted biblio
 
 This will generate a "References" section at the end of your document with the bibliography formatted according to the citation style you have specified in the YAML header. An example of this can be found at the bottom of this page!
 
-## Changing Citation Style
+### Changing Citation Style
 
 The [Citation Style Language](/background/citation-style-language.qmd) page talked in depth about the different citation styles available to you. You can change the citation style of your document by adding the `csl: <your-csl-file.csl>` line to the YAML header like below:
 
@@ -228,7 +228,7 @@ csl: https://www.zotero.org/styles/nature
 ---
 ```
 
-# References
+## References
 
 ::: {#refs}
 :::

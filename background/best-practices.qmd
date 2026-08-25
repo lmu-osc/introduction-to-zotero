@@ -4,7 +4,7 @@ title: "Best Practices"
 
 There are a number of different ways that can make your interaction with Zotero as smooth and effortless as possible. Below we collected a number of tips that can help you get started. 
 
-# Organizing your library
+## Organizing your library
 
 Create a temporary space or tag for unprocessed materials before
     adding them to the group library:
@@ -23,22 +23,22 @@ Create a temporary space or tag for unprocessed materials before
   -   Use subcollections to remain organized
 
 
-# Workflow
+## Workflow
 
 In each collection, a separate standalone note explaining the purpose of the folder, the group workflow, tagging conventions, folder structure and definitions for "related" items. Always keep this note updated and communicate any changes in the workflow or tagging conventions to the other group members. 
 
 ::: panel-tabset
 
-## Create Note
+### Create Note
 ![In your group library, select "New Note" and then "Standalone
       Note" from the toolbar.](/assets/groups-media/07-create-note)
 
-## Describe Workflow
+### Describe Workflow
 ![Write a clear description of the group workflow, including the purpose of the folder,
       folder usage, and definitions for
       "related" items.](/assets/groups-media/08-describe-workflow)
       
-## Describe Tagging Conventions
+### Describe Tagging Conventions
 ![In a separate note, list all the used tags and write a clear description of the tagging conventions. Avoid adding too many tags and regularly delete unused or redundant tags. Directly edit tags in the "Tags" tab on the right-hand pane in Zotero](/assets/groups-media/09-describe-tagging)
 
 :::

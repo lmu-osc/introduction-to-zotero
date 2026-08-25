@@ -2,7 +2,7 @@
 title: "Exercise 2: Integrating with Quarto"
 ---
 
-# Instructions
+## Instructions
 
 1. Create a new R Project in RStudio.
 1. Create a new Quarto document in the R Project. This should be available as an option in the "New File" dropdown menu under "File".

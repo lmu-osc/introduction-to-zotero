@@ -5,7 +5,7 @@ title: "Zotero Basics"
 Hopefully you are already familiar with the concept of citing the work of others and creating bibliographies. If not, don't worry! This tutorial will introduce you to the basics of citations and citation managers, with a specific focus on the Zotero citation manager.
 
 
-# Citations
+## Citations
 
 A citation is a reference to a source of information. They are used to give credit to the original author of a work that you are using in your research, and they also allow readers to locate the original source of the information.
 
@@ -14,7 +14,7 @@ Citations are typically included in the body of your work as short, in-text refe
 In fact, there are at least 8,000 variations of citation styles in use today, but some of the most common and well-known citation styles are the APA, MLA, Chicago, and Vancouver styles. The format of citations generally changes according to the preferred citation style of your research field and/or by journal preference. This topic is a bit more complex, and is covered more thoroughly in the [Citation Style Language chapter](citation-style-language.qmd), but it is first necessary to understand the basics of citation managers.
 
 
-# Citation Managers
+## Citation Managers
 
 Citation managers are software that help you organize your research, and they can save you significant time and effort by automating the process of creating citations and bibliographies.
 
@@ -30,7 +30,7 @@ What features are included in citation managers? Here are some of the most impor
 Popular examples of citation managers include RefWorks, Mendeley, and EndNote although these are generally paid tools. The focus of this tutorial, however, is on an alternative citation manager called Zotero.
 
 
-# Zotero
+## Zotero
 
 Zotero provides the same features as the previously-mentioned citation managers: it helps you organize your research, collects and stores references, and generates citations and bibliographies in a variety of citation styles. The major difference between Zotero and these competitors is that **Zotero is free and open-source**, which makes it accessible to a wider audience. 
 
@@ -44,7 +44,7 @@ Zotero is available as a standalone application for Windows, macOS, and Linux, a
 
 
 
-## Downloading Zotero
+### Downloading Zotero
 
 To get started with Zotero, you will need to download the [Zotero desktop application](https://www.zotero.org/download/) and the browser extension available for the Chrome, Firefox, Safari, and Edge browsers. 
 
