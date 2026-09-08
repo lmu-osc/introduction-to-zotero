@@ -1,0 +1,25 @@
+/* Brand-tinted styles for the Background overview deck (LMU OSC palette). */
+
+.reveal h1,
+.reveal h2 {
+  color: #00883a; /* lmu-green */
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.reveal h3,
+.reveal h4 {
+  color: #0f1987; /* lmu-blue */
+  text-transform: none;
+}
+
+.reveal blockquote {
+  background: #f5f5f5; /* lmu-lichtgrau */
+  border-left: 6px solid #f18700; /* lmu-orange */
+  border-radius: 4px;
+  padding: 0.75em 1em;
+}
+
+.reveal a {
+  color: #0f1987;
+}

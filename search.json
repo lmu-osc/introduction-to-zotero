@@ -62,110 +62,263 @@
     ]
   },
   {
-    "objectID": "background/zotero-usage.html",
-    "href": "background/zotero-usage.html",
-    "title": "Using Zotero",
+    "objectID": "background/best-practices.html",
+    "href": "background/best-practices.html",
+    "title": "Best Practices",
     "section": "",
-    "text": "This page will cover the basics of using Zotero, and is structured around the three main tasks you will need to do when using Zotero:",
+    "text": "There are a number of different ways that can make your interaction with Zotero as smooth and effortless as possible. Below we collected a number of tips that can help you get started.",
     "crumbs": [
       "Home",
-      "Background",
-      "Zotero Usage"
+      "Best Practices"
     ]
   },
   {
-    "objectID": "background/zotero-usage.html#creating-a-zotero-library",
-    "href": "background/zotero-usage.html#creating-a-zotero-library",
-    "title": "Using Zotero",
-    "section": "Creating a Zotero Library",
-    "text": "Creating a Zotero Library\nZotero’s library system functions similar to a file system on your computer. You can create folders to organize your references, and add tags to references to help you find them later. The images below show how to create a new folder in Zotero, and what a fresh folder looks like.\n\n1. General Library2. Creating a New Folder3. A Fresh Folder\n\n\n\n\n\nAll of your citations can be accessed in the overall My Library section.\n\n\n\n\n\n\n\nPress the folder button in the top left corner to create a new folder, and provide a relevant name.\n\n\n\n\n\n\n\nA new folder will be empty by default, and will now appear in the tab bar on the left size of the Zotero application.",
+    "objectID": "background/best-practices.html#organizing-your-library",
+    "href": "background/best-practices.html#organizing-your-library",
+    "title": "Best Practices",
+    "section": "Organizing your library",
+    "text": "Organizing your library\nCreate a temporary space or tag for unprocessed materials before adding them to the group library:\n\nIn the Zotero desktop app, create a new collection (right-click on your personal library and select “New Collection”).\nName this collection something like “Inbox” or “To Process.”\nWhen saving items to Zotero, apply a tag such as \"Unprocessed.\" You can do this directly when saving an item in your browser or later in the Zotero desktop app.\nFilter by this tag later to review and process these items.\nUse subcollections to remain organized",
     "crumbs": [
       "Home",
-      "Background",
-      "Zotero Usage"
+      "Best Practices"
     ]
   },
   {
-    "objectID": "background/zotero-usage.html#adding-references",
-    "href": "background/zotero-usage.html#adding-references",
-    "title": "Using Zotero",
-    "section": "Adding References",
-    "text": "Adding References\nWhile creating libraries/folders for your projects is highly recommended and useful, the more important step in using Zotero is adding references to your library. You can add references to Zotero in several ways:\n\nSave to Zotero with the Zotero Connector browser extension\nManual entry\nImport from online databases.\n\nWe will outline the first two methods here, as they are the most common ways to add references to Zotero.\n\nZotero Connector\nThe most common, fastest, and preferred way of entering references is by using the Zotero Connector browser extension.\nThe Zotero Connector allows you to save references directly from your browser to your Zotero library. The connector will, when possible, download a PDF of the article and attach it to the reference. If you save content from a webpage that does not have an available PDF download of the content, the Connector will take a snapshot of the webpage to preserve the information in case the page is later changed or removed.\n\n1. Locate Source2. Open Link3. Download4. Check Library\n\n\n\n\n\nIdentify the publication, book, website, or other source of information you wish to cite.\n\n\n\n\n\n\n\nOpen the website page. Try to find links to PubMed, the original publisher, or similar sites that have PDFs available. Zotero will automatically download these when available. Otherwise, it will attempt to screenshot the website itself.\n\n\n\n\n\n\n\nClick the Zotero Connector button in your browser to save the reference to your Zotero library. The button is generally in the top right corner of your browser. The appearance of this button can change depending on the type of object being cited.\n\n\n\n\n\n\n\nAfter saving the reference, check your Zotero library to ensure the reference was saved correctly.\n\n\n\n\n\n\n\nManual Entries\nThe Zotero Connector is not perfect, however, and you may occasionally need to “manually” enter a reference. To do this, click on the “New Item” button in Zotero, and select the type of reference you want to add. You can then enter the metadata for the reference manually. This is a more time-consuming process than using the Zotero Connector, but it is necessary if you cannot find the reference online (e.g. a book or a conference presentation).\nHowever, if you can find a BibTex or RIS file for the reference, you can import the reference into Zotero by dragging and dropping the file into the Zotero window, or by copying the BibTex content and then selecting File -&gt; Import from Clipboard in Zotero.\nThe example below will demonstrate how to manually import a BibTex entry. All you really need to know about BibTex is that it is a commonly-used, structured file format for bibliographic entries and bibliographies (BibTeX 2026).\n\n1. Locate Source2. Open Citation3. Copy BibTex4. Import to Zotero5. Check Library\n\n\n\n\n\nIdentify the object you want to cite. If you can find the publication on Google Scholar, for example, BibTex entries are readily available. Click on the “Cite” button in Google Scholar to access the BibTex entry.\n\n\n\n\n\n\n\nClick on the “BibTex” button in Google Scholar to access the BibTex entry.\n\n\n\n\n\n\n\nCopy the BibTex entry to your clipboard.\n\n\n\n\n\n\n\nIn Zotero, click on File -&gt; Import from Clipboard to import the BibTex entry.\n\n\n\n\n\n\n\nAfter importing the BibTex entry, check your Zotero library to ensure the reference was saved correctly. Note how much less information is included by importing BibTex, however. Compared to the Zotero Connector, we are, at minimum, missing a PDF copy of the document and the date on which we accessed the material.\n\n\n\n\n\nLess commonly, you may need to import references from other software. To do this, export the references from the software in a compatible format, and import them into Zotero. Zotero can import references from a variety of formats, including BibTex, RIS, and EndNote XML.\n\n\nImporting from Online Databases\nZotero can also import references directly from online databases using an identifier such as a DOI, ISBN, or PMID. To do this, click on the “Add Item by Identifier” button in Zotero, and enter the identifier for the reference you want to add. Zotero will then search for the reference online and add it to your library.\n\n1. Open the “Add Item by Identifier” Dialog2. Enter the Identifier3. Check Library\n\n\n\n\n\nPress the wand-like button that opens the import-by-id function\n\n\n\n\n\n\n\nEnter a valid identifier such as a DOI or PMID\n\n\n\n\n\n\n\nAfter importing the reference, check your Zotero library to ensure the reference was saved correctly.",
+    "objectID": "background/best-practices.html#workflow",
+    "href": "background/best-practices.html#workflow",
+    "title": "Best Practices",
+    "section": "Workflow",
+    "text": "Workflow\nIn each collection, a separate standalone note explaining the purpose of the folder, the group workflow, tagging conventions, folder structure and definitions for “related” items. Always keep this note updated and communicate any changes in the workflow or tagging conventions to the other group members.\n\nCreate NoteDescribe WorkflowDescribe Tagging Conventions\n\n\n\n\n\nIn your group library, select “New Note” and then “Standalone Note” from the toolbar.\n\n\n\n\n\n\n\nWrite a clear description of the group workflow, including the purpose of the folder, folder usage, and definitions for “related” items.\n\n\n\n\n\n\n\nIn a separate note, list all the used tags and write a clear description of the tagging conventions. Avoid adding too many tags and regularly delete unused or redundant tags. Directly edit tags in the “Tags” tab on the right-hand pane in Zotero",
     "crumbs": [
       "Home",
-      "Background",
-      "Zotero Usage"
+      "Best Practices"
     ]
   },
   {
-    "objectID": "background/zotero-usage.html#citing-references-with-zotero",
-    "href": "background/zotero-usage.html#citing-references-with-zotero",
-    "title": "Using Zotero",
-    "section": "Citing References with Zotero",
-    "text": "Citing References with Zotero\nThe main point of using Zotero, of course, is to cite references in your documents. Zotero makes this easy by providing plugins for popular word processors like Microsoft Word and LibreOffice. These word processor plugins should be installed automatically when you install Zotero.\nInserting citations and bibliographies into Quarto and Word documents are specifically covered in later chapters. However, we first describe how to manually generate bibliographies and provide some details on the BibTex format.\n\nGenerating Bibliographies\n\nText Formatted\nYou can generate a bibliography by right-clicking on the folder or publication of interest, and selecting the option to “Create Bibliography from Collection.” From there, you will be prompted to choose a citation style and an output method (i.e. copy to clipboard, save as file, etc.).\nThis option to quickly generate a bibliography is useful if you are using a text editor that does not have a Zotero plugin to paste the bibliography to, or if you simply need a one-and-done bibliography for a smaller project.\nFor more details, see the Zotero documentation on creating bibliographies.\n\n\nBibTex and .bib Files\nIf you are using a text editor that does not have a Zotero plugin, you can export a BibTex file directly from Zotero to generate a bibliography. However, you will generally not need to make or edit BibTex files if you are using a word processor with a Zotero plugin, as the plugin will automatically generate the bibliography for you.\nTo export a BibTex file from Zotero, right-click on the folder or publication of interest, and select the option to “Export Collection.” You can then choose the BibTex format from the drop-down menu, and save the .bib file to your computer. You can then include this BibTex file in your document to generate a bibliography.\n\n\n\n\n\n\nTipBibTex Tip\n\n\n\nFor citations in Quarto, it is important to know that Quarto documents should have a .bib file in the same directory as the .qmd file plus a reference to the .bib file in the YAML header. This will be discussed in the Citations in Quarto chapter.",
-    "crumbs": [
-      "Home",
-      "Background",
-      "Zotero Usage"
-    ]
-  },
-  {
-    "objectID": "background/zotero-usage.html#other-features",
-    "href": "background/zotero-usage.html#other-features",
-    "title": "Using Zotero",
-    "section": "Other Features",
-    "text": "Other Features\nThis page has covered the basics of using Zotero, but there are many other features that Zotero offers that you may find useful. Some of these topics will be covered in more detail in optional chapters at the end of this tutorial, but here are a few other features that you may find useful:\n\nOrganizing References\nYou can organize your references in Zotero by creating collections and tags. To create a collection, click on the “New Collection” button, and give the collection a name. To add references to this collection, simply drag and drop the references into the collection. To add tags to a reference, click on the “Tags” tab, and enter the tags you want to add. These tags are particularly convenient if you want to later search your library for references on a specific topic as defined by you.\n\n\nCollaborating with others\nYou can also collaborate with others by sharing your references with them, generally by creating a Zotero group, see the Zotero Groups chapter for details. The contents of these groups are shared with all members online, and you can set the group to be public or private.\nPublic groups are open to anyone, while private groups require an invitation to join. You can also create a group library, which is a shared library that all members can edit. This is useful if you are working on a project with others and want to share references with them.\n\n\nNotetaking\nZotero can function as a note-taking app. To add a note to a reference, click on the “Notes” tab, and enter the note you want to add. These notes can be useful if you want to record your thoughts on a reference, or if you want to summarize the key points of the reference.\n\nCollecting Quotes in Notes\nZotero also allows you to easily collect quotes from your references that automatically include a citation to the author, paper, and the publication year. This feature specifically works for PDFs that you have saved in your Zotero library. To use this feature, open the PDF of interest, copy the text you want to quote, and paste it into a note. Zotero will automatically include the citation information for the quote.",
-    "crumbs": [
-      "Home",
-      "Background",
-      "Zotero Usage"
-    ]
-  },
-  {
-    "objectID": "background/index.html",
-    "href": "background/index.html",
-    "title": "Background",
+    "objectID": "background/citation-style-language.html",
+    "href": "background/citation-style-language.html",
+    "title": "Citation Style Language (CSL)",
     "section": "",
-    "text": "The Background section covers the fundamentals of Zotero and citation management. These chapters will help you understand what Zotero is, how to use it for collecting and organizing references, and how citation styles work under the hood.\n\nZotero Basics introduces citation managers generally and Zotero specifically, covering its key features and how to download and install it.\nZotero Usage walks through the core workflows: creating libraries, adding references (via the Zotero Connector, manual entry, and BibTeX import), citing in documents, and generating bibliographies.\nCitation Style Language explains the CSL XML format that powers citation formatting, with examples of common styles like APA, MLA, Chicago, Harvard, and Vancouver, and how to install new styles in Zotero.\n\n\n\n\n\n\n Back to top",
+    "text": "As mentioned earlier in the tutorial, Citation Style Language (CSL) is an XML-based format for defining citation and bibliography styles. CSL files are used by citation management software like Zotero to format citations and bibliographies in a specific style. This section is particularly interesting if you want to modify or edit your own citation styles.\n\n\nA CSL file is an XML file that contains the information necessary to format citations and bibliographies in a specific style. The file is divided into several sections, including:\n\nMetadata: Information about the style, such as the title, author, and version.\nMacros: Definitions for common elements like names, dates, and titles.\nCitations: Rules for formatting in-text citations.\nBibliography: Rules for formatting the bibliography.\n\nIf you’re interested, the collapsed code below is an example of a CSL file that defines the style for formatting citations in Nature style. Understanding the code underlying a CSL file is not necessary to use Zotero CSL files, but it can be helpful if you want to modify or create your own styles.\n\n\n\n\n\n\nNoteXML file for Nature Citation Language Style\n\n\n\n\n\n&lt;?xml version=\"1.0\" encoding=\"utf-8\"?&gt;\n&lt;style xmlns=\"http://purl.org/net/xbiblio/csl\" class=\"in-text\" version=\"1.0\" demote-non-dropping-particle=\"sort-only\" default-locale=\"en-GB\"&gt;\n  &lt;info&gt;\n    &lt;title&gt;Nature&lt;/title&gt;\n    &lt;id&gt;http://www.zotero.org/styles/nature&lt;/id&gt;\n    &lt;link href=\"http://www.zotero.org/styles/nature\" rel=\"self\"/&gt;\n    &lt;link href=\"http://www.nature.com/nature/authors/gta/index.html#a5.4\" rel=\"documentation\"/&gt;\n    &lt;link href=\"http://www.nature.com/srep/publish/guidelines#references\" rel=\"documentation\"/&gt;\n    &lt;author&gt;\n      &lt;name&gt;Michael Berkowitz&lt;/name&gt;\n      &lt;email&gt;mberkowi@gmu.edu&lt;/email&gt;\n    &lt;/author&gt;\n    &lt;category citation-format=\"numeric\"/&gt;\n    &lt;category field=\"science\"/&gt;\n    &lt;category field=\"generic-base\"/&gt;\n    &lt;issn&gt;0028-0836&lt;/issn&gt;\n    &lt;eissn&gt;1476-4687&lt;/eissn&gt;\n    &lt;updated&gt;2024-01-22T03:08:05+00:00&lt;/updated&gt;\n    &lt;rights license=\"http://creativecommons.org/licenses/by-sa/3.0/\"&gt;This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License&lt;/rights&gt;\n  &lt;/info&gt;\n  &lt;macro name=\"title\"&gt;\n    &lt;choose&gt;\n      &lt;if type=\"bill book graphic legal_case legislation motion_picture report song\" match=\"any\"&gt;\n        &lt;text variable=\"title\" font-style=\"italic\" text-case=\"title\"/&gt;\n      &lt;/if&gt;\n      &lt;else&gt;\n        &lt;text variable=\"title\"/&gt;\n      &lt;/else&gt;\n    &lt;/choose&gt;\n  &lt;/macro&gt;\n  &lt;macro name=\"author\"&gt;\n    &lt;names variable=\"author\"&gt;\n      &lt;name sort-separator=\", \" delimiter=\", \" and=\"symbol\" initialize-with=\". \" delimiter-precedes-last=\"never\" name-as-sort-order=\"all\"/&gt;\n      &lt;label form=\"short\" prefix=\", \"/&gt;\n      &lt;et-al font-style=\"italic\"/&gt;\n    &lt;/names&gt;\n  &lt;/macro&gt;\n  &lt;macro name=\"access\"&gt;\n    &lt;choose&gt;\n      &lt;if variable=\"volume\" type=\"article dataset software\" match=\"any\"/&gt;\n      &lt;else-if variable=\"DOI\"&gt;\n        &lt;text variable=\"DOI\" prefix=\"doi:\"/&gt;\n      &lt;/else-if&gt;\n    &lt;/choose&gt;\n  &lt;/macro&gt;\n  &lt;macro name=\"access-data\"&gt;\n    &lt;choose&gt;\n      &lt;if type=\"dataset software\" match=\"any\"&gt;\n        &lt;text variable=\"DOI\" prefix=\"https://doi.org/\"/&gt;\n      &lt;/if&gt;\n    &lt;/choose&gt;\n  &lt;/macro&gt;\n  &lt;macro name=\"issuance\"&gt;\n    &lt;choose&gt;\n      &lt;if type=\"bill book graphic legal_case legislation motion_picture song thesis chapter paper-conference\" match=\"any\"&gt;\n        &lt;group delimiter=\"; \" suffix=\".\"&gt;\n          &lt;group delimiter=\", \" prefix=\"(\" suffix=\")\"&gt;\n            &lt;text variable=\"publisher\" form=\"long\"/&gt;\n            &lt;text variable=\"publisher-place\"/&gt;\n            &lt;date variable=\"issued\"&gt;\n              &lt;date-part name=\"year\"/&gt;\n            &lt;/date&gt;\n          &lt;/group&gt;\n        &lt;/group&gt;\n      &lt;/if&gt;\n      &lt;else-if type=\"article\"&gt;\n        &lt;group delimiter=\" \"&gt;\n          &lt;choose&gt;\n            &lt;if variable=\"genre\" match=\"any\"&gt;\n              &lt;text variable=\"genre\" text-case=\"capitalize-first\"/&gt;\n            &lt;/if&gt;\n            &lt;else&gt;\n              &lt;text term=\"article\" text-case=\"capitalize-first\"/&gt;\n            &lt;/else&gt;\n          &lt;/choose&gt;\n          &lt;text term=\"at\"/&gt;\n          &lt;choose&gt;\n            &lt;if variable=\"DOI\" match=\"any\"&gt;\n              &lt;text variable=\"DOI\" prefix=\"https://doi.org/\"/&gt;\n            &lt;/if&gt;\n            &lt;else&gt;\n              &lt;text variable=\"URL\"/&gt;\n            &lt;/else&gt;\n          &lt;/choose&gt;\n          &lt;date date-parts=\"year\" form=\"text\" variable=\"issued\" prefix=\"(\" suffix=\")\"/&gt;\n        &lt;/group&gt;\n      &lt;/else-if&gt;\n      &lt;else-if type=\"dataset software\" match=\"any\"&gt;\n        &lt;group delimiter=\" \"&gt;\n          &lt;text variable=\"publisher\"/&gt;\n          &lt;text macro=\"access-data\"/&gt;\n          &lt;date date-parts=\"year\" form=\"text\" variable=\"issued\" prefix=\"(\" suffix=\")\"/&gt;\n        &lt;/group&gt;\n      &lt;/else-if&gt;\n      &lt;else-if type=\"report webpage post post-weblog\" match=\"any\"&gt;\n        &lt;group delimiter=\" \"&gt;\n          &lt;text variable=\"URL\"/&gt;\n          &lt;date date-parts=\"year\" form=\"text\" variable=\"issued\" prefix=\"(\" suffix=\")\"/&gt;\n        &lt;/group&gt;\n      &lt;/else-if&gt;\n      &lt;else&gt;\n        &lt;date variable=\"issued\" prefix=\"(\" suffix=\")\"&gt;\n          &lt;date-part name=\"year\"/&gt;\n        &lt;/date&gt;\n      &lt;/else&gt;\n    &lt;/choose&gt;\n  &lt;/macro&gt;\n  &lt;macro name=\"container-title\"&gt;\n    &lt;choose&gt;\n      &lt;if type=\"article-journal\"&gt;\n        &lt;text variable=\"container-title\" font-style=\"italic\" form=\"short\"/&gt;\n      &lt;/if&gt;\n      &lt;else&gt;\n        &lt;text variable=\"container-title\" font-style=\"italic\"/&gt;\n      &lt;/else&gt;\n    &lt;/choose&gt;\n  &lt;/macro&gt;\n  &lt;macro name=\"editor\"&gt;\n    &lt;choose&gt;\n      &lt;if type=\"chapter paper-conference\" match=\"any\"&gt;\n        &lt;names variable=\"editor\" prefix=\"(\" suffix=\")\"&gt;\n          &lt;label form=\"short\" suffix=\" \"/&gt;\n          &lt;name and=\"symbol\" delimiter-precedes-last=\"never\" initialize-with=\". \" name-as-sort-order=\"all\"/&gt;\n        &lt;/names&gt;\n      &lt;/if&gt;\n    &lt;/choose&gt;\n  &lt;/macro&gt;\n  &lt;macro name=\"volume\"&gt;\n    &lt;choose&gt;\n      &lt;if type=\"article-journal\" match=\"any\"&gt;\n        &lt;text variable=\"volume\" font-weight=\"bold\" suffix=\",\"/&gt;\n      &lt;/if&gt;\n      &lt;else&gt;\n        &lt;group delimiter=\" \"&gt;\n          &lt;label variable=\"volume\" form=\"short\"/&gt;\n          &lt;text variable=\"volume\"/&gt;\n        &lt;/group&gt;\n      &lt;/else&gt;\n    &lt;/choose&gt;\n  &lt;/macro&gt;\n  &lt;citation collapse=\"citation-number\"&gt;\n    &lt;sort&gt;\n      &lt;key variable=\"citation-number\"/&gt;\n    &lt;/sort&gt;\n    &lt;layout vertical-align=\"sup\" delimiter=\",\"&gt;\n      &lt;text variable=\"citation-number\"/&gt;\n    &lt;/layout&gt;\n  &lt;/citation&gt;\n  &lt;bibliography et-al-min=\"6\" et-al-use-first=\"1\" second-field-align=\"flush\" entry-spacing=\"0\" line-spacing=\"2\"&gt;\n    &lt;layout suffix=\".\"&gt;\n      &lt;text variable=\"citation-number\" suffix=\".\"/&gt;\n      &lt;group delimiter=\" \"&gt;\n        &lt;text macro=\"author\" suffix=\".\"/&gt;\n        &lt;text macro=\"title\" suffix=\".\"/&gt;\n        &lt;choose&gt;\n          &lt;if type=\"chapter paper-conference\" match=\"any\"&gt;\n            &lt;text term=\"in\"/&gt;\n          &lt;/if&gt;\n        &lt;/choose&gt;\n        &lt;text macro=\"container-title\"/&gt;\n        &lt;text macro=\"editor\"/&gt;\n        &lt;text macro=\"volume\"/&gt;\n        &lt;text variable=\"page\"/&gt;\n        &lt;text macro=\"issuance\"/&gt;\n        &lt;text macro=\"access\"/&gt;\n      &lt;/group&gt;\n    &lt;/layout&gt;\n  &lt;/bibliography&gt;\n&lt;/style&gt;\n\n\n\n\n\n\nTo demonstrate differences in citation styles, the citation for the same article is shown in several different styles below. The article is “Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson’s Irises” by Allison M. Horst, Alison Presmanes Hill, and Kristen B. Gorman, published in the R Journal in 2022.\nNote that if you use Google Scholar to find article citations, you will see that the 5 examples included below are the default citation styles used by Google Scholar.\n\n\n\n\n\n\n\nStyle Name\nCitation\n\n\n\n\nMLA\nHorst, Allison M., Alison Presmanes Hill, and Kristen B. Gorman. “Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson’s Irises.” R Journal 14.1 (2022).\n\n\nAPA\nHorst, A. M., Hill, A. P., & Gorman, K. B. (2022). Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson’s Irises. R Journal, 14(1).\n\n\nChicago\nHorst, Allison M., Alison Presmanes Hill, and Kristen B. Gorman. “Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson’s Irises.” R Journal 14, no. 1 (2022).\n\n\nHarvard\nHorst, A.M., Hill, A.P. and Gorman, K.B., 2022. Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson’s Irises. R Journal, 14(1).\n\n\nVancouver\nHorst AM, Hill AP, Gorman KB. Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson’s Irises. R Journal. 2022 Mar 1;14(1).",
     "crumbs": [
       "Home",
-      "Background"
+      "Background",
+      "Citation Style Language"
     ]
   },
   {
-    "objectID": "exercises/change-csl.html",
-    "href": "exercises/change-csl.html",
-    "title": "Exercise 3: Changing CSL in Quarto",
+    "objectID": "background/citation-style-language.html#overview",
+    "href": "background/citation-style-language.html#overview",
+    "title": "Citation Style Language (CSL)",
     "section": "",
-    "text": "Open the Quarto document you created in the previous exercise.\nGo to the Zotero Style Repository and find a style you like. Download the CSL file for that style by clicking on the link, and pressing “Cancel” when asked to add the citation style to Zotero.\n\nThis will add the .csl file to your downloads folder rather than installing it directly into Zotero.\n\nAdd the downloaded CSL file to the same folder as your R Project.\nChange the citation style in the YAML front matter to the name of the downloaded CSL file.\n\nThe YAML for this should look something like csl: \"my-csl-file.csl\", and can be listed under the output key.\n\nRe-knit your Quarto document. What has changed in the output?",
+    "text": "As mentioned earlier in the tutorial, Citation Style Language (CSL) is an XML-based format for defining citation and bibliography styles. CSL files are used by citation management software like Zotero to format citations and bibliographies in a specific style. This section is particularly interesting if you want to modify or edit your own citation styles.\n\n\nA CSL file is an XML file that contains the information necessary to format citations and bibliographies in a specific style. The file is divided into several sections, including:\n\nMetadata: Information about the style, such as the title, author, and version.\nMacros: Definitions for common elements like names, dates, and titles.\nCitations: Rules for formatting in-text citations.\nBibliography: Rules for formatting the bibliography.\n\nIf you’re interested, the collapsed code below is an example of a CSL file that defines the style for formatting citations in Nature style. Understanding the code underlying a CSL file is not necessary to use Zotero CSL files, but it can be helpful if you want to modify or create your own styles.\n\n\n\n\n\n\nNoteXML file for Nature Citation Language Style\n\n\n\n\n\n&lt;?xml version=\"1.0\" encoding=\"utf-8\"?&gt;\n&lt;style xmlns=\"http://purl.org/net/xbiblio/csl\" class=\"in-text\" version=\"1.0\" demote-non-dropping-particle=\"sort-only\" default-locale=\"en-GB\"&gt;\n  &lt;info&gt;\n    &lt;title&gt;Nature&lt;/title&gt;\n    &lt;id&gt;http://www.zotero.org/styles/nature&lt;/id&gt;\n    &lt;link href=\"http://www.zotero.org/styles/nature\" rel=\"self\"/&gt;\n    &lt;link href=\"http://www.nature.com/nature/authors/gta/index.html#a5.4\" rel=\"documentation\"/&gt;\n    &lt;link href=\"http://www.nature.com/srep/publish/guidelines#references\" rel=\"documentation\"/&gt;\n    &lt;author&gt;\n      &lt;name&gt;Michael Berkowitz&lt;/name&gt;\n      &lt;email&gt;mberkowi@gmu.edu&lt;/email&gt;\n    &lt;/author&gt;\n    &lt;category citation-format=\"numeric\"/&gt;\n    &lt;category field=\"science\"/&gt;\n    &lt;category field=\"generic-base\"/&gt;\n    &lt;issn&gt;0028-0836&lt;/issn&gt;\n    &lt;eissn&gt;1476-4687&lt;/eissn&gt;\n    &lt;updated&gt;2024-01-22T03:08:05+00:00&lt;/updated&gt;\n    &lt;rights license=\"http://creativecommons.org/licenses/by-sa/3.0/\"&gt;This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License&lt;/rights&gt;\n  &lt;/info&gt;\n  &lt;macro name=\"title\"&gt;\n    &lt;choose&gt;\n      &lt;if type=\"bill book graphic legal_case legislation motion_picture report song\" match=\"any\"&gt;\n        &lt;text variable=\"title\" font-style=\"italic\" text-case=\"title\"/&gt;\n      &lt;/if&gt;\n      &lt;else&gt;\n        &lt;text variable=\"title\"/&gt;\n      &lt;/else&gt;\n    &lt;/choose&gt;\n  &lt;/macro&gt;\n  &lt;macro name=\"author\"&gt;\n    &lt;names variable=\"author\"&gt;\n      &lt;name sort-separator=\", \" delimiter=\", \" and=\"symbol\" initialize-with=\". \" delimiter-precedes-last=\"never\" name-as-sort-order=\"all\"/&gt;\n      &lt;label form=\"short\" prefix=\", \"/&gt;\n      &lt;et-al font-style=\"italic\"/&gt;\n    &lt;/names&gt;\n  &lt;/macro&gt;\n  &lt;macro name=\"access\"&gt;\n    &lt;choose&gt;\n      &lt;if variable=\"volume\" type=\"article dataset software\" match=\"any\"/&gt;\n      &lt;else-if variable=\"DOI\"&gt;\n        &lt;text variable=\"DOI\" prefix=\"doi:\"/&gt;\n      &lt;/else-if&gt;\n    &lt;/choose&gt;\n  &lt;/macro&gt;\n  &lt;macro name=\"access-data\"&gt;\n    &lt;choose&gt;\n      &lt;if type=\"dataset software\" match=\"any\"&gt;\n        &lt;text variable=\"DOI\" prefix=\"https://doi.org/\"/&gt;\n      &lt;/if&gt;\n    &lt;/choose&gt;\n  &lt;/macro&gt;\n  &lt;macro name=\"issuance\"&gt;\n    &lt;choose&gt;\n      &lt;if type=\"bill book graphic legal_case legislation motion_picture song thesis chapter paper-conference\" match=\"any\"&gt;\n        &lt;group delimiter=\"; \" suffix=\".\"&gt;\n          &lt;group delimiter=\", \" prefix=\"(\" suffix=\")\"&gt;\n            &lt;text variable=\"publisher\" form=\"long\"/&gt;\n            &lt;text variable=\"publisher-place\"/&gt;\n            &lt;date variable=\"issued\"&gt;\n              &lt;date-part name=\"year\"/&gt;\n            &lt;/date&gt;\n          &lt;/group&gt;\n        &lt;/group&gt;\n      &lt;/if&gt;\n      &lt;else-if type=\"article\"&gt;\n        &lt;group delimiter=\" \"&gt;\n          &lt;choose&gt;\n            &lt;if variable=\"genre\" match=\"any\"&gt;\n              &lt;text variable=\"genre\" text-case=\"capitalize-first\"/&gt;\n            &lt;/if&gt;\n            &lt;else&gt;\n              &lt;text term=\"article\" text-case=\"capitalize-first\"/&gt;\n            &lt;/else&gt;\n          &lt;/choose&gt;\n          &lt;text term=\"at\"/&gt;\n          &lt;choose&gt;\n            &lt;if variable=\"DOI\" match=\"any\"&gt;\n              &lt;text variable=\"DOI\" prefix=\"https://doi.org/\"/&gt;\n            &lt;/if&gt;\n            &lt;else&gt;\n              &lt;text variable=\"URL\"/&gt;\n            &lt;/else&gt;\n          &lt;/choose&gt;\n          &lt;date date-parts=\"year\" form=\"text\" variable=\"issued\" prefix=\"(\" suffix=\")\"/&gt;\n        &lt;/group&gt;\n      &lt;/else-if&gt;\n      &lt;else-if type=\"dataset software\" match=\"any\"&gt;\n        &lt;group delimiter=\" \"&gt;\n          &lt;text variable=\"publisher\"/&gt;\n          &lt;text macro=\"access-data\"/&gt;\n          &lt;date date-parts=\"year\" form=\"text\" variable=\"issued\" prefix=\"(\" suffix=\")\"/&gt;\n        &lt;/group&gt;\n      &lt;/else-if&gt;\n      &lt;else-if type=\"report webpage post post-weblog\" match=\"any\"&gt;\n        &lt;group delimiter=\" \"&gt;\n          &lt;text variable=\"URL\"/&gt;\n          &lt;date date-parts=\"year\" form=\"text\" variable=\"issued\" prefix=\"(\" suffix=\")\"/&gt;\n        &lt;/group&gt;\n      &lt;/else-if&gt;\n      &lt;else&gt;\n        &lt;date variable=\"issued\" prefix=\"(\" suffix=\")\"&gt;\n          &lt;date-part name=\"year\"/&gt;\n        &lt;/date&gt;\n      &lt;/else&gt;\n    &lt;/choose&gt;\n  &lt;/macro&gt;\n  &lt;macro name=\"container-title\"&gt;\n    &lt;choose&gt;\n      &lt;if type=\"article-journal\"&gt;\n        &lt;text variable=\"container-title\" font-style=\"italic\" form=\"short\"/&gt;\n      &lt;/if&gt;\n      &lt;else&gt;\n        &lt;text variable=\"container-title\" font-style=\"italic\"/&gt;\n      &lt;/else&gt;\n    &lt;/choose&gt;\n  &lt;/macro&gt;\n  &lt;macro name=\"editor\"&gt;\n    &lt;choose&gt;\n      &lt;if type=\"chapter paper-conference\" match=\"any\"&gt;\n        &lt;names variable=\"editor\" prefix=\"(\" suffix=\")\"&gt;\n          &lt;label form=\"short\" suffix=\" \"/&gt;\n          &lt;name and=\"symbol\" delimiter-precedes-last=\"never\" initialize-with=\". \" name-as-sort-order=\"all\"/&gt;\n        &lt;/names&gt;\n      &lt;/if&gt;\n    &lt;/choose&gt;\n  &lt;/macro&gt;\n  &lt;macro name=\"volume\"&gt;\n    &lt;choose&gt;\n      &lt;if type=\"article-journal\" match=\"any\"&gt;\n        &lt;text variable=\"volume\" font-weight=\"bold\" suffix=\",\"/&gt;\n      &lt;/if&gt;\n      &lt;else&gt;\n        &lt;group delimiter=\" \"&gt;\n          &lt;label variable=\"volume\" form=\"short\"/&gt;\n          &lt;text variable=\"volume\"/&gt;\n        &lt;/group&gt;\n      &lt;/else&gt;\n    &lt;/choose&gt;\n  &lt;/macro&gt;\n  &lt;citation collapse=\"citation-number\"&gt;\n    &lt;sort&gt;\n      &lt;key variable=\"citation-number\"/&gt;\n    &lt;/sort&gt;\n    &lt;layout vertical-align=\"sup\" delimiter=\",\"&gt;\n      &lt;text variable=\"citation-number\"/&gt;\n    &lt;/layout&gt;\n  &lt;/citation&gt;\n  &lt;bibliography et-al-min=\"6\" et-al-use-first=\"1\" second-field-align=\"flush\" entry-spacing=\"0\" line-spacing=\"2\"&gt;\n    &lt;layout suffix=\".\"&gt;\n      &lt;text variable=\"citation-number\" suffix=\".\"/&gt;\n      &lt;group delimiter=\" \"&gt;\n        &lt;text macro=\"author\" suffix=\".\"/&gt;\n        &lt;text macro=\"title\" suffix=\".\"/&gt;\n        &lt;choose&gt;\n          &lt;if type=\"chapter paper-conference\" match=\"any\"&gt;\n            &lt;text term=\"in\"/&gt;\n          &lt;/if&gt;\n        &lt;/choose&gt;\n        &lt;text macro=\"container-title\"/&gt;\n        &lt;text macro=\"editor\"/&gt;\n        &lt;text macro=\"volume\"/&gt;\n        &lt;text variable=\"page\"/&gt;\n        &lt;text macro=\"issuance\"/&gt;\n        &lt;text macro=\"access\"/&gt;\n      &lt;/group&gt;\n    &lt;/layout&gt;\n  &lt;/bibliography&gt;\n&lt;/style&gt;\n\n\n\n\n\n\nTo demonstrate differences in citation styles, the citation for the same article is shown in several different styles below. The article is “Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson’s Irises” by Allison M. Horst, Alison Presmanes Hill, and Kristen B. Gorman, published in the R Journal in 2022.\nNote that if you use Google Scholar to find article citations, you will see that the 5 examples included below are the default citation styles used by Google Scholar.\n\n\n\n\n\n\n\nStyle Name\nCitation\n\n\n\n\nMLA\nHorst, Allison M., Alison Presmanes Hill, and Kristen B. Gorman. “Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson’s Irises.” R Journal 14.1 (2022).\n\n\nAPA\nHorst, A. M., Hill, A. P., & Gorman, K. B. (2022). Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson’s Irises. R Journal, 14(1).\n\n\nChicago\nHorst, Allison M., Alison Presmanes Hill, and Kristen B. Gorman. “Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson’s Irises.” R Journal 14, no. 1 (2022).\n\n\nHarvard\nHorst, A.M., Hill, A.P. and Gorman, K.B., 2022. Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson’s Irises. R Journal, 14(1).\n\n\nVancouver\nHorst AM, Hill AP, Gorman KB. Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson’s Irises. R Journal. 2022 Mar 1;14(1).",
+    "crumbs": [
+      "Home",
+      "Background",
+      "Citation Style Language"
+    ]
+  },
+  {
+    "objectID": "background/citation-style-language.html#csl-and-zotero",
+    "href": "background/citation-style-language.html#csl-and-zotero",
+    "title": "Citation Style Language (CSL)",
+    "section": "CSL and Zotero",
+    "text": "CSL and Zotero\nThe main Zotero application comes pre-loaded with several popular citation styles like APA, Chicago, Nature, and Vancouver style. These formats are generally sufficient for most users and scenarios, but, in the event that you need a style that is not included, you can easily add more.\nZotero maintains a collection of over 8,000 additional citation styles on the Zotero Style Repository. There are two ways to add a new citation style to Zotero:\n\nFrom outside the Zotero application: The CSL files can be downloaded directly from the Zotero Style Repository. Once you have the file, you can add it to Zotero by dragging and dropping it into the Zotero application, or by attempting to open the file. This should open a prompt asking if you’d like to install the style.\nFrom within the Zotero application: The directions for this will vary based on your operating system. In general, you can find the option to add a new citation style in the preferences or settings menu where the other citation styles are listed. You may find a button that says “Get additional styles” or “Add style.” Clicking this button will open a window where you can search for and install new styles (this window, however, is essentially a browser window that opens the Zotero Style Repository).\n\nOnce you have added a new citation style, it will be available in the Zotero application for you to select when you generate a bibliography directly from Zotero. If you are using Zotero with a word processor, you may need to restart the word processor to see the new style. For text editors like RStudio, you will need to copy the CSL file to the appropriate project directory; this will be covered in detail in the Citations in Quarto chapter.",
+    "crumbs": [
+      "Home",
+      "Background",
+      "Citation Style Language"
+    ]
+  },
+  {
+    "objectID": "exercises/quarto-citations.html",
+    "href": "exercises/quarto-citations.html",
+    "title": "Exercise 2: Integrating with Quarto",
+    "section": "",
+    "text": "Create a new R Project in RStudio.\nCreate a new Quarto document in the R Project. This should be available as an option in the “New File” dropdown menu under “File”.\nMake sure you are using the “Visual Editor” mode in Quarto.\nInsert a citation into the body of your document by pressing the “Insert” button in the toolbar and scroll down to the “Citation” option.\nSelect “My Library” under the Zotero tab. Find the “Exercise 1” folder you created in the previous exercise and select a reference to insert.\nWhat has happened to your Quarto file? What has been added to the YAML front matter? What has been added to the body of the document?\n\nA references.bib file should have been added to your project, and referenced in the YAML front matter.\nA citation should have been added to the body of the document.",
     "crumbs": [
       "Home",
       "Exercises",
-      "Changing CSL"
+      "Integrating with Quarto"
     ]
   },
   {
-    "objectID": "exercises/change-csl.html#instructions",
-    "href": "exercises/change-csl.html#instructions",
-    "title": "Exercise 3: Changing CSL in Quarto",
+    "objectID": "exercises/quarto-citations.html#instructions",
+    "href": "exercises/quarto-citations.html#instructions",
+    "title": "Exercise 2: Integrating with Quarto",
     "section": "",
-    "text": "Open the Quarto document you created in the previous exercise.\nGo to the Zotero Style Repository and find a style you like. Download the CSL file for that style by clicking on the link, and pressing “Cancel” when asked to add the citation style to Zotero.\n\nThis will add the .csl file to your downloads folder rather than installing it directly into Zotero.\n\nAdd the downloaded CSL file to the same folder as your R Project.\nChange the citation style in the YAML front matter to the name of the downloaded CSL file.\n\nThe YAML for this should look something like csl: \"my-csl-file.csl\", and can be listed under the output key.\n\nRe-knit your Quarto document. What has changed in the output?",
+    "text": "Create a new R Project in RStudio.\nCreate a new Quarto document in the R Project. This should be available as an option in the “New File” dropdown menu under “File”.\nMake sure you are using the “Visual Editor” mode in Quarto.\nInsert a citation into the body of your document by pressing the “Insert” button in the toolbar and scroll down to the “Citation” option.\nSelect “My Library” under the Zotero tab. Find the “Exercise 1” folder you created in the previous exercise and select a reference to insert.\nWhat has happened to your Quarto file? What has been added to the YAML front matter? What has been added to the body of the document?\n\nA references.bib file should have been added to your project, and referenced in the YAML front matter.\nA citation should have been added to the body of the document.",
     "crumbs": [
       "Home",
       "Exercises",
-      "Changing CSL"
+      "Integrating with Quarto"
     ]
   },
   {
-    "objectID": "exercises/index.html",
-    "href": "exercises/index.html",
-    "title": "Exercises",
+    "objectID": "exercises/use-zotero.html",
+    "href": "exercises/use-zotero.html",
+    "title": "Exercise 1: Using Zotero",
     "section": "",
-    "text": "This section provides hands-on exercises to practice and consolidate what you’ve learned in the Background and Integrating Zotero sections. Each exercise builds on the previous one.\n\nExercise 1: Basic Zotero Usage — create a Zotero folder, save references using different methods, and export them as BibTeX and Word bibliography files.\nExercise 2: Integrating with Quarto — create a new R Project and Quarto document, then insert a citation using RStudio’s Visual Editor.\nExercise 3: Changing CSL in Quarto — download a CSL file from the Zotero Style Repository, add it to your project, and apply it to change your document’s citation style.\n\n\n\n\n\n\n Back to top",
+    "text": "This exercise is designed to help you get started with Zotero and RStudio. You will need to have Zotero installed on your computer. If you do not have Zotero installed, you can download it from here.\n\nCreate a new folder in Zotero.\n\nName the folder “Exercise 1”.\nAdd a tag to the folder called “Exercise 1”.\n\nSave references to 3-4 different sources in Zotero.\n\nTry to use the Zotero web connector for some of the sources, add 1 manually, and add one by copying/pasting a BibTex entry.\n\nExport the references from Zotero to a BibTex file. This can be done by right-clicking on the folder and selecting “Export Collection”.\nExport the references from Zotero as a Word document. This can be done by right-clicking on the folder and selecting “Create Bibliography from Collection”.\n\nWhen completed, you can delete the BibTex and Word files you’ve just created. They will not be needed in subsequent exercises.",
     "crumbs": [
       "Home",
-      "Exercises"
+      "Exercises",
+      "Basic Zotero Usage"
     ]
+  },
+  {
+    "objectID": "exercises/use-zotero.html#instructions",
+    "href": "exercises/use-zotero.html#instructions",
+    "title": "Exercise 1: Using Zotero",
+    "section": "",
+    "text": "This exercise is designed to help you get started with Zotero and RStudio. You will need to have Zotero installed on your computer. If you do not have Zotero installed, you can download it from here.\n\nCreate a new folder in Zotero.\n\nName the folder “Exercise 1”.\nAdd a tag to the folder called “Exercise 1”.\n\nSave references to 3-4 different sources in Zotero.\n\nTry to use the Zotero web connector for some of the sources, add 1 manually, and add one by copying/pasting a BibTex entry.\n\nExport the references from Zotero to a BibTex file. This can be done by right-clicking on the folder and selecting “Export Collection”.\nExport the references from Zotero as a Word document. This can be done by right-clicking on the folder and selecting “Create Bibliography from Collection”.\n\nWhen completed, you can delete the BibTex and Word files you’ve just created. They will not be needed in subsequent exercises.",
+    "crumbs": [
+      "Home",
+      "Exercises",
+      "Basic Zotero Usage"
+    ]
+  },
+  {
+    "objectID": "integrating-zotero/citations-in-word.html",
+    "href": "integrating-zotero/citations-in-word.html",
+    "title": "Citations in Word",
+    "section": "",
+    "text": "Zotero also provides a plugin for Microsoft Word that allows you to insert citations and bibliographies directly into your documents. The technical details of this depart from the procedure for inserting citations into a Quarto document, but still follows the same steps of 1) inserting a citation and 2) generating a bibliography.",
+    "crumbs": [
+      "Home",
+      "Integrating Zotero",
+      "Citations in Word"
+    ]
+  },
+  {
+    "objectID": "integrating-zotero/citations-in-word.html#inserting-citations",
+    "href": "integrating-zotero/citations-in-word.html#inserting-citations",
+    "title": "Citations in Word",
+    "section": "Inserting Citations",
+    "text": "Inserting Citations\nThe Zotero plugin for Word should have been automatically downloaded and installed when you installed Zotero. You can confirm this by checking for a Zotero tab in the toolbar of a new Word document. If the tab is not visible, you may need to restart Word or reinstall Zotero.\n\n1. New Project2. Add3. Choose CSL4. Search5. Results6. Cited\n\n\n\n\n\nIn a new Word document, the Zotero tab should be available if you have already downloaded Zotero–it automatically installs the Word plugin.\n\n\n\n\n\n\n\nUnder the Zotero tab, press the “Add/Edit Citation” button.\n\n\n\n\n\n\n\nIf this is the first citation you’re inserting into the document, you will be prompted to choose the citation style you’d like to use. This can be changed later if needed.\n\n\n\n\n\n\n\nYou can now search through your Zotero library for the content you need to cite. This searchbar pop-up will search through your whole library, but you can opt to look through a specific folder by pressing the Z drop-down button on the left.\n\n\n\n\n\n\n\nThe results of your search will appear in a drop-down menu below. You can search for and select multiple documents before inserting them. When you are done adding citations, press Enter.\n\n\n\n\n\n\n\nYour in-line citation should now be visible in your document. The next section will discuss how to include the bibliography.",
+    "crumbs": [
+      "Home",
+      "Integrating Zotero",
+      "Citations in Word"
+    ]
+  },
+  {
+    "objectID": "integrating-zotero/citations-in-word.html#adding-a-bibliography",
+    "href": "integrating-zotero/citations-in-word.html#adding-a-bibliography",
+    "title": "Citations in Word",
+    "section": "Adding a Bibliography",
+    "text": "Adding a Bibliography\nNote that adding citations and adding the bibliography are two separate steps. The bibliography can be added at any time after the first citation has been placed in the document. Simply press the “Add/Edit Bibliography” button. You may occassionally need to press the “Refresh” button to update the bibliography.\n\nInitial Add & New Citations\n\n1. Add Bibliography2. Results3. Add New Citations\n\n\n\n\n\nThe bibliography can be added at any time after the first citation has been placed in the document. Simply press the “Add/Edit Bibliography” button.\n\n\n\n\n\n\n\nAfter pressing the button, the bibliography should appear where you had your cursor placed.\n\n\n\n\n\n\n\nTo add new citations, simply repeat the procedure outlined previously. Some versions of Word and Zotero will automatically update the bibliography, but older versions may require you to press the Refresh button!\n\n\n\n\n\n\n\nChange Style\nIf, after inserting your first citation, you decide to use a different citation style, you can do so by pressing the “Document Preferences” button under the Zotero tab. This will allow you to change the citation style of the document. Note that this will change the style of all in-line citations and the bibliography.\n\n1. Doc Preferences2. Change CSL3. See Updates\n\n\n\n\n\nPress the Document Preferences button to make changes to the citation style of the document.\n\n\n\n\n\n\n\nSelect the new style you’d like to use. If needed, you can first download the style from the Zotero website, install it into Zotero, and then restart both Word and Zotero.\n\n\n\n\n\n\n\nNote that the style of the in-line citations and the bibliography have now been updated to reflect the new CSL file we’ve chosen.",
+    "crumbs": [
+      "Home",
+      "Integrating Zotero",
+      "Citations in Word"
+    ]
+  },
+  {
+    "objectID": "integrating-zotero/index.html",
+    "href": "integrating-zotero/index.html",
+    "title": "Integrating Zotero",
+    "section": "",
+    "text": "This section covers how to use Zotero citations within the tools you write in: Quarto documents and Microsoft Word. Both chapters follow the same basic workflow of inserting citations and generating a bibliography, adapted to each environment.\n\nCitations in Quarto covers BibTeX and .bib files, citation keys, inserting citations via RStudio’s Visual Editor, automatic bibliography generation, and keeping your bibliography in sync with Zotero using the Better BibTeX plugin.\nCitations in Word demonstrates using the Zotero Word plugin to insert citations, add a bibliography, and change citation styles — all from within the Zotero tab in Microsoft Word.\n\n\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Home",
+      "Integrating Zotero"
+    ]
+  },
+  {
+    "objectID": "advanced/zotero-groups.html",
+    "href": "advanced/zotero-groups.html",
+    "title": "Zotero Groups",
+    "section": "",
+    "text": "Zotero Groups provide an excellent platform for collaborative research, enabling users to share, organize, and manage references and resources effectively. This tutorial combines best practices, step-by-step instructions, and general recommendations from various trusted resources to help you make the most of Zotero Groups.\n\n\nZotero Groups are designed to facilitate collaboration for:\n\nStudents working on group projects\nFaculty collaborating across institutions\nResearch teams sharing resources and references\nAny group requiring a centralized space for research materials\n\n\n\n\n\nThis great overview video from Georgia State University Library provides an introduction to Zotero Groups, including what they are, how to create them, how to add references to them, how to share them, and how to collaborate on them (Georgia State University Library 2019).",
+    "crumbs": [
+      "Home",
+      "Advanced",
+      "Zotero Groups"
+    ]
+  },
+  {
+    "objectID": "advanced/zotero-groups.html#collaborating-with-zotero-groups",
+    "href": "advanced/zotero-groups.html#collaborating-with-zotero-groups",
+    "title": "Zotero Groups",
+    "section": "",
+    "text": "Zotero Groups provide an excellent platform for collaborative research, enabling users to share, organize, and manage references and resources effectively. This tutorial combines best practices, step-by-step instructions, and general recommendations from various trusted resources to help you make the most of Zotero Groups.\n\n\nZotero Groups are designed to facilitate collaboration for:\n\nStudents working on group projects\nFaculty collaborating across institutions\nResearch teams sharing resources and references\nAny group requiring a centralized space for research materials\n\n\n\n\n\nThis great overview video from Georgia State University Library provides an introduction to Zotero Groups, including what they are, how to create them, how to add references to them, how to share them, and how to collaborate on them (Georgia State University Library 2019).",
+    "crumbs": [
+      "Home",
+      "Advanced",
+      "Zotero Groups"
+    ]
+  },
+  {
+    "objectID": "advanced/zotero-groups.html#zotero-group-features",
+    "href": "advanced/zotero-groups.html#zotero-group-features",
+    "title": "Zotero Groups",
+    "section": "Zotero Group Features",
+    "text": "Zotero Group Features\nBefore creating a group, it is important to reflect on which type of group you want, what the primary purpose of the group is and how you want others to interact within the sources shared within the group.\n\nGroup Types\nThe group type defines the characteristics of accessing the group and sharing materials and depends on the intended purpose of the group.\n\n\n\n\n\n\n\n\n\nGroup Type\nAccess\nFile Sharing\nBest For\n\n\n\n\nPublic, Open Membership\nAnyone can join and access\nNot allowed\nSharing resources publicly\n\n\nPublic, Closed Membership\nVisible to all, members by invite\nAllowed for members\nShowcasing work selectively\n\n\nPrivate Membership\nOnly invited members can access\nAllowed for members\nPrivate or sensitive projects\n\n\n\n\n\nMember Roles\nMembers within a Zotero group can be assigned one of three roles to determine how they interact with the shared materials:\n\nRegular Members: Can read and edit the library (based on permissions)\nAdministrators: Can manage group settings, invite members, and adjust permissions\nGroup Owners: Have full administrative rights, including the ability to delete the group or transfer ownership\n\n\n\nGroup Library settings\nImportant group parameters are the following:\n\nGroup Type: Private, Public/Closed, Public/Opened\nLibrary Reading: Control who can view items in the library\nLibrary Editing: Set permissions for adding, editing, and organizing items\nFile Editing: Enable or restrict file sharing among group members",
+    "crumbs": [
+      "Home",
+      "Advanced",
+      "Zotero Groups"
+    ]
+  },
+  {
+    "objectID": "advanced/zotero-groups.html#step-by-step-guide-for-creating-a-zotero-group",
+    "href": "advanced/zotero-groups.html#step-by-step-guide-for-creating-a-zotero-group",
+    "title": "Zotero Groups",
+    "section": "Step-by-Step Guide for creating a Zotero Group",
+    "text": "Step-by-Step Guide for creating a Zotero Group\n\nLogin to Zotero AccountCreate New GroupSet up the GroupAdjust Group SettingsAdjust Member SettingsAdjust Library Settings\n\n\n\n\n\nLogin to your Zotero account.\n\n\n\n\n\n\n\nIn the top menu, click on “Groups” and then on “Create a new group”\n\n\n\n\n\n\n\nChoose a name for your group and the group type (Public, Open Membership; Public, CLosed Membership; Private)\n\n\n\n\n\n\n\nCustomize settings for group description, discipline, group picture and urls\n\n\n\n\n\n\n\nCustomize group by inviting members, managing roles and transferring ownership of the group to rolers)\n\n\n\n\n\n\n\nCustomize group by visibility and editing and viewing permissions)\n\n\n\n\n\n\nInteracting with Groups in Zotero Application\nGroup libraries appear under \"Group Libraries\" in the Zotero desktop application. Similar to your other colllections, you can add, edit and organise your sources for your group directly within the desktop application. It is important to sync regularly to ensure updates are shared with all collaborating members.\n\n\nConsiderations for Zotero Groups\nZotero Groups are a great way to collaborate with others on a research project and to share sources. However, there are some considerations to keep in mind when using Zotero Groups:\n\nPrivacy: Zotero Groups are public by default, so be sure to set your group to private if you want to keep your references private.\nStorage: Zotero Groups have limited storage space, so be mindful of how many references you add to your group. This will really only be a concern if you wish to include PDF files with your references. You can use up to 300MB for free. If you need more space, you can upgrade to a paid plan which are available in 2GB, 6GB, and Unlimited sizes for $20, $60, and $120 per year, respectively.\nCollaboration: Zotero Groups allow for collaboration, but be sure to communicate with your collaborators about who can add, edit, and delete references.",
+    "crumbs": [
+      "Home",
+      "Advanced",
+      "Zotero Groups"
+    ]
+  },
+  {
+    "objectID": "LICENSE-CODE.html",
+    "href": "LICENSE-CODE.html",
+    "title": "",
+    "section": "",
+    "text": "Code\n\n\n\n\n\n\nCreative Commons Zero v1.0 Universal\nCREATIVE COMMONS CORPORATION IS NOT A LAW FIRM AND DOES NOT PROVIDE LEGAL SERVICES. DISTRIBUTION OF THIS DOCUMENT DOES NOT CREATE AN ATTORNEY-CLIENT RELATIONSHIP. CREATIVE COMMONS PROVIDES THIS INFORMATION ON AN “AS-IS” BASIS. CREATIVE COMMONS MAKES NO WARRANTIES REGARDING THE USE OF THIS DOCUMENT OR THE INFORMATION OR WORKS PROVIDED HEREUNDER, AND DISCLAIMS LIABILITY FOR DAMAGES RESULTING FROM THE USE OF THIS DOCUMENT OR THE INFORMATION OR WORKS PROVIDED HEREUNDER.\n\nStatement of Purpose\nThe laws of most jurisdictions throughout the world automatically confer exclusive Copyright and Related Rights (defined below) upon the creator and subsequent owner(s) (each and all, an “owner”) of an original work of authorship and/or a database (each, a “Work”).\nCertain owners wish to permanently relinquish those rights to a Work for the purpose of contributing to a commons of creative, cultural and scientific works (“Commons”) that the public can reliably and without fear of later claims of infringement build upon, modify, incorporate in other works, reuse and redistribute as freely as possible in any form whatsoever and for any purposes, including without limitation commercial purposes. These owners may contribute to the Commons to promote the ideal of a free culture and the further production of creative, cultural and scientific works, or to gain reputation or greater distribution for their Work in part through the use and efforts of others.\nFor these and/or other purposes and motivations, and without any expectation of additional consideration or compensation, the person associating CC0 with a Work (the “Affirmer”), to the extent that he or she is an owner of Copyright and Related Rights in the Work, voluntarily elects to apply CC0 to the Work and publicly distribute the Work under its terms, with knowledge of his or her Copyright and Related Rights in the Work and the meaning and intended legal effect of CC0 on those rights.\n\nCopyright and Related Rights. A Work made available under CC0 may be protected by copyright and related or neighboring rights (“Copyright and Related Rights”). Copyright and Related Rights include, but are not limited to, the following:\n\nthe right to reproduce, adapt, distribute, perform, display, communicate, and translate a Work;\nmoral rights retained by the original author(s) and/or performer(s);\npublicity and privacy rights pertaining to a person’s image or likeness depicted in a Work;\nrights protecting against unfair competition in regards to a Work, subject to the limitations in paragraph 4(a), below;\nrights protecting the extraction, dissemination, use and reuse of data in a Work;\ndatabase rights (such as those arising under Directive 96/9/EC of the European Parliament and of the Council of 11 March 1996 on the legal protection of databases, and under any national implementation thereof, including any amended or successor version of such directive); and\nother similar, equivalent or corresponding rights throughout the world based on applicable law or treaty, and any national implementations thereof.\n\nWaiver. To the greatest extent permitted by, but not in contravention of, applicable law, Affirmer hereby overtly, fully, permanently, irrevocably and unconditionally waives, abandons, and surrenders all of Affirmer’s Copyright and Related Rights and associated claims and causes of action, whether now known or unknown (including existing as well as future claims and causes of action), in the Work (i) in all territories worldwide, (ii) for the maximum duration provided by applicable law or treaty (including future time extensions), (iii) in any current or future medium and for any number of copies, and (iv) for any purpose whatsoever, including without limitation commercial, advertising or promotional purposes (the “Waiver”). Affirmer makes the Waiver for the benefit of each member of the public at large and to the detriment of Affirmer’s heirs and successors, fully intending that such Waiver shall not be subject to revocation, rescission, cancellation, termination, or any other legal or equitable action to disrupt the quiet enjoyment of the Work by the public as contemplated by Affirmer’s express Statement of Purpose.\nPublic License Fallback. Should any part of the Waiver for any reason be judged legally invalid or ineffective under applicable law, then the Waiver shall be preserved to the maximum extent permitted taking into account Affirmer’s express Statement of Purpose. In addition, to the extent the Waiver is so judged Affirmer hereby grants to each affected person a royalty-free, non transferable, non sublicensable, non exclusive, irrevocable and unconditional license to exercise Affirmer’s Copyright and Related Rights in the Work (i) in all territories worldwide, (ii) for the maximum duration provided by applicable law or treaty (including future time extensions), (iii) in any current or future medium and for any number of copies, and (iv) for any purpose whatsoever, including without limitation commercial, advertising or promotional purposes (the “License”). The License shall be deemed effective as of the date CC0 was applied by Affirmer to the Work. Should any part of the License for any reason be judged legally invalid or ineffective under applicable law, such partial invalidity or ineffectiveness shall not invalidate the remainder of the License, and in such case Affirmer hereby affirms that he or she will not (i) exercise any of his or her remaining Copyright and Related Rights in the Work or (ii) assert any associated claims and causes of action with respect to the Work, in either case contrary to Affirmer’s express Statement of Purpose.\nLimitations and Disclaimers.\n\nNo trademark or patent rights held by Affirmer are waived, abandoned, surrendered, licensed or otherwise affected by this document.\nAffirmer offers the Work as-is and makes no representations or warranties of any kind concerning the Work, express, implied, statutory or otherwise, including without limitation warranties of title, merchantability, fitness for a particular purpose, non infringement, or the absence of latent or other defects, accuracy, or the present or absence of errors, whether or not discoverable, all to the greatest extent permissible under applicable law.\nAffirmer disclaims responsibility for clearing rights of other persons that may apply to the Work or any use thereof, including without limitation any person’s Copyright and Related Rights in the Work. Further, Affirmer disclaims responsibility for obtaining any necessary consents, permissions or other rights required for any use of the Work.\nAffirmer understands and acknowledges that Creative Commons is not a party to this document and has no duty or obligation with respect to this CC0 or use of the Work.\n\n\n\n\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome to the Zotero Tutorial!",
+    "section": "",
+    "text": "This self-paced tutorial will introduce you to Zotero, a free citation management tool that can help you organize your research and create bibliographies with a specific focus on integrating it with RStudio and Quarto. It is intended to take about 30-60 minutes to complete.\nThe tutorial is split into the following sections:\n\nGetting Started with Zotero\nIntegrating Zotero\nExercises\nAdvanced\n\n\n\n\n\n\n\nTipSoftware Requirements\n\n\n\nTo complete this tutorial, you will need to have the following software installed on your computer:\n\nZotero and Zotero Connector\nRStudio\nQuarto\n\nRStudio comes bundled with Quarto. You do not need to install Quarto separately if you have a recent version of RStudio.\n\n\n\n\n\n\n\n\n\n\nTipExercises\n\n\n\nWe recommend completing all of the steps outlined in the Background and Integrating Zotero sections of this tutorial as you read through them. The Exercises section of this tutorial essentially rehashes the same content, but is intended to review and consolidate the topics discussed.\nMoreover, while this tutorial can be completed with any code text editor, we highly recommend using RStudio because it is well-integrated with Zotero.\n\n\n\n\n\n\n\n\n\n\nTipSupport the LMU Open Science Center!\n\n\n\nLike this tutorial? Be sure to give the repository a star and follow us on GitHub!\n\n\n\n\n\n\n\n\n\n\n\nTipQuestions about this tutorial?\n\n\n\nIf you have questions for the author of this tutorial, please take a look at the About page.",
+    "crumbs": [
+      "Home",
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "index.html#tutorial-overview",
+    "href": "index.html#tutorial-overview",
+    "title": "Welcome to the Zotero Tutorial!",
+    "section": "",
+    "text": "This self-paced tutorial will introduce you to Zotero, a free citation management tool that can help you organize your research and create bibliographies with a specific focus on integrating it with RStudio and Quarto. It is intended to take about 30-60 minutes to complete.\nThe tutorial is split into the following sections:\n\nGetting Started with Zotero\nIntegrating Zotero\nExercises\nAdvanced\n\n\n\n\n\n\n\nTipSoftware Requirements\n\n\n\nTo complete this tutorial, you will need to have the following software installed on your computer:\n\nZotero and Zotero Connector\nRStudio\nQuarto\n\nRStudio comes bundled with Quarto. You do not need to install Quarto separately if you have a recent version of RStudio.\n\n\n\n\n\n\n\n\n\n\nTipExercises\n\n\n\nWe recommend completing all of the steps outlined in the Background and Integrating Zotero sections of this tutorial as you read through them. The Exercises section of this tutorial essentially rehashes the same content, but is intended to review and consolidate the topics discussed.\nMoreover, while this tutorial can be completed with any code text editor, we highly recommend using RStudio because it is well-integrated with Zotero.\n\n\n\n\n\n\n\n\n\n\nTipSupport the LMU Open Science Center!\n\n\n\nLike this tutorial? Be sure to give the repository a star and follow us on GitHub!\n\n\n\n\n\n\n\n\n\n\n\nTipQuestions about this tutorial?\n\n\n\nIf you have questions for the author of this tutorial, please take a look at the About page.",
+    "crumbs": [
+      "Home",
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "advanced/index.html",
+    "href": "advanced/index.html",
+    "title": "Advanced Topics",
+    "section": "",
+    "text": "This section covers more advanced Zotero features for those who want to go beyond the basics and explore collaborative research workflows.\n\nZotero Groups covers how to create and manage shared group libraries for collaborative research, including group types (public, closed, private), member roles, and library permissions.\n\n\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Home",
+      "Advanced"
+    ]
+  },
+  {
+    "objectID": "advanced/zotero-plugins.html",
+    "href": "advanced/zotero-plugins.html",
+    "title": "Zotero Plugins",
+    "section": "",
+    "text": "Back to top"
   },
   {
     "objectID": "integrating-zotero/citations-in-quarto.html",
@@ -228,263 +381,219 @@
     ]
   },
   {
-    "objectID": "advanced/zotero-plugins.html",
-    "href": "advanced/zotero-plugins.html",
-    "title": "Zotero Plugins",
+    "objectID": "exercises/index.html",
+    "href": "exercises/index.html",
+    "title": "Exercises",
     "section": "",
-    "text": "Back to top"
+    "text": "This section provides hands-on exercises to practice and consolidate what you’ve learned in the Background and Integrating Zotero sections. Each exercise builds on the previous one.\n\nExercise 1: Basic Zotero Usage — create a Zotero folder, save references using different methods, and export them as BibTeX and Word bibliography files.\nExercise 2: Integrating with Quarto — create a new R Project and Quarto document, then insert a citation using RStudio’s Visual Editor.\nExercise 3: Changing CSL in Quarto — download a CSL file from the Zotero Style Repository, add it to your project, and apply it to change your document’s citation style.\n\n\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Home",
+      "Exercises"
+    ]
   },
   {
-    "objectID": "advanced/index.html",
-    "href": "advanced/index.html",
-    "title": "Advanced Topics",
+    "objectID": "exercises/change-csl.html",
+    "href": "exercises/change-csl.html",
+    "title": "Exercise 3: Changing CSL in Quarto",
     "section": "",
-    "text": "This section covers more advanced Zotero features for those who want to go beyond the basics and explore collaborative research workflows.\n\nZotero Groups covers how to create and manage shared group libraries for collaborative research, including group types (public, closed, private), member roles, and library permissions.\n\n\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Home",
-      "Advanced"
-    ]
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Welcome to the Zotero Tutorial!",
-    "section": "",
-    "text": "This self-paced tutorial will introduce you to Zotero, a free citation management tool that can help you organize your research and create bibliographies with a specific focus on integrating it with RStudio and Quarto. It is intended to take about 30-60 minutes to complete.\nThe tutorial is split into the following sections:\n\nGetting Started with Zotero\nIntegrating Zotero\nExercises\nAdvanced\n\n\n\n\n\n\n\nTipSoftware Requirements\n\n\n\nTo complete this tutorial, you will need to have the following software installed on your computer:\n\nZotero and Zotero Connector\nRStudio\nQuarto\n\nRStudio comes bundled with Quarto. You do not need to install Quarto separately if you have a recent version of RStudio.\n\n\n\n\n\n\n\n\n\n\nTipExercises\n\n\n\nWe recommend completing all of the steps outlined in the Background and Integrating Zotero sections of this tutorial as you read through them. The Exercises section of this tutorial essentially rehashes the same content, but is intended to review and consolidate the topics discussed.\nMoreover, while this tutorial can be completed with any code text editor, we highly recommend using RStudio because it is well-integrated with Zotero.\n\n\n\n\n\n\n\n\n\n\nTipSupport the LMU Open Science Center!\n\n\n\nLike this tutorial? Be sure to give the repository a star and follow us on GitHub!\n\n\n\n\n\n\n\n\n\n\n\nTipQuestions about this tutorial?\n\n\n\nIf you have questions for the author of this tutorial, please take a look at the About page.",
-    "crumbs": [
-      "Home",
-      "Overview"
-    ]
-  },
-  {
-    "objectID": "index.html#tutorial-overview",
-    "href": "index.html#tutorial-overview",
-    "title": "Welcome to the Zotero Tutorial!",
-    "section": "",
-    "text": "This self-paced tutorial will introduce you to Zotero, a free citation management tool that can help you organize your research and create bibliographies with a specific focus on integrating it with RStudio and Quarto. It is intended to take about 30-60 minutes to complete.\nThe tutorial is split into the following sections:\n\nGetting Started with Zotero\nIntegrating Zotero\nExercises\nAdvanced\n\n\n\n\n\n\n\nTipSoftware Requirements\n\n\n\nTo complete this tutorial, you will need to have the following software installed on your computer:\n\nZotero and Zotero Connector\nRStudio\nQuarto\n\nRStudio comes bundled with Quarto. You do not need to install Quarto separately if you have a recent version of RStudio.\n\n\n\n\n\n\n\n\n\n\nTipExercises\n\n\n\nWe recommend completing all of the steps outlined in the Background and Integrating Zotero sections of this tutorial as you read through them. The Exercises section of this tutorial essentially rehashes the same content, but is intended to review and consolidate the topics discussed.\nMoreover, while this tutorial can be completed with any code text editor, we highly recommend using RStudio because it is well-integrated with Zotero.\n\n\n\n\n\n\n\n\n\n\nTipSupport the LMU Open Science Center!\n\n\n\nLike this tutorial? Be sure to give the repository a star and follow us on GitHub!\n\n\n\n\n\n\n\n\n\n\n\nTipQuestions about this tutorial?\n\n\n\nIf you have questions for the author of this tutorial, please take a look at the About page.",
-    "crumbs": [
-      "Home",
-      "Overview"
-    ]
-  },
-  {
-    "objectID": "LICENSE-CODE.html",
-    "href": "LICENSE-CODE.html",
-    "title": "",
-    "section": "",
-    "text": "Code\n\n\n\n\n\n\nCreative Commons Zero v1.0 Universal\nCREATIVE COMMONS CORPORATION IS NOT A LAW FIRM AND DOES NOT PROVIDE LEGAL SERVICES. DISTRIBUTION OF THIS DOCUMENT DOES NOT CREATE AN ATTORNEY-CLIENT RELATIONSHIP. CREATIVE COMMONS PROVIDES THIS INFORMATION ON AN “AS-IS” BASIS. CREATIVE COMMONS MAKES NO WARRANTIES REGARDING THE USE OF THIS DOCUMENT OR THE INFORMATION OR WORKS PROVIDED HEREUNDER, AND DISCLAIMS LIABILITY FOR DAMAGES RESULTING FROM THE USE OF THIS DOCUMENT OR THE INFORMATION OR WORKS PROVIDED HEREUNDER.\n\nStatement of Purpose\nThe laws of most jurisdictions throughout the world automatically confer exclusive Copyright and Related Rights (defined below) upon the creator and subsequent owner(s) (each and all, an “owner”) of an original work of authorship and/or a database (each, a “Work”).\nCertain owners wish to permanently relinquish those rights to a Work for the purpose of contributing to a commons of creative, cultural and scientific works (“Commons”) that the public can reliably and without fear of later claims of infringement build upon, modify, incorporate in other works, reuse and redistribute as freely as possible in any form whatsoever and for any purposes, including without limitation commercial purposes. These owners may contribute to the Commons to promote the ideal of a free culture and the further production of creative, cultural and scientific works, or to gain reputation or greater distribution for their Work in part through the use and efforts of others.\nFor these and/or other purposes and motivations, and without any expectation of additional consideration or compensation, the person associating CC0 with a Work (the “Affirmer”), to the extent that he or she is an owner of Copyright and Related Rights in the Work, voluntarily elects to apply CC0 to the Work and publicly distribute the Work under its terms, with knowledge of his or her Copyright and Related Rights in the Work and the meaning and intended legal effect of CC0 on those rights.\n\nCopyright and Related Rights. A Work made available under CC0 may be protected by copyright and related or neighboring rights (“Copyright and Related Rights”). Copyright and Related Rights include, but are not limited to, the following:\n\nthe right to reproduce, adapt, distribute, perform, display, communicate, and translate a Work;\nmoral rights retained by the original author(s) and/or performer(s);\npublicity and privacy rights pertaining to a person’s image or likeness depicted in a Work;\nrights protecting against unfair competition in regards to a Work, subject to the limitations in paragraph 4(a), below;\nrights protecting the extraction, dissemination, use and reuse of data in a Work;\ndatabase rights (such as those arising under Directive 96/9/EC of the European Parliament and of the Council of 11 March 1996 on the legal protection of databases, and under any national implementation thereof, including any amended or successor version of such directive); and\nother similar, equivalent or corresponding rights throughout the world based on applicable law or treaty, and any national implementations thereof.\n\nWaiver. To the greatest extent permitted by, but not in contravention of, applicable law, Affirmer hereby overtly, fully, permanently, irrevocably and unconditionally waives, abandons, and surrenders all of Affirmer’s Copyright and Related Rights and associated claims and causes of action, whether now known or unknown (including existing as well as future claims and causes of action), in the Work (i) in all territories worldwide, (ii) for the maximum duration provided by applicable law or treaty (including future time extensions), (iii) in any current or future medium and for any number of copies, and (iv) for any purpose whatsoever, including without limitation commercial, advertising or promotional purposes (the “Waiver”). Affirmer makes the Waiver for the benefit of each member of the public at large and to the detriment of Affirmer’s heirs and successors, fully intending that such Waiver shall not be subject to revocation, rescission, cancellation, termination, or any other legal or equitable action to disrupt the quiet enjoyment of the Work by the public as contemplated by Affirmer’s express Statement of Purpose.\nPublic License Fallback. Should any part of the Waiver for any reason be judged legally invalid or ineffective under applicable law, then the Waiver shall be preserved to the maximum extent permitted taking into account Affirmer’s express Statement of Purpose. In addition, to the extent the Waiver is so judged Affirmer hereby grants to each affected person a royalty-free, non transferable, non sublicensable, non exclusive, irrevocable and unconditional license to exercise Affirmer’s Copyright and Related Rights in the Work (i) in all territories worldwide, (ii) for the maximum duration provided by applicable law or treaty (including future time extensions), (iii) in any current or future medium and for any number of copies, and (iv) for any purpose whatsoever, including without limitation commercial, advertising or promotional purposes (the “License”). The License shall be deemed effective as of the date CC0 was applied by Affirmer to the Work. Should any part of the License for any reason be judged legally invalid or ineffective under applicable law, such partial invalidity or ineffectiveness shall not invalidate the remainder of the License, and in such case Affirmer hereby affirms that he or she will not (i) exercise any of his or her remaining Copyright and Related Rights in the Work or (ii) assert any associated claims and causes of action with respect to the Work, in either case contrary to Affirmer’s express Statement of Purpose.\nLimitations and Disclaimers.\n\nNo trademark or patent rights held by Affirmer are waived, abandoned, surrendered, licensed or otherwise affected by this document.\nAffirmer offers the Work as-is and makes no representations or warranties of any kind concerning the Work, express, implied, statutory or otherwise, including without limitation warranties of title, merchantability, fitness for a particular purpose, non infringement, or the absence of latent or other defects, accuracy, or the present or absence of errors, whether or not discoverable, all to the greatest extent permissible under applicable law.\nAffirmer disclaims responsibility for clearing rights of other persons that may apply to the Work or any use thereof, including without limitation any person’s Copyright and Related Rights in the Work. Further, Affirmer disclaims responsibility for obtaining any necessary consents, permissions or other rights required for any use of the Work.\nAffirmer understands and acknowledges that Creative Commons is not a party to this document and has no duty or obligation with respect to this CC0 or use of the Work.\n\n\n\n\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "advanced/zotero-groups.html",
-    "href": "advanced/zotero-groups.html",
-    "title": "Zotero Groups",
-    "section": "",
-    "text": "Zotero Groups provide an excellent platform for collaborative research, enabling users to share, organize, and manage references and resources effectively. This tutorial combines best practices, step-by-step instructions, and general recommendations from various trusted resources to help you make the most of Zotero Groups.\n\n\nZotero Groups are designed to facilitate collaboration for:\n\nStudents working on group projects\nFaculty collaborating across institutions\nResearch teams sharing resources and references\nAny group requiring a centralized space for research materials\n\n\n\n\n\nThis great overview video from Georgia State University Library provides an introduction to Zotero Groups, including what they are, how to create them, how to add references to them, how to share them, and how to collaborate on them (Georgia State University Library 2019).",
-    "crumbs": [
-      "Home",
-      "Advanced",
-      "Zotero Groups"
-    ]
-  },
-  {
-    "objectID": "advanced/zotero-groups.html#collaborating-with-zotero-groups",
-    "href": "advanced/zotero-groups.html#collaborating-with-zotero-groups",
-    "title": "Zotero Groups",
-    "section": "",
-    "text": "Zotero Groups provide an excellent platform for collaborative research, enabling users to share, organize, and manage references and resources effectively. This tutorial combines best practices, step-by-step instructions, and general recommendations from various trusted resources to help you make the most of Zotero Groups.\n\n\nZotero Groups are designed to facilitate collaboration for:\n\nStudents working on group projects\nFaculty collaborating across institutions\nResearch teams sharing resources and references\nAny group requiring a centralized space for research materials\n\n\n\n\n\nThis great overview video from Georgia State University Library provides an introduction to Zotero Groups, including what they are, how to create them, how to add references to them, how to share them, and how to collaborate on them (Georgia State University Library 2019).",
-    "crumbs": [
-      "Home",
-      "Advanced",
-      "Zotero Groups"
-    ]
-  },
-  {
-    "objectID": "advanced/zotero-groups.html#zotero-group-features",
-    "href": "advanced/zotero-groups.html#zotero-group-features",
-    "title": "Zotero Groups",
-    "section": "Zotero Group Features",
-    "text": "Zotero Group Features\nBefore creating a group, it is important to reflect on which type of group you want, what the primary purpose of the group is and how you want others to interact within the sources shared within the group.\n\nGroup Types\nThe group type defines the characteristics of accessing the group and sharing materials and depends on the intended purpose of the group.\n\n\n\n\n\n\n\n\n\nGroup Type\nAccess\nFile Sharing\nBest For\n\n\n\n\nPublic, Open Membership\nAnyone can join and access\nNot allowed\nSharing resources publicly\n\n\nPublic, Closed Membership\nVisible to all, members by invite\nAllowed for members\nShowcasing work selectively\n\n\nPrivate Membership\nOnly invited members can access\nAllowed for members\nPrivate or sensitive projects\n\n\n\n\n\nMember Roles\nMembers within a Zotero group can be assigned one of three roles to determine how they interact with the shared materials:\n\nRegular Members: Can read and edit the library (based on permissions)\nAdministrators: Can manage group settings, invite members, and adjust permissions\nGroup Owners: Have full administrative rights, including the ability to delete the group or transfer ownership\n\n\n\nGroup Library settings\nImportant group parameters are the following:\n\nGroup Type: Private, Public/Closed, Public/Opened\nLibrary Reading: Control who can view items in the library\nLibrary Editing: Set permissions for adding, editing, and organizing items\nFile Editing: Enable or restrict file sharing among group members",
-    "crumbs": [
-      "Home",
-      "Advanced",
-      "Zotero Groups"
-    ]
-  },
-  {
-    "objectID": "advanced/zotero-groups.html#step-by-step-guide-for-creating-a-zotero-group",
-    "href": "advanced/zotero-groups.html#step-by-step-guide-for-creating-a-zotero-group",
-    "title": "Zotero Groups",
-    "section": "Step-by-Step Guide for creating a Zotero Group",
-    "text": "Step-by-Step Guide for creating a Zotero Group\n\nLogin to Zotero AccountCreate New GroupSet up the GroupAdjust Group SettingsAdjust Member SettingsAdjust Library Settings\n\n\n\n\n\nLogin to your Zotero account.\n\n\n\n\n\n\n\nIn the top menu, click on “Groups” and then on “Create a new group”\n\n\n\n\n\n\n\nChoose a name for your group and the group type (Public, Open Membership; Public, CLosed Membership; Private)\n\n\n\n\n\n\n\nCustomize settings for group description, discipline, group picture and urls\n\n\n\n\n\n\n\nCustomize group by inviting members, managing roles and transferring ownership of the group to rolers)\n\n\n\n\n\n\n\nCustomize group by visibility and editing and viewing permissions)\n\n\n\n\n\n\nInteracting with Groups in Zotero Application\nGroup libraries appear under \"Group Libraries\" in the Zotero desktop application. Similar to your other colllections, you can add, edit and organise your sources for your group directly within the desktop application. It is important to sync regularly to ensure updates are shared with all collaborating members.\n\n\nConsiderations for Zotero Groups\nZotero Groups are a great way to collaborate with others on a research project and to share sources. However, there are some considerations to keep in mind when using Zotero Groups:\n\nPrivacy: Zotero Groups are public by default, so be sure to set your group to private if you want to keep your references private.\nStorage: Zotero Groups have limited storage space, so be mindful of how many references you add to your group. This will really only be a concern if you wish to include PDF files with your references. You can use up to 300MB for free. If you need more space, you can upgrade to a paid plan which are available in 2GB, 6GB, and Unlimited sizes for $20, $60, and $120 per year, respectively.\nCollaboration: Zotero Groups allow for collaboration, but be sure to communicate with your collaborators about who can add, edit, and delete references.",
-    "crumbs": [
-      "Home",
-      "Advanced",
-      "Zotero Groups"
-    ]
-  },
-  {
-    "objectID": "integrating-zotero/index.html",
-    "href": "integrating-zotero/index.html",
-    "title": "Integrating Zotero",
-    "section": "",
-    "text": "This section covers how to use Zotero citations within the tools you write in: Quarto documents and Microsoft Word. Both chapters follow the same basic workflow of inserting citations and generating a bibliography, adapted to each environment.\n\nCitations in Quarto covers BibTeX and .bib files, citation keys, inserting citations via RStudio’s Visual Editor, automatic bibliography generation, and keeping your bibliography in sync with Zotero using the Better BibTeX plugin.\nCitations in Word demonstrates using the Zotero Word plugin to insert citations, add a bibliography, and change citation styles — all from within the Zotero tab in Microsoft Word.\n\n\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Home",
-      "Integrating Zotero"
-    ]
-  },
-  {
-    "objectID": "integrating-zotero/citations-in-word.html",
-    "href": "integrating-zotero/citations-in-word.html",
-    "title": "Citations in Word",
-    "section": "",
-    "text": "Zotero also provides a plugin for Microsoft Word that allows you to insert citations and bibliographies directly into your documents. The technical details of this depart from the procedure for inserting citations into a Quarto document, but still follows the same steps of 1) inserting a citation and 2) generating a bibliography.",
-    "crumbs": [
-      "Home",
-      "Integrating Zotero",
-      "Citations in Word"
-    ]
-  },
-  {
-    "objectID": "integrating-zotero/citations-in-word.html#inserting-citations",
-    "href": "integrating-zotero/citations-in-word.html#inserting-citations",
-    "title": "Citations in Word",
-    "section": "Inserting Citations",
-    "text": "Inserting Citations\nThe Zotero plugin for Word should have been automatically downloaded and installed when you installed Zotero. You can confirm this by checking for a Zotero tab in the toolbar of a new Word document. If the tab is not visible, you may need to restart Word or reinstall Zotero.\n\n1. New Project2. Add3. Choose CSL4. Search5. Results6. Cited\n\n\n\n\n\nIn a new Word document, the Zotero tab should be available if you have already downloaded Zotero–it automatically installs the Word plugin.\n\n\n\n\n\n\n\nUnder the Zotero tab, press the “Add/Edit Citation” button.\n\n\n\n\n\n\n\nIf this is the first citation you’re inserting into the document, you will be prompted to choose the citation style you’d like to use. This can be changed later if needed.\n\n\n\n\n\n\n\nYou can now search through your Zotero library for the content you need to cite. This searchbar pop-up will search through your whole library, but you can opt to look through a specific folder by pressing the Z drop-down button on the left.\n\n\n\n\n\n\n\nThe results of your search will appear in a drop-down menu below. You can search for and select multiple documents before inserting them. When you are done adding citations, press Enter.\n\n\n\n\n\n\n\nYour in-line citation should now be visible in your document. The next section will discuss how to include the bibliography.",
-    "crumbs": [
-      "Home",
-      "Integrating Zotero",
-      "Citations in Word"
-    ]
-  },
-  {
-    "objectID": "integrating-zotero/citations-in-word.html#adding-a-bibliography",
-    "href": "integrating-zotero/citations-in-word.html#adding-a-bibliography",
-    "title": "Citations in Word",
-    "section": "Adding a Bibliography",
-    "text": "Adding a Bibliography\nNote that adding citations and adding the bibliography are two separate steps. The bibliography can be added at any time after the first citation has been placed in the document. Simply press the “Add/Edit Bibliography” button. You may occassionally need to press the “Refresh” button to update the bibliography.\n\nInitial Add & New Citations\n\n1. Add Bibliography2. Results3. Add New Citations\n\n\n\n\n\nThe bibliography can be added at any time after the first citation has been placed in the document. Simply press the “Add/Edit Bibliography” button.\n\n\n\n\n\n\n\nAfter pressing the button, the bibliography should appear where you had your cursor placed.\n\n\n\n\n\n\n\nTo add new citations, simply repeat the procedure outlined previously. Some versions of Word and Zotero will automatically update the bibliography, but older versions may require you to press the Refresh button!\n\n\n\n\n\n\n\nChange Style\nIf, after inserting your first citation, you decide to use a different citation style, you can do so by pressing the “Document Preferences” button under the Zotero tab. This will allow you to change the citation style of the document. Note that this will change the style of all in-line citations and the bibliography.\n\n1. Doc Preferences2. Change CSL3. See Updates\n\n\n\n\n\nPress the Document Preferences button to make changes to the citation style of the document.\n\n\n\n\n\n\n\nSelect the new style you’d like to use. If needed, you can first download the style from the Zotero website, install it into Zotero, and then restart both Word and Zotero.\n\n\n\n\n\n\n\nNote that the style of the in-line citations and the bibliography have now been updated to reflect the new CSL file we’ve chosen.",
-    "crumbs": [
-      "Home",
-      "Integrating Zotero",
-      "Citations in Word"
-    ]
-  },
-  {
-    "objectID": "exercises/use-zotero.html",
-    "href": "exercises/use-zotero.html",
-    "title": "Exercise 1: Using Zotero",
-    "section": "",
-    "text": "This exercise is designed to help you get started with Zotero and RStudio. You will need to have Zotero installed on your computer. If you do not have Zotero installed, you can download it from here.\n\nCreate a new folder in Zotero.\n\nName the folder “Exercise 1”.\nAdd a tag to the folder called “Exercise 1”.\n\nSave references to 3-4 different sources in Zotero.\n\nTry to use the Zotero web connector for some of the sources, add 1 manually, and add one by copying/pasting a BibTex entry.\n\nExport the references from Zotero to a BibTex file. This can be done by right-clicking on the folder and selecting “Export Collection”.\nExport the references from Zotero as a Word document. This can be done by right-clicking on the folder and selecting “Create Bibliography from Collection”.\n\nWhen completed, you can delete the BibTex and Word files you’ve just created. They will not be needed in subsequent exercises.",
+    "text": "Open the Quarto document you created in the previous exercise.\nGo to the Zotero Style Repository and find a style you like. Download the CSL file for that style by clicking on the link, and pressing “Cancel” when asked to add the citation style to Zotero.\n\nThis will add the .csl file to your downloads folder rather than installing it directly into Zotero.\n\nAdd the downloaded CSL file to the same folder as your R Project.\nChange the citation style in the YAML front matter to the name of the downloaded CSL file.\n\nThe YAML for this should look something like csl: \"my-csl-file.csl\", and can be listed under the output key.\n\nRe-knit your Quarto document. What has changed in the output?",
     "crumbs": [
       "Home",
       "Exercises",
-      "Basic Zotero Usage"
+      "Changing CSL"
     ]
   },
   {
-    "objectID": "exercises/use-zotero.html#instructions",
-    "href": "exercises/use-zotero.html#instructions",
-    "title": "Exercise 1: Using Zotero",
+    "objectID": "exercises/change-csl.html#instructions",
+    "href": "exercises/change-csl.html#instructions",
+    "title": "Exercise 3: Changing CSL in Quarto",
     "section": "",
-    "text": "This exercise is designed to help you get started with Zotero and RStudio. You will need to have Zotero installed on your computer. If you do not have Zotero installed, you can download it from here.\n\nCreate a new folder in Zotero.\n\nName the folder “Exercise 1”.\nAdd a tag to the folder called “Exercise 1”.\n\nSave references to 3-4 different sources in Zotero.\n\nTry to use the Zotero web connector for some of the sources, add 1 manually, and add one by copying/pasting a BibTex entry.\n\nExport the references from Zotero to a BibTex file. This can be done by right-clicking on the folder and selecting “Export Collection”.\nExport the references from Zotero as a Word document. This can be done by right-clicking on the folder and selecting “Create Bibliography from Collection”.\n\nWhen completed, you can delete the BibTex and Word files you’ve just created. They will not be needed in subsequent exercises.",
+    "text": "Open the Quarto document you created in the previous exercise.\nGo to the Zotero Style Repository and find a style you like. Download the CSL file for that style by clicking on the link, and pressing “Cancel” when asked to add the citation style to Zotero.\n\nThis will add the .csl file to your downloads folder rather than installing it directly into Zotero.\n\nAdd the downloaded CSL file to the same folder as your R Project.\nChange the citation style in the YAML front matter to the name of the downloaded CSL file.\n\nThe YAML for this should look something like csl: \"my-csl-file.csl\", and can be listed under the output key.\n\nRe-knit your Quarto document. What has changed in the output?",
     "crumbs": [
       "Home",
       "Exercises",
-      "Basic Zotero Usage"
+      "Changing CSL"
     ]
   },
   {
-    "objectID": "exercises/quarto-citations.html",
-    "href": "exercises/quarto-citations.html",
-    "title": "Exercise 2: Integrating with Quarto",
+    "objectID": "background/index.html",
+    "href": "background/index.html",
+    "title": "Background",
     "section": "",
-    "text": "Create a new R Project in RStudio.\nCreate a new Quarto document in the R Project. This should be available as an option in the “New File” dropdown menu under “File”.\nMake sure you are using the “Visual Editor” mode in Quarto.\nInsert a citation into the body of your document by pressing the “Insert” button in the toolbar and scroll down to the “Citation” option.\nSelect “My Library” under the Zotero tab. Find the “Exercise 1” folder you created in the previous exercise and select a reference to insert.\nWhat has happened to your Quarto file? What has been added to the YAML front matter? What has been added to the body of the document?\n\nA references.bib file should have been added to your project, and referenced in the YAML front matter.\nA citation should have been added to the body of the document.",
+    "text": "The Background section covers the fundamentals of Zotero and citation management. These chapters will help you understand what Zotero is, how to use it for collecting and organizing references, and how citation styles work under the hood.",
     "crumbs": [
       "Home",
-      "Exercises",
-      "Integrating with Quarto"
+      "Background"
     ]
   },
   {
-    "objectID": "exercises/quarto-citations.html#instructions",
-    "href": "exercises/quarto-citations.html#instructions",
-    "title": "Exercise 2: Integrating with Quarto",
-    "section": "",
-    "text": "Create a new R Project in RStudio.\nCreate a new Quarto document in the R Project. This should be available as an option in the “New File” dropdown menu under “File”.\nMake sure you are using the “Visual Editor” mode in Quarto.\nInsert a citation into the body of your document by pressing the “Insert” button in the toolbar and scroll down to the “Citation” option.\nSelect “My Library” under the Zotero tab. Find the “Exercise 1” folder you created in the previous exercise and select a reference to insert.\nWhat has happened to your Quarto file? What has been added to the YAML front matter? What has been added to the body of the document?\n\nA references.bib file should have been added to your project, and referenced in the YAML front matter.\nA citation should have been added to the body of the document.",
+    "objectID": "background/index.html#background-at-a-glance",
+    "href": "background/index.html#background-at-a-glance",
+    "title": "Background",
+    "section": "Background at a Glance",
+    "text": "Background at a Glance\nGet a quick overview of the section in the presentation below, or open it in a new tab.\n\n\n\nZotero Basics introduces citation managers generally and Zotero specifically, covering its key features and how to download and install it.\nZotero Usage walks through the core workflows: creating libraries, adding references (via the Zotero Connector, manual entry, and BibTeX import), citing in documents, and generating bibliographies.\nCitation Style Language explains the CSL XML format that powers citation formatting, with examples of common styles like APA, MLA, Chicago, Harvard, and Vancouver, and how to install new styles in Zotero.",
     "crumbs": [
       "Home",
-      "Exercises",
-      "Integrating with Quarto"
+      "Background"
     ]
   },
   {
-    "objectID": "background/citation-style-language.html",
-    "href": "background/citation-style-language.html",
-    "title": "Citation Style Language (CSL)",
+    "objectID": "background/zotero-usage.html",
+    "href": "background/zotero-usage.html",
+    "title": "Using Zotero",
     "section": "",
-    "text": "As mentioned earlier in the tutorial, Citation Style Language (CSL) is an XML-based format for defining citation and bibliography styles. CSL files are used by citation management software like Zotero to format citations and bibliographies in a specific style. This section is particularly interesting if you want to modify or edit your own citation styles.\n\n\nA CSL file is an XML file that contains the information necessary to format citations and bibliographies in a specific style. The file is divided into several sections, including:\n\nMetadata: Information about the style, such as the title, author, and version.\nMacros: Definitions for common elements like names, dates, and titles.\nCitations: Rules for formatting in-text citations.\nBibliography: Rules for formatting the bibliography.\n\nIf you’re interested, the collapsed code below is an example of a CSL file that defines the style for formatting citations in Nature style. Understanding the code underlying a CSL file is not necessary to use Zotero CSL files, but it can be helpful if you want to modify or create your own styles.\n\n\n\n\n\n\nNoteXML file for Nature Citation Language Style\n\n\n\n\n\n&lt;?xml version=\"1.0\" encoding=\"utf-8\"?&gt;\n&lt;style xmlns=\"http://purl.org/net/xbiblio/csl\" class=\"in-text\" version=\"1.0\" demote-non-dropping-particle=\"sort-only\" default-locale=\"en-GB\"&gt;\n  &lt;info&gt;\n    &lt;title&gt;Nature&lt;/title&gt;\n    &lt;id&gt;http://www.zotero.org/styles/nature&lt;/id&gt;\n    &lt;link href=\"http://www.zotero.org/styles/nature\" rel=\"self\"/&gt;\n    &lt;link href=\"http://www.nature.com/nature/authors/gta/index.html#a5.4\" rel=\"documentation\"/&gt;\n    &lt;link href=\"http://www.nature.com/srep/publish/guidelines#references\" rel=\"documentation\"/&gt;\n    &lt;author&gt;\n      &lt;name&gt;Michael Berkowitz&lt;/name&gt;\n      &lt;email&gt;mberkowi@gmu.edu&lt;/email&gt;\n    &lt;/author&gt;\n    &lt;category citation-format=\"numeric\"/&gt;\n    &lt;category field=\"science\"/&gt;\n    &lt;category field=\"generic-base\"/&gt;\n    &lt;issn&gt;0028-0836&lt;/issn&gt;\n    &lt;eissn&gt;1476-4687&lt;/eissn&gt;\n    &lt;updated&gt;2024-01-22T03:08:05+00:00&lt;/updated&gt;\n    &lt;rights license=\"http://creativecommons.org/licenses/by-sa/3.0/\"&gt;This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License&lt;/rights&gt;\n  &lt;/info&gt;\n  &lt;macro name=\"title\"&gt;\n    &lt;choose&gt;\n      &lt;if type=\"bill book graphic legal_case legislation motion_picture report song\" match=\"any\"&gt;\n        &lt;text variable=\"title\" font-style=\"italic\" text-case=\"title\"/&gt;\n      &lt;/if&gt;\n      &lt;else&gt;\n        &lt;text variable=\"title\"/&gt;\n      &lt;/else&gt;\n    &lt;/choose&gt;\n  &lt;/macro&gt;\n  &lt;macro name=\"author\"&gt;\n    &lt;names variable=\"author\"&gt;\n      &lt;name sort-separator=\", \" delimiter=\", \" and=\"symbol\" initialize-with=\". \" delimiter-precedes-last=\"never\" name-as-sort-order=\"all\"/&gt;\n      &lt;label form=\"short\" prefix=\", \"/&gt;\n      &lt;et-al font-style=\"italic\"/&gt;\n    &lt;/names&gt;\n  &lt;/macro&gt;\n  &lt;macro name=\"access\"&gt;\n    &lt;choose&gt;\n      &lt;if variable=\"volume\" type=\"article dataset software\" match=\"any\"/&gt;\n      &lt;else-if variable=\"DOI\"&gt;\n        &lt;text variable=\"DOI\" prefix=\"doi:\"/&gt;\n      &lt;/else-if&gt;\n    &lt;/choose&gt;\n  &lt;/macro&gt;\n  &lt;macro name=\"access-data\"&gt;\n    &lt;choose&gt;\n      &lt;if type=\"dataset software\" match=\"any\"&gt;\n        &lt;text variable=\"DOI\" prefix=\"https://doi.org/\"/&gt;\n      &lt;/if&gt;\n    &lt;/choose&gt;\n  &lt;/macro&gt;\n  &lt;macro name=\"issuance\"&gt;\n    &lt;choose&gt;\n      &lt;if type=\"bill book graphic legal_case legislation motion_picture song thesis chapter paper-conference\" match=\"any\"&gt;\n        &lt;group delimiter=\"; \" suffix=\".\"&gt;\n          &lt;group delimiter=\", \" prefix=\"(\" suffix=\")\"&gt;\n            &lt;text variable=\"publisher\" form=\"long\"/&gt;\n            &lt;text variable=\"publisher-place\"/&gt;\n            &lt;date variable=\"issued\"&gt;\n              &lt;date-part name=\"year\"/&gt;\n            &lt;/date&gt;\n          &lt;/group&gt;\n        &lt;/group&gt;\n      &lt;/if&gt;\n      &lt;else-if type=\"article\"&gt;\n        &lt;group delimiter=\" \"&gt;\n          &lt;choose&gt;\n            &lt;if variable=\"genre\" match=\"any\"&gt;\n              &lt;text variable=\"genre\" text-case=\"capitalize-first\"/&gt;\n            &lt;/if&gt;\n            &lt;else&gt;\n              &lt;text term=\"article\" text-case=\"capitalize-first\"/&gt;\n            &lt;/else&gt;\n          &lt;/choose&gt;\n          &lt;text term=\"at\"/&gt;\n          &lt;choose&gt;\n            &lt;if variable=\"DOI\" match=\"any\"&gt;\n              &lt;text variable=\"DOI\" prefix=\"https://doi.org/\"/&gt;\n            &lt;/if&gt;\n            &lt;else&gt;\n              &lt;text variable=\"URL\"/&gt;\n            &lt;/else&gt;\n          &lt;/choose&gt;\n          &lt;date date-parts=\"year\" form=\"text\" variable=\"issued\" prefix=\"(\" suffix=\")\"/&gt;\n        &lt;/group&gt;\n      &lt;/else-if&gt;\n      &lt;else-if type=\"dataset software\" match=\"any\"&gt;\n        &lt;group delimiter=\" \"&gt;\n          &lt;text variable=\"publisher\"/&gt;\n          &lt;text macro=\"access-data\"/&gt;\n          &lt;date date-parts=\"year\" form=\"text\" variable=\"issued\" prefix=\"(\" suffix=\")\"/&gt;\n        &lt;/group&gt;\n      &lt;/else-if&gt;\n      &lt;else-if type=\"report webpage post post-weblog\" match=\"any\"&gt;\n        &lt;group delimiter=\" \"&gt;\n          &lt;text variable=\"URL\"/&gt;\n          &lt;date date-parts=\"year\" form=\"text\" variable=\"issued\" prefix=\"(\" suffix=\")\"/&gt;\n        &lt;/group&gt;\n      &lt;/else-if&gt;\n      &lt;else&gt;\n        &lt;date variable=\"issued\" prefix=\"(\" suffix=\")\"&gt;\n          &lt;date-part name=\"year\"/&gt;\n        &lt;/date&gt;\n      &lt;/else&gt;\n    &lt;/choose&gt;\n  &lt;/macro&gt;\n  &lt;macro name=\"container-title\"&gt;\n    &lt;choose&gt;\n      &lt;if type=\"article-journal\"&gt;\n        &lt;text variable=\"container-title\" font-style=\"italic\" form=\"short\"/&gt;\n      &lt;/if&gt;\n      &lt;else&gt;\n        &lt;text variable=\"container-title\" font-style=\"italic\"/&gt;\n      &lt;/else&gt;\n    &lt;/choose&gt;\n  &lt;/macro&gt;\n  &lt;macro name=\"editor\"&gt;\n    &lt;choose&gt;\n      &lt;if type=\"chapter paper-conference\" match=\"any\"&gt;\n        &lt;names variable=\"editor\" prefix=\"(\" suffix=\")\"&gt;\n          &lt;label form=\"short\" suffix=\" \"/&gt;\n          &lt;name and=\"symbol\" delimiter-precedes-last=\"never\" initialize-with=\". \" name-as-sort-order=\"all\"/&gt;\n        &lt;/names&gt;\n      &lt;/if&gt;\n    &lt;/choose&gt;\n  &lt;/macro&gt;\n  &lt;macro name=\"volume\"&gt;\n    &lt;choose&gt;\n      &lt;if type=\"article-journal\" match=\"any\"&gt;\n        &lt;text variable=\"volume\" font-weight=\"bold\" suffix=\",\"/&gt;\n      &lt;/if&gt;\n      &lt;else&gt;\n        &lt;group delimiter=\" \"&gt;\n          &lt;label variable=\"volume\" form=\"short\"/&gt;\n          &lt;text variable=\"volume\"/&gt;\n        &lt;/group&gt;\n      &lt;/else&gt;\n    &lt;/choose&gt;\n  &lt;/macro&gt;\n  &lt;citation collapse=\"citation-number\"&gt;\n    &lt;sort&gt;\n      &lt;key variable=\"citation-number\"/&gt;\n    &lt;/sort&gt;\n    &lt;layout vertical-align=\"sup\" delimiter=\",\"&gt;\n      &lt;text variable=\"citation-number\"/&gt;\n    &lt;/layout&gt;\n  &lt;/citation&gt;\n  &lt;bibliography et-al-min=\"6\" et-al-use-first=\"1\" second-field-align=\"flush\" entry-spacing=\"0\" line-spacing=\"2\"&gt;\n    &lt;layout suffix=\".\"&gt;\n      &lt;text variable=\"citation-number\" suffix=\".\"/&gt;\n      &lt;group delimiter=\" \"&gt;\n        &lt;text macro=\"author\" suffix=\".\"/&gt;\n        &lt;text macro=\"title\" suffix=\".\"/&gt;\n        &lt;choose&gt;\n          &lt;if type=\"chapter paper-conference\" match=\"any\"&gt;\n            &lt;text term=\"in\"/&gt;\n          &lt;/if&gt;\n        &lt;/choose&gt;\n        &lt;text macro=\"container-title\"/&gt;\n        &lt;text macro=\"editor\"/&gt;\n        &lt;text macro=\"volume\"/&gt;\n        &lt;text variable=\"page\"/&gt;\n        &lt;text macro=\"issuance\"/&gt;\n        &lt;text macro=\"access\"/&gt;\n      &lt;/group&gt;\n    &lt;/layout&gt;\n  &lt;/bibliography&gt;\n&lt;/style&gt;\n\n\n\n\n\n\nTo demonstrate differences in citation styles, the citation for the same article is shown in several different styles below. The article is “Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson’s Irises” by Allison M. Horst, Alison Presmanes Hill, and Kristen B. Gorman, published in the R Journal in 2022.\nNote that if you use Google Scholar to find article citations, you will see that the 5 examples included below are the default citation styles used by Google Scholar.\n\n\n\n\n\n\n\nStyle Name\nCitation\n\n\n\n\nMLA\nHorst, Allison M., Alison Presmanes Hill, and Kristen B. Gorman. “Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson’s Irises.” R Journal 14.1 (2022).\n\n\nAPA\nHorst, A. M., Hill, A. P., & Gorman, K. B. (2022). Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson’s Irises. R Journal, 14(1).\n\n\nChicago\nHorst, Allison M., Alison Presmanes Hill, and Kristen B. Gorman. “Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson’s Irises.” R Journal 14, no. 1 (2022).\n\n\nHarvard\nHorst, A.M., Hill, A.P. and Gorman, K.B., 2022. Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson’s Irises. R Journal, 14(1).\n\n\nVancouver\nHorst AM, Hill AP, Gorman KB. Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson’s Irises. R Journal. 2022 Mar 1;14(1).",
+    "text": "This page will cover the basics of using Zotero, and is structured around the three main tasks you will need to do when using Zotero:",
     "crumbs": [
       "Home",
       "Background",
-      "Citation Style Language"
+      "Zotero Usage"
     ]
   },
   {
-    "objectID": "background/citation-style-language.html#overview",
-    "href": "background/citation-style-language.html#overview",
-    "title": "Citation Style Language (CSL)",
-    "section": "",
-    "text": "As mentioned earlier in the tutorial, Citation Style Language (CSL) is an XML-based format for defining citation and bibliography styles. CSL files are used by citation management software like Zotero to format citations and bibliographies in a specific style. This section is particularly interesting if you want to modify or edit your own citation styles.\n\n\nA CSL file is an XML file that contains the information necessary to format citations and bibliographies in a specific style. The file is divided into several sections, including:\n\nMetadata: Information about the style, such as the title, author, and version.\nMacros: Definitions for common elements like names, dates, and titles.\nCitations: Rules for formatting in-text citations.\nBibliography: Rules for formatting the bibliography.\n\nIf you’re interested, the collapsed code below is an example of a CSL file that defines the style for formatting citations in Nature style. Understanding the code underlying a CSL file is not necessary to use Zotero CSL files, but it can be helpful if you want to modify or create your own styles.\n\n\n\n\n\n\nNoteXML file for Nature Citation Language Style\n\n\n\n\n\n&lt;?xml version=\"1.0\" encoding=\"utf-8\"?&gt;\n&lt;style xmlns=\"http://purl.org/net/xbiblio/csl\" class=\"in-text\" version=\"1.0\" demote-non-dropping-particle=\"sort-only\" default-locale=\"en-GB\"&gt;\n  &lt;info&gt;\n    &lt;title&gt;Nature&lt;/title&gt;\n    &lt;id&gt;http://www.zotero.org/styles/nature&lt;/id&gt;\n    &lt;link href=\"http://www.zotero.org/styles/nature\" rel=\"self\"/&gt;\n    &lt;link href=\"http://www.nature.com/nature/authors/gta/index.html#a5.4\" rel=\"documentation\"/&gt;\n    &lt;link href=\"http://www.nature.com/srep/publish/guidelines#references\" rel=\"documentation\"/&gt;\n    &lt;author&gt;\n      &lt;name&gt;Michael Berkowitz&lt;/name&gt;\n      &lt;email&gt;mberkowi@gmu.edu&lt;/email&gt;\n    &lt;/author&gt;\n    &lt;category citation-format=\"numeric\"/&gt;\n    &lt;category field=\"science\"/&gt;\n    &lt;category field=\"generic-base\"/&gt;\n    &lt;issn&gt;0028-0836&lt;/issn&gt;\n    &lt;eissn&gt;1476-4687&lt;/eissn&gt;\n    &lt;updated&gt;2024-01-22T03:08:05+00:00&lt;/updated&gt;\n    &lt;rights license=\"http://creativecommons.org/licenses/by-sa/3.0/\"&gt;This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License&lt;/rights&gt;\n  &lt;/info&gt;\n  &lt;macro name=\"title\"&gt;\n    &lt;choose&gt;\n      &lt;if type=\"bill book graphic legal_case legislation motion_picture report song\" match=\"any\"&gt;\n        &lt;text variable=\"title\" font-style=\"italic\" text-case=\"title\"/&gt;\n      &lt;/if&gt;\n      &lt;else&gt;\n        &lt;text variable=\"title\"/&gt;\n      &lt;/else&gt;\n    &lt;/choose&gt;\n  &lt;/macro&gt;\n  &lt;macro name=\"author\"&gt;\n    &lt;names variable=\"author\"&gt;\n      &lt;name sort-separator=\", \" delimiter=\", \" and=\"symbol\" initialize-with=\". \" delimiter-precedes-last=\"never\" name-as-sort-order=\"all\"/&gt;\n      &lt;label form=\"short\" prefix=\", \"/&gt;\n      &lt;et-al font-style=\"italic\"/&gt;\n    &lt;/names&gt;\n  &lt;/macro&gt;\n  &lt;macro name=\"access\"&gt;\n    &lt;choose&gt;\n      &lt;if variable=\"volume\" type=\"article dataset software\" match=\"any\"/&gt;\n      &lt;else-if variable=\"DOI\"&gt;\n        &lt;text variable=\"DOI\" prefix=\"doi:\"/&gt;\n      &lt;/else-if&gt;\n    &lt;/choose&gt;\n  &lt;/macro&gt;\n  &lt;macro name=\"access-data\"&gt;\n    &lt;choose&gt;\n      &lt;if type=\"dataset software\" match=\"any\"&gt;\n        &lt;text variable=\"DOI\" prefix=\"https://doi.org/\"/&gt;\n      &lt;/if&gt;\n    &lt;/choose&gt;\n  &lt;/macro&gt;\n  &lt;macro name=\"issuance\"&gt;\n    &lt;choose&gt;\n      &lt;if type=\"bill book graphic legal_case legislation motion_picture song thesis chapter paper-conference\" match=\"any\"&gt;\n        &lt;group delimiter=\"; \" suffix=\".\"&gt;\n          &lt;group delimiter=\", \" prefix=\"(\" suffix=\")\"&gt;\n            &lt;text variable=\"publisher\" form=\"long\"/&gt;\n            &lt;text variable=\"publisher-place\"/&gt;\n            &lt;date variable=\"issued\"&gt;\n              &lt;date-part name=\"year\"/&gt;\n            &lt;/date&gt;\n          &lt;/group&gt;\n        &lt;/group&gt;\n      &lt;/if&gt;\n      &lt;else-if type=\"article\"&gt;\n        &lt;group delimiter=\" \"&gt;\n          &lt;choose&gt;\n            &lt;if variable=\"genre\" match=\"any\"&gt;\n              &lt;text variable=\"genre\" text-case=\"capitalize-first\"/&gt;\n            &lt;/if&gt;\n            &lt;else&gt;\n              &lt;text term=\"article\" text-case=\"capitalize-first\"/&gt;\n            &lt;/else&gt;\n          &lt;/choose&gt;\n          &lt;text term=\"at\"/&gt;\n          &lt;choose&gt;\n            &lt;if variable=\"DOI\" match=\"any\"&gt;\n              &lt;text variable=\"DOI\" prefix=\"https://doi.org/\"/&gt;\n            &lt;/if&gt;\n            &lt;else&gt;\n              &lt;text variable=\"URL\"/&gt;\n            &lt;/else&gt;\n          &lt;/choose&gt;\n          &lt;date date-parts=\"year\" form=\"text\" variable=\"issued\" prefix=\"(\" suffix=\")\"/&gt;\n        &lt;/group&gt;\n      &lt;/else-if&gt;\n      &lt;else-if type=\"dataset software\" match=\"any\"&gt;\n        &lt;group delimiter=\" \"&gt;\n          &lt;text variable=\"publisher\"/&gt;\n          &lt;text macro=\"access-data\"/&gt;\n          &lt;date date-parts=\"year\" form=\"text\" variable=\"issued\" prefix=\"(\" suffix=\")\"/&gt;\n        &lt;/group&gt;\n      &lt;/else-if&gt;\n      &lt;else-if type=\"report webpage post post-weblog\" match=\"any\"&gt;\n        &lt;group delimiter=\" \"&gt;\n          &lt;text variable=\"URL\"/&gt;\n          &lt;date date-parts=\"year\" form=\"text\" variable=\"issued\" prefix=\"(\" suffix=\")\"/&gt;\n        &lt;/group&gt;\n      &lt;/else-if&gt;\n      &lt;else&gt;\n        &lt;date variable=\"issued\" prefix=\"(\" suffix=\")\"&gt;\n          &lt;date-part name=\"year\"/&gt;\n        &lt;/date&gt;\n      &lt;/else&gt;\n    &lt;/choose&gt;\n  &lt;/macro&gt;\n  &lt;macro name=\"container-title\"&gt;\n    &lt;choose&gt;\n      &lt;if type=\"article-journal\"&gt;\n        &lt;text variable=\"container-title\" font-style=\"italic\" form=\"short\"/&gt;\n      &lt;/if&gt;\n      &lt;else&gt;\n        &lt;text variable=\"container-title\" font-style=\"italic\"/&gt;\n      &lt;/else&gt;\n    &lt;/choose&gt;\n  &lt;/macro&gt;\n  &lt;macro name=\"editor\"&gt;\n    &lt;choose&gt;\n      &lt;if type=\"chapter paper-conference\" match=\"any\"&gt;\n        &lt;names variable=\"editor\" prefix=\"(\" suffix=\")\"&gt;\n          &lt;label form=\"short\" suffix=\" \"/&gt;\n          &lt;name and=\"symbol\" delimiter-precedes-last=\"never\" initialize-with=\". \" name-as-sort-order=\"all\"/&gt;\n        &lt;/names&gt;\n      &lt;/if&gt;\n    &lt;/choose&gt;\n  &lt;/macro&gt;\n  &lt;macro name=\"volume\"&gt;\n    &lt;choose&gt;\n      &lt;if type=\"article-journal\" match=\"any\"&gt;\n        &lt;text variable=\"volume\" font-weight=\"bold\" suffix=\",\"/&gt;\n      &lt;/if&gt;\n      &lt;else&gt;\n        &lt;group delimiter=\" \"&gt;\n          &lt;label variable=\"volume\" form=\"short\"/&gt;\n          &lt;text variable=\"volume\"/&gt;\n        &lt;/group&gt;\n      &lt;/else&gt;\n    &lt;/choose&gt;\n  &lt;/macro&gt;\n  &lt;citation collapse=\"citation-number\"&gt;\n    &lt;sort&gt;\n      &lt;key variable=\"citation-number\"/&gt;\n    &lt;/sort&gt;\n    &lt;layout vertical-align=\"sup\" delimiter=\",\"&gt;\n      &lt;text variable=\"citation-number\"/&gt;\n    &lt;/layout&gt;\n  &lt;/citation&gt;\n  &lt;bibliography et-al-min=\"6\" et-al-use-first=\"1\" second-field-align=\"flush\" entry-spacing=\"0\" line-spacing=\"2\"&gt;\n    &lt;layout suffix=\".\"&gt;\n      &lt;text variable=\"citation-number\" suffix=\".\"/&gt;\n      &lt;group delimiter=\" \"&gt;\n        &lt;text macro=\"author\" suffix=\".\"/&gt;\n        &lt;text macro=\"title\" suffix=\".\"/&gt;\n        &lt;choose&gt;\n          &lt;if type=\"chapter paper-conference\" match=\"any\"&gt;\n            &lt;text term=\"in\"/&gt;\n          &lt;/if&gt;\n        &lt;/choose&gt;\n        &lt;text macro=\"container-title\"/&gt;\n        &lt;text macro=\"editor\"/&gt;\n        &lt;text macro=\"volume\"/&gt;\n        &lt;text variable=\"page\"/&gt;\n        &lt;text macro=\"issuance\"/&gt;\n        &lt;text macro=\"access\"/&gt;\n      &lt;/group&gt;\n    &lt;/layout&gt;\n  &lt;/bibliography&gt;\n&lt;/style&gt;\n\n\n\n\n\n\nTo demonstrate differences in citation styles, the citation for the same article is shown in several different styles below. The article is “Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson’s Irises” by Allison M. Horst, Alison Presmanes Hill, and Kristen B. Gorman, published in the R Journal in 2022.\nNote that if you use Google Scholar to find article citations, you will see that the 5 examples included below are the default citation styles used by Google Scholar.\n\n\n\n\n\n\n\nStyle Name\nCitation\n\n\n\n\nMLA\nHorst, Allison M., Alison Presmanes Hill, and Kristen B. Gorman. “Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson’s Irises.” R Journal 14.1 (2022).\n\n\nAPA\nHorst, A. M., Hill, A. P., & Gorman, K. B. (2022). Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson’s Irises. R Journal, 14(1).\n\n\nChicago\nHorst, Allison M., Alison Presmanes Hill, and Kristen B. Gorman. “Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson’s Irises.” R Journal 14, no. 1 (2022).\n\n\nHarvard\nHorst, A.M., Hill, A.P. and Gorman, K.B., 2022. Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson’s Irises. R Journal, 14(1).\n\n\nVancouver\nHorst AM, Hill AP, Gorman KB. Palmer Archipelago Penguins Data in the palmerpenguins R Package-An Alternative to Anderson’s Irises. R Journal. 2022 Mar 1;14(1).",
+    "objectID": "background/zotero-usage.html#creating-a-zotero-library",
+    "href": "background/zotero-usage.html#creating-a-zotero-library",
+    "title": "Using Zotero",
+    "section": "Creating a Zotero Library",
+    "text": "Creating a Zotero Library\nZotero’s library system functions similar to a file system on your computer. You can create folders to organize your references, and add tags to references to help you find them later. The images below show how to create a new folder in Zotero, and what a fresh folder looks like.\n\n1. General Library2. Creating a New Folder3. A Fresh Folder\n\n\n\n\n\nAll of your citations can be accessed in the overall My Library section.\n\n\n\n\n\n\n\nPress the folder button in the top left corner to create a new folder, and provide a relevant name.\n\n\n\n\n\n\n\nA new folder will be empty by default, and will now appear in the tab bar on the left size of the Zotero application.",
     "crumbs": [
       "Home",
       "Background",
-      "Citation Style Language"
+      "Zotero Usage"
     ]
   },
   {
-    "objectID": "background/citation-style-language.html#csl-and-zotero",
-    "href": "background/citation-style-language.html#csl-and-zotero",
-    "title": "Citation Style Language (CSL)",
-    "section": "CSL and Zotero",
-    "text": "CSL and Zotero\nThe main Zotero application comes pre-loaded with several popular citation styles like APA, Chicago, Nature, and Vancouver style. These formats are generally sufficient for most users and scenarios, but, in the event that you need a style that is not included, you can easily add more.\nZotero maintains a collection of over 8,000 additional citation styles on the Zotero Style Repository. There are two ways to add a new citation style to Zotero:\n\nFrom outside the Zotero application: The CSL files can be downloaded directly from the Zotero Style Repository. Once you have the file, you can add it to Zotero by dragging and dropping it into the Zotero application, or by attempting to open the file. This should open a prompt asking if you’d like to install the style.\nFrom within the Zotero application: The directions for this will vary based on your operating system. In general, you can find the option to add a new citation style in the preferences or settings menu where the other citation styles are listed. You may find a button that says “Get additional styles” or “Add style.” Clicking this button will open a window where you can search for and install new styles (this window, however, is essentially a browser window that opens the Zotero Style Repository).\n\nOnce you have added a new citation style, it will be available in the Zotero application for you to select when you generate a bibliography directly from Zotero. If you are using Zotero with a word processor, you may need to restart the word processor to see the new style. For text editors like RStudio, you will need to copy the CSL file to the appropriate project directory; this will be covered in detail in the Citations in Quarto chapter.",
+    "objectID": "background/zotero-usage.html#adding-references",
+    "href": "background/zotero-usage.html#adding-references",
+    "title": "Using Zotero",
+    "section": "Adding References",
+    "text": "Adding References\nWhile creating libraries/folders for your projects is highly recommended and useful, the more important step in using Zotero is adding references to your library. You can add references to Zotero in several ways:\n\nSave to Zotero with the Zotero Connector browser extension\nManual entry\nImport from online databases.\n\nWe will outline the first two methods here, as they are the most common ways to add references to Zotero.\n\nZotero Connector\nThe most common, fastest, and preferred way of entering references is by using the Zotero Connector browser extension.\nThe Zotero Connector allows you to save references directly from your browser to your Zotero library. The connector will, when possible, download a PDF of the article and attach it to the reference. If you save content from a webpage that does not have an available PDF download of the content, the Connector will take a snapshot of the webpage to preserve the information in case the page is later changed or removed.\n\n1. Locate Source2. Open Link3. Download4. Check Library\n\n\n\n\n\nIdentify the publication, book, website, or other source of information you wish to cite.\n\n\n\n\n\n\n\nOpen the website page. Try to find links to PubMed, the original publisher, or similar sites that have PDFs available. Zotero will automatically download these when available. Otherwise, it will attempt to screenshot the website itself.\n\n\n\n\n\n\n\nClick the Zotero Connector button in your browser to save the reference to your Zotero library. The button is generally in the top right corner of your browser. The appearance of this button can change depending on the type of object being cited.\n\n\n\n\n\n\n\nAfter saving the reference, check your Zotero library to ensure the reference was saved correctly.\n\n\n\n\n\n\n\nManual Entries\nThe Zotero Connector is not perfect, however, and you may occasionally need to “manually” enter a reference. To do this, click on the “New Item” button in Zotero, and select the type of reference you want to add. You can then enter the metadata for the reference manually. This is a more time-consuming process than using the Zotero Connector, but it is necessary if you cannot find the reference online (e.g. a book or a conference presentation).\nHowever, if you can find a BibTex or RIS file for the reference, you can import the reference into Zotero by dragging and dropping the file into the Zotero window, or by copying the BibTex content and then selecting File -&gt; Import from Clipboard in Zotero.\nThe example below will demonstrate how to manually import a BibTex entry. All you really need to know about BibTex is that it is a commonly-used, structured file format for bibliographic entries and bibliographies (BibTeX 2026).\n\n1. Locate Source2. Open Citation3. Copy BibTex4. Import to Zotero5. Check Library\n\n\n\n\n\nIdentify the object you want to cite. If you can find the publication on Google Scholar, for example, BibTex entries are readily available. Click on the “Cite” button in Google Scholar to access the BibTex entry.\n\n\n\n\n\n\n\nClick on the “BibTex” button in Google Scholar to access the BibTex entry.\n\n\n\n\n\n\n\nCopy the BibTex entry to your clipboard.\n\n\n\n\n\n\n\nIn Zotero, click on File -&gt; Import from Clipboard to import the BibTex entry.\n\n\n\n\n\n\n\nAfter importing the BibTex entry, check your Zotero library to ensure the reference was saved correctly. Note how much less information is included by importing BibTex, however. Compared to the Zotero Connector, we are, at minimum, missing a PDF copy of the document and the date on which we accessed the material.\n\n\n\n\n\nLess commonly, you may need to import references from other software. To do this, export the references from the software in a compatible format, and import them into Zotero. Zotero can import references from a variety of formats, including BibTex, RIS, and EndNote XML.\n\n\nImporting from Online Databases\nZotero can also import references directly from online databases using an identifier such as a DOI, ISBN, or PMID. To do this, click on the “Add Item by Identifier” button in Zotero, and enter the identifier for the reference you want to add. Zotero will then search for the reference online and add it to your library.\n\n1. Open the “Add Item by Identifier” Dialog2. Enter the Identifier3. Check Library\n\n\n\n\n\nPress the wand-like button that opens the import-by-id function\n\n\n\n\n\n\n\nEnter a valid identifier such as a DOI or PMID\n\n\n\n\n\n\n\nAfter importing the reference, check your Zotero library to ensure the reference was saved correctly.",
     "crumbs": [
       "Home",
       "Background",
-      "Citation Style Language"
+      "Zotero Usage"
     ]
   },
   {
-    "objectID": "background/best-practices.html",
-    "href": "background/best-practices.html",
-    "title": "Best Practices",
-    "section": "",
-    "text": "There are a number of different ways that can make your interaction with Zotero as smooth and effortless as possible. Below we collected a number of tips that can help you get started.",
+    "objectID": "background/zotero-usage.html#citing-references-with-zotero",
+    "href": "background/zotero-usage.html#citing-references-with-zotero",
+    "title": "Using Zotero",
+    "section": "Citing References with Zotero",
+    "text": "Citing References with Zotero\nThe main point of using Zotero, of course, is to cite references in your documents. Zotero makes this easy by providing plugins for popular word processors like Microsoft Word and LibreOffice. These word processor plugins should be installed automatically when you install Zotero.\nInserting citations and bibliographies into Quarto and Word documents are specifically covered in later chapters. However, we first describe how to manually generate bibliographies and provide some details on the BibTex format.\n\nGenerating Bibliographies\n\nText Formatted\nYou can generate a bibliography by right-clicking on the folder or publication of interest, and selecting the option to “Create Bibliography from Collection.” From there, you will be prompted to choose a citation style and an output method (i.e. copy to clipboard, save as file, etc.).\nThis option to quickly generate a bibliography is useful if you are using a text editor that does not have a Zotero plugin to paste the bibliography to, or if you simply need a one-and-done bibliography for a smaller project.\nFor more details, see the Zotero documentation on creating bibliographies.\n\n\nBibTex and .bib Files\nIf you are using a text editor that does not have a Zotero plugin, you can export a BibTex file directly from Zotero to generate a bibliography. However, you will generally not need to make or edit BibTex files if you are using a word processor with a Zotero plugin, as the plugin will automatically generate the bibliography for you.\nTo export a BibTex file from Zotero, right-click on the folder or publication of interest, and select the option to “Export Collection.” You can then choose the BibTex format from the drop-down menu, and save the .bib file to your computer. You can then include this BibTex file in your document to generate a bibliography.\n\n\n\n\n\n\nTipBibTex Tip\n\n\n\nFor citations in Quarto, it is important to know that Quarto documents should have a .bib file in the same directory as the .qmd file plus a reference to the .bib file in the YAML header. This will be discussed in the Citations in Quarto chapter.",
     "crumbs": [
       "Home",
-      "Best Practices"
+      "Background",
+      "Zotero Usage"
     ]
   },
   {
-    "objectID": "background/best-practices.html#organizing-your-library",
-    "href": "background/best-practices.html#organizing-your-library",
-    "title": "Best Practices",
-    "section": "Organizing your library",
-    "text": "Organizing your library\nCreate a temporary space or tag for unprocessed materials before adding them to the group library:\n\nIn the Zotero desktop app, create a new collection (right-click on your personal library and select “New Collection”).\nName this collection something like “Inbox” or “To Process.”\nWhen saving items to Zotero, apply a tag such as \"Unprocessed.\" You can do this directly when saving an item in your browser or later in the Zotero desktop app.\nFilter by this tag later to review and process these items.\nUse subcollections to remain organized",
+    "objectID": "background/zotero-usage.html#other-features",
+    "href": "background/zotero-usage.html#other-features",
+    "title": "Using Zotero",
+    "section": "Other Features",
+    "text": "Other Features\nThis page has covered the basics of using Zotero, but there are many other features that Zotero offers that you may find useful. Some of these topics will be covered in more detail in optional chapters at the end of this tutorial, but here are a few other features that you may find useful:\n\nOrganizing References\nYou can organize your references in Zotero by creating collections and tags. To create a collection, click on the “New Collection” button, and give the collection a name. To add references to this collection, simply drag and drop the references into the collection. To add tags to a reference, click on the “Tags” tab, and enter the tags you want to add. These tags are particularly convenient if you want to later search your library for references on a specific topic as defined by you.\n\n\nCollaborating with others\nYou can also collaborate with others by sharing your references with them, generally by creating a Zotero group, see the Zotero Groups chapter for details. The contents of these groups are shared with all members online, and you can set the group to be public or private.\nPublic groups are open to anyone, while private groups require an invitation to join. You can also create a group library, which is a shared library that all members can edit. This is useful if you are working on a project with others and want to share references with them.\n\n\nNotetaking\nZotero can function as a note-taking app. To add a note to a reference, click on the “Notes” tab, and enter the note you want to add. These notes can be useful if you want to record your thoughts on a reference, or if you want to summarize the key points of the reference.\n\nCollecting Quotes in Notes\nZotero also allows you to easily collect quotes from your references that automatically include a citation to the author, paper, and the publication year. This feature specifically works for PDFs that you have saved in your Zotero library. To use this feature, open the PDF of interest, copy the text you want to quote, and paste it into a note. Zotero will automatically include the citation information for the quote.",
     "crumbs": [
       "Home",
-      "Best Practices"
+      "Background",
+      "Zotero Usage"
     ]
   },
   {
-    "objectID": "background/best-practices.html#workflow",
-    "href": "background/best-practices.html#workflow",
-    "title": "Best Practices",
-    "section": "Workflow",
-    "text": "Workflow\nIn each collection, a separate standalone note explaining the purpose of the folder, the group workflow, tagging conventions, folder structure and definitions for “related” items. Always keep this note updated and communicate any changes in the workflow or tagging conventions to the other group members.\n\nCreate NoteDescribe WorkflowDescribe Tagging Conventions\n\n\n\n\n\nIn your group library, select “New Note” and then “Standalone Note” from the toolbar.\n\n\n\n\n\n\n\nWrite a clear description of the group workflow, including the purpose of the folder, folder usage, and definitions for “related” items.\n\n\n\n\n\n\n\nIn a separate note, list all the used tags and write a clear description of the tagging conventions. Avoid adding too many tags and regularly delete unused or redundant tags. Directly edit tags in the “Tags” tab on the right-hand pane in Zotero",
-    "crumbs": [
-      "Home",
-      "Best Practices"
-    ]
+    "objectID": "background/overview-slides.html#whats-in-this-deck",
+    "href": "background/overview-slides.html#whats-in-this-deck",
+    "title": "Background at a Glance",
+    "section": "What’s in this deck",
+    "text": "What’s in this deck\nA quick tour of the three chapters that make up the Background section of the Introduction to Zotero tutorial:\n\nZotero Basics — citations, citation managers, and why Zotero\nZotero Usage — creating a library, adding references, and citing\nCitation Style Language — how citation styles work under the hood\n\nNavigate with the arrow keys or the on-screen controls."
+  },
+  {
+    "objectID": "background/overview-slides.html#why-cite",
+    "href": "background/overview-slides.html#why-cite",
+    "title": "Background at a Glance",
+    "section": "Why cite?",
+    "text": "Why cite?\n\nA citation is a reference to a source used in your research.\nCitations give credit to the original author and let readers locate the source.\nIn-text citations (usually author and year) are paired with a bibliography or reference list of full details at the end of the work.\nCitation formatting varies by style: there are at least 8,000 styles in use."
+  },
+  {
+    "objectID": "background/overview-slides.html#citation-managers",
+    "href": "background/overview-slides.html#citation-managers",
+    "title": "Background at a Glance",
+    "section": "Citation managers",
+    "text": "Citation managers\nCitation managers are software that organize your research and automate citations and bibliographies. Typical features:\n\nOrganize references into folders or collections\nImport references from databases, websites, and PDFs\nGenerate citations and bibliographies in many styles\nIntegrate with word processors and editors\n\nPopular options include RefWorks, Mendeley, and EndNote (often paid). This tutorial focuses on a free alternative: Zotero."
+  },
+  {
+    "objectID": "background/overview-slides.html#why-zotero",
+    "href": "background/overview-slides.html#why-zotero",
+    "title": "Background at a Glance",
+    "section": "Why Zotero?",
+    "text": "Why Zotero?\n\nFree and open source, with the same core features as its competitors.\nFully transportable library: you can export and import your references freely, with no lock-in.\nAvailable as a desktop app (Windows, macOS, Linux), a browser connector (Firefox, Chrome, Safari, Edge), a web library (300 MB free storage), and an iOS app.\nExtras: group libraries for collaboration, an active plugin community, and integration with Word, LibreOffice, Google Docs, and RStudio."
+  },
+  {
+    "objectID": "background/overview-slides.html#getting-started",
+    "href": "background/overview-slides.html#getting-started",
+    "title": "Background at a Glance",
+    "section": "Getting started",
+    "text": "Getting started\nDownload the two core pieces from zotero.org/download:\n\nThe Zotero desktop application\nThe Zotero Connector browser extension\n\nThe Zotero website automatically detects your operating system and browser and shows the right downloads."
+  },
+  {
+    "objectID": "background/overview-slides.html#using-zotero-three-core-workflows",
+    "href": "background/overview-slides.html#using-zotero-three-core-workflows",
+    "title": "Background at a Glance",
+    "section": "Using Zotero: three core workflows",
+    "text": "Using Zotero: three core workflows\nThe Zotero Usage chapter is built around three tasks:\n\nCreate a library — organize references into collections (folders) and tag them.\nAdd references — bring items in from the web, by hand, or from files.\nCite in documents — insert citations and bibliographies into your writing.\n\nYour Zotero library works like a file system: collections keep things tidy, and tags make references easy to find later."
+  },
+  {
+    "objectID": "background/overview-slides.html#adding-references-to-your-library",
+    "href": "background/overview-slides.html#adding-references-to-your-library",
+    "title": "Background at a Glance",
+    "section": "Adding references to your library",
+    "text": "Adding references to your library\nFour main routes:\n\nZotero Connector (preferred): one-click save from your browser. When possible it downloads the PDF; otherwise it saves a snapshot of the page.\nManual entry: click “New Item”, choose a reference type, and type in the metadata.\nImport: drag-and-drop or clipboard import of BibTeX, RIS, or EndNote XML files.\nBy identifier: enter a DOI, ISBN, or PMID and Zotero fetches the reference."
+  },
+  {
+    "objectID": "background/overview-slides.html#citing-and-creating-bibliographies",
+    "href": "background/overview-slides.html#citing-and-creating-bibliographies",
+    "title": "Background at a Glance",
+    "section": "Citing and creating bibliographies",
+    "text": "Citing and creating bibliographies\n\nZotero installs plugins for word processors like Word and LibreOffice so you can insert citations directly.\n“Create Bibliography from Collection” generates a bibliography in any installed style and output format.\nFor editors without a plugin (like Quarto), export a BibTeX .bib file and reference it from your document.\n\nFull instructions for Word and Quarto appear in the Integrating Zotero section."
+  },
+  {
+    "objectID": "background/overview-slides.html#citation-style-language-csl",
+    "href": "background/overview-slides.html#citation-style-language-csl",
+    "title": "Background at a Glance",
+    "section": "Citation Style Language (CSL)",
+    "text": "Citation Style Language (CSL)\n\nCSL is an XML-based, open format for describing citation and bibliography styles.\nZotero uses CSL files to format references\nA CSL style file defines:\n\nmetadata — style title, author, version\ncitation rules — how in-text citations look\nbibliography rules — how the reference list looks\n\n\nYou don’t need to read XML to use CSL styles, only to create or modify your own."
+  },
+  {
+    "objectID": "background/overview-slides.html#one-article-many-styles",
+    "href": "background/overview-slides.html#one-article-many-styles",
+    "title": "Background at a Glance",
+    "section": "One article, many styles",
+    "text": "One article, many styles\nThe same source looks different depending on the style chosen (here, author names and dates):\n\nMLA: Horst, Allison M., Alison Presmanes Hill, and Kristen B. Gorman. … R Journal 14.1 (2022).\nAPA: Horst, A. M., Hill, A. P., & Gorman, K. B. (2022). … R Journal, 14(1).\nHarvard: Horst, A.M., Hill, A.P. and Gorman, K.B., 2022. … R Journal, 14(1).\nVancouver: Horst AM, Hill AP, Gorman KB. … R Journal. 2022 Mar 1;14(1)."
+  },
+  {
+    "objectID": "background/overview-slides.html#csl-styles-in-zotero",
+    "href": "background/overview-slides.html#csl-styles-in-zotero",
+    "title": "Background at a Glance",
+    "section": "CSL styles in Zotero",
+    "text": "CSL styles in Zotero\n\nZotero ships with popular styles pre-loaded: APA, Chicago, Nature, Vancouver, and more.\nThe Zotero Style Repository hosts over 8,000 free styles.\nAdd a style by dragging and dropping a downloaded .csl file onto Zotero, or via “Get additional styles” in Zotero’s settings.\nIn word processors you may need to restart the app; in RStudio or Quarto you copy the .csl file into your project."
+  },
+  {
+    "objectID": "background/overview-slides.html#worth-knowing",
+    "href": "background/overview-slides.html#worth-knowing",
+    "title": "Background at a Glance",
+    "section": "Worth knowing",
+    "text": "Worth knowing\nOther Zotero features you may use along the way:\n\nOrganizing: collections, subcollections, and tags.\nCollaboration: public or private group libraries.\nNotetaking: notes attached to references, plus quoting from PDFs with citations included automatically.\n\nFor tips on library organization and workflows, see the Best Practices chapter."
+  },
+  {
+    "objectID": "background/overview-slides.html#inserting-zotero-citations-in-quarto",
+    "href": "background/overview-slides.html#inserting-zotero-citations-in-quarto",
+    "title": "Background at a Glance",
+    "section": "Inserting Zotero Citations in Quarto",
+    "text": "Inserting Zotero Citations in Quarto\n\nRStudio, Quarto, and Zotero all play nicely together.\nYou can insert Zotero citations in Quarto documents using the @ syntax and a BibTeX .bib file exported from Zotero.\nInline citation and bibliography formatting is handled for you!"
+  },
+  {
+    "objectID": "background/overview-slides.html#where-to-go-next",
+    "href": "background/overview-slides.html#where-to-go-next",
+    "title": "Background at a Glance",
+    "section": "Where to go next",
+    "text": "Where to go next\n\nRead the chapters in depth: Zotero Basics, Zotero Usage, and Citation Style Language.\nHead to Integrating Zotero to cite in Quarto and Word.\nReinforce what you’ve learned in the Exercises section."
   },
   {
     "objectID": "about.html",
