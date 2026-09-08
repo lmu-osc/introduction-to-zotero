@@ -73,8 +73,6 @@ website:
 # Begin Includes
 include-in-header:
   - file: matomo-analytics.html
-include-after-body:
-  - file: footer/footer.html
 # End Includes
 
 # Begin Format
@@ -84,6 +82,8 @@ format:
   tutorial-template-html+tutorial:
     css:
       - footer/footer-style.css
+    include-after-body:
+      - file: footer/footer.html
 # End Format
 
 # Begin Editor

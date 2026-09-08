@@ -4,6 +4,12 @@ title: "Background"
 
 The Background section covers the fundamentals of Zotero and citation management. These chapters will help you understand what Zotero is, how to use it for collecting and organizing references, and how citation styles work under the hood.
 
+## Background at a Glance
+
+Get a quick overview of the section in the presentation below, or [open it in a new tab](overview-slides.html).
+
+<iframe src="overview-slides.html" title="Background section overview slides" width="100%" height="560" style="border: 1px solid var(--bs-secondary-border-subtle, #e6e6e7); border-radius: 8px;" loading="lazy" allowfullscreen></iframe>
+
 - **[Zotero Basics](zotero-basics.qmd)** introduces citation managers generally and Zotero specifically, covering its key features and how to download and install it.
 - **[Zotero Usage](zotero-usage.qmd)** walks through the core workflows: creating libraries, adding references (via the Zotero Connector, manual entry, and BibTeX import), citing in documents, and generating bibliographies.
 - **[Citation Style Language](citation-style-language.qmd)** explains the CSL XML format that powers citation formatting, with examples of common styles like APA, MLA, Chicago, Harvard, and Vancouver, and how to install new styles in Zotero.

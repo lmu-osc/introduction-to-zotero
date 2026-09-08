@@ -1,0 +1,129 @@
+---
+title: "Background at a Glance"
+subtitle: "A quick overview of citations, citation managers, Zotero, and citation styles"
+format:
+  revealjs:
+    theme: white
+    slide-number: true
+    css: overview-slides.css
+---
+
+## What's in this deck
+
+A quick tour of the three chapters that make up the Background section of the *Introduction to Zotero* tutorial:
+
+1. [Zotero Basics](zotero-basics.qmd) — citations, citation managers, and why Zotero
+2. [Zotero Usage](zotero-usage.qmd) — creating a library, adding references, and citing
+3. [Citation Style Language](citation-style-language.qmd) — how citation styles work under the hood
+
+Navigate with the arrow keys or the on-screen controls.
+
+## Why cite?
+
+- A **citation** is a reference to a source used in your research.
+- Citations **give credit** to the original author and let readers **locate the source**.
+- In-text citations (usually author and year) are paired with a **bibliography** or reference list of full details at the end of the work.
+- Citation formatting varies by style: there are at least **8,000 styles** in use.
+
+## Citation managers
+
+Citation managers are software that organize your research and automate citations and bibliographies. Typical features:
+
+- Organize references into folders or collections
+- Import references from databases, websites, and PDFs
+- Generate citations and bibliographies in many styles
+- Integrate with word processors and editors
+
+Popular options include RefWorks, Mendeley, and EndNote (often paid). This tutorial focuses on a free alternative: **Zotero**.
+
+## Why Zotero?
+
+- **Free and open source**, with the same core features as its competitors.
+- **Fully transportable library**: you can export and import your references freely, with no lock-in.
+- Available as a **desktop app** (Windows, macOS, Linux), a **browser connector** (Firefox, Chrome, Safari, Edge), a **web library** (300 MB free storage), and an iOS app.
+- Extras: group libraries for collaboration, an active plugin community, and integration with Word, LibreOffice, Google Docs, and RStudio.
+
+## Getting started
+
+Download the two core pieces from [zotero.org/download](https://www.zotero.org/download/):
+
+1. The **Zotero desktop application**
+2. The **Zotero Connector** browser extension
+
+The Zotero website automatically detects your operating system and browser and shows the right downloads.
+
+## Using Zotero: three core workflows
+
+The [Zotero Usage](zotero-usage.qmd) chapter is built around three tasks:
+
+1. **Create a library** — organize references into collections (folders) and tag them.
+2. **Add references** — bring items in from the web, by hand, or from files.
+3. **Cite in documents** — insert citations and bibliographies into your writing.
+
+Your Zotero library works like a file system: collections keep things tidy, and tags make references easy to find later.
+
+## Adding references to your library
+
+Four main routes:
+
+- **Zotero Connector (preferred)**: one-click save from your browser. When possible it downloads the PDF; otherwise it saves a snapshot of the page.
+- **Manual entry**: click "New Item", choose a reference type, and type in the metadata.
+- **Import**: drag-and-drop or clipboard import of **BibTeX**, **RIS**, or **EndNote XML** files.
+- **By identifier**: enter a **DOI, ISBN, or PMID** and Zotero fetches the reference.
+
+## Citing and creating bibliographies
+
+- Zotero installs plugins for word processors like **Word and LibreOffice** so you can insert citations directly.
+- "Create Bibliography from Collection" generates a bibliography in any installed style and output format.
+- For editors without a plugin (like Quarto), export a **BibTeX `.bib` file** and reference it from your document.
+
+Full instructions for Word and Quarto appear in the *Integrating Zotero* section.
+
+## Citation Style Language (CSL)
+
+- **CSL** is an XML-based, open format for describing citation and bibliography styles.
+- Zotero uses CSL files to format references
+- A CSL style file defines:
+  - **metadata** — style title, author, version
+  - **citation rules** — how in-text citations look
+  - **bibliography rules** — how the reference list looks
+
+You don't need to read XML to *use* CSL styles, only to create or modify your own.
+
+## One article, many styles
+
+The same source looks different depending on the style chosen (here, author names and dates):
+
+- **MLA**: Horst, Allison M., Alison Presmanes Hill, and Kristen B. Gorman. ... R Journal 14.1 (2022).
+- **APA**: Horst, A. M., Hill, A. P., & Gorman, K. B. (2022). ... R Journal, 14(1).
+- **Harvard**: Horst, A.M., Hill, A.P. and Gorman, K.B., 2022. ... R Journal, 14(1).
+- **Vancouver**: Horst AM, Hill AP, Gorman KB. ... R Journal. 2022 Mar 1;14(1).
+
+## CSL styles in Zotero
+
+- Zotero ships with popular styles pre-loaded: **APA, Chicago, Nature, Vancouver**, and more.
+- The [Zotero Style Repository](https://www.zotero.org/styles) hosts **over 8,000 free styles**.
+- Add a style by dragging and dropping a downloaded `.csl` file onto Zotero, or via "Get additional styles" in Zotero's settings.
+- In word processors you may need to restart the app; in RStudio or Quarto you copy the `.csl` file into your project.
+
+## Worth knowing
+
+Other Zotero features you may use along the way:
+
+- **Organizing**: collections, subcollections, and tags.
+- **Collaboration**: public or private group libraries.
+- **Notetaking**: notes attached to references, plus quoting from PDFs with citations included automatically.
+
+For tips on library organization and workflows, see the [Best Practices](best-practices.qmd) chapter.
+
+## Inserting Zotero Citations in Quarto
+
+- RStudio, Quarto, and Zotero all play nicely together. 
+- You can insert Zotero citations in Quarto documents using the `@` syntax and a BibTeX `.bib` file exported from Zotero.
+- Inline citation and bibliography formatting is handled for you!
+
+## Where to go next
+
+- Read the chapters in depth: [Zotero Basics](zotero-basics.qmd), [Zotero Usage](zotero-usage.qmd), and [Citation Style Language](citation-style-language.qmd).
+- Head to **Integrating Zotero** to cite in Quarto and Word.
+- Reinforce what you've learned in the **Exercises** section.
