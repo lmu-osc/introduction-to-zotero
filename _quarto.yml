@@ -8,6 +8,12 @@ project:
 repo-url: https://github.com/lmu-osc/introduction-to-zotero
 website:
   title: "Introduction to Zotero"
+  announcement:
+    content: "**[Zotero 10](https://www.zotero.org/blog/zotero-10/) has just arrived!** It brings a redesigned advanced search, a new Reading Mode for PDFs, batch editing, and much more."
+    dismissable: true
+    icon: info-circle
+    type: warning
+    position: below-navbar
   page-footer:
     border: false
     center: © 2024 Pat Callahan, Dejana Damjanovic. Published by LMU Open Science Center. Licensed under CC BY-SA 4.0.
