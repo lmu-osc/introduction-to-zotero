@@ -7,7 +7,7 @@ citation:
   container-title: "LMU Open Science Center"
   url: https://lmu-osc.github.io/introduction-to-zotero
   doi: "10.5281/zenodo.14243118"
-  version: 0.3.0
+  version: 0.3.1
 author:
   - name: Pat Callahan
     roles: [conceptualization, data curation, formal analysis, funding acquisition, investigation, methodology, project administration, software, resources, supervision, validation, visualization, writing - original draft, writing - editing & review]
