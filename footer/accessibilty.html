@@ -26,6 +26,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -48,9 +83,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-3c3f1368ed8db972a012dae01a8e5220.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-5bbef05c637e0139e2f347a6a332a695.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-1dccc60458a8c6d99a7043fdfc815c12.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-5bbef05c637e0139e2f347a6a332a695.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-15209287336beec7429ab397f8192adc.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-0fd66a72018a63d913d6e27d7a0bd232.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-15209287336beec7429ab397f8192adc.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -77,6 +112,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 <!-- Matomo -->
 <script>
 if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
@@ -97,6 +133,8 @@ if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
 <!-- End Matomo Code -->
 
 
+<link rel="stylesheet" href="../site_libs/quarto-contrib/quarto-project/lmu-osc/tutorial-template/assets/bootstrap-grid.min.css">
+<link rel="stylesheet" href="../footer/footer-style.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -468,19 +506,44 @@ if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+   
+  <ul>
+  <li><a href="#status-of-compliance" id="toc-status-of-compliance" class="nav-link active" data-scroll-target="#status-of-compliance">Status of Compliance</a>
+  <ul class="collapse">
+  <li><a href="#legal-name" id="toc-legal-name" class="nav-link" data-scroll-target="#legal-name">Legal Name</a></li>
+  <li><a href="#websites" id="toc-websites" class="nav-link" data-scroll-target="#websites">Website(s):</a></li>
+  </ul></li>
+  <li><a href="#known-accessibility-issues" id="toc-known-accessibility-issues" class="nav-link" data-scroll-target="#known-accessibility-issues">Known Accessibility Issues</a>
+  <ul class="collapse">
+  <li><a href="#content-not-accessible-to-people-with-disabilities" id="toc-content-not-accessible-to-people-with-disabilities" class="nav-link" data-scroll-target="#content-not-accessible-to-people-with-disabilities">Content Not Accessible to People With Disabilities</a></li>
+  </ul></li>
+  <li><a href="#explanation" id="toc-explanation" class="nav-link" data-scroll-target="#explanation">Explanation</a></li>
+  <li><a href="#feedback-mechanism" id="toc-feedback-mechanism" class="nav-link" data-scroll-target="#feedback-mechanism">Feedback Mechanism</a>
+  <ul class="collapse">
+  <li><a href="#contact-information" id="toc-contact-information" class="nav-link" data-scroll-target="#contact-information">Contact Information</a></li>
+  </ul></li>
+  <li><a href="#enforcement-procedure" id="toc-enforcement-procedure" class="nav-link" data-scroll-target="#enforcement-procedure">Enforcement Procedure</a>
+  <ul class="collapse">
+  <li><a href="#contact-information-of-the-agency-responsible-for-the-enforcement-procedure" id="toc-contact-information-of-the-agency-responsible-for-the-enforcement-procedure" class="nav-link" data-scroll-target="#contact-information-of-the-agency-responsible-for-the-enforcement-procedure">Contact information of the agency responsible for the enforcement procedure</a></li>
+  <li><a href="#other-help-services" id="toc-other-help-services" class="nav-link" data-scroll-target="#other-help-services">Other Help Services</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/lmu-osc/introduction-to-zotero/edit/main/footer/accessibilty.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/introduction-to-zotero/blob/main/footer/accessibilty.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/lmu-osc/introduction-to-zotero/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
 <!-- main -->
-<main class="content column-page-right" id="quarto-document-content">
+<main class="content column-body" id="quarto-document-content">
 
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Accessibility</h1>
+<div class="quarto-title-block"><div><h1 class="title">Accessibility</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
 </div>
 
 
 
-<div class="quarto-title-meta column-page-right">
+<div class="quarto-title-meta column-body">
 
     
   
@@ -492,74 +555,25 @@ if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
 </header>
 
 
-<style>
-  /* css styles */
-:root {
-    --primary-color: #00883A;
-    --primary-light: rgba(43, 134, 75, 0.1);
-    --text-dark: #333333;
-    --text-light: #ffffff;
-    --osc-white: #ffffff;
-    --text-light: #5f5f5f;
-    --lmu-black: #232323;
-  }
-  
-#quarto-content.page-columns main.column-page{
-    margin:0 auto;
-    max-width: 1200px;
-    padding: 5rem;
-    width:100%;
-    background-color: #f9fcf9;
-}
-
-
-.accessibility-container h4{
-    font-size: 1.1rem;
-    line-height: 1.5;
-    font-weight: 600; 
-    color:var(--primary-color);
-}
-.accessibility-container h5{
-    font-size: 1rem;
-    line-height: 1.5;
-    font-weight: 600; 
-    color:var(--text-light);
-}
-
-.accessibility-container p,
-.accessibility-container li{
-    text-align: justify;
-    font-size: 1rem;
-    line-height: 1.85;
-    font-weight:400;
-    color: var(--text-light);
-}
-
-.accessibility-container a{
-    color:var(--primary-color);
-}
-
-</style>
-<div class="accessibility-container">
 <p>The Ludwig-Maximilians-Universität München strives to make its offers accessible in accordance with § 9 Act on Digitalisation in the Free State of Bavaria (Bayerisches Digitalgesetz – BayDig).</p>
 <p>This Accessibility Statement applies to applications available at <a href="https://www.lmu.de/de/index.html">https://www.lmu.de/de/index.html</a>, <a href="https://www.lmu.de/de/index.html">https://www.lmu.de/de/index.html</a> and all subdomain pages.</p>
-<section id="status-of-compliance" class="level4">
-<h4 class="anchored" data-anchor-id="status-of-compliance">Status of Compliance</h4>
+<section id="status-of-compliance" class="level2">
+<h2 class="anchored" data-anchor-id="status-of-compliance">Status of Compliance</h2>
 <p>Partially compliant: This application partially corresponds to § 1 BayEGovV.</p>
-<section id="legal-name" class="level5">
-<h5 class="anchored" data-anchor-id="legal-name">Legal Name</h5>
+<section id="legal-name" class="level3">
+<h3 class="anchored" data-anchor-id="legal-name">Legal Name</h3>
 <p>Ludwig-Maximilians-Universität München</p>
 </section>
-<section id="websites" class="level5">
-<h5 class="anchored" data-anchor-id="websites">Website(s):</h5>
+<section id="websites" class="level3">
+<h3 class="anchored" data-anchor-id="websites">Website(s):</h3>
 <p><a href="https://www.lmu.de/de/index.html">https://www.lmu.de/de/index.html</a>, <a href="https://www.lmu.de/de/index.html">https://www.lmu.de/de/index.html</a> and all subdomain pages.</p>
 </section>
 </section>
-<section id="known-accessibility-issues" class="level4">
-<h4 class="anchored" data-anchor-id="known-accessibility-issues">Known Accessibility Issues</h4>
+<section id="known-accessibility-issues" class="level2">
+<h2 class="anchored" data-anchor-id="known-accessibility-issues">Known Accessibility Issues</h2>
 <p>List and explanation of the problems encountered when implementing the accessibility of these websites</p>
-<section id="content-not-accessible-to-people-with-disabilities" class="level5">
-<h5 class="anchored" data-anchor-id="content-not-accessible-to-people-with-disabilities">Content Not Accessible to People With Disabilities</h5>
+<section id="content-not-accessible-to-people-with-disabilities" class="level3">
+<h3 class="anchored" data-anchor-id="content-not-accessible-to-people-with-disabilities">Content Not Accessible to People With Disabilities</h3>
 <ul>
 <li>Apart from the main pages, alternative text-based content for images and tables may be missing. There may also be errors in content hierarchy and links may be unintelligible.</li>
 <li>PDF documents created before 09/23/2018 have not yet been converted to a fully accessible format.</li>
@@ -573,18 +587,18 @@ if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
 </ul>
 </section>
 </section>
-<section id="explanation" class="level4">
-<h4 class="anchored" data-anchor-id="explanation">Explanation</h4>
+<section id="explanation" class="level2">
+<h2 class="anchored" data-anchor-id="explanation">Explanation</h2>
 <p>All LMU websites are currently undergoing a complete relaunch. It therefore no longer makes sense to revise the existing websites.<br>
 The deficiencies of the old website have been listed above.</p>
 <p><strong>Creation Date</strong>: 09/22/2019<br>
 <strong>Methodology</strong>: Self-assessment</p>
 </section>
-<section id="feedback-mechanism" class="level4">
-<h4 class="anchored" data-anchor-id="feedback-mechanism">Feedback Mechanism</h4>
+<section id="feedback-mechanism" class="level2">
+<h2 class="anchored" data-anchor-id="feedback-mechanism">Feedback Mechanism</h2>
 <p>As a user, you can inform us of any shortcomings in complying with accessibility requirements or request information in an accessible format that is not required to be displayed in an accessible format.</p>
-<section id="contact-information" class="level5">
-<h5 class="anchored" data-anchor-id="contact-information">Contact Information</h5>
+<section id="contact-information" class="level3">
+<h3 class="anchored" data-anchor-id="contact-information">Contact Information</h3>
 <p>Unit VI.5 Internet Services<br>
 Martiusstraße 4<br>
 80802 Munich<br>
@@ -592,11 +606,11 @@ Mail: <a href="mailto:it.internet@verwaltung.uni-muenchen.de">it.internet@verwal
 Phone: +49 (0) 89 / 2180-9832</p>
 </section>
 </section>
-<section id="enforcement-procedure" class="level4">
-<h4 class="anchored" data-anchor-id="enforcement-procedure">Enforcement Procedure</h4>
+<section id="enforcement-procedure" class="level2">
+<h2 class="anchored" data-anchor-id="enforcement-procedure">Enforcement Procedure</h2>
 <p>If a request for contact remains unanswered in whole or in part within six weeks, the Landesamt für Digitalisierung, Breitband und Vermessung (Agency for Digitisation, High-Speed Internet and Surveying) will, at the request of the user, examine whether measures are necessary with regard to the monitoring of the obligated party.</p>
-<section id="contact-information-of-the-agency-responsible-for-the-enforcement-procedure" class="level5">
-<h5 class="anchored" data-anchor-id="contact-information-of-the-agency-responsible-for-the-enforcement-procedure">Contact information of the agency responsible for the enforcement procedure</h5>
+<section id="contact-information-of-the-agency-responsible-for-the-enforcement-procedure" class="level3">
+<h3 class="anchored" data-anchor-id="contact-information-of-the-agency-responsible-for-the-enforcement-procedure">Contact information of the agency responsible for the enforcement procedure</h3>
 <p>Landesamt für Digitalisierung, Breitband und Vermessung Alexandrastraße 4<br>
 80538 Munich<br>
 Phone: +49 89 2129-1111<br>
@@ -604,15 +618,16 @@ Fax: +49 89 2129-1113<br>
 Email:<a href="mailto:service@geodaten.bayern.de">service@geodaten.bayern.de</a><br>
 <a href="https://www.ldbv.bayern.de/service/kontakt/">https://www.ldbv.bayern.de/service/kontakt/</a></p>
 </section>
-<section id="other-help-services" class="level5">
-<h5 class="anchored" data-anchor-id="other-help-services">Other Help Services</h5>
+<section id="other-help-services" class="level3">
+<h3 class="anchored" data-anchor-id="other-help-services">Other Help Services</h3>
 <p>Students with disabilities are supported by the <a href="https://www.lmu.de/de/workspace-fuer-studierende/support-angebote/studieren-mit-beeintraechtigung/">Beratungsstelle für Studierende mit Behinderung und chronischer Erkrankung</a> (Counselling Center for Students with Disabilities and Chronic Illnesses).</p>
 <p>The <a href="https://login.lmu.de/idp/profile/SAML2/Redirect/SSO?execution=e3s1">Schwerbehindertenvertretung (Representative for Disabled Persons)</a> (access protected on the service portal) can support employees.</p>
-</section>
-</section>
-</div>
 
 
+<!-- -->
+
+</section>
+</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -699,6 +714,57 @@ Email:<a href="mailto:service@geodaten.bayern.de">service@geodaten.bayern.de</a>
       });
       clipboardModal.on('success', onCopySuccess);
     }
+    const viewSource = window.document.getElementById('quarto-view-source') ||
+                       window.document.getElementById('quarto-code-tools-source');
+    if (viewSource) {
+      const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+      viewSource.addEventListener("click", function(e) {
+        if (sourceUrl) {
+          // rstudio viewer pane
+          if (/\bcapabilities=\b/.test(window.location)) {
+            window.open(sourceUrl);
+          } else {
+            window.location.href = sourceUrl;
+          }
+        } else {
+          const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+          modal.show();
+        }
+        return false;
+      });
+    }
+    function toggleCodeHandler(show) {
+      return function(e) {
+        const cellDetails = window.document.querySelectorAll(".cell details.code-fold");
+        for (let i=0; i<cellDetails.length; i++) {
+          const details = cellDetails[i];
+          if (show) {
+            details.open = true;
+          } else {
+            details.removeAttribute("open");
+          }
+        }
+        const cellCodeDivs = window.document.querySelectorAll(".cell div.sourceCode.cell-code");
+        const fromCls = show ? "hidden" : "unhidden";
+        const toCls = show ? "unhidden" : "hidden";
+        for (let i=0; i<cellCodeDivs.length; i++) {
+          const codeDiv = cellCodeDivs[i];
+          if (codeDiv.classList.contains(fromCls)) {
+            codeDiv.classList.remove(fromCls);
+            codeDiv.classList.add(toCls);
+          } 
+        }
+        return false;
+      }
+    }
+    const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+    if (hideAllCode) {
+      hideAllCode.addEventListener("click", toggleCodeHandler(false));
+    }
+    const showAllCode = window.document.getElementById("quarto-show-all-code");
+    if (showAllCode) {
+      showAllCode.addEventListener("click", toggleCodeHandler(true));
+    }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
         var filterRegex = new RegExp("https:\/\/lmu-osc\.github\.io\/introduction-to-zotero\/");
@@ -715,6 +781,13 @@ Email:<a href="mailto:service@geodaten.bayern.de">service@geodaten.bayern.de</a>
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+            // default icon
+            link.classList.add("external");
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -1027,7 +1100,77 @@ Email:<a href="mailto:service@geodaten.bayern.de">service@geodaten.bayern.de</a>
       }
     }
   });
-  </script>
+  </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Accessibility"</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">page-layout:</span><span class="co"> full</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>The Ludwig-Maximilians-Universität München strives to make its offers accessible in accordance with § 9 Act on Digitalisation in the Free State of Bavaria (Bayerisches Digitalgesetz – BayDig).</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>This Accessibility Statement applies to applications available at <span class="co">[</span><span class="ot">https://www.lmu.de/de/index.html</span><span class="co">](https://www.lmu.de/de/index.html)</span>, <span class="co">[</span><span class="ot">https://www.lmu.de/de/index.html</span><span class="co">](https://www.lmu.de/de/index.html)</span> and all subdomain pages.</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="fu">## Status of Compliance</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>Partially compliant: This application partially corresponds to § 1 BayEGovV.</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="fu">### Legal Name</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>Ludwig-Maximilians-Universität München</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="fu">### Website(s):</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">https://www.lmu.de/de/index.html</span><span class="co">](https://www.lmu.de/de/index.html)</span>, <span class="co">[</span><span class="ot">https://www.lmu.de/de/index.html</span><span class="co">](https://www.lmu.de/de/index.html)</span> and all subdomain pages.</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="fu">## Known Accessibility Issues</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>List and explanation of the problems encountered when implementing the accessibility of these websites</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="fu">### Content Not Accessible to People With Disabilities</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Apart from the main pages, alternative text-based content for images and tables may be missing. There may also be errors in content hierarchy and links may be unintelligible.</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>PDF documents created before 09/23/2018 have not yet been converted to a fully accessible format.</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Some documents have been provided by institutions of the LMU, which are not yet all available in a fully accessible version.</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Many of our videos also lack subtitles and audio descriptions.</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>We will be adding written directions for the maps used to give directions.</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Quotes are often not indicated as such using the appropriate HTML tag.</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Responsive design (for viewing on mobile devices) is only partially available for the websites, screen orientation is otherwise limited to landscape format. For non-responsive pages, texts do not wrap correctly in a small viewport.</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Fields for inputting user data are not always sufficiently designated as such.</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Words or passages in other languages are not always indicated as such.</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Because of the Google Search plugin, the criteria for "valid HTML text" is not being fulfilled.</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="fu">## Explanation</span></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>All LMU websites are currently undergoing a complete relaunch. It therefore no longer makes sense to revise the existing websites.\</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>The deficiencies of the old website have been listed above.</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>**Creation Date**: 09/22/2019\</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>**Methodology**: Self-assessment</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a><span class="fu">## Feedback Mechanism</span></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>As a user, you can inform us of any shortcomings in complying with accessibility requirements or request information in an accessible format that is not required to be displayed in an accessible format.</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a><span class="fu">### Contact Information</span></span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>Unit VI.5 Internet Services\</span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>Martiusstraße 4\</span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>80802 Munich\</span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>Mail: <span class="co">[</span><span class="ot">it.internet@verwaltung.uni-muenchen.de</span><span class="co">](mailto:it.internet@verwaltung.uni-muenchen.de)</span>\</span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>Phone: +49 (0) 89 / 2180-9832</span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a><span class="fu">## Enforcement Procedure</span></span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>If a request for contact remains unanswered in whole or in part within six weeks, the Landesamt für Digitalisierung, Breitband und Vermessung (Agency for Digitisation, High-Speed Internet and Surveying) will, at the request of the user, examine whether measures are necessary with regard to the monitoring of the obligated party.</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a><span class="fu">### Contact information of the agency responsible for the enforcement procedure</span></span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>Landesamt für Digitalisierung, Breitband und Vermessung\above</span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>Alexandrastraße 4\</span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a>80538 Munich\</span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a>Phone: +49 89 2129-1111\</span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a>Fax: +49 89 2129-1113\</span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>Email:<span class="co">[</span><span class="ot">service@geodaten.bayern.de</span><span class="co">](mailto:service@geodaten.bayern.de)</span>\</span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">https://www.ldbv.bayern.de/service/kontakt/</span><span class="co">](https://www.ldbv.bayern.de/service/kontakt/)</span></span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a><span class="fu">### Other Help Services</span></span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a>Students with disabilities are supported by the <span class="co">[</span><span class="ot">Beratungsstelle für Studierende mit Behinderung und chronischer Erkrankung</span><span class="co">](https://www.lmu.de/de/workspace-fuer-studierende/support-angebote/studieren-mit-beeintraechtigung/)</span> (Counselling Center for Students with Disabilities and Chronic Illnesses).</span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a>The <span class="co">[</span><span class="ot">Schwerbehindertenvertretung (Representative for Disabled Persons)</span><span class="co">](https://login.lmu.de/idp/profile/SAML2/Redirect/SSO?execution=e3s1)</span> (access protected on the service portal) can support employees.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+</div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
@@ -1036,9 +1179,95 @@ Email:<a href="mailto:service@geodaten.bayern.de">service@geodaten.bayern.de</a>
     </div>   
     <div class="nav-footer-center">
 <p>© 2024 Pat Callahan, Dejana Damjanovic. Published by LMU Open Science Center. Licensed under CC BY-SA 4.0.</p>
-<div class="toc-actions"><ul><li><a href="https://github.com/lmu-osc/introduction-to-zotero/edit/main/footer/accessibilty.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/introduction-to-zotero/blob/main/footer/accessibilty.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/lmu-osc/introduction-to-zotero/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/lmu-osc/introduction-to-zotero/edit/main/footer/accessibilty.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/introduction-to-zotero/blob/main/footer/accessibilty.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/lmu-osc/introduction-to-zotero/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
+    </div>
+  </div>
+</footer>
+<footer class="osc-footer-card py-5">
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-12 col-md-6 col-lg-3">
+        <h4 class="fw-bold fs-5 fs-lg-4">
+          Ludwig-Maximilians-Universität<br>
+          LMU Open Science Center
+        </h4>
+        <p class="mb-0 mt-1 fw-normal fs-5">
+          Leopoldstr. 13<br>
+          80802 München
+        </p>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-3">
+        <h4 class="fw-semibold fs-5">Contact</h4>
+        <ul class="list-unstyled mt-2 mb-0">
+          <li>
+            <a href="mailto:felix.schoenbrodt@psy.lmu.de" class="text-decoration-underline">
+              <i class="bi bi-envelope me-1"></i>
+              Prof. Dr. Felix Schönbrodt (Managing Director)
+            </a>
+          </li>
+          <li>
+            <a href="mailto:malika.ihle@lmu.de" class="text-decoration-underline">
+              <i class="bi bi-envelope me-1"></i>
+              Dr. Malika Ihle (Coordinator)
+            </a>
+          </li>
+          <li>
+            <a href="mailto:osc@lmu.de" class="text-decoration-underline">
+              <i class="bi bi-envelope me-1"></i>
+              OSC team
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-3">
+        <h4 class="fw-semibold fs-5">Join Us</h4>
+        <ul class="list-unstyled mt-2 mb-0">
+          <li>
+            <a href="https://lists.lrz.de/mailman/listinfo/lmu-osc" class="text-decoration-underline" aria-label="Subscribe to our announcement list (opens in new window)">
+              Subscribe to our announcement list
+            </a>
+          </li>
+          <li>
+            <a href="https://www.osc.lmu.de/about/join-us.html" class="text-decoration-underline" aria-label="Become a member (opens in new window)">
+              Become a member
+            </a>
+          </li>
+          <li>
+            <a href="https://matrix.to/#/#lmu-open-science-center:matrix.lmu.de" class="text-decoration-underline" aria-label="Chat with us on Matrix (opens in new window)">
+              Chat with us on Matrix
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-3 d-flex align-items-start gap-3 osc-footer-socials">
+        <a href="https://github.com/lmu-osc" class="fs-3" aria-label="LMU Open Science Center on GitHub (opens in new window)">
+          <i class="bi bi-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/company/lmu-open-science-center/" class="fs-3" aria-label="LMU Open Science Center on LinkedIn (opens in new window)">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="https://bsky.app/profile/lmu-osc.bsky.social" class="fs-3" aria-label="LMU Open Science Center on Bluesky (opens in new window)">
+          <i class="bi bi-bluesky"></i>
+        </a>
+        <a href="https://scicomm.xyz/@lmu_osc" class="fs-3" aria-label="LMU Open Science Center on Mastodon (opens in new window)">
+          <i class="bi bi-mastodon"></i>
+        </a>
+      </div>
+    </div>
+
+    <hr class="my-4">
+
+    <div class="d-flex flex-wrap gap-3 small">
+      <a href="../footer/imprint.html" class="text-decoration-underline">Imprint</a>
+      <span aria-hidden="true">|</span>
+      <a href="../footer/privacy.html" class="text-decoration-underline">Privacy Policy</a>
+      <span aria-hidden="true">|</span>
+      <a href="../footer/accessibilty.html" class="text-decoration-underline">Accessibility</a>
     </div>
   </div>
 </footer>
@@ -1046,4 +1275,5 @@ Email:<a href="mailto:service@geodaten.bayern.de">service@geodaten.bayern.de</a>
 
 
 
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
