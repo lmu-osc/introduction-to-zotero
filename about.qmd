@@ -12,9 +12,7 @@ author:
   - name: Pat Callahan
     roles: [conceptualization, data curation, formal analysis, funding acquisition, investigation, methodology, project administration, software, resources, supervision, validation, visualization, writing - original draft, writing - editing & review]
     degrees:
-      - B.S.
       - M.Sc.
-      - PhD
     affiliation: 
       - id: osc
         name: LMU Open Science Center
